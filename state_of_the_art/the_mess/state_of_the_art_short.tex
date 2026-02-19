@@ -1,0 +1,291 @@
+% =============================================================================
+% State of the Art - Short Version for Supervisor Meeting
+% Explainable Disease Progression with Vision–Language Models
+% =============================================================================
+
+\documentclass[aspectratio=169]{beamer}
+\usetheme{SimplePlus}
+
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+\definecolor{ForestGreen}{RGB}{34,139,34}
+\definecolor{BrickRed}{RGB}{178,34,34}
+
+\title[State of the Art]{State of the Art Review}
+\subtitle{Explainable Disease Progression \& Counterfactual Video Generation}
+\author{Mohamed Amine}
+\institute{TÉLUQ University $\cdot$ Mitacs Globalink}
+\date{February 2026}
+
+\begin{document}
+
+% =============================================================================
+% TITLE
+% =============================================================================
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% =============================================================================
+% OVERVIEW
+% =============================================================================
+\begin{frame}{Research Components Overview}
+    \begin{center}
+        \Large
+        \textbf{Vision Transformers} $\rightarrow$ \textbf{LLMs} $\rightarrow$ \textbf{Diffusion Models}
+    \end{center}
+    
+    \vspace{1em}
+    
+    \begin{columns}
+        \begin{column}{0.33\textwidth}
+            \begin{block}{Feature Extraction}
+                \centering
+                Swin UNETR \\
+                (Medical Segmentation)
+            \end{block}
+        \end{column}
+        \begin{column}{0.33\textwidth}
+            \begin{block}{Explainability}
+                \centering
+                Med-PaLM / LLaMA \\
+                (Text Generation)
+            \end{block}
+        \end{column}
+        \begin{column}{0.33\textwidth}
+            \begin{block}{Video Generation}
+                \centering
+                Video LDM \\
+                (Counterfactuals)
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% =============================================================================
+% VISION TRANSFORMERS
+% =============================================================================
+\begin{frame}{State of the Art: Vision Transformers for Medical Imaging}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Evolution}
+                \begin{itemize}
+                    \item \textbf{ViT (2020):} First pure transformer for images
+                    \item \textbf{Swin (2021):} Shifted windows, $\mathcal{O}(n)$ complexity
+                    \item \textbf{UNETR (2022):} ViT encoder + CNN decoder
+                    \item \textbf{Swin UNETR (2022):} Current SOTA for 3D medical
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Swin UNETR on BraTS 2021}
+                \begin{center}
+                    \begin{tabular}{lc}
+                        \toprule
+                        \textbf{Region} & \textbf{Dice} \\
+                        \midrule
+                        Whole Tumor & 0.929 \\
+                        Tumor Core & 0.891 \\
+                        Enhancing & 0.854 \\
+                        \bottomrule
+                    \end{tabular}
+                \end{center}
+            \end{block}
+            
+            \begin{alertblock}{Our Choice}
+                \textbf{Swin UNETR} for segmentation + feature extraction
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% =============================================================================
+% LLMs
+% =============================================================================
+\begin{frame}{State of the Art: Medical Language Models}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Evolution}
+                \begin{itemize}
+                    \item \textbf{BioBERT (2020):} BERT + PubMed pretraining
+                    \item \textbf{PubMedBERT (2021):} From-scratch biomedical
+                    \item \textbf{Med-PaLM (2023):} First to pass USMLE
+                    \item \textbf{Med-PaLM 2:} 86.5\% on MedQA
+                \end{itemize}
+            \end{block}
+            
+            \begin{block}{Key Capability}
+                Generate clinical explanations with reasoning chains
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Vision-Language Integration}
+                \begin{enumerate}
+                    \item Extract ViT features
+                    \item Project to LLM space
+                    \item Generate text explanations
+                \end{enumerate}
+            \end{block}
+            
+            \begin{alertblock}{Our Approach}
+                \textbf{LLaMA-2 + LoRA} fine-tuned on MIMIC-III radiology reports
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% =============================================================================
+% DIFFUSION MODELS
+% =============================================================================
+\begin{frame}{State of the Art: Diffusion Models for Video Generation}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Evolution}
+                \begin{itemize}
+                    \item \textbf{DDPM (2020):} Denoising diffusion foundation
+                    \item \textbf{LDM (2022):} Latent space diffusion (64$\times$ faster)
+                    \item \textbf{Video LDM (2023):} Temporal layers for video
+                    \item \textbf{Stable Video Diffusion:} Production-ready
+                \end{itemize}
+            \end{block}
+            
+            \begin{block}{Core Formula}
+                \begin{center}
+                    $p_\theta(\mathbf{x}_{t-1} | \mathbf{x}_t) = \mathcal{N}(\boldsymbol{\mu}_\theta, \sigma_t^2\mathbf{I})$
+                \end{center}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Video LDM Architecture}
+                \begin{itemize}
+                    \item Spatial layers (per frame)
+                    \item Temporal attention (across frames)
+                    \item Conditioning via cross-attention
+                \end{itemize}
+            \end{block}
+            
+            \begin{alertblock}{Our Goal}
+                Generate counterfactual disease progression: \\
+                \textit{``What if treatment A vs B?''}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% =============================================================================
+% DATASETS
+% =============================================================================
+\begin{frame}{Datasets for Our Research}
+    \begin{center}
+        \begin{tabular}{@{}lccc@{}}
+            \toprule
+            \textbf{Dataset} & \textbf{Type} & \textbf{Size} & \textbf{Use} \\
+            \midrule
+            \textbf{BraTS} & Brain MRI & 2,000+ & Primary: ViT training \\
+            \textbf{MIMIC-III} & Clinical text & 46K patients & LLM fine-tuning \\
+            TCGA & Multi-modal & 11K+ & Secondary validation \\
+            LIDC-IDRI & Lung CT & 1,018 & Cross-domain test \\
+            \bottomrule
+        \end{tabular}
+    \end{center}
+    
+    \vspace{1em}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{BraTS Details}
+                4 MRI sequences: T1, T1Gd, T2, FLAIR \\
+                3 tumor regions annotated
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{MIMIC-III Details}
+                500K+ radiology reports \\
+                Ideal for explanation training
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% =============================================================================
+% KEY REFERENCES
+% =============================================================================
+\begin{frame}{Key References Summary}
+    \footnotesize
+    \begin{columns}
+        \begin{column}{0.33\textwidth}
+            \begin{block}{Vision Transformers}
+                \begin{itemize}
+                    \item Dosovitskiy (ViT)
+                    \item Liu (Swin)
+                    \item Tang (Swin UNETR)
+                \end{itemize}
+                \centering $\star\star\star\star\star$
+            \end{block}
+        \end{column}
+        \begin{column}{0.33\textwidth}
+            \begin{block}{Language Models}
+                \begin{itemize}
+                    \item Lee (BioBERT)
+                    \item Singhal (Med-PaLM)
+                    \item Touvron (LLaMA)
+                \end{itemize}
+                \centering $\star\star\star\star$
+            \end{block}
+        \end{column}
+        \begin{column}{0.33\textwidth}
+            \begin{block}{Diffusion Models}
+                \begin{itemize}
+                    \item Ho (DDPM)
+                    \item Rombach (LDM)
+                    \item Blattmann (Video LDM)
+                \end{itemize}
+                \centering $\star\star\star\star\star$
+            \end{block}
+        \end{column}
+    \end{columns}
+    
+    \vspace{1em}
+    
+    \begin{alertblock}{Most Critical for Our Project}
+        \begin{enumerate}
+            \item \textbf{Swin UNETR} (Tang et al., CVPR 2022) - Feature extraction backbone
+            \item \textbf{Video LDM} (Blattmann et al., CVPR 2023) - Video generation framework
+            \item \textbf{Med-PaLM} (Singhal et al., Nature 2023) - Medical LLM architecture reference
+        \end{enumerate}
+    \end{alertblock}
+\end{frame}
+
+% =============================================================================
+% DISCUSSION POINTS
+% =============================================================================
+\begin{frame}{Discussion Points}
+    \begin{block}{Questions for Supervisor}
+        \begin{enumerate}
+            \item \textbf{Architecture:} Should we prioritize Swin UNETR or explore newer alternatives (e.g., SAM-Med3D)?
+            \item \textbf{LLM Choice:} LLaMA-2 vs Mistral vs waiting for open medical LLMs?
+            \item \textbf{Video Generation:} Start with 2D slice sequences or directly 3D volumes?
+            \item \textbf{Evaluation:} How to validate counterfactual realism clinically?
+        \end{enumerate}
+    \end{block}
+    
+    \begin{alertblock}{Ready to Start Phase 1}
+        Data pipeline development with BraTS dataset
+    \end{alertblock}
+\end{frame}
+
+% =============================================================================
+% END
+% =============================================================================
+\begin{frame}[standout]
+    \centering
+    \Huge Questions?
+    
+    \vspace{1cm}
+    \Large Let's discuss the approach
+\end{frame}
+
+\end{document}

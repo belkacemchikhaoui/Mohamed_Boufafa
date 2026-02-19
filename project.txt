@@ -1,0 +1,285 @@
+2. Proposed Research:
+2.1 Background (1 to 2 pages)
+(a) Provide a review of the existing literature with references to relevant prior works. Explain the state of
+knowledge and the contribution of your project to this literature and to the general research field.
+(b) Clearly state the research problem, knowledge gaps and questions that your objectives are attempting to
+investigate, solve, and/or answer.
+(a) State of the Art and Relevant Literature
+Deep learning has become a dominant paradigm in medical imaging analysis, with significant impact in
+oncology. Convolutional neural networks (CNNs) have been extensively used for tumor detection,
+segmentation, and classification across diverse modalities such as CT, MRI, and histopathology images.
+Large public datasets, including The Cancer Genome Atlas (TCGA), BraTS, and LIDC-IDRI, have played a
+critical role in advancing data-driven cancer imaging research by enabling reproducible benchmarking
+and model comparison [1–3].
+More recently, Vision Transformers (ViTs) have emerged as a powerful alternative to CNNs by modeling
+long-range spatial dependencies through self-attention mechanisms. Originally proposed by Dosovitskiy
+et al. [4], ViTs have been successfully adapted for medical imaging tasks, demonstrating strong
+performance in tumor segmentation and classification due to their ability to capture global context
+Latest version November 2024
+2 of 11
+
+
+[5,6]. Hierarchical transformer architectures such as Swin Transformer further improve scalability and
+have been applied to medical image analysis, including cancer imaging [7].
+Despite these advances, most cancer-related AI models operate on static images, focusing on single
+time-point analysis. Cancer, however, is a progressive disease whose behavior depends on time,
+biological processes, and treatment interventions. Some studies have explored longitudinal modeling
+using recurrent neural networks or temporal CNNs; however, these approaches typically output
+numerical predictions such as survival probabilities or growth rates, which are often difficult for
+clinicians and patients to interpret visually [8].
+Parallel to progress in vision modeling, Large Language Models (LLMs) have demonstrated strong
+capabilities in natural language understanding, reasoning, and multimodal integration. In the medical
+domain, LLMs have been applied to clinical text summarization, radiology report generation, and
+question answering, showing promise in supporting clinical reasoning [9–11]. Recent works highlight the
+ability of LLMs to combine medical knowledge with structured inputs; however, their integration with
+medical imaging features remains limited and is often restricted to generating textual reports rather
+than actionable multimodal reasoning [12].
+Another rapidly evolving area is generative modeling, particularly diffusion-based models for image and
+video synthesis. Diffusion models have achieved state-of-the-art results in generating high-quality
+images and videos in natural domains [13,14]. In medical imaging, generative models have primarily
+been explored for data augmentation, reconstruction, and privacy-preserving synthetic data generation
+[15,16]. While these applications are valuable, they generally do not address disease progression or
+clinical interpretability.
+At present, there is limited research combining vision-based representations, language-based clinical
+reasoning, and generative video modeling to explicitly visualize disease evolution over time. In oncology,
+no established method exists that can generate interpretable, temporally coherent visualizations of
+tumor progression conditioned on different treatment strategies, leaving a significant gap between
+advanced AI modeling and real clinical needs.
+(b) Research Problem, Knowledge Gaps, and Research Questions
+The primary research problem addressed by this project is the lack of interpretable and dynamic AI
+models for longitudinal cancer progression analysis. While current deep learning systems can achieve
+high predictive accuracy, they suffer from three critical limitations.
+First, most existing approaches rely on static image analysis, which does not adequately reflect the
+temporal nature of cancer development or response to treatment. Second, predictions are typically
+expressed as abstract numerical outputs (e.g., probabilities or risk scores), offering limited
+interpretability and minimal support for clinical decision-making or patient communication. Third,
+existing models do not support counterfactual reasoning, an essential component of personalized
+medicine that allows clinicians to explore alternative treatment outcomes.
+These gaps motivate the following research questions:
+ Can Vision Transformer-based models capture meaningful representations of tumor morphology
+and its evolution from longitudinal medical imaging?
+ Can Large Language Models integrate imaging-derived features with clinical metadata to
+provide coherent, medically grounded reasoning about disease progression?
+Latest version November 2024
+3 of 11
+
+
+ Is it possible to generate temporally consistent and clinically plausible videos that visualize
+cancer progression over time?
+ Can such a system support counterfactual analysis by simulating alternative tumor trajectories
+under different treatment scenarios?
+By addressing these questions, the proposed project aims to advance the state of the art in multimodal,
+explainable AI for oncology, moving beyond static prediction toward interpretable and clinically
+meaningful disease modeling.
+2.2 Objectives of the Mitacs Globalink research project (1 to 3 pages max. depending on the number
+of interns)
+Describe the objectives and sub-objectives of the Globalink research project and specify whether they are part of a
+bigger initiative (e.g., intern’s thesis/dissertation or team project). Provide enough details for the reviewers to
+clearly understand what the intern(s) will be doing during their internship(s) and how they will achieve each
+objective. For Globalink research projects with multiple interns, explain which objectives or sub-objectives will be
+tackled by each intern. Distribution of the tasks among the interns must be explicit.
+Overall Objective
+The primary objective is to design, implement, and evaluate a multimodal artificial intelligence framework that
+integrates Large Vision Models (LVMs), Vision Transformers (ViTs), and Large Language Models (LLMs) to analyze,
+explain, and simulate cancer progression from longitudinal medical imaging data.
+The project aims to move beyond conventional static cancer image analysis by enabling temporal modeling,
+multimodal reasoning, and explainable clinical insights, with a particular emphasis on interpretability and
+generative modeling of disease trajectories.
+This project is part of a broader research initiative led by Dr. Belkacem Chikhaoui at TELUQ university on
+multimodal AI for medical decision support and explainable clinical intelligence, targeting applications in oncology
+and precision medicine. The outcomes of this internship are expected to contribute to a peer-reviewed
+publication, as well as to serve as a foundation for future MSc/PhD theses and collaborative projects in medical AI.
+Specific Objectives and Sub-Objectives
+The project is structured around five tightly connected objectives, each associated with concrete technical tasks
+and learning outcomes for the intern.
+Objective 1 – Develop a Robust Pipeline for Longitudinal Cancer Imaging Analysis
+Goal:
+To build a reproducible and clinically meaningful data pipeline for processing and organizing longitudinal cancer
+imaging data (MRI or CT).
+Sub-objectives:
+ Acquire and curate publicly available oncology datasets (e.g., TCGA, BraTS, LIDC-IDRI).
+ Perform standardized preprocessing, including normalization, spatial alignment, and temporal consistency
+checks across patient visits.
+ Structure patient data into longitudinal image sequences suitable for temporal and generative modeling.
+The intern will implement preprocessing pipelines using Python-based medical imaging libraries (e.g., MONAI,
+SimpleITK), validate consistency across time points, and systematically document data quality and limitations.
+Objective 2 – Learn High-Level Tumor Representations Using Vision Transformers
+Latest version November 2024
+4 of 11
+
+
+Goal:
+To extract semantically rich and temporally informative representations of tumors using state-of-the-art Vision
+Transformer architectures.
+Sub-objectives:
+ Implement and fine-tune Vision Transformer models (e.g., ViT, Swin Transformer) on cancer imaging data.
+ Compare Transformer-based representations with CNN baselines.
+ Learn embeddings that capture tumor morphology, spatial heterogeneity, and temporal evolution.
+The intern will train transformer-based models using longitudinal imaging snapshots, analyze embedding evolution
+across time, and evaluate representation quality using downstream prediction and clustering tasks.
+Objective 3 – Integrate Imaging and Clinical Context Using Large Language Models
+Goal:
+To enable multimodal clinical reasoning by combining visual tumor representations with structured clinical
+metadata using LLMs.
+Sub-objectives:
+ Design multimodal representations that fuse imaging embeddings with clinical variables (e.g., cancer
+stage, treatment type).
+ Develop prompt-based strategies to guide LLMs in generating clinically coherent explanations of disease
+progression.
+ Align visual evidence with textual medical reasoning for interpretability.
+The intern will experiment with LLM prompting and embedding alignment techniques, generating explanatory text
+linked explicitly to temporal imaging changes.
+Objective 4 – Generate and Analyze Cancer Progression Videos
+Goal:
+To model and visualize cancer progression through AI-generated video sequences conditioned on multimodal
+inputs.
+Sub-objectives:
+ Adapt diffusion-based or transformer-based video generation models to medical imaging data.
+ Generate temporally consistent disease progression videos.
+ Explore counterfactual scenarios (e.g., treatment vs. no treatment trajectories).
+The intern will condition generative models on vision and language embeddings, evaluate temporal coherence,
+and analyze the clinical plausibility of generated trajectories.
+Objective 5 – Evaluate Explainability, Clinical Plausibility, and Scientific Impact
+Goal:
+To rigorously assess the performance, interpretability, and medical relevance of the proposed multimodal
+framework.
+Sub-objectives:
+ Quantitatively evaluate model performance and temporal consistency.
+ Qualitatively assess explainability through clinician-aligned interpretations.
+ Prepare a comprehensive technical report and a publication-ready manuscript draft.
+The intern will apply quantitative metrics, conduct qualitative analysis of explanations and videos, and synthesize
+results into structured scientific documentation.
+Latest version November 2024
+5 of 11
+
+
+2.3. Indigenous community involvement or impact (if applicable):
+Globalink research projects that involve or impact Indigenous communities must comply with the Mitacs
+Indigenous Research Policy.
+Provide information on i) Indigenous community support for the project, and their role in shaping its objectives &
+approach, ii) plans for Indigenous community access, use, and governance of resulting knowledge / data, and iii)
+the team’s background in Indigenous research, including any planned training / mentorship the intern(s) will
+receive to address deficits in experience.
+You may also submit 1-2 letter(s) of support from Indigenous Elders who are members of the partner community /
+communities and possess the authority to speak on community interests.
+2.4 Timeline showing which task will be done when to achieve each objective
+Provide details about when and where the tasks and activities will be conducted, and by which intern.
+We suggest using a Gantt chart.
+The project is structured into six methodological phases, distributed over 20 weeks, allowing a gradual progression
+from medical imaging preprocessing to explainable cancer progression video generation and final validation.
+Phase 1 – Oncology Medical Imaging Preparation and Exploration
+Duration: 4 weeks (Weeks 1–4)
+Activities:
+ Selection and acquisition of public cancer imaging datasets (TCGA, BraTS, and/or LIDC-IDRI).
+ Preprocessing of medical images (MRI/CT):
+o Intensity normalization.
+o Spatial resampling.
+o Longitudinal image alignment across time points.
+ Verification and processing of tumor annotations when available.
+ Exploratory data analysis:
+o Distribution of tumor sizes and locations.
+o Inter-patient and temporal variability analysis.
+ Organization of longitudinal patient imaging sequences.
+Intermediate Deliverables:
+ Reproducible imaging preprocessing pipeline.
+ Cleaned, standardized, and temporally organized datasets.
+ Exploratory data analysis report.
+Phase 2 – Baseline Vision Models for Tumor Representation
+Duration: 3 weeks (Weeks 5–7)
+Activities:
+ Implementation of baseline deep learning models for tumor analysis:
+o Convolutional Neural Networks (CNNs).
+ Training and validation on single time-point tumor imaging tasks.
+ Quantitative evaluation of baseline performance.
+ Identification of limitations in static modeling.
+Intermediate Deliverables:
+Latest version November 2024
+6 of 11
+
+
+ Baseline model implementations and trained weights.
+ Comparative performance results serving as reference benchmarks.
+Phase 3 – Vision Transformer-Based Longitudinal Representation Learning
+Duration: 4 weeks (Weeks 8–11)
+Activities:
+ Implementation and fine-tuning of Vision Transformer architectures (ViT or Swin Transformer).
+ Extraction of high-level tumor embeddings for each time point.
+ Modeling temporal evolution through ordered embedding sequences.
+ Analysis of learned representations capturing tumor morphology changes.
+Intermediate Deliverables:
+ Transformer-based imaging embeddings.
+ Longitudinal tumor representation framework.
+ Visualization of learned tumor evolution features.
+Phase 4 – Multimodal Integration and Clinical Reasoning with LLMs
+Duration: 3 weeks (Weeks 12–14)
+Activities:
+ Integration of imaging embeddings with structured clinical metadata (e.g., cancer stage, treatment type).
+ Design of prompt strategies for Large Language Models (LLMs).
+ Generation of medically coherent disease progression narratives.
+ Alignment of textual explanations with imaging timelines.
+Intermediate Deliverables:
+ Multimodal embedding representation.
+ LLM prompt templates and generated clinical narratives.
+ Qualitative validation of clinical plausibility.
+Phase 5 – Generative Video Modeling of Cancer Progression
+Duration: 4 weeks (Weeks 15–18)
+Activities:
+ Selection and adaptation of diffusion-based or transformer-based video generation models.
+ Conditioning video generation on multimodal embeddings.
+ Generation of temporally consistent cancer progression videos.
+ Extension to counterfactual scenarios (e.g., treatment vs no treatment).
+Intermediate Deliverables:
+ Generated cancer progression video sequences.
+ Counterfactual disease trajectory visualizations.
+ Analysis of video realism and coherence.
+Phase 6 – Evaluation, Explainability, and Final Deliverables
+Duration: 2 weeks (Weeks 19–20)
+Activities:
+ Quantitative evaluation:
+o Structural consistency metrics.
+o Temporal coherence analysis.
+ Qualitative evaluation:
+o Visual plausibility assessment.
+Latest version November 2024
+7 of 11
+
+
+o Text-to-video alignment verification.
+ Preparation of final report and research documentation.
+ Final project presentation and knowledge transfer.
+Final Deliverables:
+ Fully implemented multimodal AI framework.
+ Explainable cancer progression and counterfactual videos.
+ Final technical report summarizing methodology and results.
+ Publication-ready research draft.
+2.5 Literature cited in sections 2.1 and .2.2
+1. Weinstein, J. N., et al. The Cancer Genome Atlas Pan-Cancer analysis project. Nature Genetics,
+45(10), 1113–1120, 2013.
+2. Menze, B. H., et al. The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS). IEEE
+Transactions on Medical Imaging, 34(10), 1993–2024, 2015.
+3. Armato, S. G., et al. The Lung Image Database Consortium (LIDC). Medical Physics, 38(2), 915–
+931, 2011.
+4. Dosovitskiy, A., et al. An Image is Worth 16×16 Words: Transformers for Image Recognition at
+Scale. ICLR, 2021.
+5. Hatamizadeh, A., et al. UNETR: Transformers for 3D Medical Image Segmentation. WACV, 2022.
+6. Tang, Y., et al. Self-Supervised Pretraining of Vision Transformers for Medical Imaging. CVPR,
+2022.
+7. Liu, Z., et al. Swin Transformer: Hierarchical Vision Transformer using Shifted Windows. ICCV,
+2021.
+8. Harangi, B. Skin lesion classification with ensembles of deep convolutional neural networks.
+Journal of Biomedical Informatics, 86, 25–32, 2018.
+9. Lee, J., et al. BioBERT: a pre-trained biomedical language representation model. Bioinformatics,
+36(4), 1234–1240, 2020.
+10. Singhal, K., et al. Large Language Models Encode Clinical Knowledge. Nature, 620, 172–180,
+2023.
+11. Johnson, A. E. W., et al. MIMIC-III, a freely accessible critical care database. Scientific Data, 3,
+160035, 2016.
+12. Li, X., et al. Multi-modal Pre-training for Medical Vision-language Understanding and
+Generation: An Empirical Study with A New Benchmark. arXiv:2306.06494, 2023.
+14. Ho, J., et al. Denoising Diffusion Probabilistic Models. NeurIPS, 2020.
+15. Blattmann, A., et al. Align your Latents: High-Resolution Video Synthesis with Latent Diffusion
+Models. CVPR, 2023.
+16. Frid-Adar, M., et al. GAN-based synthetic medical image augmentation. Neurocomputing, 321,
+321–331, 2018.
+17. Chen, R. J., et al. Synthetic data in machine learning for medicine and healthcare. Nature
+Biomedical Engineering, 2021. 

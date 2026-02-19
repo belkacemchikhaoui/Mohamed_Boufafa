@@ -1,0 +1,1609 @@
+% =============================================================================
+% State of the Art Presentation
+% Explainable Disease Progression and Counterfactual Video Generation
+% with Vision–Language Models
+% =============================================================================
+
+\documentclass[aspectratio=169]{beamer}
+\usetheme{SimplePlus}
+
+% -----------------------------------------------------------------------------
+% Packages
+% -----------------------------------------------------------------------------
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{multirow}
+
+% -----------------------------------------------------------------------------
+% Custom Colors
+% -----------------------------------------------------------------------------
+\definecolor{ForestGreen}{RGB}{34,139,34}
+\definecolor{BrickRed}{RGB}{178,34,34}
+\definecolor{DeepBlue}{RGB}{0,51,102}
+
+% -----------------------------------------------------------------------------
+% Title Information
+% -----------------------------------------------------------------------------
+\title[Explainable Disease Progression]{Explainable Disease Progression and Counterfactual Video Generation with Vision–Language Models}
+\subtitle{State of the Art Review}
+\author{Mohamed Amine}
+\institute{TÉLUQ University, Montreal \\ Mitacs Globalink Research Internship \\ \vspace{0.5em} \small Supervisors: Dr. Belkacem Chikhaoui (Canada), Dr. Belkacem Khaldi (Algeria)}
+\date{April 2026}
+
+\begin{document}
+
+% =============================================================================
+% TITLE PAGE
+% =============================================================================
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% =============================================================================
+% ROADMAP
+% =============================================================================
+\begin{frame}{Roadmap}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Part I: Introduction}
+                \begin{itemize}
+                    \item Research Context \& Motivation
+                    \item Problem Statement
+                    \item Research Questions
+                \end{itemize}
+            \end{block}
+            \begin{block}{Part II: Vision Transformers}
+                \begin{itemize}
+                    \item ViT Architecture
+                    \item Swin Transformer
+                    \item UNETR \& Swin UNETR
+                \end{itemize}
+            \end{block}
+            \begin{block}{Part III: Language Models}
+                \begin{itemize}
+                    \item BioBERT \& PubMedBERT
+                    \item Med-PaLM \& GPT-4 Medical
+                    \item Vision-Language Integration
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Part IV: Generative Models}
+                \begin{itemize}
+                    \item Diffusion Models (DDPM)
+                    \item Latent Diffusion \& Video LDM
+                    \item Counterfactual Generation
+                \end{itemize}
+            \end{block}
+            \begin{block}{Part V: Datasets}
+                \begin{itemize}
+                    \item BraTS Challenge
+                    \item TCGA \& LIDC-IDRI
+                    \item MIMIC-III Clinical Data
+                \end{itemize}
+            \end{block}
+            \begin{block}{Part VI: Project Plan}
+                \begin{itemize}
+                    \item Research Objectives
+                    \item Timeline \& Deliverables
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% =============================================================================
+% TRANSITION 1: Introduction
+% =============================================================================
+\begin{frame}[plain]
+    \centering
+    \vfill
+    \begin{beamercolorbox}[center,shadow=true,rounded=true]{title}
+        \usebeamerfont{title}
+        \textbf{Part I: Introduction}\\
+        \vspace{0.5em}
+        \large Research Context, Motivation \& Problem Statement
+    \end{beamercolorbox}
+    \vfill
+    
+    \vspace{1em}
+    \normalsize
+    \textit{Why do we need explainable AI for disease progression modeling?}
+\end{frame}
+
+% =============================================================================
+% INTRODUCTION FRAMES
+% =============================================================================
+\begin{frame}{Research Context: The Challenge}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Current Medical Imaging Landscape}
+                \begin{itemize}
+                    \item \textbf{Data Explosion:} Medical imaging data growing exponentially
+                    \item \textbf{Complexity:} Multi-modal, longitudinal patient data
+                    \item \textbf{Critical Decisions:} Tumor monitoring, treatment planning
+                    \item \textbf{Radiologist Burden:} Increasing workload, fatigue errors
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{AI in Healthcare: The Promise}
+                \begin{itemize}
+                    \item Deep learning achieves expert-level performance
+                    \item Automated lesion detection and segmentation
+                    \item Quantitative disease tracking
+                    \item \textbf{BUT:} Models remain ``black boxes''
+                \end{itemize}
+            \end{block}
+            \begin{alertblock}{The Trust Gap}
+                Clinicians hesitate to adopt AI systems they cannot understand or verify.
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Problem Statement: Three Key Challenges}
+    \begin{block}{Challenge 1: Explainability Crisis}
+        Current deep learning models for medical imaging lack interpretability:
+        \begin{itemize}
+            \item \textbf{Why} did the model predict tumor growth?
+            \item \textbf{What} features drove the diagnosis?
+            \item \textbf{How} confident is the prediction?
+        \end{itemize}
+    \end{block}
+    
+    \begin{block}{Challenge 2: Temporal Modeling Gap}
+        Disease progression is inherently temporal, yet most models are static:
+        \begin{itemize}
+            \item Single time-point analysis misses progression patterns
+            \item Longitudinal data underutilized in current pipelines
+            \item Need for video-like representation of disease evolution
+        \end{itemize}
+    \end{block}
+    
+    \begin{block}{Challenge 3: Counterfactual Reasoning}
+        Clinicians need to answer ``what-if'' questions:
+        \begin{itemize}
+            \item ``What would happen without treatment?''
+            \item ``How would the tumor evolve with alternative therapy?''
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Research Questions}
+    \begin{alertblock}{Main Research Question}
+        \centering
+        \large How can we develop an explainable AI system that models disease progression \\
+        and generates counterfactual visualizations using vision–language models?
+    \end{alertblock}
+    
+    \vspace{1em}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Sub-Questions}
+                \begin{enumerate}
+                    \item How can Vision Transformers extract clinically meaningful representations from medical images?
+                    \item How can LLMs provide natural language explanations for visual features?
+                    \item How can diffusion models generate realistic counterfactual disease trajectories?
+                \end{enumerate}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Expected Contributions}
+                \begin{itemize}
+                    \item Novel ViT-LLM integration framework
+                    \item Explainable disease progression model
+                    \item Counterfactual video generation pipeline
+                    \item Clinical evaluation methodology
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% =============================================================================
+% TRANSITION 2: Vision Transformers
+% =============================================================================
+\begin{frame}[plain]
+    \centering
+    \vfill
+    \begin{beamercolorbox}[center,shadow=true,rounded=true]{title}
+        \usebeamerfont{title}
+        \textbf{Part II: Vision Transformers}\\
+        \vspace{0.5em}
+        \large From ViT to UNETR: Transformers for Medical Imaging
+    \end{beamercolorbox}
+    \vfill
+    
+    \vspace{1em}
+    \normalsize
+    \begin{block}{Why Vision Transformers?}
+        \begin{itemize}
+            \item Global context modeling through self-attention
+            \item Natural alignment with language models
+            \item State-of-the-art performance in medical image analysis
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+% =============================================================================
+% VISION TRANSFORMER FRAMES
+% =============================================================================
+\begin{frame}{Vision Transformer (ViT): The Foundation}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Key Innovation (Dosovitskiy et al., 2020)}
+                Apply pure Transformer architecture to images:
+                \begin{enumerate}
+                    \item Split image into fixed-size patches
+                    \item Flatten patches into vectors
+                    \item Add positional embeddings
+                    \item Process with standard Transformer encoder
+                \end{enumerate}
+            \end{block}
+            
+            \begin{block}{Patch Embedding}
+                \begin{center}
+                    Image $\rightarrow$ Patches $\rightarrow$ Linear Projection $\rightarrow$ Tokens
+                \end{center}
+                For $224 \times 224$ image with $16 \times 16$ patches: \\
+                $N = (224/16)^2 = 196$ tokens
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Self-Attention Mechanism}
+                \begin{center}
+                    $\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$
+                \end{center}
+                \begin{itemize}
+                    \item $Q$, $K$, $V$: Query, Key, Value matrices
+                    \item $d_k$: Dimension of keys
+                    \item Global receptive field from layer 1
+                \end{itemize}
+            \end{block}
+            
+            \begin{alertblock}{Medical Imaging Advantage}
+                Self-attention captures long-range dependencies critical for:
+                \begin{itemize}
+                    \item Tumor boundary delineation
+                    \item Multi-organ relationships
+                    \item Bilateral symmetry analysis
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{ViT Architecture: Mathematical Formulation}
+    \begin{block}{Patch Embedding Process}
+        \begin{center}
+            \Large
+            $\mathbf{z}_0 = [\mathbf{x}_{\text{class}}; \mathbf{x}_p^1\mathbf{E}; \mathbf{x}_p^2\mathbf{E}; \cdots; \mathbf{x}_p^N\mathbf{E}] + \mathbf{E}_{\text{pos}}$
+        \end{center}
+        \begin{itemize}
+            \item $\mathbf{x}_p^i \in \mathbb{R}^{P^2 \cdot C}$: Flattened patch $i$
+            \item $\mathbf{E} \in \mathbb{R}^{(P^2 \cdot C) \times D}$: Patch embedding projection
+            \item $\mathbf{E}_{\text{pos}} \in \mathbb{R}^{(N+1) \times D}$: Learnable positional embeddings
+            \item $\mathbf{x}_{\text{class}}$: Classification token
+        \end{itemize}
+    \end{block}
+    
+    \begin{block}{Transformer Encoder Layers}
+        \begin{center}
+            $\mathbf{z}'_\ell = \text{MSA}(\text{LN}(\mathbf{z}_{\ell-1})) + \mathbf{z}_{\ell-1}$ \hspace{2em} (Multi-Head Self-Attention)\\
+            \vspace{0.5em}
+            $\mathbf{z}_\ell = \text{MLP}(\text{LN}(\mathbf{z}'_\ell)) + \mathbf{z}'_\ell$ \hspace{2em} (Feed-Forward Network)
+        \end{center}
+    \end{block}
+    
+    \begin{block}{Classification Output}
+        \begin{center}
+            $\mathbf{y} = \text{LN}(\mathbf{z}_L^0)$ \hspace{2em} (Use class token from final layer)
+        \end{center}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Swin Transformer: Hierarchical Vision Transformer}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Key Innovation (Liu et al., 2021)}
+                \textbf{Shifted Window Attention:}
+                \begin{itemize}
+                    \item Local attention within windows
+                    \item Shifted windows enable cross-window connections
+                    \item Linear complexity: $\mathcal{O}(n)$ vs $\mathcal{O}(n^2)$
+                \end{itemize}
+            \end{block}
+            
+            \begin{block}{Hierarchical Feature Maps}
+                \begin{itemize}
+                    \item Stage 1: $\frac{H}{4} \times \frac{W}{4}$, $C$ channels
+                    \item Stage 2: $\frac{H}{8} \times \frac{W}{8}$, $2C$ channels
+                    \item Stage 3: $\frac{H}{16} \times \frac{W}{16}$, $4C$ channels
+                    \item Stage 4: $\frac{H}{32} \times \frac{W}{32}$, $8C$ channels
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Window-Based Self-Attention}
+                \begin{center}
+                    $\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d}} + B\right)V$
+                \end{center}
+                \begin{itemize}
+                    \item $B$: Relative position bias
+                    \item Window size: $M \times M$ (typically $M=7$)
+                    \item Complexity: $\mathcal{O}(M^2 \cdot n)$
+                \end{itemize}
+            \end{block}
+            
+            \begin{alertblock}{Medical Imaging Benefits}
+                \begin{itemize}
+                    \item Multi-scale feature extraction
+                    \item Efficient for high-resolution images
+                    \item Compatible with CNN decoders (U-Net)
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{UNETR: Transformers Meet U-Net}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Architecture Overview (Hatamizadeh et al., 2022)}
+                \textbf{Encoder:} Pure ViT for feature extraction
+                \begin{itemize}
+                    \item 3D patch embedding for volumetric data
+                    \item 12 Transformer blocks
+                    \item Skip connections from layers 3, 6, 9, 12
+                \end{itemize}
+                
+                \vspace{0.5em}
+                \textbf{Decoder:} CNN-based upsampling
+                \begin{itemize}
+                    \item Progressive upsampling
+                    \item Skip connections from encoder
+                    \item Final segmentation head
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{3D Patch Embedding}
+                For 3D medical volumes ($H \times W \times D$):
+                \begin{center}
+                    $N = \frac{H}{P} \times \frac{W}{P} \times \frac{D}{P}$
+                \end{center}
+                With $P=16$, a $128^3$ volume yields $8^3 = 512$ tokens
+            \end{block}
+            
+            \begin{block}{Performance on BraTS}
+                \begin{center}
+                    \begin{tabular}{lc}
+                        \toprule
+                        \textbf{Metric} & \textbf{Dice Score} \\
+                        \midrule
+                        Whole Tumor & 0.912 \\
+                        Tumor Core & 0.857 \\
+                        Enhancing Tumor & 0.823 \\
+                        \bottomrule
+                    \end{tabular}
+                \end{center}
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Swin UNETR: State-of-the-Art for 3D Medical Segmentation}
+    \begin{block}{Key Innovation (Tang et al., 2022)}
+        Replace ViT encoder with Swin Transformer for improved efficiency and performance
+    \end{block}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Architecture Improvements}
+                \begin{itemize}
+                    \item \textbf{Hierarchical encoder:} Multi-scale features
+                    \item \textbf{Shifted 3D windows:} Efficient attention
+                    \item \textbf{Self-supervised pretraining:} Better initialization
+                \end{itemize}
+            \end{block}
+            
+            \begin{block}{Self-Supervised Learning}
+                Pretrained on 5,050 CT volumes using:
+                \begin{itemize}
+                    \item Masked volume inpainting
+                    \item Contrastive learning
+                    \item Rotation prediction
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{BraTS 2021 Results}
+                \begin{center}
+                    \begin{tabular}{lcc}
+                        \toprule
+                        \textbf{Region} & \textbf{UNETR} & \textbf{Swin UNETR} \\
+                        \midrule
+                        Whole Tumor & 0.912 & \textcolor{ForestGreen}{0.929} \\
+                        Tumor Core & 0.857 & \textcolor{ForestGreen}{0.891} \\
+                        Enhancing & 0.823 & \textcolor{ForestGreen}{0.854} \\
+                        \bottomrule
+                    \end{tabular}
+                \end{center}
+            \end{block}
+            
+            \begin{alertblock}{Project Relevance}
+                \textbf{Swin UNETR} will be our primary architecture for:
+                \begin{itemize}
+                    \item Tumor segmentation
+                    \item Feature extraction for progression modeling
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Vision Transformers: Summary Comparison}
+    \begin{center}
+        \begin{tabular}{@{}p{2.5cm}p{3cm}p{3.5cm}p{4cm}@{}}
+            \toprule
+            \textbf{Model} & \textbf{Attention Type} & \textbf{Complexity} & \textbf{Medical Application} \\
+            \midrule
+            ViT & Global self-attention & $\mathcal{O}(n^2)$ & Classification, feature extraction \\[8pt]
+            Swin Transformer & Shifted window & $\mathcal{O}(n)$ & Multi-scale analysis, detection \\[8pt]
+            UNETR & ViT + CNN decoder & $\mathcal{O}(n^2)$ & 3D segmentation \\[8pt]
+            Swin UNETR & Swin + CNN decoder & $\mathcal{O}(n)$ & 3D segmentation (SOTA) \\
+            \bottomrule
+        \end{tabular}
+    \end{center}
+    
+    \vspace{1em}
+    
+    \begin{alertblock}{Our Approach}
+        \begin{itemize}
+            \item Use \textbf{Swin UNETR} for segmentation and feature extraction
+            \item Extract intermediate representations for disease progression modeling
+            \item Connect ViT features to language models for explainability
+        \end{itemize}
+    \end{alertblock}
+\end{frame}
+
+% =============================================================================
+% TRANSITION 3: Language Models
+% =============================================================================
+\begin{frame}[plain]
+    \centering
+    \vfill
+    \begin{beamercolorbox}[center,shadow=true,rounded=true]{title}
+        \usebeamerfont{title}
+        \textbf{Part III: Large Language Models for Medical AI}\\
+        \vspace{0.5em}
+        \large From BioBERT to Med-PaLM: Natural Language Understanding in Healthcare
+    \end{beamercolorbox}
+    \vfill
+    
+    \vspace{1em}
+    \normalsize
+    \begin{block}{Why Language Models?}
+        \begin{itemize}
+            \item Generate natural language explanations for visual features
+            \item Bridge the gap between AI predictions and clinical understanding
+            \item Enable counterfactual reasoning through text descriptions
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+% =============================================================================
+% LANGUAGE MODEL FRAMES
+% =============================================================================
+\begin{frame}{BioBERT \& PubMedBERT: Domain-Specific Language Models}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{BioBERT (Lee et al., 2020)}
+                BERT pretrained on biomedical corpora:
+                \begin{itemize}
+                    \item \textbf{Training Data:}
+                    \begin{itemize}
+                        \item PubMed abstracts (4.5B words)
+                        \item PMC full-text articles (13.5B words)
+                    \end{itemize}
+                    \item \textbf{Architecture:} BERT-base (110M params)
+                    \item \textbf{Tasks:} NER, relation extraction, QA
+                \end{itemize}
+            \end{block}
+            
+            \begin{block}{Performance Gains}
+                \begin{center}
+                    \begin{tabular}{lcc}
+                        \toprule
+                        \textbf{Task} & \textbf{BERT} & \textbf{BioBERT} \\
+                        \midrule
+                        NER (F1) & 85.2 & \textcolor{ForestGreen}{89.7} \\
+                        RE (F1) & 72.1 & \textcolor{ForestGreen}{77.5} \\
+                        QA (F1) & 73.3 & \textcolor{ForestGreen}{81.4} \\
+                        \bottomrule
+                    \end{tabular}
+                \end{center}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{PubMedBERT (Gu et al., 2021)}
+                \textbf{From-scratch pretraining} on PubMed:
+                \begin{itemize}
+                    \item Custom vocabulary from biomedical text
+                    \item No transfer from general domain
+                    \item Better domain-specific tokenization
+                \end{itemize}
+            \end{block}
+            
+            \begin{alertblock}{Key Finding}
+                Domain-specific pretraining from scratch outperforms continued pretraining from general models.
+            \end{alertblock}
+            
+            \begin{block}{Our Use Case}
+                \begin{itemize}
+                    \item Extract medical entities from reports
+                    \item Generate clinical terminology embeddings
+                    \item Support explanation generation
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Med-PaLM: Medical Large Language Models}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Med-PaLM (Singhal et al., 2023)}
+                \textbf{Foundation:} PaLM (540B parameters) \\
+                \textbf{Fine-tuning:}
+                \begin{itemize}
+                    \item Instruction tuning on medical QA
+                    \item Chain-of-thought prompting
+                    \item Human feedback alignment
+                \end{itemize}
+                
+                \vspace{0.5em}
+                \textbf{Key Results:}
+                \begin{itemize}
+                    \item First AI to pass USMLE (>60\%)
+                    \item Expert-level on MedQA benchmark
+                    \item Clinician-preferred explanations
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Med-PaLM 2 Improvements}
+                \begin{itemize}
+                    \item 86.5\% on MedQA (vs 67.6\% Med-PaLM)
+                    \item Better reasoning chains
+                    \item Reduced hallucinations
+                    \item Multi-step medical reasoning
+                \end{itemize}
+            \end{block}
+            
+            \begin{alertblock}{Explainability Advantage}
+                Med-PaLM generates:
+                \begin{itemize}
+                    \item Clinical rationales for predictions
+                    \item Step-by-step diagnostic reasoning
+                    \item Patient-friendly explanations
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Vision-Language Models: Bridging Images and Text}
+    \begin{block}{The Integration Challenge}
+        How do we connect visual features from ViT to language understanding in LLMs?
+    \end{block}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Approach 1: CLIP-Style Alignment}
+                \begin{itemize}
+                    \item Contrastive learning on image-text pairs
+                    \item Shared embedding space
+                    \item Zero-shot transfer capabilities
+                \end{itemize}
+                \textbf{Medical variants:} BiomedCLIP, PubMedCLIP
+            \end{block}
+            
+            \begin{block}{Approach 2: Visual Instruction Tuning}
+                \begin{itemize}
+                    \item Project visual features into LLM space
+                    \item Fine-tune on visual QA tasks
+                    \item Examples: LLaVA, MiniGPT-4
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Our Proposed Integration}
+                \begin{enumerate}
+                    \item Extract features with Swin UNETR
+                    \item Project to LLM embedding space
+                    \item Fine-tune on medical image-text pairs
+                    \item Generate explanations for predictions
+                \end{enumerate}
+            \end{block}
+            
+            \begin{alertblock}{Expected Output}
+                \textit{``The model detected a 2.3cm enhancing lesion in the right temporal lobe, showing 15\% growth compared to the previous scan. This pattern is consistent with high-grade glioma progression.''}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{LLM Integration Architecture}
+    \begin{center}
+        \Large
+        \textbf{Visual Features $\rightarrow$ Projection Layer $\rightarrow$ LLM $\rightarrow$ Explanation}
+    \end{center}
+    
+    \vspace{1em}
+    
+    \begin{block}{Mathematical Formulation}
+        \begin{center}
+            $\mathbf{z}_{\text{visual}} = \text{SwinUNETR}_{\text{encoder}}(\mathbf{x}_{\text{image}})$ \hspace{1em} (Visual Features) \\
+            \vspace{0.5em}
+            $\mathbf{z}_{\text{proj}} = \mathbf{W}_{\text{proj}} \cdot \mathbf{z}_{\text{visual}} + \mathbf{b}_{\text{proj}}$ \hspace{1em} (Projection) \\
+            \vspace{0.5em}
+            $\mathbf{y}_{\text{text}} = \text{LLM}([\mathbf{z}_{\text{proj}}; \mathbf{z}_{\text{prompt}}])$ \hspace{1em} (Generation)
+        \end{center}
+    \end{block}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Training Strategy}
+                \begin{enumerate}
+                    \item Freeze ViT encoder (pretrained)
+                    \item Train projection layer
+                    \item Fine-tune LLM with LoRA
+                \end{enumerate}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Prompt Template}
+                \textit{``Given the following tumor features: [VISUAL\_TOKENS], generate a clinical explanation for the observed disease progression.''}
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% =============================================================================
+% TRANSITION 4: Generative Models
+% =============================================================================
+\begin{frame}[plain]
+    \centering
+    \vfill
+    \begin{beamercolorbox}[center,shadow=true,rounded=true]{title}
+        \usebeamerfont{title}
+        \textbf{Part IV: Generative Models for Medical Imaging}\\
+        \vspace{0.5em}
+        \large Diffusion Models and Counterfactual Video Generation
+    \end{beamercolorbox}
+    \vfill
+    
+    \vspace{1em}
+    \normalsize
+    \begin{block}{Why Generative Models?}
+        \begin{itemize}
+            \item Synthesize realistic disease progression sequences
+            \item Enable ``what-if'' counterfactual scenarios
+            \item Augment limited longitudinal medical data
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+% =============================================================================
+% GENERATIVE MODEL FRAMES
+% =============================================================================
+\begin{frame}{Denoising Diffusion Probabilistic Models (DDPM)}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Core Idea (Ho et al., 2020)}
+                Learn to reverse a gradual noising process:
+                \begin{enumerate}
+                    \item \textbf{Forward:} Gradually add noise to data
+                    \item \textbf{Reverse:} Learn to denoise step-by-step
+                \end{enumerate}
+            \end{block}
+            
+            \begin{block}{Forward Process}
+                \begin{center}
+                    $q(\mathbf{x}_t | \mathbf{x}_{t-1}) = \mathcal{N}(\mathbf{x}_t; \sqrt{1-\beta_t}\mathbf{x}_{t-1}, \beta_t\mathbf{I})$
+                \end{center}
+                \begin{itemize}
+                    \item $\beta_t$: Noise schedule (small values)
+                    \item After $T$ steps: $\mathbf{x}_T \approx \mathcal{N}(0, \mathbf{I})$
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Reverse Process (Learned)}
+                \begin{center}
+                    $p_\theta(\mathbf{x}_{t-1} | \mathbf{x}_t) = \mathcal{N}(\mathbf{x}_{t-1}; \boldsymbol{\mu}_\theta(\mathbf{x}_t, t), \sigma_t^2\mathbf{I})$
+                \end{center}
+                Neural network predicts noise to remove:
+                \begin{center}
+                    $\boldsymbol{\mu}_\theta(\mathbf{x}_t, t) = \frac{1}{\sqrt{\alpha_t}}\left(\mathbf{x}_t - \frac{\beta_t}{\sqrt{1-\bar{\alpha}_t}}\boldsymbol{\epsilon}_\theta(\mathbf{x}_t, t)\right)$
+                \end{center}
+            \end{block}
+            
+            \begin{block}{Training Objective}
+                \begin{center}
+                    $\mathcal{L} = \mathbb{E}_{t, \mathbf{x}_0, \boldsymbol{\epsilon}}\left[\|\boldsymbol{\epsilon} - \boldsymbol{\epsilon}_\theta(\mathbf{x}_t, t)\|^2\right]$
+                \end{center}
+                Simple MSE loss on predicted noise.
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Latent Diffusion Models (LDM)}
+    \begin{block}{Key Innovation (Rombach et al., 2022)}
+        Perform diffusion in compressed latent space instead of pixel space:
+        \begin{center}
+            $\mathbf{z} = \mathcal{E}(\mathbf{x})$ \hspace{2em} $\hat{\mathbf{x}} = \mathcal{D}(\hat{\mathbf{z}})$
+        \end{center}
+    \end{block}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Architecture Components}
+                \begin{enumerate}
+                    \item \textbf{Autoencoder:} Compress images to latent space
+                    \item \textbf{U-Net:} Denoise in latent space
+                    \item \textbf{Conditioning:} Text, class, or other modalities
+                \end{enumerate}
+            \end{block}
+            
+            \begin{block}{Efficiency Gains}
+                \begin{itemize}
+                    \item Latent space: $64 \times 64$ vs $512 \times 512$
+                    \item 64$\times$ computational reduction
+                    \item Enables high-resolution generation
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Cross-Attention Conditioning}
+                \begin{center}
+                    $\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d}}\right)V$
+                \end{center}
+                Where:
+                \begin{itemize}
+                    \item $Q$: From U-Net features
+                    \item $K, V$: From text/condition embeddings
+                \end{itemize}
+            \end{block}
+            
+            \begin{alertblock}{Medical Application}
+                Condition on:
+                \begin{itemize}
+                    \item Disease stage (Grade I-IV)
+                    \item Treatment type
+                    \item Temporal progression
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Video Latent Diffusion Models}
+    \begin{block}{Extending LDM to Video (Blattmann et al., 2023)}
+        Add temporal modeling to generate coherent video sequences
+    \end{block}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Temporal Architecture}
+                \begin{enumerate}
+                    \item \textbf{Spatial layers:} Process individual frames
+                    \item \textbf{Temporal layers:} Model frame-to-frame dynamics
+                    \item \textbf{3D U-Net:} Joint spatial-temporal processing
+                \end{enumerate}
+            \end{block}
+            
+            \begin{block}{Temporal Attention}
+                \begin{center}
+                    $\mathbf{z}_{\text{out}} = \text{TemporalAttn}(\mathbf{z}_1, \mathbf{z}_2, ..., \mathbf{z}_T)$
+                \end{center}
+                Attention across time dimension ensures:
+                \begin{itemize}
+                    \item Temporal coherence
+                    \item Smooth transitions
+                    \item Consistent content
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Disease Progression Modeling}
+                \textbf{Inputs:}
+                \begin{itemize}
+                    \item Baseline scan $\mathbf{x}_0$
+                    \item Condition: ``tumor growth over 6 months''
+                \end{itemize}
+                
+                \vspace{0.5em}
+                \textbf{Outputs:}
+                \begin{itemize}
+                    \item Sequence $[\mathbf{x}_0, \mathbf{x}_1, ..., \mathbf{x}_T]$
+                    \item Realistic disease progression video
+                \end{itemize}
+            \end{block}
+            
+            \begin{alertblock}{Counterfactual Generation}
+                \textit{``What would this tumor look like with/without treatment at month 3, 6, 12?''}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Counterfactual Video Generation: Our Approach}
+    \begin{block}{Research Goal}
+        Generate realistic ``what-if'' disease progression videos conditioned on treatment scenarios
+    \end{block}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Methodology}
+                \begin{enumerate}
+                    \item Train Video LDM on longitudinal data
+                    \item Condition on treatment embedding
+                    \item Generate progression under different scenarios
+                    \item Validate with clinical experts
+                \end{enumerate}
+            \end{block}
+            
+            \begin{block}{Conditioning Variables}
+                \begin{itemize}
+                    \item \textcolor{ForestGreen}{Treatment type} (surgery, radiation, chemo)
+                    \item \textcolor{violet}{Initial tumor characteristics}
+                    \item \textcolor{BrickRed}{Time horizon} (3, 6, 12 months)
+                    \item \textcolor{Orange}{Patient demographics}
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Clinical Value}
+                \begin{itemize}
+                    \item \textbf{Treatment planning:} Visualize expected outcomes
+                    \item \textbf{Patient communication:} Show possible futures
+                    \item \textbf{Training:} Educate residents on progression patterns
+                \end{itemize}
+            \end{block}
+            
+            \begin{alertblock}{Validation Metrics}
+                \begin{itemize}
+                    \item FID/FVD for visual quality
+                    \item Clinical realism assessment
+                    \item Progression pattern accuracy
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% =============================================================================
+% TRANSITION 5: Datasets
+% =============================================================================
+\begin{frame}[plain]
+    \centering
+    \vfill
+    \begin{beamercolorbox}[center,shadow=true,rounded=true]{title}
+        \usebeamerfont{title}
+        \textbf{Part V: Medical Imaging Datasets}\\
+        \vspace{0.5em}
+        \large BraTS, TCGA, LIDC-IDRI, and MIMIC-III
+    \end{beamercolorbox}
+    \vfill
+    
+    \vspace{1em}
+    \normalsize
+    \begin{block}{Dataset Requirements}
+        \begin{itemize}
+            \item High-quality medical images with expert annotations
+            \item Longitudinal data for progression modeling
+            \item Multi-modal information (imaging + clinical text)
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+% =============================================================================
+% DATASET FRAMES
+% =============================================================================
+\begin{frame}{BraTS Challenge: Brain Tumor Segmentation}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Dataset Overview}
+                \textbf{Brain Tumor Segmentation Challenge}
+                \begin{itemize}
+                    \item \textbf{Patients:} 2,000+ cases (2021 version)
+                    \item \textbf{Modalities:} T1, T1Gd, T2, T2-FLAIR
+                    \item \textbf{Annotations:} Expert neuroradiologists
+                    \item \textbf{Resolution:} $240 \times 240 \times 155$
+                \end{itemize}
+            \end{block}
+            
+            \begin{block}{Segmentation Labels}
+                \begin{itemize}
+                    \item \textcolor{ForestGreen}{Whole Tumor (WT)}: Complete tumor extent
+                    \item \textcolor{BrickRed}{Tumor Core (TC)}: Non-enhancing + enhancing
+                    \item \textcolor{Orange}{Enhancing Tumor (ET)}: Active tumor
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{MRI Sequences}
+                \begin{center}
+                    \begin{tabular}{lp{5cm}}
+                        \toprule
+                        \textbf{Sequence} & \textbf{Clinical Purpose} \\
+                        \midrule
+                        T1 & Anatomical structure \\
+                        T1Gd & Enhancing tumor (contrast) \\
+                        T2 & Edema visualization \\
+                        T2-FLAIR & Lesion boundaries \\
+                        \bottomrule
+                    \end{tabular}
+                \end{center}
+            \end{block}
+            
+            \begin{alertblock}{Project Relevance: $\star\star\star\star\star$}
+                \textbf{Primary dataset} for:
+                \begin{itemize}
+                    \item ViT training and evaluation
+                    \item Tumor progression modeling
+                    \item Benchmark comparisons
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{TCGA: The Cancer Genome Atlas}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Dataset Overview}
+                \textbf{Multi-Omics Cancer Database}
+                \begin{itemize}
+                    \item \textbf{Patients:} 11,000+ cases
+                    \item \textbf{Cancer Types:} 33 different types
+                    \item \textbf{Data Types:}
+                    \begin{itemize}
+                        \item Pathology images (WSI)
+                        \item Genomic data
+                        \item Clinical records
+                        \item Radiology images
+                    \end{itemize}
+                \end{itemize}
+            \end{block}
+            
+            \begin{block}{Relevant Subsets}
+                \begin{itemize}
+                    \item \textbf{TCGA-GBM:} Glioblastoma (600+ cases)
+                    \item \textbf{TCGA-LGG:} Low-grade glioma (500+ cases)
+                    \item \textbf{TCGA-LUAD:} Lung adenocarcinoma
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Multi-Modal Integration}
+                \begin{center}
+                    \begin{tabular}{lc}
+                        \toprule
+                        \textbf{Modality} & \textbf{Availability} \\
+                        \midrule
+                        Pathology WSI & $\checkmark$ \\
+                        MRI/CT Images & $\checkmark$ \\
+                        Genomic Data & $\checkmark$ \\
+                        Clinical Reports & $\checkmark$ \\
+                        Survival Data & $\checkmark$ \\
+                        \bottomrule
+                    \end{tabular}
+                \end{center}
+            \end{block}
+            
+            \begin{alertblock}{Project Relevance: $\star\star\star\star$}
+                \textbf{Secondary dataset} for:
+                \begin{itemize}
+                    \item Multi-modal model training
+                    \item Cross-cancer generalization
+                    \item Clinical text integration
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{LIDC-IDRI: Lung Image Database Consortium}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Dataset Overview}
+                \textbf{Lung CT Nodule Database}
+                \begin{itemize}
+                    \item \textbf{Patients:} 1,018 cases
+                    \item \textbf{Nodules:} 2,669 annotated lesions
+                    \item \textbf{Annotators:} 4 thoracic radiologists
+                    \item \textbf{Slice Thickness:} 0.6 - 5.0 mm
+                \end{itemize}
+            \end{block}
+            
+            \begin{block}{Annotation Details}
+                For each nodule $\geq$ 3mm:
+                \begin{itemize}
+                    \item 3D segmentation boundaries
+                    \item Malignancy rating (1-5)
+                    \item Texture, margin, subtlety scores
+                    \item Likelihood of malignancy
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Multi-Annotator Consensus}
+                \begin{itemize}
+                    \item 4 independent annotations per nodule
+                    \item Inter-observer variability studied
+                    \item Consensus for training/evaluation
+                \end{itemize}
+            \end{block}
+            
+            \begin{block}{Malignancy Distribution}
+                \begin{center}
+                    \begin{tabular}{cc}
+                        \toprule
+                        \textbf{Score} & \textbf{Percentage} \\
+                        \midrule
+                        1 (Benign) & 23\% \\
+                        2-3 & 35\% \\
+                        4-5 (Malignant) & 42\% \\
+                        \bottomrule
+                    \end{tabular}
+                \end{center}
+            \end{block}
+            
+            \begin{alertblock}{Project Relevance: $\star\star\star$}
+                \textbf{Validation dataset} for model generalization
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{MIMIC-III: Clinical Text Database}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Dataset Overview}
+                \textbf{Medical Information Mart for Intensive Care}
+                \begin{itemize}
+                    \item \textbf{Patients:} 46,520 ICU admissions
+                    \item \textbf{Time Span:} 2001-2012
+                    \item \textbf{Hospital:} Beth Israel Deaconess
+                \end{itemize}
+            \end{block}
+            
+            \begin{block}{Data Types}
+                \begin{itemize}
+                    \item \textbf{Clinical Notes:} 2M+ documents
+                    \item \textbf{Radiology Reports:} 500K+ reports
+                    \item \textbf{Discharge Summaries}
+                    \item \textbf{Lab Results}
+                    \item \textbf{Medications}
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Text Categories}
+                \begin{center}
+                    \begin{tabular}{lc}
+                        \toprule
+                        \textbf{Note Type} & \textbf{Count} \\
+                        \midrule
+                        Nursing Notes & 800K+ \\
+                        Radiology & 500K+ \\
+                        Physician Notes & 400K+ \\
+                        Discharge & 50K+ \\
+                        \bottomrule
+                    \end{tabular}
+                \end{center}
+            \end{block}
+            
+            \begin{alertblock}{Project Relevance: $\star\star\star\star$}
+                \textbf{Critical for LLM training:}
+                \begin{itemize}
+                    \item Clinical language patterns
+                    \item Radiology report templates
+                    \item Explanation generation training
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Dataset Summary and Selection}
+    \begin{center}
+        \begin{tabular}{@{}lcccc@{}}
+            \toprule
+            \textbf{Dataset} & \textbf{Modality} & \textbf{Size} & \textbf{Use Case} & \textbf{Relevance} \\
+            \midrule
+            BraTS & Brain MRI & 2,000+ & Segmentation, Progression & $\star\star\star\star\star$ \\
+            TCGA & Multi-modal & 11,000+ & Multi-cancer analysis & $\star\star\star\star$ \\
+            LIDC-IDRI & Lung CT & 1,018 & Generalization testing & $\star\star\star$ \\
+            MIMIC-III & Clinical text & 46,520 & LLM training & $\star\star\star\star$ \\
+            \bottomrule
+        \end{tabular}
+    \end{center}
+    
+    \vspace{1em}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Primary Focus}
+                \begin{itemize}
+                    \item \textbf{BraTS:} Main imaging dataset
+                    \item \textbf{MIMIC-III:} Clinical text source
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Secondary/Validation}
+                \begin{itemize}
+                    \item \textbf{TCGA:} Multi-modal extension
+                    \item \textbf{LIDC-IDRI:} Cross-domain validation
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% =============================================================================
+% TRANSITION 6: Project Plan
+% =============================================================================
+\begin{frame}[plain]
+    \centering
+    \vfill
+    \begin{beamercolorbox}[center,shadow=true,rounded=true]{title}
+        \usebeamerfont{title}
+        \textbf{Part VI: Research Project Plan}\\
+        \vspace{0.5em}
+        \large Objectives, Timeline, and Expected Deliverables
+    \end{beamercolorbox}
+    \vfill
+    
+    \vspace{1em}
+    \normalsize
+    \textit{20-week Mitacs Globalink Research Internship}\\
+    April 1 - August 19, 2026
+\end{frame}
+
+% =============================================================================
+% PROJECT PLAN FRAMES
+% =============================================================================
+\begin{frame}{Research Objectives Overview}
+    \begin{block}{Main Goal}
+        Develop an explainable AI system for disease progression modeling and counterfactual video generation using vision-language models
+    \end{block}
+    
+    \begin{center}
+        \begin{tabular}{@{}clc@{}}
+            \toprule
+            \textbf{Obj.} & \textbf{Description} & \textbf{Duration} \\
+            \midrule
+            1 & Data Pipeline Development & Weeks 1-4 \\
+            2 & ViT-Based Feature Extraction & Weeks 5-8 \\
+            3 & LLM Integration for Explainability & Weeks 9-12 \\
+            4 & Counterfactual Video Generation & Weeks 13-16 \\
+            5 & Evaluation and Documentation & Weeks 17-20 \\
+            \bottomrule
+        \end{tabular}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Objective 1: Data Pipeline Development (Weeks 1-4)}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Tasks}
+                \begin{enumerate}
+                    \item Download and organize BraTS dataset
+                    \item Implement preprocessing pipeline:
+                    \begin{itemize}
+                        \item Skull stripping
+                        \item Intensity normalization
+                        \item Registration to template
+                    \end{itemize}
+                    \item Create data loaders for PyTorch
+                    \item Set up experiment tracking (W\&B)
+                \end{enumerate}
+            \end{block}
+            
+            \begin{block}{Key Technologies}
+                \begin{itemize}
+                    \item MONAI for medical imaging
+                    \item PyTorch DataLoader
+                    \item NiBabel for NIfTI handling
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Deliverables}
+                \begin{itemize}
+                    \item $\checkmark$ Organized dataset structure
+                    \item $\checkmark$ Preprocessing scripts
+                    \item $\checkmark$ Data augmentation pipeline
+                    \item $\checkmark$ Train/val/test splits
+                \end{itemize}
+            \end{block}
+            
+            \begin{alertblock}{Success Criteria}
+                \begin{itemize}
+                    \item All data accessible via unified API
+                    \item Preprocessing validated visually
+                    \item Reproducible data loading
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Objective 2: ViT-Based Feature Extraction (Weeks 5-8)}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Tasks}
+                \begin{enumerate}
+                    \item Implement Swin UNETR architecture
+                    \item Load pretrained weights
+                    \item Fine-tune on BraTS dataset
+                    \item Extract intermediate representations
+                    \item Analyze attention patterns
+                \end{enumerate}
+            \end{block}
+            
+            \begin{block}{Architecture Details}
+                \begin{itemize}
+                    \item \textbf{Encoder:} Swin Transformer
+                    \item \textbf{Decoder:} CNN upsampling
+                    \item \textbf{Output:} Multi-class segmentation
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Target Metrics}
+                \begin{center}
+                    \begin{tabular}{lc}
+                        \toprule
+                        \textbf{Region} & \textbf{Target Dice} \\
+                        \midrule
+                        Whole Tumor & $\geq$ 0.90 \\
+                        Tumor Core & $\geq$ 0.85 \\
+                        Enhancing & $\geq$ 0.80 \\
+                        \bottomrule
+                    \end{tabular}
+                \end{center}
+            \end{block}
+            
+            \begin{alertblock}{Deliverables}
+                \begin{itemize}
+                    \item Trained Swin UNETR model
+                    \item Feature extraction module
+                    \item Attention visualization tools
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Objective 3: LLM Integration for Explainability (Weeks 9-12)}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Tasks}
+                \begin{enumerate}
+                    \item Design vision-language projection layer
+                    \item Fine-tune LLM on medical explanations
+                    \item Create prompt templates for reports
+                    \item Implement explanation generation pipeline
+                    \item Evaluate explanation quality
+                \end{enumerate}
+            \end{block}
+            
+            \begin{block}{LLM Options}
+                \begin{itemize}
+                    \item \textbf{Primary:} LLaMA-2 + LoRA fine-tuning
+                    \item \textbf{Alternative:} Mistral-7B
+                    \item \textbf{Training Data:} MIMIC-III reports
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Evaluation Metrics}
+                \begin{itemize}
+                    \item \textbf{BLEU/ROUGE:} Text quality
+                    \item \textbf{Clinical Accuracy:} Expert review
+                    \item \textbf{Faithfulness:} Explanation-prediction alignment
+                \end{itemize}
+            \end{block}
+            
+            \begin{alertblock}{Expected Output}
+                \textit{``Analysis shows a 23mm enhancing mass in the right temporal lobe with surrounding edema. Compared to baseline, tumor volume increased 15\%, suggesting disease progression. Key features: irregular margins, heterogeneous enhancement.''}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Objective 4: Counterfactual Video Generation (Weeks 13-16)}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Tasks}
+                \begin{enumerate}
+                    \item Implement Video Latent Diffusion Model
+                    \item Train on longitudinal tumor data
+                    \item Design conditioning mechanism
+                    \item Generate counterfactual sequences
+                    \item Validate clinical realism
+                \end{enumerate}
+            \end{block}
+            
+            \begin{block}{Conditioning Variables}
+                \begin{itemize}
+                    \item Treatment type (surgery, radiation, chemo)
+                    \item Time horizon (3, 6, 12 months)
+                    \item Baseline tumor characteristics
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Technical Approach}
+                \begin{enumerate}
+                    \item 3D VAE for latent compression
+                    \item Temporal U-Net for diffusion
+                    \item Cross-attention for conditioning
+                    \item Classifier-free guidance
+                \end{enumerate}
+            \end{block}
+            
+            \begin{alertblock}{Validation}
+                \begin{itemize}
+                    \item FVD score for video quality
+                    \item Clinical expert assessment
+                    \item Progression pattern accuracy
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Objective 5: Evaluation and Documentation (Weeks 17-20)}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Evaluation Tasks}
+                \begin{enumerate}
+                    \item Comprehensive model testing
+                    \item Ablation studies
+                    \item Cross-dataset generalization
+                    \item Clinical expert evaluation
+                    \item User study (if time permits)
+                \end{enumerate}
+            \end{block}
+            
+            \begin{block}{Documentation}
+                \begin{itemize}
+                    \item Technical report
+                    \item Code documentation
+                    \item Model cards
+                    \item Usage tutorials
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Expected Deliverables}
+                \begin{itemize}
+                    \item $\checkmark$ Trained models (ViT, LLM, Video LDM)
+                    \item $\checkmark$ Evaluation results
+                    \item $\checkmark$ GitHub repository
+                    \item $\checkmark$ Technical report / draft paper
+                    \item $\checkmark$ Final presentation
+                \end{itemize}
+            \end{block}
+            
+            \begin{alertblock}{Publication Target}
+                \begin{itemize}
+                    \item MICCAI 2026 (Medical Imaging)
+                    \item CVPR 2027 (Computer Vision)
+                    \item Nature Medicine (if results strong)
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Project Timeline: Gantt Chart Overview}
+    \begin{center}
+        \begin{tabular}{|l|c|c|c|c|c|}
+            \hline
+            \textbf{Phase} & \textbf{W1-4} & \textbf{W5-8} & \textbf{W9-12} & \textbf{W13-16} & \textbf{W17-20} \\
+            \hline
+            Data Pipeline & \cellcolor{ForestGreen!60} & & & & \\
+            \hline
+            ViT Training & & \cellcolor{ForestGreen!60} & & & \\
+            \hline
+            LLM Integration & & & \cellcolor{ForestGreen!60} & & \\
+            \hline
+            Video Generation & & & & \cellcolor{ForestGreen!60} & \\
+            \hline
+            Evaluation & & & & & \cellcolor{ForestGreen!60} \\
+            \hline
+            Documentation & \cellcolor{blue!20} & \cellcolor{blue!20} & \cellcolor{blue!20} & \cellcolor{blue!20} & \cellcolor{blue!60} \\
+            \hline
+            Meetings & \cellcolor{orange!30} & \cellcolor{orange!30} & \cellcolor{orange!30} & \cellcolor{orange!30} & \cellcolor{orange!30} \\
+            \hline
+        \end{tabular}
+    \end{center}
+    
+    \vspace{1em}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Key Milestones}
+                \begin{itemize}
+                    \item Week 4: Data pipeline complete
+                    \item Week 8: ViT baseline trained
+                    \item Week 12: LLM integration done
+                    \item Week 16: Video generation working
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Risk Mitigation}
+                \begin{itemize}
+                    \item Weekly supervisor meetings
+                    \item Incremental development
+                    \item Fallback to simpler models if needed
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% =============================================================================
+% REFERENCES SUMMARY
+% =============================================================================
+\begin{frame}{Key References: Helpfulness Scores}
+    \begin{center}
+        \footnotesize
+        \begin{tabular}{@{}p{4.5cm}p{3cm}cc@{}}
+            \toprule
+            \textbf{Paper} & \textbf{Topic} & \textbf{Score} & \textbf{Objectives} \\
+            \midrule
+            Dosovitskiy et al., 2020 & Vision Transformer & 9/10 & O2 \\
+            Liu et al., 2021 & Swin Transformer & 10/10 & O2 \\
+            Hatamizadeh et al., 2022 & UNETR & 10/10 & O2 \\
+            Tang et al., 2022 & Swin UNETR & 10/10 & O2 \\
+            Lee et al., 2020 & BioBERT & 8/10 & O3 \\
+            Singhal et al., 2023 & Med-PaLM & 9/10 & O3 \\
+            Ho et al., 2020 & DDPM & 9/10 & O4 \\
+            Rombach et al., 2022 & Latent Diffusion & 10/10 & O4 \\
+            Blattmann et al., 2023 & Video LDM & 10/10 & O4 \\
+            \bottomrule
+        \end{tabular}
+    \end{center}
+    
+    \vspace{0.5em}
+    \footnotesize
+    \textbf{Legend:} O2 = ViT Features, O3 = LLM Integration, O4 = Video Generation
+\end{frame}
+
+% =============================================================================
+% CONCLUSION
+% =============================================================================
+\begin{frame}{Conclusion: Project Summary}
+    \begin{block}{Key Contributions}
+        \begin{enumerate}
+            \item \textbf{Novel Framework:} Integration of ViT + LLM + Diffusion for medical imaging
+            \item \textbf{Explainability:} Natural language explanations for visual predictions
+            \item \textbf{Counterfactual Generation:} ``What-if'' disease progression videos
+            \item \textbf{Clinical Utility:} Tools for treatment planning and patient communication
+        \end{enumerate}
+    \end{block}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Expected Impact}
+                \begin{itemize}
+                    \item Bridge AI-clinician trust gap
+                    \item Enable personalized medicine
+                    \item Advance medical AI interpretability
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{alertblock}{Next Steps}
+                \begin{itemize}
+                    \item Begin Phase 1 implementation
+                    \item Set up computing environment
+                    \item Download and preprocess BraTS
+                \end{itemize}
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% =============================================================================
+% REFERENCES
+% =============================================================================
+\begin{frame}[allowframebreaks]{References}
+\frametitle{References}
+\begin{thebibliography}{20}
+\setlength{\itemsep}{0.3em}
+\footnotesize
+
+\bibitem{dosovitskiy2020vit}
+Alexey Dosovitskiy et al.
+\newblock An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale.
+\newblock \emph{ICLR}, 2021.
+
+\bibitem{liu2021swin}
+Ze Liu et al.
+\newblock Swin Transformer: Hierarchical Vision Transformer using Shifted Windows.
+\newblock \emph{ICCV}, 2021.
+
+\bibitem{hatamizadeh2022unetr}
+Ali Hatamizadeh et al.
+\newblock UNETR: Transformers for 3D Medical Image Segmentation.
+\newblock \emph{WACV}, 2022.
+
+\bibitem{tang2022swinunetr}
+Yucheng Tang et al.
+\newblock Self-Supervised Pre-Training of Swin Transformers for 3D Medical Image Analysis.
+\newblock \emph{CVPR}, 2022.
+
+\bibitem{lee2020biobert}
+Jinhyuk Lee et al.
+\newblock BioBERT: A Pre-trained Biomedical Language Representation Model.
+\newblock \emph{Bioinformatics}, 2020.
+
+\bibitem{singhal2023medpalm}
+Karan Singhal et al.
+\newblock Large Language Models Encode Clinical Knowledge.
+\newblock \emph{Nature}, 2023.
+
+\bibitem{ho2020ddpm}
+Jonathan Ho et al.
+\newblock Denoising Diffusion Probabilistic Models.
+\newblock \emph{NeurIPS}, 2020.
+
+\bibitem{rombach2022ldm}
+Robin Rombach et al.
+\newblock High-Resolution Image Synthesis with Latent Diffusion Models.
+\newblock \emph{CVPR}, 2022.
+
+\bibitem{blattmann2023videoldm}
+Andreas Blattmann et al.
+\newblock Align your Latents: High-Resolution Video Synthesis with Latent Diffusion Models.
+\newblock \emph{CVPR}, 2023.
+
+\end{thebibliography}
+\end{frame}
+
+% =============================================================================
+% THANK YOU
+% =============================================================================
+\begin{frame}[standout]
+    \centering
+    \Huge Thank You! \\
+    \vspace{1cm}
+    \Large Questions \& Discussion
+    
+    \vspace{2cm}
+    \normalsize
+    Mohamed Amine \\
+    TÉLUQ University, Montreal \\
+    Mitacs Globalink Research Internship 2026
+\end{frame}
+
+\end{document}

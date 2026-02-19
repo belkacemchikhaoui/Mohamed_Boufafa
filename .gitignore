@@ -1,0 +1,9 @@
+the_mess/*
+starter/*
+overall/*
+
+# Ignore data directory
+implementation/Data/*
+
+# Ignore all PDF files
+*.pdf

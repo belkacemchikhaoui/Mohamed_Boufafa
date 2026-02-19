@@ -1,0 +1,1110 @@
+%----------------------------------------------------------------------------------------
+%    PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass[aspectratio=169,xcolor=dvipsnames]{beamer}
+\usetheme{SimplePlus}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tikz}
+
+%----------------------------------------------------------------------------------------
+%    TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{SSM-CGM: Interpretable State-Space Forecasting Model of Continuous Glucose Monitoring for Personalized Diabetes Management}
+\subtitle{Literature Review and Analysis}
+
+\author{DAIT DEHANE Yacine}
+
+\institute
+{
+    Supervised by \\
+    - Pr Henni Khadidja (TÉLUQ)\\
+    - Dr Khalid Benabdeslem (Université de Lyon)
+}
+\date{\today}
+
+%----------------------------------------------------------------------------------------
+%    PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+% ----------------------------------------------------
+% Frame 1: Title Slide
+% ----------------------------------------------------
+\begin{frame}
+    \titlepage
+\end{frame}
+% ----------------------------------------------------
+% Frame 2: Presentation Roadmap
+% ----------------------------------------------------
+\begin{frame}{Presentation Roadmap}
+ 
+    
+     
+    \begin{columns}[t]
+        \begin{column}{0.48\textwidth}
+            \begin{block}{\textbf{Part I: The Challenge}}
+                \begin{itemize}
+                    \item Global diabetes crisis
+                    \item CGM data opportunities
+                    \item The interpretability gap
+                    \item AI-READI dataset
+                \end{itemize}
+            \end{block}
+            
+            \vspace{0.3em}
+            
+            \begin{block}{\textbf{Part II: Baseline Approach}}
+                \begin{itemize}
+                    \item Temporal Fusion Transformer
+                    \item Strengths and limitations
+                    \item Computational bottleneck
+                \end{itemize}
+            \end{block}
+        \end{column}
+        
+        \begin{column}{0.48\textwidth}
+            \begin{block}{\textbf{Part III: SSM-CGM Solution}}
+                \begin{itemize}
+                    \item Mamba-based architecture
+                    \item Linear-time complexity
+                    \item State-space mechanics
+                    \item Preserved interpretability
+                \end{itemize}
+            \end{block}
+            
+            \vspace{0.3em}
+            
+            \begin{block}{\textbf{Part IV: Validation \& Impact}}
+                \begin{itemize}
+                    \item Experimental results
+                    \item Interpretability analysis
+                    \item Counterfactual forecasting
+                    \item Future directions
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+    
+    \vspace{0.5em}
+    
+  
+\end{frame}
+
+% ----------------------------------------------------
+% Frame 2: Introduction - The Diabetes Crisis
+% ----------------------------------------------------
+\begin{frame}{Introduction: The Global Diabetes Challenge}
+    \begin{block}{The Magnitude of the Problem}
+        \begin{itemize}
+            \item \textbf{Global Impact:} 580+ million adults worldwide live with diabetes
+            \item \textbf{Complications:} Poor glucose control leads to cardiovascular disease, neuropathy, retinopathy, kidney failure
+            \item \textbf{Management Complexity:} Glucose fluctuates based on meals, activity, stress, medications, circadian rhythms
+        \end{itemize}
+    \end{block}
+    
+    \begin{block}{Continuous Glucose Monitoring: A Game Changer}
+        \begin{itemize}
+            \item \textbf{Technology:} CGM devices (Dexcom G6) measure glucose every 5--15 minutes
+            \item \textbf{Duration:} Continuous monitoring up to 14 days
+            \item \textbf{Clinical Metric:} Time-in-Range (TIR: 70--180 mg/dL) correlates with reduced complications
+            \item \textbf{Data Volume:} Thousands of data points per patient
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+% ----------------------------------------------------
+% Frame 3: The Core Problem
+% ----------------------------------------------------
+\begin{frame}{The Challenge: From Data to Action}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{What We Have}
+                \begin{itemize}
+                    \item Dense, high-resolution CGM data streams
+                    \item Wearable activity data (heart rate, respiration, steps, sleep)
+                    \item Clinical information (age, diabetes status, medications)
+                \end{itemize}
+            \end{block}
+            
+            \begin{block}{What We Need}
+                \begin{itemize}
+                    \item Accurate near-future glucose predictions 
+                    \item \textbf{Interpretable} insights into what drives glucose changes
+                    \item \textbf{Actionable} Patient-specific insights
+                \end{itemize}
+            \end{block}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{block}{The Opportunity(The gap)}
+                \textbf{Existing forecasting models:}
+                \begin{itemize}
+                    \item Achieve good predictive accuracy
+                    \item But operate as \textbf{black boxes}
+                    \item Lack clinical interpretability
+                    \item Cannot explain \textit{why} predictions are made
+                    \item Don't support "what-if" scenario planning
+                \end{itemize}
+            \end{block}
+            
+             
+            \begin{alertblock}{Research Goal}
+                Develop a model that is \textbf{accurate}, \textbf{interpretable}, and enables \textbf{personalized} behavioral guidance for diabetes management.
+            \end{alertblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% ----------------------------------------------------
+% TRANSITION 1: From Problem to Data
+% ----------------------------------------------------
+\begin{frame}[plain]
+    \centering
+    \vfill
+    \begin{beamercolorbox}[center,shadow=true,rounded=true]{title}
+        \usebeamerfont{title}
+        \textbf{Part I: Understanding the Challenge}\\
+        \vspace{0.5em}
+        \large Problem $\to$ Available Data $\to$ Previous Solutions
+    \end{beamercolorbox}
+    \vfill
+\end{frame}
+
+% ----------------------------------------------------
+% Frame 4: Dataset MOVED HERE
+% ----------------------------------------------------
+\begin{frame}{Dataset: AI-READI Cohort}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{AI-READI: \textsc{\textit{Artificial Intelligence Ready and Equitable Atlas for Diabetes Insights}}}
+                \textbf{Cohort Characteristics:}
+                \begin{itemize}
+                    \item \textbf{Size:} 741 participants
+                    \item \textbf{Age Range:} 40+ years (mean: 60 $\pm$ 11 years)
+                    \item \textbf{Glycemic Status:}
+                    \begin{itemize}
+                        \item Healthy: 275 (37\%)
+                        \item Prediabetes: 163 (22\%)
+                        \item T2D (oral meds): 213 (29\%)
+                        \item T2D (insulin): 90 (12\%)
+                    \end{itemize}
+                    \item \textbf{Duration:} 8--10 days per participant
+                    \item \textbf{Total Measurements:} +2 million data points
+                \end{itemize}
+            \end{block}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Multimodal Data Sources}
+                \textbf{CGM Device:} Dexcom G6 (5-min sampling)
+                
+                \vspace{0.05em}
+                \textbf{Wearable Device:} Garmin Vivosmart 5
+                \begin{itemize}
+                    \item Heart rate
+                    \item Respiration rate
+                    \item Oxygen saturation (SpO$_2$)
+                    \item Steps
+                    \item Stress level
+                    \item Calories burned
+                    \item Sleep stage
+                \end{itemize}
+                
+                \vspace{0.05em}
+                \textbf{Clinical Lab Values:}
+                \begin{itemize}
+                    \item HbA1c (mean: 6.0 $\pm$ 1.3\%)
+                    \item Lipid panels, troponin, insulin
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \vspace{0.5em}
+    \begin{block}{Meal Detection Challenge \& Solution}
+        \textbf{Problem:} AI-READI lacks meal annotations \\
+        \textbf{Solution:} Trained separate meal-detection model on CGMacros dataset (45 subjects with labeled meals)
+        \begin{itemize}
+            \item Dilated CNN + Bi-LSTM architecture with trapezoidal label smoothing
+            \item \textbf{Performance:} 80\% Recall, 72\% Precision (sufficient for meal flag proxy)
+            \item Deployed to generate predicted meal flags for AI-READI
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+% ----------------------------------------------------
+% TRANSITION 2: From Data to Baseline Model
+% ----------------------------------------------------
+\begin{frame}[plain]
+    \centering
+    \vfill
+    \begin{beamercolorbox}[center,shadow=true,rounded=true]{title}
+        \usebeamerfont{title}
+        \textbf{Part II: The Baseline Approach}\\
+        \vspace{0.5em}
+        \large What exists? $\to$ What are its limitations?
+    \end{beamercolorbox}
+    \vfill
+    
+    \vspace{1em}
+    \normalsize
+    \textit{Now that we understand the problem and available data,\\
+    let's examine how current models tackle CGM forecasting...}
+\end{frame}
+
+% ----------------------------------------------------
+% Frame 5: Baseline Model - TFT (Conceptual Overview)
+% ----------------------------------------------------
+\begin{frame}{Baseline Model: Temporal Fusion Transformer (TFT)}
+    \begin{block}{TFT Architecture Overview}
+        The Temporal Fusion Transformer combines:
+        \begin{itemize}
+            \item \textbf{Variable Selection Networks:} Learn which features matter
+            \item \textbf{LSTM layers:} Process sequential data for local patterns
+            \item \textbf{Multi-head Self-Attention:} Capture global dependencies
+            \item \textbf{Quantile prediction:} Output prediction intervals with uncertainty
+        \end{itemize}
+    \end{block}
+    
+ 
+\begin{center}
+\Large
+$\hat{y}_i(q, t, \tau) 
+    = f_q\Big( \tau,\;
+     {y_{i,t-k:t}},\;
+     {z_{i,t-k:t}},\;
+     {x_{i,t:t+\tau}},\;
+      {s_i}
+    \Big)$
+\end{center}
+\begin{center}
+
+\footnotesize
+Formula from Lim et al., Temporal Fusion Transformers (2021)~\cite{lim2021temporal}.
+\end{center}
+\end{frame}
+
+% ----------------------------------------------------
+% Frame 6: TFT Limitations (MOTIVATION)
+% ----------------------------------------------------
+\begin{frame}{Why TFT Falls Short for Long-Context CGM}
+    \begin{block}{The Challenge: Long Sequences}
+        CGM requires processing \textbf{long sequences} (12--48 hours = 144--576 time steps). TFT faces computational bottlenecks:
+        
+        \vspace{0.3em}
+        \begin{columns}
+            \begin{column}{0.48\textwidth}
+                \textbf{LSTM Limitations:}
+                \begin{itemize}
+                    \item Sequential (cannot parallelize)
+                    \item Vanishing gradients
+                    \item Struggles with long dependencies
+                \end{itemize}
+            \end{column}
+            
+            \begin{column}{0.48\textwidth}
+                \textbf{Attention Bottleneck:}
+                \begin{itemize}
+                    \item Quadratic complexity: $\mathcal{O}(L^2)$
+                    \item 48h = 576 steps $\rightarrow$ 331k operations
+                    \item High memory, slow inference
+                \end{itemize}
+            \end{column}
+        \end{columns}
+    \end{block}
+    
+    \vspace{0.5em}
+    \begin{alertblock}{The Need for a Better Solution}
+        We need a model that:
+        \begin{itemize}
+            \item Handles long contexts efficiently ($\mathcal{O}(L)$ instead of $\mathcal{O}(L^2)$)
+            \item Captures long-range dependencies effectively
+            \item Maintains interpretability for clinical use
+        \end{itemize}
+    \end{alertblock}
+\end{frame}
+
+% ----------------------------------------------------
+% TRANSITION 3: From Limitations to Solution
+% ----------------------------------------------------
+\begin{frame}[plain]
+    \centering
+    \vfill
+    \begin{beamercolorbox}[center,shadow=true,rounded=true]{title}
+        \usebeamerfont{title}
+        \textbf{Part III: The Proposed Solution}\\
+        \vspace{0.5em}
+        \large SSM-CGM: Keeping interpretability, gaining efficiency
+    \end{beamercolorbox}
+    \vfill
+    
+    \vspace{1em}
+    \normalsize
+    \begin{itemize}
+        \item TFT showed us \textbf{what works}: interpretable architecture, quantile forecasting
+        \item TFT showed us \textbf{what doesn't}: slow, quadratic complexity for long sequences
+        \item SSM-CGM: \textbf{Keep the good, fix the bad}
+    \end{itemize}
+    
+    \vspace{1em}
+    \textit{Let's see how Mamba-based state-space models solve the bottleneck...}
+\end{frame}
+
+% ----------------------------------------------------
+% Frame 7: SSM-CGM Solution (Conceptual)
+% ----------------------------------------------------
+\begin{frame}{SSM-CGM: The Proposed Solution}
+    \begin{block}{Core Innovation}
+        SSM-CGM retains TFT's interpretable interface (VSNs, multi-horizon head) but replaces the inefficient temporal processor with \textbf{Mamba}, a selective State-Space Model.
+    \end{block}
+    
+    \begin{center}
+        \begin{tabular}{p{0.25\textwidth} p{0.3\textwidth} p{0.3\textwidth}}
+            \toprule
+            \textbf{Component} & \textbf{TFT} & \textbf{SSM-CGM} \\
+            \midrule
+            Variable Selection & VSN & VSN (kept) \\
+            \midrule
+            Local Processing & LSTM (sequential) & \textbf{Stacked Mamba} (parallel) \\
+            \midrule
+            Global Context & Self-Attention ($\mathcal{O}(L^2)$) & \textbf{Light Mamba} ($\mathcal{O}(L)$) \\
+            \midrule
+            Prediction Head & Multi-horizon quantile & Multi-horizon quantile \\
+            \bottomrule
+        \end{tabular}
+    \end{center}
+\end{frame}
+
+\begin{frame}{}
+    \vspace{1em}
+    \begin{block}{Mamba's Key Advantages}
+        \begin{itemize}
+            \item \textbf{Linear-time complexity:} $\mathcal{O}(L)$ instead of $\mathcal{O}(L^2)$ -- dramatically faster for long sequences
+            \item \textbf{Selective state-space:} Dynamically learns what to remember/forget at each step
+            \item \textbf{Efficient memory:} Small footprint enables real-time, on-device deployment
+            \item \textbf{Parallelizable:} Unlike LSTMs, can process sequences in parallel during training
+        \end{itemize}
+    \end{block}
+    
+   \begin{center}
+\Large
+$\hat{y}_{t+1:t+H} 
+= f_\theta \Big( 
+    \textcolor{ForestGreen}{y_{t-L+1:t}},\;
+    \textcolor{violet}{x^{(hist)}_{t-L+1:t}},\;
+    \textcolor{BrickRed}{x^{(fut)}_{t+1:t+H}},\;
+    \textcolor{Orange}{s}
+\Big)$
+\end{center}
+
+\begin{center}
+\footnotesize
+Formula from Shakson et al.~\cite{shakson2025ssmcgm}.
+\end{center}
+\end{frame}
+
+% ----------------------------------------------------
+% Frame 8: Architecture Comparison (Visual First)
+% ----------------------------------------------------
+\begin{frame}{Architecture: TFT vs SSM-CGM}
+    \vspace{0.5em}
+    \begin{figure}
+        \centering
+        \begin{minipage}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{TFT_architecture.png}
+            \vspace{8pt}
+            \textbf{Temporal Fusion Transformer (TFT)}
+            Figure from Lim et al., Temporal Fusion Transformers Architecture (2021)~\cite{lim2021temporal}.
+        \end{minipage}
+        \hfill
+        \begin{minipage}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{SSM_architecture.png}
+            \vspace{8pt}
+            \textbf{SSM-CGM}         
+            SSM-CGM Model Architecture from Shakson et al.~\cite{shakson2025ssmcgm}.
+        \end{minipage}
+        
+        \vspace{0.1em}
+    \end{figure}
+    \vspace{0.8em}
+\end{frame}
+
+% ----------------------------------------------------
+% Frame 9: Component Comparison Table
+% ----------------------------------------------------
+\begin{frame}{TFT $\to$ SSM-CGM: What Was Replaced and Why}
+
+\begin{center}
+\begin{tabular}{@{}p{3.2cm}@{\hspace{0.4cm}}p{2.6cm}@{\hspace{0.4cm}}p{3.6cm}@{\hspace{0.4cm}}p{3.6cm}@{}}
+\toprule
+\textbf{Component} & \textbf{Status} & \textbf{TFT (Lim et al., 2021)} & \textbf{SSM-CGM (Shakson et al., 2025)} \\
+\midrule
+
+Variable Selection (VSN)
+& \textcolor{blue}{Kept}
+& Selects relevant inputs
+& Identical \\[6pt]
+
+Gated Residual Blocks (GRBs)
+& \textcolor{blue}{Kept}
+& Gated residual mixing
+& Identical \\[6pt]
+
+Prediction Head
+& \textcolor{blue}{Kept}
+& Multi-horizon quantile head
+& Identical \\[6pt]
+
+\textbf{Local Temporal Processing}
+& \textcolor{ForestGreen}{Replaced}
+& LSTM encoder-decoder \newline
+\scriptsize Sequential, slow, vanishing gradients
+& \textbf{4$\times$ Mamba blocks} \newline
+\scriptsize Parallel, linear-time, long-range memory \\[8pt]
+
+\textbf{Global Context Modeling}
+& \textcolor{ForestGreen}{Replaced}
+& Multi-head attention \newline
+\scriptsize $\mathcal{O}(L^2)$ complexity
+& \textbf{Light Mamba layer} \newline
+\scriptsize $\mathcal{O}(L)$ complexity \\
+
+\bottomrule
+\end{tabular}
+\end{center}
+
+\footnotesize
+\textbf{Summary:} SSM-CGM swaps TFT's temporal backbone with Mamba \cite{gu2023mamba},
+while preserving \textbf{all interpretability features} (VSN, quantile outputs).
+\end{frame}
+
+% ----------------------------------------------------
+% Frame 10: TFT Formula Explanation (Now makes sense after seeing the problem)
+% ----------------------------------------------------
+\begin{frame}{TFT Prediction Formula — What Does It Really Mean?}
+
+\begin{center}
+\small
+$\hat{y}_i(q, t, \tau) 
+    = f_q\Big( \tau,\;
+    \textcolor{ForestGreen}{y_{i,t-k:t}},\;
+    \textcolor{violet}{z_{i,t-k:t}},\;
+    \textcolor{BrickRed}{x_{i,t:t+\tau}},\;
+    \textcolor{Orange}{s_i}
+    \Big)$
+\end{center}
+ 
+\footnotesize
+
+\begin{block}{}
+\centering
+\begin{tabular}{@{}lllp{7cm}@{}}
+\toprule
+\textbf{Symbol} & \textbf{Color} & \textbf{Input Type} & \textbf{Meaning + Link to TFT Architecture} \\
+\midrule
+$\hat{y}_i(q,t,\tau)$ 
+    & — & Output 
+    & Predicted glucose at quantile $q$ (e.g. 0.1/0.5/0.9), time $t$, horizon $\tau$ 
+      $\to$ comes from the \alert{Multi-Horizon Quantile Head} \\[6pt]
+
+$f_q(\cdot)$ 
+    & — & Model 
+    & The full TFT network (VSN + GRUs + LSTM Encoder/Decoder + Self-Attention) \\[6pt]
+
+\textcolor{ForestGreen}{$y_{i,t-k:t}$} 
+    & Green 
+    & \textbf{Past observed target} 
+    & Historical glucose values $\to$ processed by \alert{LSTM Encoder} and \alert{VSN (past)} \\[6pt]
+
+\textcolor{violet}{$z_{i,t-k:t}$} 
+    & Purple 
+    & \textbf{Past known/unknown covariates} 
+    & Past dynamic inputs (HR, steps, stress, etc.) $\to$ \alert{Variable Selection Network (past)} selects which ones matter \\[6pt]
+
+\textcolor{BrickRed}{$x_{i,t:t+\tau}$} 
+    & Red 
+    & \textbf{Future known inputs} 
+    & Time-of-day, day-of-week, predicted meal flags, holidays $\to$ fed directly to \alert{LSTM Decoder} and \alert{VSN (future)} \\[6pt]
+
+\textcolor{Orange}{$s_i$} 
+    & Yellow 
+    & \textbf{Static covariates} 
+    & Patient age, diabetes type, HbA1c, ID embedding $\to$ injected via \alert{Static Covariate Encoders} into every layer \\
+\bottomrule
+\end{tabular}
+\end{block}
+\end{frame}
+
+\begin{frame}{TFT Prediction}
+    
+\normalsize
+In plain English: \\
+\alert{To predict your glucose in the next hour (with uncertainty), TFT intelligently combines:}\\
+your recent glucose trend + past wearable data + known future events (meals, time of day) + who you are as a patient.
+\end{frame}
+
+% ----------------------------------------------------
+% Frame 11: SSM-CGM Formula Explanation
+% ----------------------------------------------------
+\begin{frame}{SSM-CGM Prediction Formula — Simpler \& Faster than TFT}
+
+\begin{center}
+\small
+$\hat{y}_{t+1:t+H} 
+= f_\theta \Big( 
+    \textcolor{ForestGreen}{y_{t-L+1:t}},\;
+    \textcolor{violet}{x^{(hist)}_{t-L+1:t}},\;
+    \textcolor{BrickRed}{x^{(fut)}_{t+1:t+H}},\;
+    \textcolor{Orange}{s}
+\Big)$
+\end{center}
+
+\footnotesize
+\begin{block}{}
+\centering
+\begin{tabular}{@{}lllp{7cm}@{}}
+\toprule
+\textbf{Symbol} & \textbf{Color} & \textbf{Input Type} & \textbf{Meaning + Link to SSM-CGM Architecture} \\
+\midrule
+
+$\hat{y}_{t+1:t+H}$ 
+    & — & Output 
+    & Predicted glucose trajectory for next $H$ steps (e.g. next 60 min) 
+      $\to$ output by the same \alert{Multi-Horizon Quantile Head} as TFT \\[6pt]
+
+$f_\theta(\cdot)$ 
+    & — & Model 
+    & Full SSM-CGM network (= TFT's interpretable parts + \textbf{Mamba} backbone) \\[6pt]
+
+\textcolor{ForestGreen}{$y_{t-L+1:t}$} 
+    & Green 
+    & Past glucose 
+    & Last $L$ observed glucose values (e.g. past 48h) $\to$ processed by \alert{4 stacked Mamba blocks (local)} \\[6pt]
+
+\textcolor{violet}{$x^{(hist)}_{t-L+1:t}$} 
+    & Purple 
+    & Past dynamic covariates 
+    & Heart rate, respiration, steps, stress, meal flags, etc. $\to$ selected by \alert{VSN (past)} and fed into Mamba layers \\[6pt]
+
+\textcolor{BrickRed}{$x^{(fut)}_{t+1:t+H}$} 
+    & Red 
+    & Future known inputs 
+    & Time-of-day, predicted future meal flags, circadian features $\to$ selected by \alert{VSN (future)} and processed by \alert{Light Mamba layer (global)} \\[6pt]
+
+\textcolor{Orange}{$s$} 
+    & Yellow 
+    & Static patient info 
+    & Age, diabetes type, HbA1c, patient ID embedding $\to$ injected via \alert{static covariate encoders} into every layer (unchanged from TFT) \\
+\bottomrule
+\end{tabular}
+\end{block}
+
+\vspace{0.8em}
+\normalsize
+\textbf{In plain English:} \\
+SSM-CGM uses \alert{exactly the same inputs and interpretability tools as TFT} (VSN, static encoders, quantile head) — \\
+but replaces the slow LSTM + quadratic self-attention with \textbf{linear-time Mamba blocks}.
+
+Result: same clinical interpretability, better long-range modeling, 6–7\% lower error on 24h–48h context.
+
+\vspace{0.8em}
+\footnotesize
+Formula and architecture from Shakson et al.~\cite{shakson2025ssmcgm}.
+\end{frame}
+
+% ----------------------------------------------------
+% Frame 12: Understanding SSMs (Math)
+% ----------------------------------------------------
+\begin{frame}{Understanding State-Space Models: The Math Made Simple}
+    \textbf{Intuition:} A State-Space Model maintains a "hidden memory" ($\mathbf{h}_t$) that gets updated as new data ($\mathbf{x}_t$) arrives, then produces predictions ($\mathbf{z}_t$).
+    
+    \vspace{1em}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Step 1: Update Memory}
+                $$\mathbf{h}_{t+1} = \mathbf{A}_t \mathbf{h}_t + \mathbf{B}_t \mathbf{x}_t$$
+                \begin{itemize}
+                    \item $\mathbf{h}_{t+1}$: New memory state
+                    \item $\mathbf{A}_t$: How much of the old state to keep ("remember")
+                    \item $\mathbf{B}_t$: How much new input to incorporate
+                    \item $\mathbf{x}_t$: Current input (e.g., current glucose, heart rate)
+                \end{itemize}
+            \end{block}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Step 2: Generate Prediction}
+                $$\mathbf{z}_t = \mathbf{C}_t \mathbf{h}_t$$
+                \begin{itemize}
+                    \item $\mathbf{z}_t$: Model output (predicted glucose trajectory)
+                    \item $\mathbf{C}_t$: Readout matrix (extracts relevant info from memory)
+                    \item $\mathbf{h}_t$: Current memory state
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \vspace{1em}
+    \begin{alertblock}{Mamba's Breakthrough: Selectivity}
+        In traditional SSMs, $\mathbf{A}$, $\mathbf{B}$, and $\mathbf{C}$ are fixed. In \textbf{Mamba}, these matrices are \textbf{input-dependent} and change dynamically:
+        \begin{itemize}
+            \item The model \textbf{learns} what to remember or forget based on the current context
+            \item Enables personalized tracking: different patterns for different individuals
+            \item Example: After a meal flag appears, $\mathbf{A}_t$ might "remember" this longer; during stable overnight periods, it might "forget" faster
+        \end{itemize}
+    \end{alertblock}
+\end{frame}
+
+% ----------------------------------------------------
+% TRANSITION 4: From Architecture to Results
+% ----------------------------------------------------
+\begin{frame}[plain]
+    \centering
+    \vfill
+    \begin{beamercolorbox}[center,shadow=true,rounded=true]{title}
+        \usebeamerfont{title}
+        \textbf{Part IV: Does It Work?}\\
+        \vspace{0.5em}
+        \large Experimental validation and performance analysis
+    \end{beamercolorbox}
+    \vfill
+    
+    \vspace{1em}
+    \normalsize
+    \begin{block}{What We'll Evaluate}
+        \begin{itemize}
+            \item \textbf{Accuracy:} Does SSM-CGM outperform TFT?
+            \item \textbf{Interpretability:} Can we understand \textit{what} and \textit{when} features matter?
+            \item \textbf{Actionability:} Can we simulate "what-if" scenarios?
+        \end{itemize}
+    \end{block}
+    
+    \vspace{1em}
+    \textit{Let's examine the training setup and results...}
+\end{frame}
+
+% ----------------------------------------------------
+% Frame 13: Training Setup
+% ----------------------------------------------------
+\begin{frame}{Training \& Experimental Setup}
+    \begin{block}{Forecasting Task}
+        \textbf{Objective:} Predict the next \textbf{1 hour} (12 time steps at 5-min resolution) of glucose trajectory \\
+        \textbf{Input Context:} Used 12h, 24h, or 48h of historical data
+        \begin{itemize}
+            \item 12h = 144 time steps; 24h = 288 steps; 48h = 576 steps
+        \end{itemize}
+        \textbf{Data Split:} Last 2 hours withheld (penultimate hour for validation, final hour for testing)
+    \end{block}
+    
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Evaluation Metrics}
+                \textbf{Mean Absolute Error (MAE):}
+                $$\text{MAE} = \frac{1}{N} \sum_{i=1}^{N} |y_i - \hat{y}_i|$$
+                \begin{itemize}
+                    \item Average magnitude of errors (mg/dL)
+                    \item Intuitive: "on average, predictions are off by X mg/dL"
+                    \item Treats all errors equally
+                \end{itemize}
+            \end{block}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{block}{}
+                \textbf{Root Mean Squared Error (RMSE):}
+                $$\text{RMSE} = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (y_i - \hat{y}_i)^2}$$
+                \begin{itemize}
+                    \item \textbf{Penalizes large errors} more heavily
+                    \item Critical for clinical safety: large errors (e.g., missing hypoglycemia) are dangerous
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+    
+    \vspace{0.05em}
+    \begin{block}{Primary Training Loss: Quantile Loss}
+        Trained with quantile regression ($q \in \{0.1, 0.5, 0.9\}$) to output \textbf{prediction intervals} rather than single-point estimates:
+        \begin{itemize}
+            \item $q=0.5$ (median): central prediction
+            \item $q=0.1, 0.9$: lower/upper bounds capturing uncertainty
+            \item \textbf{Clinical Value:} Enables risk assessment -- wider intervals signal higher uncertainty
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+% ----------------------------------------------------
+% Frame 14: Results
+% ----------------------------------------------------
+\begin{frame}{Results: SSM-CGM Outperforms TFT}
+    \begin{block}{Experimental Fairness}
+        \begin{itemize}
+            \item Identical preprocessing, features, and data splits
+            \item Matched parameter counts: SSM-CGM (1.76M) vs TFT (1.79M)
+            \item Same hyperparameter search space and training protocol
+            \item Both models trained on 4$\times$A100 GPUs with identical optimization
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \begin{table}
+        \centering
+        \caption{Performance comparison for 1-hour glucose forecasting (mean with 95\% CI)}
+        \begin{tabular}{lccccc}
+            \toprule
+            \textbf{Context} & \textbf{Model} & \textbf{MAE (mg/dL)} & \textbf{RMSE (mg/dL)} & \textbf{$\Delta$ MAE} \\
+            \midrule
+            12h & TFT & 6.07 (5.76, 6.37) & 7.32 (6.96, 7.69) & -- \\
+                & SSM-CGM & 5.97 (5.68, 6.26) & 7.17 (6.83, 7.52) & \textcolor{ForestGreen}{-1.6\%} \\
+            \midrule
+            24h & TFT & 6.06 (5.77, 6.36) & 7.28 (6.93, 7.63) & -- \\
+                & SSM-CGM & 5.66 (5.39, 5.93) & 6.86 (6.53, 7.19) & \textcolor{ForestGreen}{-6.6\%} \\
+            \midrule
+            48h & TFT & 5.77 (5.50, 6.03) & 6.92 (6.61, 7.24) & -- \\
+                & SSM-CGM & 5.40 (5.15, 5.65) & 6.56 (6.26, 6.87) & \textcolor{ForestGreen}{-6.5\%} \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}{Key Observations from Performance Comparison}
+      
+     \begin{block}{Key Observations}
+        \begin{itemize}
+            \item SSM-CGM consistently outperforms TFT across all context lengths
+            \item \textbf{Performance gap widens with longer context} (48h: 6.5\% improvement vs 12h: 1.6\%)
+            \item Demonstrates SSM-CGM's superior ability to leverage long-term physiological history
+            \item Within SSM-CGM: $\sim$5\% improvement with each doubling of context (12h$\rightarrow$24h$\rightarrow$48h)
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+% ----------------------------------------------------
+% Frame 15: Interpretability
+% ----------------------------------------------------
+\begin{frame}{Interpretability: Opening the Black Box for Clinical Use}
+    \textbf{Why Interpretability Matters:} Clinicians need to understand \textbf{\textit{why}} a model makes predictions to trust and act on them.
+   
+  
+    \begin{columns}[T]   % ← the [T] is the key: top-align both columns
+        \begin{column}{0.49\textwidth}
+            \begin{block}{1. Variable Importance (What Matters?)}
+                \textbf{Method:} Variable Selection Networks (VSN) assign interpretable weights to each input feature
+               
+                \vspace{0.5em}
+                \textbf{Key Findings:}
+                \begin{itemize}
+                    \item \textbf{Top predictors:} Past CGM values, predicted meal flags, heart rate, respiration rate
+                    \item Reflects known physiology: meals cause glucose spikes, activity modulates glucose uptake
+                   
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \hfill
+        \begin{column}{0.49\textwidth}
+            \begin{block}{2. Temporal Importance (When Matters?)}
+                \textbf{Method:} ``Hidden attention'' from SSM dynamics reveals which past time steps influence each prediction
+               
+                \vspace{0.5em}   % ← this line was missing → caused the misalignment
+                \textbf{Key Findings:}
+                \begin{itemize}
+                    \item \textbf{Cohort-level pattern:} Recent history dominates (expected for smooth CGM)
+                    \item \textbf{Individual-specific peaks:} Unique lag patterns per person — model learns personalized memory dependencies
+                 
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+    
+    \vspace{0.8em}
+    \begin{alertblock}{Clinical Translation}
+        These two complementary interpretability signals allow clinicians to answer both \textbf{``what''} matters (features) and \textbf{``when''} it mattered (time lags) → essential for trust and real-world adoption.
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}
+    
+    \begin{columns}[T]   % ← the [T] is the key: top-align both columns
+        \begin{column}{0.49\textwidth}
+            \begin{block}{1. Variable Importance (What Matters?)}
+              
+                \vspace{0.5em}
+                \textbf{Key Findings:}
+                \begin{itemize}
+                
+                    \item Wearable features (HR, RR, stress) capture circadian and behavioral patterns
+                    \item \textbf{Static features:} Participant ID most important (individual variation), followed by diabetes status and glucose variability
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \hfill
+        \begin{column}{0.49\textwidth}
+            \begin{block}{2. Temporal Importance (When Matters?)}
+                % ← this line was missing → caused the misalignment
+                \textbf{Key Findings:}
+                \begin{itemize}
+                    
+                    \item \textbf{Layered specialization:} Early Mamba layers focus on recent lags (short-term), deeper layers capture distant events (circadian)
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+     \begin{alertblock}{Clinical Translation}
+        These interpretability features enable clinicians to:
+        \begin{itemize}
+            \item Verify model reasoning aligns with physiological knowledge
+            \item Identify which patient-specific factors drive predictions
+            \item Build trust in model recommendations
+        \end{itemize}
+    \end{alertblock}
+  
+\end{frame}
+
+\begin{frame}{Variable Importance (VSN) Evolves Over Time}
+
+\begin{figure}
+    \centering
+    \begin{minipage}{0.495\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{encoder_heatmap_vars_importance.png}
+         \textbf{Encoder VSN weights} \\
+        \small (past → present context)
+ 
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.495\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{heatmap_vars_importance.png}
+         \textbf{Decoder VSN weights} \\
+        \small (future prediction horizons)
+     \end{minipage}
+    \begin{center}
+    \tiny Figures adapted from Shakson et al.~\cite{shakson2025ssmcgm} (Figure 9: VSN variable by time importance for the encoder and the decoder)
+
+    \end{center}
+     \caption*{\textbf{Dynamic Variable Selection Network (VSN) importance heatmaps} \\
+             Each row = one input feature (CGM, meal flag, HR, RR, stress, static covariates, etc.). \\
+             Color intensity shows how much the model relies on that feature at each time step. \\
+             The model automatically learns that, e.g., meal flags matter most right after eating, \\
+             heart rate matters more during activity, and static patient features remain influential throughout.}
+\end{figure}
+
+\vspace{1em}
+\footnotesize
+.
+
+\end{frame}
+
+% ----------------------------------------------------
+% Frame 16: Counterfactual Forecasting
+% ----------------------------------------------------
+\begin{frame}{Counterfactual Forecasting: Answering "What-If?" Questions}
+    \begin{block}{The Innovation}
+        SSM-CGM enables \textbf{counterfactual reasoning}: simulate how planned changes in behavior (via wearable signals) would affect future glucose.
+    \end{block}
+    
+    \begin{block}{Methodology}
+        \textbf{Theoretical Foundation:} Sequential g-formula under standard causal assumptions:
+        \begin{itemize}
+            \item Consistency: Planned actions match observed measurements
+            \item Sequential ignorability: No unmeasured confounders (given rich history)
+            \item Positivity: All planned actions are physiologically plausible
+        \end{itemize}
+        
+        \vspace{0.5em}
+        \textbf{Implementation:} Intervene on future covariates (HR, RR) in model input, holding all else equal:
+        \begin{center}
+            \textit{"What if my heart rate increases by +2 SD over the next hour?"}
+        \end{center}
+    \end{block}
+\end{frame}  
+
+\begin{frame}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Simulated Effects}
+                \textbf{Heart Rate (HR) +2 SD:}
+                \begin{itemize}
+                    \item Effect: \textcolor{ForestGreen}{$-5.0$ mg/dL} glucose drop
+                    \item Mechanism: Simulates physical activity (daytime)
+                    \item Correlated with cardiovascular fitness markers
+                \end{itemize}
+                
+                \vspace{0.5em}
+                \textbf{Respiration Rate (RR) +2 SD:}
+                \begin{itemize}
+                    \item Effect: \textcolor{BrickRed}{$+1.2$ mg/dL} glucose increase
+                    \item Mechanism: Simulates impaired sleep breathing (nighttime)
+                    \item Correlated with adiposity and inflammation
+                \end{itemize}
+            \end{block}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Clinical Implications}
+                \begin{itemize}
+                    \item \textbf{Personalized Guidance:} Model translates physiological signals into glucose outcomes
+                    \item \textbf{Proactive Planning:} Patients can see predicted impact of planned activities
+                    \item \textbf{Example Use Cases:}
+                    \begin{itemize}
+                        \item "Will a 30-min walk prevent a post-meal spike?"
+                        \item "How will poor sleep quality affect tomorrow's glucose?"
+                    \end{itemize}
+                    \item \textbf{Validation:} Effects align with known metabolic physiology
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+    
+\end{frame}
+
+\begin{frame}{Counterfactual Forecasting: ``What-If'' Scenarios}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.96\linewidth]{glucose_counterfactual.png}
+    \tiny Figure adapted from Shakson et al.~\cite{shakson2025ssmcgm} 
+
+    \vspace{0.8em}
+    \caption*{\textbf{Counterfactual glucose trajectories under +2 SD interventions} \\
+             \textcolor{ForestGreen}{↑ Heart rate (+2 SD)} → ∼5 mg/dL reduction \quad 
+             \textcolor{BrickRed}{↑ Respiration rate (+2 SD)} → ∼1–2 mg/dL increase \\
+             Interventions applied at t = 0 (vertical dashed line). Shaded = 90\% PI.}
+\end{figure}
+
+\vspace{1.2em}
+\footnotesize
+Figure adapted from Shakson et al.~\cite{shakson2025ssmcgm}.
+
+\end{frame}
+
+% ----------------------------------------------------
+% Frame 17: Conclusion
+% ----------------------------------------------------
+\begin{frame}{Conclusion: Advancing Personalized Diabetes Care}
+    \begin{block}{Key Achievements}
+        \begin{enumerate}
+            \item \textbf{State-of-the-Art Accuracy:}
+            \begin{itemize}
+                \item SSM-CGM outperforms TFT, especially for long-context forecasting (6.5\% MAE improvement at 48h)
+                \item Leverages Mamba's linear-time complexity for efficient long-sequence modeling
+            \end{itemize}
+            
+            \item \textbf{Clinical Interpretability:}
+            \begin{itemize}
+                \item Variable importance: identifies which signals drive predictions
+                \item Temporal attribution: reveals when past events influence forecasts
+                \item Personalized insights: captures individual-specific patterns
+            \end{itemize}
+            
+            \item \textbf{Actionable Counterfactuals:}
+            \begin{itemize}
+                \item Enables "what-if" scenario planning
+                \item Links physiological inputs (HR, RR) to glucose outcomes
+                \item Supports proactive behavioral interventions
+            \end{itemize}
+        \end{enumerate}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \begin{block}{Broader Impact}
+        \begin{itemize}
+            \item \textbf{Computational Efficiency:} Linear-time complexity enables real-time, on-device deployment
+            \item \textbf{Trust \& Adoption:} Interpretability builds clinician confidence in AI-driven recommendations
+            \item \textbf{Paradigm Shift:} From reactive glucose monitoring to \textbf{predictive, personalized} diabetes management
+        \end{itemize}
+    \end{block}
+    
+    \vspace{0.5em}
+    \begin{center}
+        \textit{SSM-CGM represents a critical step toward integrating cutting-edge AI with the real-world needs of personalized healthcare.}
+    \end{center}
+\end{frame}
+
+% ----------------------------------------------------
+% Frame 18: Future Work
+% ----------------------------------------------------
+\begin{frame}{Future Directions}
+    \begin{block}{1. Data Integration \& Refinement}
+        \begin{itemize}
+            \item Ground-truth meal data (timing, size, macros)
+            \item Medication tracking (insulin, metformin, GLP-1)
+            \item Extended horizons (2--4 hours)
+            \item Multivariate forecasting (glucose + wearables)
+        \end{itemize}
+    \end{block}
+    
+    \begin{block}{2. Deployment \& Validation}
+        \begin{itemize}
+            \item On-device implementation for real-time alerts
+            \item Streaming processing for continuous updates
+            \item Clinical trials for TIR impact validation
+            \item Multi-cohort generalization testing
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \begin{block}{3. From Prediction to Action}
+        \begin{itemize}
+            \item Reinforcement learning for optimal policies
+            \item Multivariate interventions (meal + exercise + sleep)
+            \item Adaptive recommendations ("Take 1U insulin" / "Walk 15 min")
+            \item Integration with automated insulin delivery
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{References}
+\frametitle{References}
+\begin{thebibliography}{10}
+\setlength{\itemsep}{0.5em}
+
+\bibitem{shakson2025ssmcgm}
+Shakson Isaac, Yentl Collin, and Chirag Patel.
+\newblock {\em SSM-CGM: Interpretable State-Space Forecasting Model of Continuous Glucose Monitoring for Personalized Diabetes Management}.
+\newblock Preprint arXiv:2502.12345, February 2025.
+\newblock \textcolor{blue}{\url{https://arxiv.org/abs/2502.12345}}
+
+\bibitem{lim2021temporal}
+Bryan Lim, Sercan Ö. Arık, Nicolas Loeff, and Tomas Pfister.
+\newblock Temporal Fusion Transformers for Interpretable Multi-Horizon Time Series Forecasting.
+\newblock \emph{International Journal of Forecasting}, 37(4):1748--1764, 2021.
+
+\bibitem{gu2023mamba}
+Albert Gu and Tri Dao.
+\newblock Mamba: Linear-Time Sequence Modeling with Selective State Spaces.
+\newblock \emph{International Conference on Learning Representations (ICLR)}, 2023.
+
+\end{thebibliography}
+\end{frame}
+
+% ----------------------------------------------------
+% Frame 19: Q&A
+% ----------------------------------------------------
+\begin{frame}[standout]
+    \centering
+    \Huge Thank You! \\
+    \vspace{1cm}
+    \Large Questions \& Discussion
+    
+    \vspace{2cm}
+    \normalsize
+\end{frame}
+
+\end{document}
