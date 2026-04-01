@@ -1,0 +1,19 @@
+{
+  "M1_volume_R2": -2386462.7401774307,
+  "M2_log_volume_R2": -1274784.659863309,
+  "M3_svr_R2": -410808.26320914447,
+  "M4_necrosis_F1": 0.5388528138528137,
+  "M5_elongation_R2": -1274783.2856899644,
+  "M6_nn_consistency_pct": 14.938271604938272,
+  "H1_pca_residual_r": 0.8240495324134827,
+  "H2_heterogeneity_R2": -1274784.7952549357,
+  "H3_subregion_F1": 0.4442642654866919,
+  "H4_texture_bundle_R2": -1357353.38759748,
+  "T1_dist_vol_r": 0.06216184422516551,
+  "T3_delta_R2": -250602.9807495345,
+  "T4_response_AUC": NaN,
+  "T5_coherence_cos": 0.9901270866394043,
+  "T6_velocity_r": 0.3658026513778144,
+  "T7_treatment_d": 20.015779495239258,
+  "T2_tsne": "saved"
+}
