@@ -38,19 +38,14 @@ Phase 1 prepared the Cyprus PROTEAS brain metastases dataset for deep learning a
 
 ### Per-Patient Data Structure
 
-```
-P??/
-├── BraTS/
-│   ├── baseline/          T1, T1c, T2, FLAIR
-│   ├── fu1/               Follow-up 1 (~6 weeks post-treatment)
-│   ├── fu2/ ... fu5/      Follow-ups 2-5 (~3, 6, 9, 12 months)
-├── P??_brain_mask.nii.gz  Healthy tissue labels (10=ventricles, 30=WM, 40=GM, 50=CSF)
-├── P??_CT.nii.gz          Planning CT (Hounsfield Units)
-├── P??_RTP.nii.gz         3D radiation dose map (Gy)
-└── tumor_segmentation/
-    ├── P??_tumor_mask_baseline.nii.gz   Multi-class (1=NCR, 2=ET, 3=ED)
-    └── P??_tumor_mask_fu?.nii.gz
-```
+| Path | Contents |
+|---|---|
+| `P??/BraTS/baseline/` | T1, T1c, T2, FLAIR (4 modalities) |
+| `P??/BraTS/fu1/ ... fu5/` | Follow-up scans (~6 weeks to ~12 months post-treatment) |
+| `P??/P??_brain_mask.nii.gz` | Healthy tissue labels (10=ventricles, 30=WM, 40=GM, 50=CSF) |
+| `P??/P??_CT.nii.gz` | Planning CT (Hounsfield Units) |
+| `P??/P??_RTP.nii.gz` | 3D radiation dose map (Gy) |
+| `P??/tumor_segmentation/P??_tumor_mask_*.nii.gz` | Multi-class segmentation (1=NCR, 2=ET, 3=ED) |
 
 ### Why This Dataset Was Selected
 

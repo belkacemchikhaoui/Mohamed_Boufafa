@@ -1,0 +1,28 @@
+{
+  "total_patient_dirs": 45,
+  "total_patient_groups": 40,
+  "total_scans": 186,
+  "scans_with_masks": 170,
+  "scans_without_masks": 16,
+  "ab_groups": [
+    "P04",
+    "P07",
+    "P17",
+    "P20",
+    "P23"
+  ],
+  "modalities": [
+    "t1",
+    "t1c",
+    "t2",
+    "fla"
+  ],
+  "visits": [
+    "baseline",
+    "fu1",
+    "fu2",
+    "fu3",
+    "fu4",
+    "fu5"
+  ]
+}

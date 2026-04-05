@@ -25,19 +25,14 @@
 
 ### Per-Patient Structure
 
-```
-P??/
-├── BraTS/
-│   ├── baseline/          t1.nii.gz, t1c.nii.gz, t2.nii.gz, fla.nii.gz
-│   ├── fu1/               follow-up 1 (~6 weeks post-treatment)
-│   ├── fu2/ ... fu5/      follow-ups 2-5 (~3, 6, 9, 12 months)
-├── P??_brain_mask.nii.gz  healthy tissue labels (10=ventricles, 30=WM, 40=GM, 50=CSF)
-├── P??_CT.nii.gz          CT scan (Hounsfield Units, for RT planning)
-├── P??_RTP.nii.gz         3D radiation dose map (Grays)
-└── tumor_segmentation/
-    ├── P??_tumor_mask_baseline.nii.gz   (1=NCR, 2=ET, 3=ED)
-    └── P??_tumor_mask_fu?.nii.gz
-```
+| Path | Contents |
+|---|---|
+| `P??/BraTS/baseline/` | t1.nii.gz, t1c.nii.gz, t2.nii.gz, fla.nii.gz |
+| `P??/BraTS/fu1/ ... fu5/` | Follow-ups (~6 weeks to ~12 months post-treatment) |
+| `P??/P??_brain_mask.nii.gz` | Healthy tissue labels (10=ventricles, 30=WM, 40=GM, 50=CSF) |
+| `P??/P??_CT.nii.gz` | CT scan (Hounsfield Units, for RT planning) |
+| `P??/P??_RTP.nii.gz` | 3D radiation dose map (Grays) |
+| `P??/tumor_segmentation/P??_tumor_mask_*.nii.gz` | Segmentation (1=NCR, 2=ET, 3=ED) |
 
 ### Key Medical Context
 

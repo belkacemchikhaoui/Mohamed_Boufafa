@@ -2,13 +2,30 @@ the_mess/*
 starter/*
 overall/*
 
-# Ignore data directory
+# Ignore data directories
 implementation/Data/*
 implementation_cyprus/Data/*
 
-# Ignore all PDF files
+# Ignore large binary files
 *.pdf
+*.nii.gz
+*.pth
+
+# Phase 1 — large non-essential outputs
 implementation_cyprus/Phase1/outputs/3d_overlays/
 implementation_cyprus/Phase1/outputs/pre_skullstrip_backup/
+implementation_cyprus/Phase1/outputs/eda/
+
+# Phase 2 — training logs and weights (too large for GitHub)
 implementation_cyprus/Phase2/training_logs/
-*.nii.gz
+implementation_cyprus/Phase2/weights/
+
+# Old scattered folders (now organized into Phase1/ and Phase2/)
+folder0/
+folder1/
+folder2/
+cnn_emb_SegResNet/
+
+# Root-level duplicates (originals now in Phase folders)
+implementation_cyprus/outputs/
+implementation_cyprus/notebooks/
