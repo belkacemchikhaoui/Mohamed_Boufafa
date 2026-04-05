@@ -4,6 +4,11 @@ overall/*
 
 # Ignore data directory
 implementation/Data/*
+implementation_cyprus/Data/*
 
 # Ignore all PDF files
 *.pdf
+implementation_cyprus/Phase1/outputs/3d_overlays/
+implementation_cyprus/Phase1/outputs/pre_skullstrip_backup/
+implementation_cyprus/Phase2/training_logs/
+*.nii.gz
