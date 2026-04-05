@@ -1,0 +1,66 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=1.8cm]{geometry}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{titlesec}
+
+\titlespacing*{\section}{0pt}{6pt}{2pt}
+\titlespacing*{\subsection}{0pt}{4pt}{2pt}
+\setlength{\parskip}{2pt}
+\setlength{\parindent}{0pt}
+
+\title{\vspace{-1.5cm}\textbf{Supervision Meeting Report}\\[4pt]
+\large Explainable Disease Progression \& Counterfactual Video Generation}
+\author{Mohamed Boufafa \\ Supervisor: Dr.~Belkacem Chikhaoui \\ Mitacs Globalink -- T\'ELuQ University}
+\date{March 11, 2026}
+
+\begin{document}
+\maketitle
+\vspace{-0.5cm}
+
+\section{Meeting Summary}
+
+\textbf{Attendees:} Mohamed Boufafa, Dr.~Belkacem Chikhaoui \\
+\textbf{Objective:} Review dataset acquisition progress and agree on Phase~1 work plan.
+
+\section{Dataset Selection}
+
+The \textbf{Cyprus PROTEAS Brain Metastases} dataset (Flouri et al., 2025) was confirmed for Objective~1. It provides 40 unique patients (45 directories), 186 longitudinal MRI timepoints across 4 sequences (T1, T2, T1c, FLAIR), expert tumor segmentations, CT scans, radiotherapy dose maps, and pre-extracted radiomic features. The dataset is already preprocessed to BraTS standard (1$\times$1$\times$1~mm\textsuperscript{3} isotropic, co-registered, skull-stripped).
+
+\section{Phase 1 Plan Agreed}
+
+\textbf{Phase 1 -- Oncology Medical Imaging Preparation and Exploration}\\
+\textbf{Duration:} 2 weeks (Weeks 1--2)
+
+\subsection*{Activities}
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item Selection and acquisition of public cancer imaging datasets (TCGA, BraTS, and/or LIDC-IDRI).
+    \item Preprocessing of medical images (MRI/CT):
+    \begin{itemize}[nosep, leftmargin=1em]
+        \item Intensity normalization.
+        \item Spatial resampling.
+        \item Longitudinal image alignment across time points.
+    \end{itemize}
+    \item Verification and processing of tumor annotations when available.
+    \item Exploratory data analysis:
+    \begin{itemize}[nosep, leftmargin=1em]
+        \item Distribution of tumor sizes and locations.
+        \item Inter-patient and temporal variability analysis.
+    \end{itemize}
+    \item Organization of longitudinal patient imaging sequences.
+\end{itemize}
+
+\subsection*{Deliverables for Next Meeting}
+Since the dataset is already preprocessed to BraTS standard, the preprocessing pipeline reduces to a validation step. The deliverables are:
+\begin{enumerate}[nosep, leftmargin=1.5em]
+    \item Cleaned, standardized, and temporally organized dataset with preprocessing validation report.
+    \item Exploratory data analysis report with detailed methodology documentation.
+    \item Longitudinal timeline CSV with exact visit day intervals.
+    \item Progress summary for Phase~1 completion.
+\end{enumerate}
+
+\section{Next Steps}
+Complete the Phase~1 EDA and preprocessing validation by the next meeting. Phase~2 will focus on feature extraction using temporal-aware architectures (Swin UNETR, TaViT) and integrating radiomic trajectories with clinical outcome data.
+
+\end{document}

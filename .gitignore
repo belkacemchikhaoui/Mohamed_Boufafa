@@ -10,6 +10,7 @@ implementation_cyprus/Data/*
 *.pdf
 *.nii.gz
 *.pth
+*.ckpt
 
 # Phase 1 — large non-essential outputs
 implementation_cyprus/Phase1/outputs/3d_overlays/
