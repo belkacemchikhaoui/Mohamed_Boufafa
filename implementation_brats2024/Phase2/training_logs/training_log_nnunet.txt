@@ -1,0 +1,340 @@
+7.5s	1	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.5s	2	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.5s	3	0.00s - to python to disable frozen modules.
+7.5s	4	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.1s	5	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.1s	6	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.1s	7	0.00s - to python to disable frozen modules.
+8.1s	8	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+9.3s	9	Model: nnunet | Patch: [128, 128, 128] | Regions: ['WT', 'TC', 'ET']
+14.2s	10	Installing nnunetv2 ...
+16.3s	11	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 205.6/205.6 kB 11.3 MB/s eta 0:00:00
+16.5s	12	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 205.6/205.6 kB 11.3 MB/s eta 0:00:00
+32.3s	13	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.0/77.0 kB 5.9 MB/s eta 0:00:00
+32.5s	14	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.0/77.0 kB 5.9 MB/s eta 0:00:00
+33.9s	15	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.1/63.1 kB 3.6 MB/s eta 0:00:00
+34.1s	16	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.1/63.1 kB 3.6 MB/s eta 0:00:00
+34.5s	17	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.7/73.7 kB 5.4 MB/s eta 0:00:00
+34.7s	18	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.7/73.7 kB 5.4 MB/s eta 0:00:00
+34.8s	19	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 26.5/26.5 MB 68.8 MB/s eta 0:00:00
+34.8s	20	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 81.0 MB/s eta 0:00:00
+34.9s	21	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 88.2 MB/s eta 0:00:00
+34.9s	22	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.4/96.4 kB 7.5 MB/s eta 0:00:00
+35.0s	23	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 26.5/26.5 MB 68.8 MB/s eta 0:00:00
+35.0s	24	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 81.0 MB/s eta 0:00:00
+35.0s	25	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 88.2 MB/s eta 0:00:00
+35.0s	26	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.4/96.4 kB 7.5 MB/s eta 0:00:00
+43.2s	27	nnunetv2 installed
+44.9s	28	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.2/49.2 kB 2.9 MB/s eta 0:00:00
+45.1s	29	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.2/49.2 kB 2.9 MB/s eta 0:00:00
+46.1s	30	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.4/54.4 kB 3.5 MB/s eta 0:00:00
+46.3s	31	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.4/54.4 kB 3.5 MB/s eta 0:00:00
+47.2s	32	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.0/50.0 kB 3.0 MB/s eta 0:00:00
+47.4s	33	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.0/50.0 kB 3.0 MB/s eta 0:00:00
+47.7s	34	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.6/43.6 kB 3.1 MB/s eta 0:00:00
+47.9s	35	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.6/43.6 kB 3.1 MB/s eta 0:00:00
+48.4s	36	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.4/48.4 kB 3.3 MB/s eta 0:00:00
+48.6s	37	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.4/48.4 kB 3.3 MB/s eta 0:00:00
+49.8s	38	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.8/53.8 kB 3.3 MB/s eta 0:00:00
+49.8s	39	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 266.5/266.5 kB 17.4 MB/s eta 0:00:00
+49.8s	40	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 48.2 MB/s eta 0:00:00
+50.0s	41	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.8/53.8 kB 3.3 MB/s eta 0:00:00
+50.0s	42	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 266.5/266.5 kB 17.4 MB/s eta 0:00:00
+50.0s	43	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 48.2 MB/s eta 0:00:00
+50.7s	44	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.9/80.9 MB 23.1 MB/s eta 0:00:00
+50.9s	45	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.9/80.9 MB 23.1 MB/s eta 0:00:00
+51.4s	46	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.8/67.8 MB 26.8 MB/s eta 0:00:00
+51.6s	47	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.8/67.8 MB 26.8 MB/s eta 0:00:00
+51.6s	48	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.0/28.0 MB 61.0 MB/s eta 0:00:00
+51.8s	49	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.0/28.0 MB 61.0 MB/s eta 0:00:00
+52.2s	50	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.2/57.2 MB 29.8 MB/s eta 0:00:00
+52.4s	51	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.2/57.2 MB 29.8 MB/s eta 0:00:00
+52.5s	52	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.5/28.5 MB 61.0 MB/s eta 0:00:00
+52.6s	53	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.9/15.9 MB 94.1 MB/s eta 0:00:00
+52.7s	54	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.5/28.5 MB 61.0 MB/s eta 0:00:00
+52.7s	55	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.9/15.9 MB 94.1 MB/s eta 0:00:00
+52.7s	56	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.5/10.5 MB 104.1 MB/s eta 0:00:00
+52.8s	57	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 91.3 MB/s eta 0:00:00
+52.8s	58	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 68.0 MB/s eta 0:00:00
+52.8s	59	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 62.8 MB/s eta 0:00:00
+52.9s	60	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 115.9/115.9 kB 8.5 MB/s eta 0:00:00
+52.9s	61	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 333.1/333.1 kB 23.0 MB/s eta 0:00:00
+52.9s	62	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.5/10.5 MB 104.1 MB/s eta 0:00:00
+52.9s	63	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 91.3 MB/s eta 0:00:00
+52.9s	64	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 68.0 MB/s eta 0:00:00
+52.9s	65	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 62.8 MB/s eta 0:00:00
+52.9s	66	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 115.9/115.9 kB 8.5 MB/s eta 0:00:00
+52.9s	67	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 333.1/333.1 kB 23.0 MB/s eta 0:00:00
+52.9s	68	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 86.8 MB/s eta 0:00:00
+53.1s	69	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 86.8 MB/s eta 0:00:00
+53.7s	70	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.4/61.4 MB 28.9 MB/s eta 0:00:00
+53.7s	71	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.5/87.5 kB 6.6 MB/s eta 0:00:00
+53.7s	72	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 199.5/199.5 kB 13.4 MB/s eta 0:00:00
+53.7s	73	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 295.7/295.7 kB 19.3 MB/s eta 0:00:00
+53.8s	74	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.9/114.9 kB 9.3 MB/s eta 0:00:00
+53.9s	75	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 208.4/208.4 kB 15.7 MB/s eta 0:00:00
+53.9s	76	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.4/61.4 MB 28.9 MB/s eta 0:00:00
+53.9s	77	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.5/87.5 kB 6.6 MB/s eta 0:00:00
+53.9s	78	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 199.5/199.5 kB 13.4 MB/s eta 0:00:00
+53.9s	79	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 295.7/295.7 kB 19.3 MB/s eta 0:00:00
+53.9s	80	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.9/114.9 kB 9.3 MB/s eta 0:00:00
+53.9s	81	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 208.4/208.4 kB 15.7 MB/s eta 0:00:00
+53.9s	82	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.0/77.0 kB 5.2 MB/s eta 0:00:00
+53.9s	83	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.3/56.3 kB 3.4 MB/s eta 0:00:00
+54.0s	84	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.2/9.2 MB 97.8 MB/s eta 0:00:00
+54.1s	85	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.2/132.2 kB 9.5 MB/s eta 0:00:00
+54.1s	86	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.0/77.0 kB 5.2 MB/s eta 0:00:00
+54.1s	87	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.3/56.3 kB 3.4 MB/s eta 0:00:00
+54.1s	88	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.2/9.2 MB 97.8 MB/s eta 0:00:00
+54.1s	89	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.2/132.2 kB 9.5 MB/s eta 0:00:00
+54.2s	90	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 857.5/857.5 kB 47.2 MB/s eta 0:00:00
+54.2s	91	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 207.3/207.3 kB 16.0 MB/s eta 0:00:00
+54.4s	92	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 857.5/857.5 kB 47.2 MB/s eta 0:00:00
+54.4s	93	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 207.3/207.3 kB 16.0 MB/s eta 0:00:00
+101.1s	94	ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+101.1s	95	pytensor 2.38.0 requires filelock>=3.15, but you have filelock 3.11.0 which is incompatible.
+101.3s	96	ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+101.3s	97	pytensor 2.38.0 requires filelock>=3.15, but you have filelock 3.11.0 which is incompatible.
+101.3s	98	
+101.3s	99	ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+101.3s	100	pytensor 2.38.0 requires filelock>=3.15, but you have filelock 3.11.0 which is incompatible.
+194.5s	101	2026-04-22 18:01:59.871771: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+194.5s	102	WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+194.5s	103	E0000 00:00:1776880920.094980      23 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+194.5s	104	E0000 00:00:1776880920.175786      23 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+194.5s	105	W0000 00:00:1776880920.709503      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+194.5s	106	W0000 00:00:1776880920.709569      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+194.5s	107	W0000 00:00:1776880920.709572      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+194.5s	108	W0000 00:00:1776880920.709574      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+194.7s	109	2026-04-22 18:01:59.871771: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+194.7s	110	WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+194.7s	111	E0000 00:00:1776880920.094980      23 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+194.7s	112	E0000 00:00:1776880920.175786      23 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+194.7s	113	W0000 00:00:1776880920.709503      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+194.7s	114	W0000 00:00:1776880920.709569      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+194.7s	115	W0000 00:00:1776880920.709572      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+194.7s	116	W0000 00:00:1776880920.709574      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+194.7s	117	
+194.7s	118	2026-04-22 18:01:59.871771: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+194.7s	119	WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+194.7s	120	E0000 00:00:1776880920.094980      23 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+194.7s	121	E0000 00:00:1776880920.175786      23 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+194.7s	122	W0000 00:00:1776880920.709503      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+194.7s	123	W0000 00:00:1776880920.709569      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+194.7s	124	W0000 00:00:1776880920.709572      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+194.7s	125	W0000 00:00:1776880920.709574      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+208.7s	126	MONAI 1.5.2 | PyTorch 2.10.0+cu128 | Device: cuda
+208.7s	127	GPU: Tesla T4 | Total memory: 15.6 GB
+208.7s	128	Disk free: 20.9 GB (need ~2GB for checkpoints)
+208.8s	129	BraTS 2024 Label mapping: WT=1+2+3 | TC=1+3 | ET=3
+208.8s	130	  1=NETC  2=SNFH  3=ET  4=RC(excluded)
+222.7s	131	  Created 8105 symlinks in datasets
+222.7s	132	NIFTI_ROOT: /kaggle/working/nifti_links
+222.7s	133	  Split metadata: 731 patients from scan_index.json
+222.8s	134	Total scans: 1621 from /kaggle/working/nifti_links
+222.8s	135	Train: 1324 scans | Val: 297 scans
+222.8s	136	Transforms ready (3-channel: WT/TC/ET)
+223.0s	137	Validating scans (gzip header check)...
+286.0s	138	Train dicts: 1324 | Val dicts: 297
+286.0s	139	  Sample: /kaggle/working/nifti_links/BraTS-GLI-00005-100/BraTS-GLI-00005-100-t1n.nii.gz
+286.0s	140	  Exists: True
+286.2s	141	=======================================================
+286.2s	142	  Loading nnUNet v2 pretrained model
+286.2s	143	  Target: WT=0.9005  TC=0.8673  ET=0.8509 (BraTS 2021)
+286.2s	144	=======================================================
+287.0s	145	Checkpoint: /kaggle/input/datasets/zinou123viva/brats2024-pretrained-weights/Dataset002_BRATS19/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/checkpoint_final.pth
+287.0s	146	Plans:      /kaggle/input/datasets/zinou123viva/brats2024-pretrained-weights/Dataset002_BRATS19/nnUNetTrainer__nnUNetPlans__3d_fullres/plans.json
+287.0s	147	  PlainConvUNet | 6 stages | features: [32, 64, 128, 256, 320, 320]
+287.0s	148	  strides: [[1, 1, 1], [2, 2, 2], [2, 2, 2], [2, 2, 2], [2, 2, 2], [2, 2, 1]]
+287.0s	149	  Imported from dynamic_network_architectures.architectures.unet
+289.9s	150	  Pretrained: 209/219 layers loaded | 30.8M params
+290.0s	151	Model on cuda
+294.0s	152	Fine-tuning nnUNet on BraTS 2024 Post-Treatment...
+294.0s	153	
+Loading dataset:   0%|          | 0/66 [00:00<?, ?it/s]
+296.8s	154	
+Loading dataset:   0%|          | 0/66 [00:00<?, ?it/s]
+Loading dataset:   2%|▏         | 1/66 [00:02<03:01,  2.80s/it]
+296.9s	155	
+Loading dataset:   2%|▏         | 1/66 [00:02<03:01,  2.80s/it]
+Loading dataset:   5%|▍         | 3/66 [00:02<00:49,  1.27it/s]
+299.4s	156	
+Loading dataset:   5%|▍         | 3/66 [00:02<00:49,  1.27it/s]
+Loading dataset:   8%|▊         | 5/66 [00:05<01:01,  1.02s/it]
+299.6s	157	
+Loading dataset:   8%|▊         | 5/66 [00:05<01:01,  1.02s/it]
+Loading dataset:  12%|█▏        | 8/66 [00:05<00:30,  1.93it/s]
+301.4s	158	
+Loading dataset:  12%|█▏        | 8/66 [00:05<00:30,  1.93it/s]
+Loading dataset:  14%|█▎        | 9/66 [00:07<00:44,  1.29it/s]
+301.7s	159	
+Loading dataset:  14%|█▎        | 9/66 [00:07<00:44,  1.29it/s]
+Loading dataset:  15%|█▌        | 10/66 [00:07<00:37,  1.49it/s]
+302.3s	160	
+Loading dataset:  15%|█▌        | 10/66 [00:07<00:37,  1.49it/s]
+Loading dataset:  17%|█▋        | 11/66 [00:08<00:35,  1.55it/s]
+304.1s	161	
+Loading dataset:  17%|█▋        | 11/66 [00:08<00:35,  1.55it/s]
+Loading dataset:  20%|█▉        | 13/66 [00:10<00:40,  1.32it/s]
+304.5s	162	
+Loading dataset:  20%|█▉        | 13/66 [00:10<00:40,  1.32it/s]
+Loading dataset:  21%|██        | 14/66 [00:10<00:35,  1.48it/s]
+304.9s	163	
+Loading dataset:  21%|██        | 14/66 [00:10<00:35,  1.48it/s]
+Loading dataset:  23%|██▎       | 15/66 [00:10<00:30,  1.67it/s]
+306.3s	164	
+Loading dataset:  23%|██▎       | 15/66 [00:10<00:30,  1.67it/s]
+Loading dataset:  26%|██▌       | 17/66 [00:12<00:31,  1.53it/s]
+306.7s	165	
+Loading dataset:  26%|██▌       | 17/66 [00:12<00:31,  1.53it/s]
+Loading dataset:  27%|██▋       | 18/66 [00:12<00:28,  1.68it/s]
+307.5s	166	
+Loading dataset:  27%|██▋       | 18/66 [00:12<00:28,  1.68it/s]
+Loading dataset:  29%|██▉       | 19/66 [00:13<00:30,  1.54it/s]
+307.7s	167	
+Loading dataset:  29%|██▉       | 19/66 [00:13<00:30,  1.54it/s]
+Loading dataset:  30%|███       | 20/66 [00:13<00:24,  1.88it/s]
+309.3s	168	
+Loading dataset:  30%|███       | 20/66 [00:13<00:24,  1.88it/s]
+Loading dataset:  33%|███▎      | 22/66 [00:15<00:28,  1.56it/s]
+310.0s	169	
+Loading dataset:  33%|███▎      | 22/66 [00:15<00:28,  1.56it/s]
+Loading dataset:  35%|███▍      | 23/66 [00:16<00:28,  1.52it/s]
+310.1s	170	
+Loading dataset:  35%|███▍      | 23/66 [00:16<00:28,  1.52it/s]
+Loading dataset:  38%|███▊      | 25/66 [00:16<00:17,  2.39it/s]
+311.8s	171	
+Loading dataset:  38%|███▊      | 25/66 [00:16<00:17,  2.39it/s]
+Loading dataset:  39%|███▉      | 26/66 [00:17<00:27,  1.46it/s]
+312.9s	172	
+Loading dataset:  39%|███▉      | 26/66 [00:17<00:27,  1.46it/s]
+Loading dataset:  41%|████      | 27/66 [00:18<00:30,  1.28it/s]
+314.2s	173	
+Loading dataset:  41%|████      | 27/66 [00:18<00:30,  1.28it/s]
+Loading dataset:  45%|████▌     | 30/66 [00:20<00:22,  1.63it/s]
+315.6s	174	
+Loading dataset:  45%|████▌     | 30/66 [00:20<00:22,  1.63it/s]
+Loading dataset:  47%|████▋     | 31/66 [00:21<00:27,  1.29it/s]
+316.7s	175	
+Loading dataset:  47%|████▋     | 31/66 [00:21<00:27,  1.29it/s]
+Loading dataset:  52%|█████▏    | 34/66 [00:22<00:18,  1.73it/s]
+318.5s	176	
+Loading dataset:  52%|█████▏    | 34/66 [00:22<00:18,  1.73it/s]
+Loading dataset:  53%|█████▎    | 35/66 [00:24<00:24,  1.25it/s]
+319.2s	177	
+Loading dataset:  53%|█████▎    | 35/66 [00:24<00:24,  1.25it/s]
+Loading dataset:  58%|█████▊    | 38/66 [00:25<00:15,  1.80it/s]
+320.6s	178	
+Loading dataset:  58%|█████▊    | 38/66 [00:25<00:15,  1.80it/s]
+Loading dataset:  59%|█████▉    | 39/66 [00:26<00:18,  1.43it/s]
+321.0s	179	
+Loading dataset:  59%|█████▉    | 39/66 [00:26<00:18,  1.43it/s]
+Loading dataset:  62%|██████▏   | 41/66 [00:27<00:13,  1.88it/s]
+321.7s	180	
+Loading dataset:  62%|██████▏   | 41/66 [00:27<00:13,  1.88it/s]
+Loading dataset:  64%|██████▎   | 42/66 [00:27<00:13,  1.78it/s]
+323.4s	181	
+Loading dataset:  64%|██████▎   | 42/66 [00:27<00:13,  1.78it/s]
+Loading dataset:  65%|██████▌   | 43/66 [00:29<00:18,  1.25it/s]
+323.7s	182	
+Loading dataset:  65%|██████▌   | 43/66 [00:29<00:18,  1.25it/s]
+Loading dataset:  68%|██████▊   | 45/66 [00:29<00:11,  1.78it/s]
+324.1s	183	
+Loading dataset:  68%|██████▊   | 45/66 [00:29<00:11,  1.78it/s]
+Loading dataset:  70%|██████▉   | 46/66 [00:30<00:10,  1.92it/s]
+325.9s	184	
+Loading dataset:  70%|██████▉   | 46/66 [00:30<00:10,  1.92it/s]
+Loading dataset:  71%|███████   | 47/66 [00:31<00:15,  1.21it/s]
+326.1s	185	
+Loading dataset:  71%|███████   | 47/66 [00:31<00:15,  1.21it/s]
+Loading dataset:  74%|███████▍  | 49/66 [00:32<00:09,  1.86it/s]
+326.4s	186	
+Loading dataset:  74%|███████▍  | 49/66 [00:32<00:09,  1.86it/s]
+Loading dataset:  76%|███████▌  | 50/66 [00:32<00:07,  2.06it/s]
+328.7s	187	
+Loading dataset:  76%|███████▌  | 50/66 [00:32<00:07,  2.06it/s]
+Loading dataset:  77%|███████▋  | 51/66 [00:34<00:13,  1.09it/s]
+328.8s	188	
+Loading dataset:  77%|███████▋  | 51/66 [00:34<00:13,  1.09it/s]
+Loading dataset:  82%|████████▏ | 54/66 [00:34<00:05,  2.11it/s]
+331.6s	189	
+Loading dataset:  82%|████████▏ | 54/66 [00:34<00:05,  2.11it/s]
+Loading dataset:  83%|████████▎ | 55/66 [00:37<00:10,  1.08it/s]
+334.4s	190	
+Loading dataset:  83%|████████▎ | 55/66 [00:37<00:10,  1.08it/s]
+Loading dataset:  89%|████████▉ | 59/66 [00:40<00:05,  1.25it/s]
+334.5s	191	
+Loading dataset:  89%|████████▉ | 59/66 [00:40<00:05,  1.25it/s]
+Loading dataset:  91%|█████████ | 60/66 [00:40<00:04,  1.44it/s]
+337.1s	192	
+Loading dataset:  91%|█████████ | 60/66 [00:40<00:04,  1.44it/s]
+Loading dataset:  95%|█████████▌| 63/66 [00:43<00:02,  1.30it/s]
+337.1s	193	
+Loading dataset:  95%|█████████▌| 63/66 [00:43<00:02,  1.30it/s]
+Loading dataset: 100%|██████████| 66/66 [00:43<00:00,  1.53it/s]
+337.1s	194	Using CacheDataset (5% RAM cache)
+337.1s	195	Train: 1324 batches | Val: 297 batches
+337.1s	196	Expected ~20 min/epoch x 28 epochs ~ 9.3h total
+337.1s	197	
+Loading dataset: 100%|██████████| 66/66 [00:43<00:00,  1.53it/s]
+337.1s	198	
+337.1s	199	
+1483.8s	200	Ep   0 | L=0.9477 | LR=2.00e-05 | 19.8m | skipped 1
+2717.8s	201	Ep   1 | L=0.9180 | LR=4.00e-05 | 40.4m | skipped 1
+3964.7s	202	Ep   2 | L=0.8296 | LR=6.00e-05 | 61.2m | skipped 1
+6109.1s	203	Ep   3 | L=0.6713 | Dice=0.7332 WT=0.831 TC=0.686 ET=0.682 | 96.9m NEW BEST | skipped 1
+7373.9s	204	Ep   4 | L=0.4706 | LR=1.00e-04 | 118.0m | skipped 1
+8620.3s	205	Ep   5 | L=0.3756 | LR=1.00e-04 | 138.8m | skipped 1
+9857.2s	206	Ep   6 | L=0.3493 | LR=9.95e-05 | 159.4m | skipped 1
+12056.7s	207	Ep   7 | L=0.3361 | Dice=0.7965 WT=0.844 TC=0.770 ET=0.776 | 196.0m NEW BEST | skipped 1
+13311.3s	208	Ep   8 | L=0.3308 | LR=9.59e-05 | 217.0m | skipped 1
+14572.5s	209	Ep   9 | L=0.3231 | LR=9.27e-05 | 238.0m | skipped 1
+15826.8s	210	Ep  10 | L=0.3186 | LR=8.88e-05 | 258.9m | skipped 1
+18006.5s	211	Ep  11 | L=0.3171 | Dice=0.8039 WT=0.856 TC=0.774 ET=0.782 | 295.2m NEW BEST | skipped 1
+19231.9s	212	Ep  12 | L=0.3100 | LR=7.88e-05 | 315.6m | skipped 1
+20477.0s	213	Ep  13 | L=0.3079 | LR=7.30e-05 | 336.4m | skipped 1
+21690.8s	214	Ep  14 | L=0.3022 | LR=6.67e-05 | 356.6m | skipped 1
+23927.4s	215	Ep  15 | L=0.2999 | Dice=0.8044 WT=0.857 TC=0.774 ET=0.782 | 393.9m NEW BEST | skipped 1
+25205.1s	216	Ep  16 | L=0.2953 | LR=5.34e-05 | 415.2m | skipped 1
+26460.2s	217	Ep  17 | L=0.2925 | LR=4.66e-05 | 436.1m | skipped 1
+27708.0s	218	Ep  18 | L=0.2915 | LR=3.98e-05 | 456.9m | skipped 1
+29956.5s	219	Ep  19 | L=0.2900 | Dice=0.8103 WT=0.861 TC=0.781 ET=0.789 | 494.4m NEW BEST | skipped 1
+31251.9s	220	Ep  20 | L=0.2884 | LR=2.70e-05 | 516.0m | skipped 1
+32557.7s	221	Ep  21 | L=0.2838 | LR=2.12e-05 | 537.7m | skipped 1
+33876.2s	222	Ep  22 | L=0.2810 | LR=1.59e-05 | 559.7m | skipped 1
+36174.8s	223	Ep  23 | L=0.2807 | Dice=0.8142 WT=0.863 TC=0.787 ET=0.793 | 598.0m NEW BEST | skipped 1
+37431.1s	224	Ep  24 | L=0.2771 | LR=7.28e-06 | 618.9m | skipped 1
+38648.0s	225	Ep  25 | L=0.2773 | LR=4.14e-06 | 639.2m | skipped 1
+39901.2s	226	Ep  26 | L=0.2756 | LR=1.85e-06 | 660.1m | skipped 1
+42117.9s	227	Ep  27 | L=0.2765 | Dice=0.8150 WT=0.864 TC=0.787 ET=0.794 | 697.1m NEW BEST | skipped 1
+42118.4s	228	Done. Best Mean Dice = 0.8150
+42118.4s	229	  Target: WT=0.900 TC=0.867 ET=0.851 (BraTS 2021 benchmark)
+42118.8s	230	  Loaded BEST checkpoint → epoch 27 | Dice 0.8150
+42122.8s	231	Traceback (most recent call last):
+42122.8s	232	  File "<string>", line 1, in <module>
+42122.8s	233	  File "/usr/local/lib/python3.12/dist-packages/papermill/execute.py", line 131, in execute_notebook
+42122.8s	234	    raise_for_execution_errors(nb, output_path)
+42122.8s	235	  File "/usr/local/lib/python3.12/dist-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+42122.8s	236	    raise error
+42122.8s	237	papermill.exceptions.PapermillExecutionError: 
+42122.8s	238	---------------------------------------------------------------------------
+42122.8s	239	Exception encountered at "In [9]":
+42122.8s	240	---------------------------------------------------------------------------
+42122.8s	241	NameError                                 Traceback (most recent call last)
+42122.8s	242	/tmp/ipykernel_23/425921040.py in <cell line: 0>()
+42122.8s	243	     15 else:
+42122.8s	244	     16     print('  BEST checkpoint not found — using current weights')
+42122.8s	245	---> 17 gc.collect(); torch.cuda.empty_cache()
+42122.8s	246	     18 print(f'  VRAM free: {(torch.cuda.get_device_properties(0).total_memory - torch.cuda.memory_allocated())/1e9:.1f} GB')
+42122.8s	247	     19 
+42122.8s	248	
+42122.8s	249	NameError: name 'gc' is not defined
+42122.8s	250	
+42126.1s	251	/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+42126.1s	252	  cells[i][c] = re.sub('\\\\\|', '|', cell)
+42126.4s	253	/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+42126.4s	254	  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+42128.0s	255	[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+42128.3s	256	[NbConvertApp] Writing 70514 bytes to __notebook__.ipynb
+42130.8s	257	[NbConvertApp] Converting notebook __notebook__.ipynb to html
+42132.2s	258	[NbConvertApp] Writing 512064 bytes to __results__.html

@@ -1,0 +1,377 @@
+6.5s	1	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.5s	2	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.5s	3	0.00s - to python to disable frozen modules.
+6.5s	4	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+7.1s	5	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.1s	6	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.1s	7	0.00s - to python to disable frozen modules.
+7.1s	8	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+12.4s	9	Model: nnunet | Patch: [128, 128, 128] | Regions: ['WT', 'TC', 'ET']
+12.6s	10	Installing nnunetv2 ...
+14.5s	11	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 205.6/205.6 kB 5.1 MB/s eta 0:00:00
+14.7s	12	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 205.6/205.6 kB 5.1 MB/s eta 0:00:00
+29.8s	13	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.0/77.0 kB 6.3 MB/s eta 0:00:00
+30.0s	14	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.0/77.0 kB 6.3 MB/s eta 0:00:00
+31.5s	15	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.1/63.1 kB 4.3 MB/s eta 0:00:00
+31.7s	16	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.1/63.1 kB 4.3 MB/s eta 0:00:00
+32.2s	17	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.7/73.7 kB 5.8 MB/s eta 0:00:00
+32.4s	18	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.7/73.7 kB 5.8 MB/s eta 0:00:00
+32.5s	19	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 26.5/26.5 MB 67.1 MB/s eta 0:00:00
+32.6s	20	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 82.3 MB/s eta 0:00:00
+32.7s	21	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 26.5/26.5 MB 67.1 MB/s eta 0:00:00
+32.7s	22	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 82.3 MB/s eta 0:00:00
+32.7s	23	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 44.5 MB/s eta 0:00:00
+32.7s	24	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.4/96.4 kB 8.9 MB/s eta 0:00:00
+32.9s	25	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 44.5 MB/s eta 0:00:00
+32.9s	26	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.4/96.4 kB 8.9 MB/s eta 0:00:00
+40.6s	27	nnunetv2 installed
+42.5s	28	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.2/49.2 kB 3.1 MB/s eta 0:00:00
+42.7s	29	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.2/49.2 kB 3.1 MB/s eta 0:00:00
+43.8s	30	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.4/54.4 kB 3.5 MB/s eta 0:00:00
+44.0s	31	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.4/54.4 kB 3.5 MB/s eta 0:00:00
+45.2s	32	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.0/50.0 kB 1.4 MB/s eta 0:00:00
+45.4s	33	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.0/50.0 kB 1.4 MB/s eta 0:00:00
+45.8s	34	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.6/43.6 kB 3.2 MB/s eta 0:00:00
+46.0s	35	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.6/43.6 kB 3.2 MB/s eta 0:00:00
+46.5s	36	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.4/48.4 kB 3.4 MB/s eta 0:00:00
+46.7s	37	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.4/48.4 kB 3.4 MB/s eta 0:00:00
+48.1s	38	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.8/53.8 kB 3.9 MB/s eta 0:00:00
+48.1s	39	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 266.5/266.5 kB 9.0 MB/s eta 0:00:00
+48.2s	40	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 32.3 MB/s eta 0:00:00
+48.3s	41	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.8/53.8 kB 3.9 MB/s eta 0:00:00
+48.3s	42	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 266.5/266.5 kB 9.0 MB/s eta 0:00:00
+48.3s	43	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 32.3 MB/s eta 0:00:00
+49.7s	44	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 81.4/81.4 MB 19.9 MB/s eta 0:00:00
+49.9s	45	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 81.4/81.4 MB 19.9 MB/s eta 0:00:00
+50.9s	46	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.8/67.8 MB 23.6 MB/s eta 0:00:00
+51.1s	47	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.8/67.8 MB 23.6 MB/s eta 0:00:00
+51.5s	48	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.0/28.0 MB 40.6 MB/s eta 0:00:00
+51.7s	49	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.0/28.0 MB 40.6 MB/s eta 0:00:00
+52.4s	50	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.2/57.2 MB 26.7 MB/s eta 0:00:00
+52.6s	51	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.2/57.2 MB 26.7 MB/s eta 0:00:00
+53.1s	52	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.5/28.5 MB 29.2 MB/s eta 0:00:00
+53.3s	53	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.5/28.5 MB 29.2 MB/s eta 0:00:00
+53.4s	54	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.9/15.9 MB 51.7 MB/s eta 0:00:00
+53.5s	55	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.5/10.5 MB 90.2 MB/s eta 0:00:00
+53.6s	56	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 70.3 MB/s eta 0:00:00
+53.6s	57	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.9/15.9 MB 51.7 MB/s eta 0:00:00
+53.6s	58	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.5/10.5 MB 90.2 MB/s eta 0:00:00
+53.6s	59	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 70.3 MB/s eta 0:00:00
+53.6s	60	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 62.4 MB/s eta 0:00:00
+53.7s	61	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 36.0 MB/s eta 0:00:00
+53.7s	62	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 115.9/115.9 kB 9.3 MB/s eta 0:00:00
+53.8s	63	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 333.1/333.1 kB 24.5 MB/s eta 0:00:00
+53.8s	64	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 64.5 MB/s eta 0:00:00
+53.8s	65	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 62.4 MB/s eta 0:00:00
+53.8s	66	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 36.0 MB/s eta 0:00:00
+53.8s	67	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 115.9/115.9 kB 9.3 MB/s eta 0:00:00
+53.8s	68	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 333.1/333.1 kB 24.5 MB/s eta 0:00:00
+54.0s	69	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 64.5 MB/s eta 0:00:00
+55.1s	70	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.4/61.4 MB 24.9 MB/s eta 0:00:00
+55.1s	71	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.5/87.5 kB 7.7 MB/s eta 0:00:00
+55.2s	72	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 199.5/199.5 kB 13.8 MB/s eta 0:00:00
+55.2s	73	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 295.7/295.7 kB 18.3 MB/s eta 0:00:00
+55.3s	74	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.4/61.4 MB 24.9 MB/s eta 0:00:00
+55.3s	75	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.5/87.5 kB 7.7 MB/s eta 0:00:00
+55.3s	76	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 199.5/199.5 kB 13.8 MB/s eta 0:00:00
+55.3s	77	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 295.7/295.7 kB 18.3 MB/s eta 0:00:00
+55.3s	78	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.9/114.9 kB 8.9 MB/s eta 0:00:00
+55.3s	79	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 208.4/208.4 kB 16.5 MB/s eta 0:00:00
+55.4s	80	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.0/77.0 kB 5.4 MB/s eta 0:00:00
+55.4s	81	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.3/56.3 kB 4.6 MB/s eta 0:00:00
+55.5s	82	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.9/114.9 kB 8.9 MB/s eta 0:00:00
+55.5s	83	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 208.4/208.4 kB 16.5 MB/s eta 0:00:00
+55.5s	84	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.0/77.0 kB 5.4 MB/s eta 0:00:00
+55.5s	85	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.3/56.3 kB 4.6 MB/s eta 0:00:00
+55.6s	86	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.2/9.2 MB 90.0 MB/s eta 0:00:00
+55.6s	87	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.2/132.2 kB 11.7 MB/s eta 0:00:00
+55.8s	88	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.2/9.2 MB 90.0 MB/s eta 0:00:00
+55.8s	89	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.2/132.2 kB 11.7 MB/s eta 0:00:00
+55.8s	90	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 866.2/866.2 kB 47.8 MB/s eta 0:00:00
+55.8s	91	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 207.3/207.3 kB 10.8 MB/s eta 0:00:00
+56.0s	92	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 866.2/866.2 kB 47.8 MB/s eta 0:00:00
+56.0s	93	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 207.3/207.3 kB 10.8 MB/s eta 0:00:00
+94.7s	94	ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+94.7s	95	pytensor 2.38.0 requires filelock>=3.15, but you have filelock 3.11.0 which is incompatible.
+94.9s	96	ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+94.9s	97	pytensor 2.38.0 requires filelock>=3.15, but you have filelock 3.11.0 which is incompatible.
+94.9s	98	
+94.9s	99	ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+94.9s	100	pytensor 2.38.0 requires filelock>=3.15, but you have filelock 3.11.0 which is incompatible.
+184.9s	101	2026-04-24 01:52:04.766926: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+184.9s	102	WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+184.9s	103	E0000 00:00:1776995524.937461      23 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+184.9s	104	E0000 00:00:1776995524.990541      23 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+184.9s	105	W0000 00:00:1776995525.402751      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+184.9s	106	W0000 00:00:1776995525.402786      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+184.9s	107	W0000 00:00:1776995525.402789      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+184.9s	108	W0000 00:00:1776995525.402791      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+185.1s	109	2026-04-24 01:52:04.766926: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+185.1s	110	WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+185.1s	111	E0000 00:00:1776995524.937461      23 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+185.1s	112	E0000 00:00:1776995524.990541      23 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+185.1s	113	W0000 00:00:1776995525.402751      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+185.1s	114	W0000 00:00:1776995525.402786      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+185.1s	115	W0000 00:00:1776995525.402789      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+185.1s	116	W0000 00:00:1776995525.402791      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+185.1s	117	
+185.1s	118	2026-04-24 01:52:04.766926: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+185.1s	119	WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+185.1s	120	E0000 00:00:1776995524.937461      23 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+185.1s	121	E0000 00:00:1776995524.990541      23 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+185.1s	122	W0000 00:00:1776995525.402751      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+185.1s	123	W0000 00:00:1776995525.402786      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+185.1s	124	W0000 00:00:1776995525.402789      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+185.1s	125	W0000 00:00:1776995525.402791      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+197.6s	126	MONAI 1.5.2 | PyTorch 2.10.0+cu128 | Device: cuda
+197.6s	127	GPU: Tesla T4 | Total memory: 15.6 GB
+197.6s	128	Disk free: 20.9 GB (need ~2GB for checkpoints)
+197.6s	129	BraTS 2024 Label mapping: WT=1+2+3 | TC=1+3 | ET=3
+197.6s	130	  1=NETC  2=SNFH  3=ET  4=RC(excluded)
+208.4s	131	  Created 8105 symlinks in datasets
+208.4s	132	NIFTI_ROOT: /kaggle/working/nifti_links
+208.4s	133	  Split metadata: 731 patients from scan_index.json
+208.5s	134	Total scans: 1621 from /kaggle/working/nifti_links
+208.5s	135	Train: 1324 scans | Val: 297 scans
+208.5s	136	Transforms ready (3-channel: WT/TC/ET)
+208.7s	137	Validating scans (gzip header check)...
+266.0s	138	Train dicts: 1324 | Val dicts: 297
+266.0s	139	  Sample: /kaggle/working/nifti_links/BraTS-GLI-00005-100/BraTS-GLI-00005-100-t1n.nii.gz
+266.0s	140	  Exists: True
+266.2s	141	=======================================================
+266.2s	142	  Loading nnUNet v2 pretrained model
+266.2s	143	  Target: WT=0.9005  TC=0.8673  ET=0.8509 (BraTS 2021)
+266.2s	144	=======================================================
+269.1s	145	Checkpoint: /kaggle/input/datasets/mohamedmohamed23/brats2024-pretrained-weights/nnunet_v2/Dataset002_BRATS19/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/checkpoint_final.pth
+269.1s	146	Plans:      /kaggle/input/datasets/mohamedmohamed23/brats2024-pretrained-weights/nnunet_v2/Dataset002_BRATS19/nnUNetTrainer__nnUNetPlans__3d_fullres/plans.json
+269.1s	147	  PlainConvUNet | 6 stages | features: [32, 64, 128, 256, 320, 320]
+269.1s	148	  strides: [[1, 1, 1], [2, 2, 2], [2, 2, 2], [2, 2, 2], [2, 2, 2], [2, 2, 1]]
+269.1s	149	  Imported from dynamic_network_architectures.architectures.unet
+271.6s	150	  Pretrained: 209/219 layers loaded | 30.8M params
+271.7s	151	Model on cuda
+274.9s	152	  Recovered BEST checkpoint from /kaggle/input/datasets/mohamedmohamed23/nnunet-brats2024-correct-lables/nnunet_best.pth
+277.6s	153	  Recovered LATEST checkpoint from /kaggle/input/datasets/mohamedmohamed23/nnunet-brats2024-correct-lables/nnunet_latest.pth
+277.6s	154	  ✅ Checkpoints recovered — training will be skipped
+277.6s	155	Fine-tuning nnUNet on BraTS 2024 Post-Treatment...
+277.6s	156	Resumed from epoch 27, best_dice=0.8150
+278.6s	157	  Loaded BEST checkpoint → epoch 27 | Dice 0.8150
+278.6s	158	  VRAM free: 15.5 GB
+278.6s	159	Generating 3D voxel-scatter visualizations (5 random patients)...
+278.6s	160	  Visualising 5 random val patients:
+278.6s	161	    BraTS-GLI-02904 tp=101
+278.6s	162	    BraTS-GLI-02882 tp=100
+278.6s	163	    BraTS-GLI-02954 tp=100
+278.6s	164	    BraTS-GLI-02944 tp=101
+278.6s	165	    BraTS-GLI-02938 tp=100
+285.7s	166	  Saved: nnunet_3d_sample0.png | WT=0.748  TC=NaN(empty GT)  ET=NaN(empty GT)
+293.2s	167	  Saved: nnunet_3d_sample1.png | WT=0.896  TC=NaN(empty GT)  ET=NaN(empty GT)
+299.6s	168	  Saved: nnunet_3d_sample2.png | WT=0.892  TC=NaN(empty GT)  ET=NaN(empty GT)
+311.8s	169	  Saved: nnunet_3d_sample3.png | WT=0.946  TC=0.965  ET=0.927
+319.2s	170	  Saved: nnunet_3d_sample4.png | WT=0.911  TC=0.321  ET=0.330
+319.2s	171	Generating 2D overlay visualizations (5 random patients)...
+324.7s	172	  Saved: nnunet_2d_sample0.png | patient=BraTS-GLI-02914
+330.4s	173	  Saved: nnunet_2d_sample1.png | patient=BraTS-GLI-02902
+336.0s	174	  Saved: nnunet_2d_sample2.png | patient=BraTS-GLI-03053
+341.6s	175	  Saved: nnunet_2d_sample3.png | patient=BraTS-GLI-02898
+347.1s	176	  Saved: nnunet_2d_sample4.png | patient=BraTS-GLI-03006
+347.1s	177	Figures saved to: /kaggle/working/phase2_nnunet/figures
+347.7s	178	Cleaning VRAM before embedding extraction...
+347.9s	179	VRAM free: 15.5 GB
+347.9s	180	
+347.9s	181	Extracting nnUNet embeddings v2 (ROI-crop + octant + volumetric)...
+347.9s	182	  Hook: encoder.stages[3] (Sequential)
+347.9s	183	  Extraction v2: 1621 scans
+347.9s	184	  ────────────────────────────────────────────────────────────
+349.1s	185	  Feature map: (1, 256, 16, 16, 16) → C=256
+349.5s	186	  Embedding: octant=2048 + region=768 + vol=9 = 2825-D
+349.5s	187	  ────────────────────────────────────────────────────────────
+349.5s	188	  [   1/1621] BraTS-GLI-00005                 tp=100  WT= 16790v TC=     0v ET=     0v  ROI=6×6×7  | 0.6/s ETA 41.6m
+363.6s	189	  [  10/1621]  done=10 | 0.6/s ETA 42.2m
+380.0s	190	  [  20/1621]  done=20 | 0.6/s ETA 42.9m
+396.3s	191	  [  30/1621]  done=30 | 0.6/s ETA 42.8m
+412.7s	192	  [  40/1621]  done=40 | 0.6/s ETA 42.7m
+427.9s	193	  [  50/1621] BraTS-GLI-00507                 tp=101  WT= 12791v TC=  1598v ET=  1598v  ROI=4×6×7  | 0.6/s ETA 41.9m
+444.2s	194	  [  60/1621]  done=60 | 0.6/s ETA 41.8m
+460.7s	195	  [  70/1621]  done=70 | 0.6/s ETA 41.7m
+478.8s	196	  [  80/1621]  done=80 | 0.6/s ETA 42.0m
+503.6s	197	  [  90/1621]  done=90 | 0.6/s ETA 44.1m
+527.4s	198	  [ 100/1621] BraTS-GLI-02064                 tp=102  WT= 14680v TC=   816v ET=   816v  ROI=7×11×6  | 0.6/s ETA 45.5m
+552.4s	199	  [ 110/1621]  done=110 | 0.5/s ETA 46.8m
+576.4s	200	  [ 120/1621]  done=120 | 0.5/s ETA 47.6m
+600.0s	201	  [ 130/1621]  done=130 | 0.5/s ETA 48.2m
+623.2s	202	  [ 140/1621]  done=140 | 0.5/s ETA 48.5m
+648.3s	203	  [ 150/1621] BraTS-GLI-02084                 tp=100  WT= 13494v TC=  2431v ET=  2426v  ROI=5×6×6  | 0.5/s ETA 49.1m
+672.7s	204	  [ 160/1621]  done=160 | 0.5/s ETA 49.4m
+696.7s	205	  [ 170/1621]  done=170 | 0.5/s ETA 49.6m
+721.5s	206	  [ 180/1621]  done=180 | 0.5/s ETA 49.8m
+749.1s	207	  [ 190/1621]  done=190 | 0.5/s ETA 50.4m
+773.9s	208	  [ 200/1621] BraTS-GLI-02102                 tp=100  WT=135538v TC= 34881v ET= 26531v  ROI=12×12×11  | 0.5/s ETA 50.4m
+798.8s	209	  [ 210/1621]  done=210 | 0.5/s ETA 50.5m
+823.3s	210	  [ 220/1621]  done=220 | 0.5/s ETA 50.5m
+848.7s	211	  [ 230/1621]  done=230 | 0.5/s ETA 50.5m
+873.1s	212	  [ 240/1621]  done=240 | 0.5/s ETA 50.4m
+895.6s	213	  [ 250/1621] BraTS-GLI-02120                 tp=101  WT= 70910v TC= 22362v ET= 17850v  ROI=8×11×9  | 0.5/s ETA 50.1m
+918.8s	214	  [ 260/1621]  done=260 | 0.5/s ETA 49.8m
+944.0s	215	  [ 270/1621]  done=270 | 0.5/s ETA 49.7m
+968.4s	216	  [ 280/1621]  done=280 | 0.5/s ETA 49.5m
+991.5s	217	  [ 290/1621]  done=290 | 0.5/s ETA 49.2m
+1016.0s	218	  [ 300/1621] BraTS-GLI-02144                 tp=100  WT= 28677v TC=  2067v ET=  2067v  ROI=8×7×7  | 0.4/s ETA 49.0m
+1040.4s	219	  [ 310/1621]  done=310 | 0.4/s ETA 48.8m
+1063.2s	220	  [ 320/1621]  done=320 | 0.4/s ETA 48.5m
+1086.8s	221	  [ 330/1621]  done=330 | 0.4/s ETA 48.2m
+1110.8s	222	  [ 340/1621]  done=340 | 0.4/s ETA 47.9m
+1133.0s	223	  [ 350/1621] BraTS-GLI-02166                 tp=101  WT= 11031v TC=     0v ET=     0v  ROI=6×7×6  | 0.4/s ETA 47.5m
+1156.6s	224	  [ 360/1621]  done=360 | 0.4/s ETA 47.2m
+1180.8s	225	  [ 370/1621]  done=370 | 0.4/s ETA 46.9m
+1206.6s	226	  [ 380/1621]  done=380 | 0.4/s ETA 46.7m
+1232.9s	227	  [ 390/1621]  done=390 | 0.4/s ETA 46.6m
+1260.0s	228	  [ 400/1621] BraTS-GLI-02193                 tp=104  WT= 21334v TC=    30v ET=    30v  ROI=8×8×9  | 0.4/s ETA 46.4m
+1283.9s	229	  [ 410/1621]  done=410 | 0.4/s ETA 46.1m
+1309.5s	230	  [ 420/1621]  done=420 | 0.4/s ETA 45.8m
+1328.3s	231	  [ 430/1621]  done=430 | 0.4/s ETA 45.3m
+1344.2s	232	  [ 440/1621]  done=440 | 0.4/s ETA 44.6m
+1360.1s	233	  [ 450/1621] BraTS-GLI-02208                 tp=101  WT=  2457v TC=  1129v ET=     0v  ROI=9×8×5  | 0.4/s ETA 43.9m
+1375.1s	234	  [ 460/1621]  done=460 | 0.4/s ETA 43.2m
+1389.8s	235	  [ 470/1621]  done=470 | 0.5/s ETA 42.5m
+1404.8s	236	  [ 480/1621]  done=480 | 0.5/s ETA 41.9m
+1419.9s	237	  [ 490/1621]  done=490 | 0.5/s ETA 41.2m
+1434.5s	238	  [ 500/1621] BraTS-GLI-02230                 tp=101  WT= 16339v TC=     0v ET=     0v  ROI=10×6×8  | 0.5/s ETA 40.6m
+1450.0s	239	  [ 510/1621]  done=510 | 0.5/s ETA 40.0m
+1465.6s	240	  [ 520/1621]  done=520 | 0.5/s ETA 39.4m
+1480.7s	241	  [ 530/1621]  done=530 | 0.5/s ETA 38.9m
+1496.2s	242	  [ 540/1621]  done=540 | 0.5/s ETA 38.3m
+1511.9s	243	  [ 550/1621] BraTS-GLI-02248                 tp=104  WT= 46612v TC=     0v ET=     0v  ROI=11×12×10  | 0.5/s ETA 37.8m
+1537.7s	244	  [ 560/1621]  done=560 | 0.5/s ETA 37.6m
+1566.4s	245	  [ 570/1621]  done=570 | 0.5/s ETA 37.4m
+1593.9s	246	  [ 580/1621]  done=580 | 0.5/s ETA 37.3m
+1621.5s	247	  [ 590/1621]  done=590 | 0.5/s ETA 37.1m
+1649.2s	248	  [ 600/1621] BraTS-GLI-02307                 tp=100  WT= 23063v TC=  9834v ET=  9768v  ROI=6×7×7  | 0.5/s ETA 36.9m
+1676.8s	249	  [ 610/1621]  done=610 | 0.5/s ETA 36.7m
+1704.3s	250	  [ 620/1621]  done=620 | 0.5/s ETA 36.5m
+1732.0s	251	  [ 630/1621]  done=630 | 0.5/s ETA 36.3m
+1759.5s	252	  [ 640/1621]  done=640 | 0.5/s ETA 36.1m
+1787.2s	253	  [ 650/1621] BraTS-GLI-02379                 tp=100  WT= 37963v TC= 18394v ET= 13473v  ROI=11×8×11  | 0.5/s ETA 35.8m
+1815.4s	254	  [ 660/1621]  done=660 | 0.4/s ETA 35.6m
+1843.0s	255	  [ 670/1621]  done=670 | 0.4/s ETA 35.4m
+1871.8s	256	  [ 680/1621]  done=680 | 0.4/s ETA 35.1m
+1900.3s	257	  [ 690/1621]  done=690 | 0.4/s ETA 34.9m
+1928.6s	258	  [ 700/1621] BraTS-GLI-02428                 tp=100  WT= 34770v TC=   222v ET=   222v  ROI=9×14×13  | 0.4/s ETA 34.7m
+1954.4s	259	  [ 710/1621]  done=710 | 0.4/s ETA 34.4m
+1970.1s	260	  [ 720/1621]  done=720 | 0.4/s ETA 33.8m
+1985.9s	261	  [ 730/1621]  done=730 | 0.4/s ETA 33.3m
+2002.0s	262	  [ 740/1621]  done=740 | 0.4/s ETA 32.8m
+2017.5s	263	  [ 750/1621] BraTS-GLI-02494                 tp=102  WT= 29412v TC=  3701v ET=  3239v  ROI=6×8×7  | 0.4/s ETA 32.3m
+2034.3s	264	  [ 760/1621]  done=760 | 0.5/s ETA 31.8m
+2050.8s	265	  [ 770/1621]  done=770 | 0.5/s ETA 31.4m
+2067.0s	266	  [ 780/1621]  done=780 | 0.5/s ETA 30.9m
+2082.9s	267	  [ 790/1621]  done=790 | 0.5/s ETA 30.4m
+2097.7s	268	  [ 800/1621] BraTS-GLI-02514                 tp=104  WT= 63892v TC=  4161v ET=  3939v  ROI=8×14×15  | 0.5/s ETA 29.9m
+2113.8s	269	  [ 810/1621]  done=810 | 0.5/s ETA 29.5m
+2129.6s	270	  [ 820/1621]  done=820 | 0.5/s ETA 29.0m
+2146.0s	271	  [ 830/1621]  done=830 | 0.5/s ETA 28.6m
+2162.1s	272	  [ 840/1621]  done=840 | 0.5/s ETA 28.1m
+2178.5s	273	  [ 850/1621] BraTS-GLI-02549                 tp=101  WT=  5865v TC=  1763v ET=  1763v  ROI=5×4×5  | 0.5/s ETA 27.7m
+2194.3s	274	  [ 860/1621]  done=860 | 0.5/s ETA 27.2m
+2210.0s	275	  [ 870/1621]  done=870 | 0.5/s ETA 26.8m
+2225.6s	276	  [ 880/1621]  done=880 | 0.5/s ETA 26.4m
+2241.6s	277	  [ 890/1621]  done=890 | 0.5/s ETA 25.9m
+2257.9s	278	  [ 900/1621] BraTS-GLI-02575                 tp=101  WT= 13538v TC=  2713v ET=  2689v  ROI=6×7×5  | 0.5/s ETA 25.5m
+2274.2s	279	  [ 910/1621]  done=910 | 0.5/s ETA 25.1m
+2290.3s	280	  [ 920/1621]  done=920 | 0.5/s ETA 24.7m
+2306.9s	281	  [ 930/1621]  done=930 | 0.5/s ETA 24.3m
+2323.1s	282	  [ 940/1621]  done=940 | 0.5/s ETA 23.8m
+2339.2s	283	  [ 950/1621] BraTS-GLI-02608                 tp=104  WT= 56583v TC=  6922v ET=  6922v  ROI=10×9×10  | 0.5/s ETA 23.4m
+2355.2s	284	  [ 960/1621]  done=960 | 0.5/s ETA 23.0m
+2371.5s	285	  [ 970/1621]  done=970 | 0.5/s ETA 22.6m
+2388.5s	286	  [ 980/1621]  done=980 | 0.5/s ETA 22.2m
+2404.4s	287	  [ 990/1621]  done=990 | 0.5/s ETA 21.8m
+2420.3s	288	  [1000/1621] BraTS-GLI-02634                 tp=100  WT= 14949v TC=  2208v ET=  2208v  ROI=5×6×5  | 0.5/s ETA 21.4m
+2436.9s	289	  [1010/1621]  done=1010 | 0.5/s ETA 21.1m
+2452.7s	290	  [1020/1621]  done=1020 | 0.5/s ETA 20.7m
+2469.0s	291	  [1030/1621]  done=1030 | 0.5/s ETA 20.3m
+2484.4s	292	  [1040/1621]  done=1040 | 0.5/s ETA 19.9m
+2500.1s	293	  [1050/1621] BraTS-GLI-02688                 tp=100  WT=  6647v TC=     0v ET=     0v  ROI=4×5×5  | 0.5/s ETA 19.5m
+2514.9s	294	  [1060/1621]  done=1060 | 0.5/s ETA 19.1m
+2529.6s	295	  [1070/1621]  done=1070 | 0.5/s ETA 18.7m
+2544.9s	296	  [1080/1621]  done=1080 | 0.5/s ETA 18.3m
+2561.0s	297	  [1090/1621]  done=1090 | 0.5/s ETA 18.0m
+2577.3s	298	  [1100/1621] BraTS-GLI-02751                 tp=100  WT=  3011v TC=     0v ET=     0v  ROI=6×4×3  | 0.5/s ETA 17.6m
+2593.5s	299	  [1110/1621]  done=1110 | 0.5/s ETA 17.2m
+2609.0s	300	  [1120/1621]  done=1120 | 0.5/s ETA 16.9m
+2624.6s	301	  [1130/1621]  done=1130 | 0.5/s ETA 16.5m
+2640.6s	302	  [1140/1621]  done=1140 | 0.5/s ETA 16.1m
+2655.6s	303	  [1150/1621] BraTS-GLI-02777                 tp=100  WT= 42658v TC=  2112v ET=  2112v  ROI=8×10×7  | 0.5/s ETA 15.8m
+2672.1s	304	  [1160/1621]  done=1160 | 0.5/s ETA 15.4m
+2689.2s	305	  [1170/1621]  done=1170 | 0.5/s ETA 15.0m
+2706.4s	306	  [1180/1621]  done=1180 | 0.5/s ETA 14.7m
+2722.2s	307	  [1190/1621]  done=1190 | 0.5/s ETA 14.3m
+2738.8s	308	  [1200/1621] BraTS-GLI-02805                 tp=100  WT= 35079v TC=     0v ET=     0v  ROI=6×9×8  | 0.5/s ETA 14.0m
+2754.8s	309	  [1210/1621]  done=1210 | 0.5/s ETA 13.6m
+2771.0s	310	  [1220/1621]  done=1220 | 0.5/s ETA 13.3m
+2787.2s	311	  [1230/1621]  done=1230 | 0.5/s ETA 12.9m
+2803.9s	312	  [1240/1621]  done=1240 | 0.5/s ETA 12.6m
+2820.5s	313	  [1250/1621] BraTS-GLI-02836                 tp=100  WT=  8329v TC=     0v ET=     0v  ROI=7×8×7  | 0.5/s ETA 12.2m
+2836.9s	314	  [1260/1621]  done=1260 | 0.5/s ETA 11.9m
+2853.2s	315	  [1270/1621]  done=1270 | 0.5/s ETA 11.5m
+2869.5s	316	  [1280/1621]  done=1280 | 0.5/s ETA 11.2m
+2885.5s	317	  [1290/1621]  done=1290 | 0.5/s ETA 10.9m
+2901.1s	318	  [1300/1621] BraTS-GLI-02864                 tp=100  WT=103510v TC=  2836v ET=  2316v  ROI=13×12×9  | 0.5/s ETA 10.5m
+2917.3s	319	  [1310/1621]  done=1310 | 0.5/s ETA 10.2m
+2933.9s	320	  [1320/1621]  done=1320 | 0.5/s ETA 9.8m
+2950.8s	321	  [1330/1621]  done=1330 | 0.5/s ETA 9.5m
+2967.0s	322	  [1340/1621]  done=1340 | 0.5/s ETA 9.2m
+2983.3s	323	  [1350/1621] BraTS-GLI-02889                 tp=100  WT=  4254v TC=     0v ET=     0v  ROI=4×5×4  | 0.5/s ETA 8.8m
+2999.7s	324	  [1360/1621]  done=1360 | 0.5/s ETA 8.5m
+3016.1s	325	  [1370/1621]  done=1370 | 0.5/s ETA 8.1m
+3032.9s	326	  [1380/1621]  done=1380 | 0.5/s ETA 7.8m
+3048.8s	327	  [1390/1621]  done=1390 | 0.5/s ETA 7.5m
+3064.8s	328	  [1400/1621] BraTS-GLI-02917                 tp=100  WT= 32222v TC=   670v ET=   670v  ROI=9×9×9  | 0.5/s ETA 7.1m
+3080.5s	329	  [1410/1621]  done=1410 | 0.5/s ETA 6.8m
+3096.1s	330	  [1420/1621]  done=1420 | 0.5/s ETA 6.5m
+3111.1s	331	  [1430/1621]  done=1430 | 0.5/s ETA 6.2m
+3126.7s	332	  [1440/1621]  done=1440 | 0.5/s ETA 5.8m
+3142.2s	333	  [1450/1621] BraTS-GLI-02946                 tp=100  WT=  2215v TC=     0v ET=     0v  ROI=empty  | 0.5/s ETA 5.5m
+3157.4s	334	  [1460/1621]  done=1460 | 0.5/s ETA 5.2m
+3173.3s	335	  [1470/1621]  done=1470 | 0.5/s ETA 4.8m
+3189.2s	336	  [1480/1621]  done=1480 | 0.5/s ETA 4.5m
+3205.2s	337	  [1490/1621]  done=1490 | 0.5/s ETA 4.2m
+3220.5s	338	  [1500/1621] BraTS-GLI-02980                 tp=100  WT= 12228v TC=     0v ET=     0v  ROI=6×6×6  | 0.5/s ETA 3.9m
+3236.0s	339	  [1510/1621]  done=1510 | 0.5/s ETA 3.5m
+3252.1s	340	  [1520/1621]  done=1520 | 0.5/s ETA 3.2m
+3268.0s	341	  [1530/1621]  done=1530 | 0.5/s ETA 2.9m
+3283.5s	342	  [1540/1621]  done=1540 | 0.5/s ETA 2.6m
+3299.5s	343	  [1550/1621] BraTS-GLI-03011                 tp=100  WT= 52097v TC=  6512v ET=  5097v  ROI=12×11×10  | 0.5/s ETA 2.3m
+3316.3s	344	  [1560/1621]  done=1560 | 0.5/s ETA 1.9m
+3332.8s	345	  [1570/1621]  done=1570 | 0.5/s ETA 1.6m
+3349.5s	346	  [1580/1621]  done=1580 | 0.5/s ETA 1.3m
+3365.6s	347	  [1590/1621]  done=1590 | 0.5/s ETA 1.0m
+3381.0s	348	  [1600/1621] BraTS-GLI-03052                 tp=102  WT= 83272v TC=  6391v ET=  3299v  ROI=14×9×10  | 0.5/s ETA 0.7m
+3397.1s	349	  [1610/1621]  done=1610 | 0.5/s ETA 0.3m
+3412.1s	350	  [1620/1621]  done=1620 | 0.5/s ETA 0.0m
+3412.1s	351	  Skipped 1 corrupt files total
+3412.1s	352	  ────────────────────────────────────────────────────────────
+3412.1s	353	  Done: 1620/1621 in 51.1 min
+3412.1s	354	  Skipped: 0 | Empty ROI (complete resection): 51
+3412.9s	355	  Saved: /kaggle/working/phase2_nnunet/embeddings/cnn_nnunet_embeddings.npz  shape=(1620, 2825) (18.3 MB)
+3486.2s	356	  Spatial tokens: /kaggle/working/phase2_nnunet/embeddings/cnn_spatial_tokens.npz
+3486.2s	357	    Shape: (1620, 2744, 256) (4552.0 MB)
+3486.2s	358	    Max tokens: 2744  Mean: 637
+3486.2s	359	  Volumes CSV: /kaggle/working/phase2_nnunet/embeddings/tumor_volumes.csv  (1620 rows)
+3486.2s	360	  Architecture: octant=2048D + region=768D + vol=9D = 2825D
+3486.2s	361	Embeddings not found at /kaggle/working/phase2_nnunet/embeddings/cnn_nnunet_embeddings_v2.npz
+3486.2s	362	  Run Cell 10 (embedding extraction) first
+3486.2s	363	=======================================================
+3486.2s	364	  nnUNet Fine-Tuning Complete
+3486.2s	365	  Best Mean Dice:  0.8150
+3486.2s	366	  Regions:         ['WT', 'TC', 'ET']
+3486.2s	367	  Target (BraTS2021): WT=0.900 TC=0.867 ET=0.851
+3486.2s	368	  Outputs: /kaggle/working/phase2_nnunet
+3486.2s	369	=======================================================
+3492.3s	370	/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+3492.3s	371	  cells[i][c] = re.sub('\\\\\|', '|', cell)
+3492.6s	372	/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+3492.6s	373	  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+3493.4s	374	[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+3493.7s	375	[NbConvertApp] Writing 87142 bytes to __notebook__.ipynb
+3496.2s	376	[NbConvertApp] Converting notebook __notebook__.ipynb to html
+3497.5s	377	[NbConvertApp] Writing 543752 bytes to __results__.html
