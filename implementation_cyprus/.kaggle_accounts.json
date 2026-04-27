@@ -1,0 +1,21 @@
+{
+  "account_1": {
+    "username": "boufafamoamed",
+    "key": "KGAT_ba154e8f08aaa10ac815ea34934226d6",
+    "note": "Primary account — Cyprus dataset uploaded here"
+  },
+  "account_2": {
+    "username": "zinou123viva",
+    "key": "KGAT_9811f85e7078d6bbb85aad26ae841bdc",
+    "note": "Phase B CNN retrain — metseg-fold-outputs dataset",
+    "datasets": {
+      "cnn_outputs": "zinou123viva/metseg-fold-outputs"
+    },
+    "upload_script": "Phase2/scripts/upload_cnn_fold_outputs_zinou123viva.py"
+  },
+  "account_3": {
+    "username": "mohamedmohamed23",
+    "key": "KGAT_8111de93847141e6f93467431b823db0",
+    "note": "Tertiary account — Phase 3 Swin UNETR"
+  }
+}

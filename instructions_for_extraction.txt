@@ -1,0 +1,19 @@
+Instructions for running Phase 3D Extraction on Kaggle:
+
+1. Create a new notebook on Kaggle.
+2. Ensure you have the `BraTS-2024` dataset attached (it contains the raw images).
+3. Ensure you have the checkpoint dataset attached. Look for the dataset path that you used previously: `/kaggle/input/datasets/boufafamoamed/continue-trainnning-data-swinunetr/phase3_swinunetr/checkpoints/`
+4. The notebook `Phase3_D1_Hybrid_Extraction.ipynb` will automatically look for `swinunetr_v5_best.pth`. From the logs you provided, the checkpoint is called `swinunetr_best_v4.pth`.
+5. Open the `Phase3_D1_Hybrid_Extraction.ipynb` notebook and locate Cell 5 (Model Loading).
+6. Update the checkpoint search block in Cell 5 to include `swinunetr_best_v4.pth`:
+
+```python
+# ── Find checkpoint ──
+ckpt_search = list(Path("/kaggle/input").rglob("swinunetr_v5_best.pth")) + \
+              list(Path("/kaggle/input").rglob("swinunetr_best_v4.pth")) + \
+              list(Path("/kaggle/input").rglob("swinunetr_v5*.pth")) + \
+              list(Path("/kaggle/input").rglob("swinunetr_best.pth")) + \
+              list(Path("/kaggle/input").rglob("*.pth"))
+```
+7. Run the notebook. It will find the checkpoint, verify that it has the `emb_head` weights, and perform the hybrid extraction (4873-D).
+8. Once finished, download `vit_swinunetr_embeddings_v5_hybrid.npz` and `tumor_volumes_hybrid.csv`.

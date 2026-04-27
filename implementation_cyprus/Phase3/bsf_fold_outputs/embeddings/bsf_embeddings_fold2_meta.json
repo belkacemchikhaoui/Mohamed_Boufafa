@@ -1,0 +1,682 @@
+{
+  "P02__baseline": {
+    "patient_dir": "P02",
+    "visit": "baseline"
+  },
+  "P02__fu1": {
+    "patient_dir": "P02",
+    "visit": "fu1"
+  },
+  "P02__fu2": {
+    "patient_dir": "P02",
+    "visit": "fu2"
+  },
+  "P03__baseline": {
+    "patient_dir": "P03",
+    "visit": "baseline"
+  },
+  "P03__fu1": {
+    "patient_dir": "P03",
+    "visit": "fu1"
+  },
+  "P03__fu2": {
+    "patient_dir": "P03",
+    "visit": "fu2"
+  },
+  "P04a__baseline": {
+    "patient_dir": "P04a",
+    "visit": "baseline"
+  },
+  "P04a__fu1": {
+    "patient_dir": "P04a",
+    "visit": "fu1"
+  },
+  "P04a__fu2": {
+    "patient_dir": "P04a",
+    "visit": "fu2"
+  },
+  "P04a__fu3": {
+    "patient_dir": "P04a",
+    "visit": "fu3"
+  },
+  "P04b__baseline": {
+    "patient_dir": "P04b",
+    "visit": "baseline"
+  },
+  "P04b__fu1": {
+    "patient_dir": "P04b",
+    "visit": "fu1"
+  },
+  "P04b__fu2": {
+    "patient_dir": "P04b",
+    "visit": "fu2"
+  },
+  "P04b__fu3": {
+    "patient_dir": "P04b",
+    "visit": "fu3"
+  },
+  "P04b__fu4": {
+    "patient_dir": "P04b",
+    "visit": "fu4"
+  },
+  "P04b__fu5": {
+    "patient_dir": "P04b",
+    "visit": "fu5"
+  },
+  "P06__baseline": {
+    "patient_dir": "P06",
+    "visit": "baseline"
+  },
+  "P06__fu1": {
+    "patient_dir": "P06",
+    "visit": "fu1"
+  },
+  "P06__fu2": {
+    "patient_dir": "P06",
+    "visit": "fu2"
+  },
+  "P07a__baseline": {
+    "patient_dir": "P07a",
+    "visit": "baseline"
+  },
+  "P07a__fu1": {
+    "patient_dir": "P07a",
+    "visit": "fu1"
+  },
+  "P07a__fu2": {
+    "patient_dir": "P07a",
+    "visit": "fu2"
+  },
+  "P07b__baseline": {
+    "patient_dir": "P07b",
+    "visit": "baseline"
+  },
+  "P07b__fu1": {
+    "patient_dir": "P07b",
+    "visit": "fu1"
+  },
+  "P07b__fu2": {
+    "patient_dir": "P07b",
+    "visit": "fu2"
+  },
+  "P09__baseline": {
+    "patient_dir": "P09",
+    "visit": "baseline"
+  },
+  "P09__fu1": {
+    "patient_dir": "P09",
+    "visit": "fu1"
+  },
+  "P09__fu3": {
+    "patient_dir": "P09",
+    "visit": "fu3"
+  },
+  "P09__fu4": {
+    "patient_dir": "P09",
+    "visit": "fu4"
+  },
+  "P09__fu5": {
+    "patient_dir": "P09",
+    "visit": "fu5"
+  },
+  "P10__baseline": {
+    "patient_dir": "P10",
+    "visit": "baseline"
+  },
+  "P10__fu1": {
+    "patient_dir": "P10",
+    "visit": "fu1"
+  },
+  "P10__fu2": {
+    "patient_dir": "P10",
+    "visit": "fu2"
+  },
+  "P10__fu3": {
+    "patient_dir": "P10",
+    "visit": "fu3"
+  },
+  "P15__baseline": {
+    "patient_dir": "P15",
+    "visit": "baseline"
+  },
+  "P15__fu2": {
+    "patient_dir": "P15",
+    "visit": "fu2"
+  },
+  "P15__fu3": {
+    "patient_dir": "P15",
+    "visit": "fu3"
+  },
+  "P15__fu5": {
+    "patient_dir": "P15",
+    "visit": "fu5"
+  },
+  "P16__baseline": {
+    "patient_dir": "P16",
+    "visit": "baseline"
+  },
+  "P17a__baseline": {
+    "patient_dir": "P17a",
+    "visit": "baseline"
+  },
+  "P17a__fu1": {
+    "patient_dir": "P17a",
+    "visit": "fu1"
+  },
+  "P17a__fu2": {
+    "patient_dir": "P17a",
+    "visit": "fu2"
+  },
+  "P17a__fu3": {
+    "patient_dir": "P17a",
+    "visit": "fu3"
+  },
+  "P17a__fu4": {
+    "patient_dir": "P17a",
+    "visit": "fu4"
+  },
+  "P17b__baseline": {
+    "patient_dir": "P17b",
+    "visit": "baseline"
+  },
+  "P17b__fu1": {
+    "patient_dir": "P17b",
+    "visit": "fu1"
+  },
+  "P17b__fu2": {
+    "patient_dir": "P17b",
+    "visit": "fu2"
+  },
+  "P17b__fu3": {
+    "patient_dir": "P17b",
+    "visit": "fu3"
+  },
+  "P17b__fu4": {
+    "patient_dir": "P17b",
+    "visit": "fu4"
+  },
+  "P17b__fu5": {
+    "patient_dir": "P17b",
+    "visit": "fu5"
+  },
+  "P18__baseline": {
+    "patient_dir": "P18",
+    "visit": "baseline"
+  },
+  "P18__fu1": {
+    "patient_dir": "P18",
+    "visit": "fu1"
+  },
+  "P18__fu2": {
+    "patient_dir": "P18",
+    "visit": "fu2"
+  },
+  "P18__fu3": {
+    "patient_dir": "P18",
+    "visit": "fu3"
+  },
+  "P18__fu4": {
+    "patient_dir": "P18",
+    "visit": "fu4"
+  },
+  "P20a__baseline": {
+    "patient_dir": "P20a",
+    "visit": "baseline"
+  },
+  "P20a__fu1": {
+    "patient_dir": "P20a",
+    "visit": "fu1"
+  },
+  "P20a__fu2": {
+    "patient_dir": "P20a",
+    "visit": "fu2"
+  },
+  "P20a__fu3": {
+    "patient_dir": "P20a",
+    "visit": "fu3"
+  },
+  "P20b__baseline": {
+    "patient_dir": "P20b",
+    "visit": "baseline"
+  },
+  "P20b__fu3": {
+    "patient_dir": "P20b",
+    "visit": "fu3"
+  },
+  "P20b__fu4": {
+    "patient_dir": "P20b",
+    "visit": "fu4"
+  },
+  "P20b__fu5": {
+    "patient_dir": "P20b",
+    "visit": "fu5"
+  },
+  "P21__baseline": {
+    "patient_dir": "P21",
+    "visit": "baseline"
+  },
+  "P21__fu1": {
+    "patient_dir": "P21",
+    "visit": "fu1"
+  },
+  "P21__fu2": {
+    "patient_dir": "P21",
+    "visit": "fu2"
+  },
+  "P23a__baseline": {
+    "patient_dir": "P23a",
+    "visit": "baseline"
+  },
+  "P23a__fu1": {
+    "patient_dir": "P23a",
+    "visit": "fu1"
+  },
+  "P23a__fu2": {
+    "patient_dir": "P23a",
+    "visit": "fu2"
+  },
+  "P23a__fu3": {
+    "patient_dir": "P23a",
+    "visit": "fu3"
+  },
+  "P23b__baseline": {
+    "patient_dir": "P23b",
+    "visit": "baseline"
+  },
+  "P23b__fu1": {
+    "patient_dir": "P23b",
+    "visit": "fu1"
+  },
+  "P23b__fu2": {
+    "patient_dir": "P23b",
+    "visit": "fu2"
+  },
+  "P23b__fu3": {
+    "patient_dir": "P23b",
+    "visit": "fu3"
+  },
+  "P23b__fu5": {
+    "patient_dir": "P23b",
+    "visit": "fu5"
+  },
+  "P25__baseline": {
+    "patient_dir": "P25",
+    "visit": "baseline"
+  },
+  "P25__fu1": {
+    "patient_dir": "P25",
+    "visit": "fu1"
+  },
+  "P25__fu3": {
+    "patient_dir": "P25",
+    "visit": "fu3"
+  },
+  "P25__fu4": {
+    "patient_dir": "P25",
+    "visit": "fu4"
+  },
+  "P25__fu5": {
+    "patient_dir": "P25",
+    "visit": "fu5"
+  },
+  "P26__baseline": {
+    "patient_dir": "P26",
+    "visit": "baseline"
+  },
+  "P26__fu1": {
+    "patient_dir": "P26",
+    "visit": "fu1"
+  },
+  "P26__fu2": {
+    "patient_dir": "P26",
+    "visit": "fu2"
+  },
+  "P28__baseline": {
+    "patient_dir": "P28",
+    "visit": "baseline"
+  },
+  "P28__fu1": {
+    "patient_dir": "P28",
+    "visit": "fu1"
+  },
+  "P28__fu2": {
+    "patient_dir": "P28",
+    "visit": "fu2"
+  },
+  "P28__fu3": {
+    "patient_dir": "P28",
+    "visit": "fu3"
+  },
+  "P28__fu4": {
+    "patient_dir": "P28",
+    "visit": "fu4"
+  },
+  "P28__fu5": {
+    "patient_dir": "P28",
+    "visit": "fu5"
+  },
+  "P30__baseline": {
+    "patient_dir": "P30",
+    "visit": "baseline"
+  },
+  "P30__fu1": {
+    "patient_dir": "P30",
+    "visit": "fu1"
+  },
+  "P30__fu2": {
+    "patient_dir": "P30",
+    "visit": "fu2"
+  },
+  "P31__baseline": {
+    "patient_dir": "P31",
+    "visit": "baseline"
+  },
+  "P31__fu1": {
+    "patient_dir": "P31",
+    "visit": "fu1"
+  },
+  "P31__fu2": {
+    "patient_dir": "P31",
+    "visit": "fu2"
+  },
+  "P31__fu3": {
+    "patient_dir": "P31",
+    "visit": "fu3"
+  },
+  "P32__baseline": {
+    "patient_dir": "P32",
+    "visit": "baseline"
+  },
+  "P32__fu1": {
+    "patient_dir": "P32",
+    "visit": "fu1"
+  },
+  "P33__baseline": {
+    "patient_dir": "P33",
+    "visit": "baseline"
+  },
+  "P33__fu1": {
+    "patient_dir": "P33",
+    "visit": "fu1"
+  },
+  "P33__fu2": {
+    "patient_dir": "P33",
+    "visit": "fu2"
+  },
+  "P34__baseline": {
+    "patient_dir": "P34",
+    "visit": "baseline"
+  },
+  "P34__fu1": {
+    "patient_dir": "P34",
+    "visit": "fu1"
+  },
+  "P34__fu2": {
+    "patient_dir": "P34",
+    "visit": "fu2"
+  },
+  "P34__fu3": {
+    "patient_dir": "P34",
+    "visit": "fu3"
+  },
+  "P34__fu4": {
+    "patient_dir": "P34",
+    "visit": "fu4"
+  },
+  "P35__baseline": {
+    "patient_dir": "P35",
+    "visit": "baseline"
+  },
+  "P35__fu1": {
+    "patient_dir": "P35",
+    "visit": "fu1"
+  },
+  "P35__fu3": {
+    "patient_dir": "P35",
+    "visit": "fu3"
+  },
+  "P36__baseline": {
+    "patient_dir": "P36",
+    "visit": "baseline"
+  },
+  "P36__fu1": {
+    "patient_dir": "P36",
+    "visit": "fu1"
+  },
+  "P36__fu2": {
+    "patient_dir": "P36",
+    "visit": "fu2"
+  },
+  "P36__fu3": {
+    "patient_dir": "P36",
+    "visit": "fu3"
+  },
+  "P37__baseline": {
+    "patient_dir": "P37",
+    "visit": "baseline"
+  },
+  "P37__fu1": {
+    "patient_dir": "P37",
+    "visit": "fu1"
+  },
+  "P37__fu2": {
+    "patient_dir": "P37",
+    "visit": "fu2"
+  },
+  "P39__baseline": {
+    "patient_dir": "P39",
+    "visit": "baseline"
+  },
+  "P39__fu1": {
+    "patient_dir": "P39",
+    "visit": "fu1"
+  },
+  "P01__baseline": {
+    "patient_dir": "P01",
+    "visit": "baseline"
+  },
+  "P01__fu1": {
+    "patient_dir": "P01",
+    "visit": "fu1"
+  },
+  "P01__fu2": {
+    "patient_dir": "P01",
+    "visit": "fu2"
+  },
+  "P01__fu3": {
+    "patient_dir": "P01",
+    "visit": "fu3"
+  },
+  "P01__fu4": {
+    "patient_dir": "P01",
+    "visit": "fu4"
+  },
+  "P05__baseline": {
+    "patient_dir": "P05",
+    "visit": "baseline"
+  },
+  "P05__fu1": {
+    "patient_dir": "P05",
+    "visit": "fu1"
+  },
+  "P05__fu2": {
+    "patient_dir": "P05",
+    "visit": "fu2"
+  },
+  "P08__baseline": {
+    "patient_dir": "P08",
+    "visit": "baseline"
+  },
+  "P08__fu1": {
+    "patient_dir": "P08",
+    "visit": "fu1"
+  },
+  "P08__fu2": {
+    "patient_dir": "P08",
+    "visit": "fu2"
+  },
+  "P08__fu3": {
+    "patient_dir": "P08",
+    "visit": "fu3"
+  },
+  "P08__fu4": {
+    "patient_dir": "P08",
+    "visit": "fu4"
+  },
+  "P11__baseline": {
+    "patient_dir": "P11",
+    "visit": "baseline"
+  },
+  "P11__fu1": {
+    "patient_dir": "P11",
+    "visit": "fu1"
+  },
+  "P11__fu2": {
+    "patient_dir": "P11",
+    "visit": "fu2"
+  },
+  "P11__fu3": {
+    "patient_dir": "P11",
+    "visit": "fu3"
+  },
+  "P11__fu4": {
+    "patient_dir": "P11",
+    "visit": "fu4"
+  },
+  "P12__baseline": {
+    "patient_dir": "P12",
+    "visit": "baseline"
+  },
+  "P12__fu1": {
+    "patient_dir": "P12",
+    "visit": "fu1"
+  },
+  "P12__fu2": {
+    "patient_dir": "P12",
+    "visit": "fu2"
+  },
+  "P13__baseline": {
+    "patient_dir": "P13",
+    "visit": "baseline"
+  },
+  "P13__fu1": {
+    "patient_dir": "P13",
+    "visit": "fu1"
+  },
+  "P13__fu2": {
+    "patient_dir": "P13",
+    "visit": "fu2"
+  },
+  "P13__fu3": {
+    "patient_dir": "P13",
+    "visit": "fu3"
+  },
+  "P13__fu4": {
+    "patient_dir": "P13",
+    "visit": "fu4"
+  },
+  "P13__fu5": {
+    "patient_dir": "P13",
+    "visit": "fu5"
+  },
+  "P14__baseline": {
+    "patient_dir": "P14",
+    "visit": "baseline"
+  },
+  "P14__fu1": {
+    "patient_dir": "P14",
+    "visit": "fu1"
+  },
+  "P19__baseline": {
+    "patient_dir": "P19",
+    "visit": "baseline"
+  },
+  "P19__fu1": {
+    "patient_dir": "P19",
+    "visit": "fu1"
+  },
+  "P19__fu2": {
+    "patient_dir": "P19",
+    "visit": "fu2"
+  },
+  "P19__fu3": {
+    "patient_dir": "P19",
+    "visit": "fu3"
+  },
+  "P22__baseline": {
+    "patient_dir": "P22",
+    "visit": "baseline"
+  },
+  "P22__fu1": {
+    "patient_dir": "P22",
+    "visit": "fu1"
+  },
+  "P22__fu2": {
+    "patient_dir": "P22",
+    "visit": "fu2"
+  },
+  "P22__fu3": {
+    "patient_dir": "P22",
+    "visit": "fu3"
+  },
+  "P22__fu4": {
+    "patient_dir": "P22",
+    "visit": "fu4"
+  },
+  "P24__baseline": {
+    "patient_dir": "P24",
+    "visit": "baseline"
+  },
+  "P24__fu1": {
+    "patient_dir": "P24",
+    "visit": "fu1"
+  },
+  "P27__baseline": {
+    "patient_dir": "P27",
+    "visit": "baseline"
+  },
+  "P27__fu1": {
+    "patient_dir": "P27",
+    "visit": "fu1"
+  },
+  "P27__fu2": {
+    "patient_dir": "P27",
+    "visit": "fu2"
+  },
+  "P27__fu3": {
+    "patient_dir": "P27",
+    "visit": "fu3"
+  },
+  "P29__baseline": {
+    "patient_dir": "P29",
+    "visit": "baseline"
+  },
+  "P29__fu1": {
+    "patient_dir": "P29",
+    "visit": "fu1"
+  },
+  "P29__fu2": {
+    "patient_dir": "P29",
+    "visit": "fu2"
+  },
+  "P29__fu4": {
+    "patient_dir": "P29",
+    "visit": "fu4"
+  },
+  "P38__baseline": {
+    "patient_dir": "P38",
+    "visit": "baseline"
+  },
+  "P38__fu2": {
+    "patient_dir": "P38",
+    "visit": "fu2"
+  },
+  "P40__baseline": {
+    "patient_dir": "P40",
+    "visit": "baseline"
+  },
+  "P40__fu1": {
+    "patient_dir": "P40",
+    "visit": "fu1"
+  }
+}

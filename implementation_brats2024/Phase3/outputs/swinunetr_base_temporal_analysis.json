@@ -1,0 +1,21 @@
+{
+  "model": "swinunetr_base",
+  "n_patients": 731,
+  "n_scans": 1620,
+  "embedding_dim_raw": 4233,
+  "embedding_dim_normed": 4233,
+  "T_max": 10,
+  "C_emb": 384,
+  "multi_visit_patients": 559,
+  "mean_visits": 2.216142270861833,
+  "drift_stats": {
+    "mean": 0.3337145087479942,
+    "std": 0.4402578729651304,
+    "min": 0.0,
+    "max": 2.4494898319244385
+  },
+  "cosine_dist_stats": {
+    "mean": 0.02712001622192503,
+    "std": 0.07860218507386936
+  }
+}

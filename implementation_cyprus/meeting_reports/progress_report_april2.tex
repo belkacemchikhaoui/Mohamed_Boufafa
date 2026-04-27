@@ -1,0 +1,162 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=1.8cm]{geometry}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\titlespacing*{\section}{0pt}{6pt}{2pt}
+\titlespacing*{\subsection}{0pt}{4pt}{2pt}
+\setlength{\parskip}{2pt}
+\setlength{\parindent}{0pt}
+
+\title{\vspace{-1.5cm}\textbf{Supervision Progress Report -- Phases 1 \& 2}\\[4pt]
+\large Explainable Disease Progression \& Counterfactual Video Generation}
+\author{Mohamed Boufafa \\ Supervisor: Dr.~Belkacem Chikhaoui \\ Mitacs Globalink -- T\'ELuQ University}
+\date{April 2, 2026}
+
+\begin{document}
+\maketitle
+\vspace{-0.5cm}
+
+\section{Summary}
+
+Phases~1 and~2 are \textbf{complete}. The Cyprus PROTEAS brain metastases dataset (45 patients, 170 longitudinal MRI scans) has been prepared, validated, and used to train and evaluate two CNN architectures as baselines for tumor representation. The key outcome is a quantitative demonstration that CNN embeddings encode static tumor anatomy but \textbf{cannot model temporal change} --- providing direct justification for the Phase~3 transition to Vision Transformers.
+
+\section{Phase 1 -- Oncology Medical Imaging Preparation and Exploration}
+
+\textbf{Duration:} Weeks 1--4 \hfill \textbf{Status:} Complete
+
+\subsection*{Activities}
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item Selection and acquisition of public cancer imaging datasets.
+    \begin{itemize}[nosep, leftmargin=1em]
+        \item Cyprus PROTEAS selected: 45 patients, 186 MRI timepoints, 4 modalities (T1, T1c, T2, FLAIR), 171 expert segmentation masks, longitudinal follow-up.
+    \end{itemize}
+    \item Preprocessing of medical images (MRI/CT):
+    \begin{itemize}[nosep, leftmargin=1em]
+        \item Intensity normalization -- validated (Z-score, mean error = 0.0).
+        \item Spatial resampling -- validated ($1\times1\times1$~mm isotropic, 45/45 patients).
+        \item Longitudinal alignment -- 728 affine checks, 100\% co-registered.
+    \end{itemize}
+    \item Verification and processing of tumor annotations.
+    \begin{itemize}[nosep, leftmargin=1em]
+        \item 171/171 masks validated (labels: 0=BG, 1=NCR, 2=ET, 3=ED).
+        \item Skull-stripping inconsistency P28--P39 discovered and corrected.
+    \end{itemize}
+    \item Exploratory data analysis:
+    \begin{itemize}[nosep, leftmargin=1em]
+        \item Tumor volumes, spatial distributions, temporal trajectories.
+        \item 7,980 radiomic features analyzed; CT and RTP dose maps validated.
+        \item Clinical metadata: 5 quality fixes, 7 derived columns (28 total).
+    \end{itemize}
+    \item Organization of longitudinal patient imaging sequences.
+    \begin{itemize}[nosep, leftmargin=1em]
+        \item Timeline CSV with day gaps; 186-row patient inventory.
+        \item Follow-up retention: 100\% at baseline $\rightarrow$ 23\% at 12 months.
+    \end{itemize}
+\end{itemize}
+
+\subsection*{Deliverables}
+\begin{enumerate}[nosep, leftmargin=1.5em]
+    \item \textbf{Reproducible imaging preprocessing pipeline} -- Skull-stripping correction notebook, validation report.
+    \item \textbf{Cleaned, standardized, and temporally organized datasets} -- Clinical data (28 columns), timeline CSV, inventory CSV, radiomic features.
+    \item \textbf{Exploratory data analysis report} -- 40-cell notebook (9 sections), methodology documentation, clinical interpretation report.
+\end{enumerate}
+
+\section{Phase 2 -- Baseline Vision Models for Tumor Representation}
+
+\textbf{Duration:} Weeks 5--7 \hfill \textbf{Status:} Complete
+
+\subsection*{Activities}
+\begin{itemize}[nosep, leftmargin=1.5em]
+    \item Implementation of baseline deep learning models for tumor analysis:
+    \begin{itemize}[nosep, leftmargin=1em]
+        \item \textbf{Met-Seg} (DynUNet, 16.7M params) -- two-stage CNN pretrained on 402 brain metastases (BraTS-METS 2023).
+        \item \textbf{SegResNet} (4.7M params) -- MONAI encoder-decoder pretrained on gliomas.
+    \end{itemize}
+    \item Training and validation on single time-point tumor imaging tasks.
+    \begin{itemize}[nosep, leftmargin=1em]
+        \item 3-fold cross-validation at patient level; trained on Kaggle GPU (T4/P100).
+        \item Met-Seg: AdamW optimizer, warmup$\rightarrow$flat$\rightarrow$step LR schedule, 60--80 epochs.
+    \end{itemize}
+    \item Quantitative evaluation of baseline performance.
+    \item Identification of limitations in static modeling.
+\end{itemize}
+
+\subsection*{Segmentation Results (3-Fold Cross-Validation)}
+
+\begin{center}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Model} & \textbf{Mean Dice} & \textbf{WT} & \textbf{TC} & \textbf{ET} \\
+\midrule
+\textbf{Met-Seg v3/v4} & \textbf{0.505 $\pm$ 0.024} & 0.519 & 0.495 & 0.497 \\
+Met-Seg v1 & 0.413 $\pm$ 0.016 & 0.426 & 0.408 & 0.406 \\
+SegResNet & 0.368 $\pm$ 0.044 & 0.399 & 0.361 & 0.344 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Met-Seg outperforms SegResNet by +37.2\% mean Dice, confirming that domain-specific pretraining is critical for brain metastasis segmentation.
+
+\subsection*{Embedding Evaluation (16-Test Battery)}
+
+We extracted 1024-dimensional embeddings from Met-Seg and 128-dimensional embeddings from SegResNet, then evaluated them on 16 downstream tasks the models were never trained for.
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Category} & \textbf{Met-Seg (DynUNet)} & \textbf{SegResNet} \\
+\midrule
+Morphology (M1--M6) & \textbf{5/6} & 2/6 \\
+Heterogeneity (H1--H4) & \textbf{4/4} & 2/4 \\
+Temporal (T1--T7) & \textbf{3/6} & 3/6 \\
+\midrule
+\textbf{Total} & \textbf{12/16} & \textbf{7/16} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{Key Findings}
+\begin{enumerate}[nosep, leftmargin=1.5em]
+    \item CNN embeddings encode tumor anatomy (volume $R^2=0.38$, necrosis $F_1=0.71$).
+    \item CNN embeddings capture heterogeneity (PCA structure $|r|=0.80$, GLCM entropy $R^2=0.39$).
+    \item CNN embeddings \textbf{cannot model temporal change} -- T1 ($r=0.05$) and T3 ($R^2=-0.21$) fail.
+    \item Treatment response prediction below chance -- T4 $\text{AUC}=0.46$.
+\end{enumerate}
+
+\subsection*{Deliverables}
+\begin{enumerate}[nosep, leftmargin=1.5em]
+    \item \textbf{Baseline model implementations and trained weights} -- Met-Seg (3 folds, 705~MB) and SegResNet (3 folds).
+    \item \textbf{Comparative performance results serving as reference benchmarks} -- Dice scores, 16-test embedding evaluation tables, t-SNE visualizations, architecture comparison.
+\end{enumerate}
+
+\section{Phase 3 Justification}
+
+The CNN temporal test failures provide direct evidence for transitioning to Vision Transformers:
+
+\begin{center}
+\begin{tabular}{>{\raggedright}p{3.5cm}cp{5.5cm}}
+\toprule
+\textbf{CNN Limitation} & \textbf{Evidence} & \textbf{Phase 3 Solution} \\
+\midrule
+No temporal awareness & T1 $r=0.049$ & TaViT cross-attention across timepoints \\
+Cannot predict change & T3 $R^2=-0.210$ & ViT temporal embeddings \\
+Cannot predict response & T4 AUC$=0.458$ & Longitudinal trajectory modeling \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Next Steps}
+
+\begin{enumerate}[nosep, leftmargin=1.5em]
+    \item \textbf{Phase 3 -- Temporal Modeling:} Implement Swin UNETR + TaViT for temporal-aware embeddings.
+    \item Re-evaluate with the same 16-test battery for direct CNN vs ViT comparison.
+    \item Target: improve temporal tests (T1, T3, T4) while maintaining morphology performance.
+\end{enumerate}
+
+\end{document}

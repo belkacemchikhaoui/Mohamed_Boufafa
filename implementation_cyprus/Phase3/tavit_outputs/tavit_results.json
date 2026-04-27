@@ -1,0 +1,22 @@
+{
+  "T3_dvol_R2": -0.3063825385481227,
+  "T3_dvol_r": 0.3921147182701131,
+  "T4_response_AUC": 0.7391304347826088,
+  "baseline_scores": {
+    "T3_static_BSF": -0.472,
+    "T4_static_BSF": 0.509
+  },
+  "model_config": {
+    "bsf_dim": 8448,
+    "proj_dim": 128,
+    "n_heads": 4,
+    "n_layers": 2,
+    "dropout": 0.3,
+    "lr": 0.0003,
+    "epochs": 150
+  },
+  "n_patients": 35,
+  "cv_strategy": "Leave-One-Patient-Out (LOPO)",
+  "paper": "Li et al. 2022 \u2014 Time-Distance Vision Transformers",
+  "adaptation": "TaViT TEM + sinusoidal time encoding on BSF v2 8448-dim embeddings"
+}

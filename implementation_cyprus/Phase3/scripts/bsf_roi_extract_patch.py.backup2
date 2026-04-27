@@ -1,0 +1,114 @@
+"""
+ROI Crop patch for Phase3_A1B_BrainSegFounder_Training.ipynb
+=============================================================
+In the notebook, find the `extract_embeddings` function (around cell with id 'a40a3ea8').
+Inside the `with torch.no_grad():` loop, FIND this block:
+
+    # Resize to 96³ to fit in VRAM (same as training patch size)
+    images = F.interpolate(images.float(), size=target_size, mode='trilinear', align_corners=False)
+    images = images.to(device)
+
+And REPLACE the entire for-loop body with what's below.
+Nothing else in the notebook needs to change.
+"""
+
+
+def extract_embeddings(model, fold):
+    """Extract 768-dim embeddings from Swin UNETR encoder for all scans.
+
+    v3 change — ROI Bounding Box Crop (Problem 6 fix):
+      Crop to WT tumour bounding box + 16 voxel pad BEFORE the 96³ resize.
+      Without this, a 5mm ET lesion covers <0.04% of a 240×240×155 volume
+      and gets washed out completely by trilinear downsampling.
+      Expected impact: M4 necrosis F1 ++, H3/H4 texture r ++
+    """
+    torch.cuda.empty_cache()
+    import gc; gc.collect()
+
+    model.eval()
+    model.to(device)
+
+    all_dicts = get_all_dicts()
+    print(f'  Extracting from {len(all_dicts)} scans...')
+
+    emb_ds = CacheDataset(all_dicts, val_transforms,
+                          cache_rate=CONFIG['cache_rate'],
+                          num_workers=CONFIG['num_workers'])
+    emb_loader = DataLoader(emb_ds, batch_size=1, shuffle=False,
+                            num_workers=CONFIG['num_workers'])
+
+    target_size   = ensure_tuple_rep(CONFIG['patch_size'], 3)  # (96, 96, 96)
+    embeddings    = {}
+    n_roi_cropped = 0
+
+    with torch.no_grad():
+        for i, batch in enumerate(tqdm(emb_loader, desc='Extracting embeddings')):
+            images  = batch['image']           # (1, 4, H, W, D) full volume
+            patient = batch['patient_dir'][0]
+            visit   = batch['visit'][0]
+            key     = f'{patient}__{visit}'
+
+            # ── ROI Crop ─────────────────────────────────────────────────────
+            # Crop to tumour bounding box BEFORE resize so ViT sees only tumour.
+            # Without this a 5mm ET gets washed out by the 96³ downsampling.
+            labels_tensor = batch.get('label', None)
+            if labels_tensor is not None:
+                wt_mask = labels_tensor[0, 0] > 0   # Channel 0 = WT
+                if wt_mask.sum() > 0:
+                    coords = torch.nonzero(wt_mask, as_tuple=False)
+                    pad    = 8  # voxels of tumour context
+                    lo = (coords.min(dim=0)[0] - pad).clamp(min=0)
+                    hi = torch.stack([
+                        (coords.max(dim=0)[0][d] + pad + 1).clamp(
+                            max=images.shape[2 + d])
+                        for d in range(3)
+                    ])
+                    images = images[:, :,
+                                    lo[0]:hi[0],
+                                    lo[1]:hi[1],
+                                    lo[2]:hi[2]]
+                    n_roi_cropped += 1
+            # ─────────────────────────────────────────────────────────────────
+
+            # Resize cropped ROI to 96³ for Swin encoder
+            images = F.interpolate(images.float(), size=target_size,
+                                   mode='trilinear', align_corners=False)
+            images = images.to(device)
+
+            with torch.amp.autocast('cuda'):
+                encoder_outputs = model.swinViT(images, model.normalize)
+                bottleneck      = encoder_outputs[-1]
+                emb             = F.adaptive_avg_pool3d(bottleneck, 1).flatten()
+
+            embeddings[key] = emb.cpu().numpy()
+
+            if (i + 1) % 20 == 0:
+                torch.cuda.empty_cache()
+
+    print(f'  ROI-cropped: {n_roi_cropped}/{len(embeddings)} scans')
+
+    if len(embeddings) == 0:
+        print('  ⚠️ No embeddings extracted!')
+        return
+
+    emb_dir = OUTPUT_ROOT / 'embeddings'
+    emb_dir.mkdir(parents=True, exist_ok=True)
+    emb_dim = list(embeddings.values())[0].shape[0]
+
+    np.savez(emb_dir / f'bsf_embeddings_fold{fold}.npz', **embeddings)
+
+    meta = {k: {'patient_dir': k.split('__')[0], 'visit': k.split('__')[1]}
+            for k in embeddings}
+    with open(emb_dir / f'bsf_embeddings_fold{fold}_meta.json', 'w') as f_out:
+        json.dump(meta, f_out, indent=2)
+
+    norms = [np.linalg.norm(v) for v in embeddings.values()]
+    print(f'  ✅ {len(embeddings)} embeddings × {emb_dim}-dim saved')
+    print(f'     Norm range: [{min(norms):.4f}, {max(norms):.4f}] std={np.std(norms):.4f}')
+
+    n_bad = sum(1 for v in embeddings.values()
+                if np.any(np.isnan(v)) or np.any(np.isinf(v)))
+    if n_bad > 0:
+        print(f'  ⚠️ {n_bad} embeddings have NaN/Inf!')
+    else:
+        print(f'     No NaN/Inf ✅')

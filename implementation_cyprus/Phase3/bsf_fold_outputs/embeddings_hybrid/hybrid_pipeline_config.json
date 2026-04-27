@@ -1,0 +1,30 @@
+{
+  "bsf_dim": 8448,
+  "n_shape_features": 18,
+  "hybrid_dim": 8466,
+  "shape_feature_names": [
+    "log_vol",
+    "log_surf",
+    "svr",
+    "sphericity",
+    "elongation",
+    "flatness",
+    "log_maxdiam",
+    "n_labels",
+    "t1c_mean",
+    "t1c_std",
+    "t1c_skew",
+    "t1c_kurt",
+    "t1c_ent",
+    "MajorAxis_mm",
+    "MinorAxis_mm",
+    "LeastAxis_mm",
+    "Max2D_mm",
+    "GLCM_JointEntropy"
+  ],
+  "cv_strategy": "KFold(n_splits=5, shuffle=True, random_state=42)",
+  "probe": "StandardScaler -> PCA(30) -> Ridge(alpha=1.0)",
+  "scaler_fitted_on_n_scans": 170,
+  "scaler_file": "/home/moamed/canada_me/explainable_diseas/implementation_cyprus/Phase3/bsf_fold_outputs/embeddings_hybrid/shape_scaler.pkl",
+  "embeddings_file": "/home/moamed/canada_me/explainable_diseas/implementation_cyprus/Phase3/bsf_fold_outputs/embeddings_hybrid/bsf_hybrid_embeddings.npz"
+}

@@ -1,0 +1,70 @@
+{
+  "hybrid_8466dim": {
+    "M1_volume_R2": 0.6112344978993691,
+    "M2_log_volume_R2": 0.6054709779108204,
+    "M3_svr_R2": 0.9970713527213959,
+    "M4_necrosis_F1": 0.7157142857142856,
+    "M5_elongation_R2": 0.9979667633765313,
+    "M6_nn_consistency_pct": 23.764705882352942,
+    "H1_pca_residual_r": 0.18939472445001226,
+    "H2_heterogeneity_R2": -0.35245989115506127,
+    "H3_subregion_F1": 0.618845717498469,
+    "H4_texture_bundle_R2": 0.42117620202697803,
+    "T1_dist_vol_r": 0.5735801511876797,
+    "T3_delta_R2": -0.47215804734334405,
+    "T4_response_AUC": 0.5091666666666667,
+    "T5_coherence_cos": 0.9393686233947462,
+    "T6_velocity_r": 0.5603270367994222,
+    "T7_treatment_d": 33.86964090372854
+  },
+  "pure_bsf_8448dim": {
+    "M1_volume_R2": 0.4370505034928806,
+    "M2_log_volume_R2": 0.4471876290794448,
+    "M3_svr_R2": 0.2100651758897305,
+    "M4_necrosis_F1": 0.695299539170507,
+    "M5_elongation_R2": -0.07232116495503127,
+    "M6_nn_consistency_pct": 23.764705882352942,
+    "H1_pca_residual_r": 0.1893947720527649,
+    "H2_heterogeneity_R2": -0.49689120013213783,
+    "H3_subregion_F1": 0.6185462741629725,
+    "H4_texture_bundle_R2": 0.28453345217816056,
+    "T1_dist_vol_r": 0.5775763206398317,
+    "T3_delta_R2": -0.5486740274645052,
+    "T4_response_AUC": 0.5091666666666667,
+    "T5_coherence_cos": 0.9423316717147827,
+    "T6_velocity_r": 0.5630933309937932,
+    "T7_treatment_d": 34.10591125488281
+  },
+  "scores": {
+    "hybrid": 11,
+    "pure_bsf": 5,
+    "improvement": 6
+  },
+  "shape_features": [
+    "log_vol",
+    "log_surf",
+    "svr",
+    "sphericity",
+    "elongation",
+    "flatness",
+    "log_maxdiam",
+    "n_labels",
+    "t1c_mean",
+    "t1c_std",
+    "t1c_skew",
+    "t1c_kurt",
+    "t1c_ent",
+    "MajorAxis_mm",
+    "MinorAxis_mm",
+    "LeastAxis_mm",
+    "Max2D_mm",
+    "GLCM_JointEntropy"
+  ],
+  "embedding_dim": {
+    "pure_bsf": 8448,
+    "shape_features": 18,
+    "hybrid": 8466
+  },
+  "cv_strategy": "KFold(n_splits=5, shuffle=True, random_state=42)",
+  "probe": "StandardScaler \u2192 PCA(30) \u2192 Ridge(alpha=1.0)"
+}

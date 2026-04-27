@@ -1,6 +1,7 @@
 # Paper 11: Time-Distance Vision Transformers (2022) - YOUR TEMPORAL BLUEPRINT!
 
 ## 1. ONE-SENTENCE SUMMARY
+
 Time-distance vision transformers encode **HOW FAR APART scans are in time** directly into the ViT's attention mechanism, so the model knows that "6 months between T0→T1" matters differently than "2 years between T1→T2" — **exactly what Yale needs for irregular clinical follow-ups!**
 
 ---
@@ -8,42 +9,45 @@ Time-distance vision transformers encode **HOW FAR APART scans are in time** dir
 ## 2. KEY RESULTS (The Numbers That Matter!)
 
 ### **Synthetic Benchmark: Tumor-CIFAR**
+
 A synthetic dataset where CIFAR images "grow" over time — perfect controlled test.
 
 **Regular time intervals** (scans every 6 months):
 
-| Method | AUC |
-|--------|-----|
-| CS-CNN (single scan, no temporal) | 0.8558 |
-| DLSTM (LSTM on features) | 0.9907 |
-| Positional ViT (position-only, no time) | 0.9314 |
-| **TeViT (sinusoidal time encoding)** | **0.9948** |
-| **TaViT (temporal emphasis model)** | **0.9960** ✅ BEST |
+| Method                                     | AUC                      |
+| ------------------------------------------ | ------------------------ |
+| CS-CNN (single scan, no temporal)          | 0.8558                   |
+| DLSTM (LSTM on features)                   | 0.9907                   |
+| Positional ViT (position-only, no time)    | 0.9314                   |
+| **TeViT (sinusoidal time encoding)** | **0.9948**         |
+| **TaViT (temporal emphasis model)**  | **0.9960** ✅ BEST |
 
 **Irregular time intervals** (scans at random gaps — like real clinics!):
 
-| Method | AUC |
-|--------|-----|
-| CS-CNN (single scan) | 0.8370 |
-| DLSTM | 0.9991 |
+| Method                                  | AUC                                   |
+| --------------------------------------- | ------------------------------------- |
+| CS-CNN (single scan)                    | 0.8370                                |
+| DLSTM                                   | 0.9991                                |
 | **Positional ViT (no time info)** | **0.5052** ❌ COMPLETE FAILURE! |
-| **TeViT** | **0.9996** ✅ |
-| **TaViT** | **0.9988** ✅ |
+| **TeViT**                         | **0.9996** ✅                   |
+| **TaViT**                         | **0.9988** ✅                   |
 
 > 🚨 **CRITICAL FINDING**: Without time-distance encoding, positional ViT drops to **RANDOM CHANCE (0.50)** on irregular data! This proves you CANNOT just use scan order — you MUST encode actual time gaps!
 
 ### **Real Clinical Data: NLST Lung Cancer Screening**
+
 National Lung Screening Trial: 535 cancer cases + 1,397 controls, 2 consecutive CT scans per patient.
 
-| Method | AUC | Description |
-|--------|-----|-------------|
-| CS-CNN (single scan) | 0.734 | Uses only the latest scan |
-| DLSTM | 0.779 | LSTM on CNN features |
-| Positional ViT | 0.768 | Scan order only, no time info |
-| **TeViT (sinusoidal time)** | **0.785** | Adds time encoding to tokens |
-| **TaViT (temporal emphasis)** | **0.786** ✅ BEST | Scales attention by time |
+| Method                              | AUC                     | Description                   |
+| ----------------------------------- | ----------------------- | ----------------------------- |
+| CS-CNN (single scan)                | 0.734                   | Uses only the latest scan     |
+| DLSTM                               | 0.779                   | LSTM on CNN features          |
+| Positional ViT                      | 0.768                   | Scan order only, no time info |
+| **TeViT (sinusoidal time)**   | **0.785**         | Adds time encoding to tokens  |
+| **TaViT (temporal emphasis)** | **0.786** ✅ BEST | Scales attention by time      |
 
 **Key statistics:**
+
 - TaViT vs CS-CNN: **p < 0.05** (statistically significant improvement!)
 - TaViT vs Positional ViT: **p > 0.05** (NOT significant) — Authors explain: NLST has >90% screening adherence → intervals are REGULAR → time encoding adds less value when intervals are already uniform
 
@@ -51,11 +55,11 @@ National Lung Screening Trial: 535 cancer cases + 1,397 controls, 2 consecutive 
 
 ### **Pretraining Results (Masked Autoencoding)**
 
-| Method | With Pretraining | Without Pretraining | Improvement |
-|--------|-----------------|---------------------|-------------|
-| TaViT | **0.786** | 0.770 | +1.6% |
-| TeViT | **0.785** | 0.764 | +2.1% |
-| Positional ViT | **0.768** | 0.751 | +1.7% |
+| Method         | With Pretraining | Without Pretraining | Improvement |
+| -------------- | ---------------- | ------------------- | ----------- |
+| TaViT          | **0.786**  | 0.770               | +1.6%       |
+| TeViT          | **0.785**  | 0.764               | +2.1%       |
+| Positional ViT | **0.768**  | 0.751               | +1.7%       |
 
 > Pretraining consistently helps! Use masked autoencoding on ALL Yale scans (11,884!) before fine-tuning.
 
@@ -70,6 +74,7 @@ National Lung Screening Trial: 535 cancer cases + 1,397 controls, 2 consecutive 
 **Solution**: Encode the **continuous time distance** (in days/months) using sinusoidal functions — same math that original Transformers use for word positions, but now applied to TIME!
 
 **The Math (Simple)**:
+
 ```
 Time distance: r_t = days between scan and reference point
 
@@ -81,6 +86,7 @@ Where: D = embedding dimension (64 in paper)
 ```
 
 **How it's used**: Time encoding vector is **ADDED** to each scan's feature token:
+
 ```
 Input token = [feature_embedding] + [time_encoding]
                     ↓                      ↓
@@ -88,6 +94,7 @@ Input token = [feature_embedding] + [time_encoding]
 ```
 
 **Yale example**:
+
 ```
 Patient with 8 scans:
 T0 (Jan 2015): r_t = 0 days      → TE(0)   = [0, 1, 0, 1, ...]
@@ -99,6 +106,7 @@ The ViT now KNOWS that T2 is 4× farther from T0 than T1 is!
 ```
 
 **Why sinusoidal?**:
+
 - Continuous → handles ANY time gap (not limited to fixed intervals)
 - Smooth → similar times get similar encodings
 - Unique → different times get different encodings
@@ -113,6 +121,7 @@ The ViT now KNOWS that T2 is 4× farther from T0 than T1 is!
 **Solution**: The **Temporal Emphasis Model (TEM)** — a learnable sigmoid function that scales self-attention weights based on time distance between scans.
 
 **The Math (Simple)**:
+
 ```
 Time distance between scan i and scan j:  R_i,j = |time_i - time_j|
 
@@ -123,6 +132,7 @@ Where: a = learnable steepness parameter (how fast emphasis drops)
 ```
 
 **What this looks like (flipped sigmoid)**:
+
 ```
 Emphasis
   1.0 |████████████████▄▄▄▄
@@ -140,6 +150,7 @@ Emphasis
 ```
 
 **How it's used**: TEM scores MULTIPLY the self-attention weights:
+
 ```
 Standard attention:  Attention(Q,K) = softmax(Q × K^T / √d)
 TaViT attention:     Attention(Q,K) = softmax(Q × K^T / √d) × TEM(R)
@@ -149,6 +160,7 @@ TaViT attention:     Attention(Q,K) = softmax(Q × K^T / √d) × TEM(R)
 ```
 
 **Why it's brilliant for Yale**:
+
 ```
 Patient scanned 8 times over 10 years:
 - Latest scan (2023) vs previous (2022): TEM ≈ 0.95 (very relevant!)
@@ -161,16 +173,16 @@ Patient scanned 8 times over 10 years:
 
 **TaViT vs TeViT — Which is better?**
 
-| Feature | TeViT | TaViT |
-|---------|-------|-------|
-| How time enters | Added to input tokens | Multiplies attention weights |
-| Time representation | Fixed sinusoidal formula | Learnable sigmoid |
-| Handles irregular | ✅ Yes | ✅ Yes |
-| Emphasizes recent | ❌ All times weighted equally | ✅ Recent > Old (learnable) |
-| NLST AUC | 0.785 | **0.786** ✅ |
-| Tumor-CIFAR (regular) | 0.9948 | **0.9960** ✅ |
-| Tumor-CIFAR (irregular) | **0.9996** ✅ | 0.9988 |
-| Parameters | Zero extra | +2 learnable (a, c) |
+| Feature                 | TeViT                         | TaViT                        |
+| ----------------------- | ----------------------------- | ---------------------------- |
+| How time enters         | Added to input tokens         | Multiplies attention weights |
+| Time representation     | Fixed sinusoidal formula      | Learnable sigmoid            |
+| Handles irregular       | ✅ Yes                        | ✅ Yes                       |
+| Emphasizes recent       | ❌ All times weighted equally | ✅ Recent > Old (learnable)  |
+| NLST AUC                | 0.785                         | **0.786** ✅           |
+| Tumor-CIFAR (regular)   | 0.9948                        | **0.9960** ✅          |
+| Tumor-CIFAR (irregular) | **0.9996** ✅           | 0.9988                       |
+| Parameters              | Zero extra                    | +2 learnable (a, c)          |
 
 **Verdict**: Very close! TaViT slightly better on real data (clinical relevance > synthetic). **Use TaViT for Yale** — the learnable emphasis is perfect for patients with varying follow-up patterns.
 
@@ -179,6 +191,7 @@ Patient scanned 8 times over 10 years:
 ## 4. ARCHITECTURE DETAILS (How to Build It!)
 
 ### Full Pipeline:
+
 ```
 Raw 3D CT scans (per patient: T0, T1, T2, ... T7)
     ↓
@@ -196,18 +209,20 @@ Transformer Encoder (8 layers, 8 attention heads)
 ```
 
 ### Hyperparameters:
-| Parameter | Value |
-|-----------|-------|
-| Embedding dimension (D) | 64 |
-| Attention heads | 8 |
-| Encoder depth | 8 layers |
-| Optimizer | AdamW |
-| Learning rate schedule | Cosine warmup |
-| Masking ratio (pretraining, 5 timepoints) | 0.75 |
-| Masking ratio (pretraining, 2 timepoints) | 0.50 |
-| ROIs per scan | 5 (from nodule detector) |
+
+| Parameter                                 | Value                    |
+| ----------------------------------------- | ------------------------ |
+| Embedding dimension (D)                   | 64                       |
+| Attention heads                           | 8                        |
+| Encoder depth                             | 8 layers                 |
+| Optimizer                                 | AdamW                    |
+| Learning rate schedule                    | Cosine warmup            |
+| Masking ratio (pretraining, 5 timepoints) | 0.75                     |
+| Masking ratio (pretraining, 2 timepoints) | 0.50                     |
+| ROIs per scan                             | 5 (from nodule detector) |
 
 ### Masked Autoencoder Pretraining:
+
 ```
 Self-supervised pretraining (no labels needed!):
 1. Take patient's scan sequence (T0, T1, ..., T7)
@@ -224,19 +239,22 @@ Self-supervised pretraining (no labels needed!):
 ## 5. LIMITATIONS & WHAT'S MISSING
 
 ### ⚠️ Limitations Acknowledged by Authors:
-1. **Only tested 2 timepoints on real data** — NLST has just 2 consecutive scans per patient
-   - Yale has ~8 scans per patient → **Opportunity to extend to longer sequences!**
-   
-2. **Only tested on lung cancer screening** — Not validated on brain tumors
-   - Yale = brain metastases → **Need to adapt feature extraction (brain ROIs, not lung nodules)**
-   
-3. **Feature extraction from pretrained CNN** — Uses a fixed nodule detector (not end-to-end)
-   - For Yale: Replace with Swin UNETR encoder (Paper 13) → Learn brain-specific features!
 
+1. **Only tested 2 timepoints on real data** — NLST has just 2 consecutive scans per patient
+
+   - Yale has ~8 scans per patient → **Opportunity to extend to longer sequences!**
+2. **Only tested on lung cancer screening** — Not validated on brain tumors
+
+   - Yale = brain metastases → **Need to adapt feature extraction (brain ROIs, not lung nodules)**
+3. **Feature extraction from pretrained CNN** — Uses a fixed nodule detector (not end-to-end)
+
+   - For Yale: Replace with Swin UNETR encoder (Paper 13) → Learn brain-specific features!
 4. **"Need to validate on irregularly repeating medical images from real clinical setting"** — Authors literally call for this!
+
    - Yale IS that real clinical setting → **Your project directly answers their call!**
 
 ### 🔄 What We Need to Adapt for Yale:
+
 1. **Replace lung nodule detector** → Use Swin UNETR encoder (Paper 13) for brain embeddings
 2. **Scale from 2→8 timepoints** → Adjust masking ratio (maybe 0.6 for 8 timepoints?)
 3. **Brain-specific ROIs** → Use nnU-Net masks to guide attention to tumor regions
@@ -275,20 +293,22 @@ STEP 6: Downstream tasks
 
 ### 📋 What to Download & Use:
 
-| Resource | Link | Use |
-|----------|------|-----|
-| **Code** | https://github.com/tom1193/time-distance-transformer | Full implementation! |
-| **Architecture** | `model.py` in repo | TeViT and TaViT classes |
-| **Pretraining** | `pretrain.py` in repo | Masked autoencoder |
-| **Time encoding** | `time_encoding.py` in repo | Sinusoidal formula |
+| Resource                | Link                                                 | Use                     |
+| ----------------------- | ---------------------------------------------------- | ----------------------- |
+| **Code**          | https://github.com/tom1193/time-distance-transformer | Full implementation!    |
+| **Architecture**  | `model.py` in repo                                 | TeViT and TaViT classes |
+| **Pretraining**   | `pretrain.py` in repo                              | Masked autoencoder      |
+| **Time encoding** | `time_encoding.py` in repo                         | Sinusoidal formula      |
 
 ### 🔑 Key Code Components to Reuse:
+
 1. **Temporal Emphasis Model** (TEM) → `class TemporalEmphasisModel(nn.Module)` — learnable sigmoid for attention scaling
 2. **Sinusoidal time encoding** → Same as positional encoding but with real time values
 3. **Masked autoencoder pretraining** → Self-supervised learning on Yale's 11,884 unlabeled scans
 4. **Multi-timepoint ViT** → Handles variable-length temporal sequences
 
 ### ⚡ Quick Start Plan:
+
 ```python
 # Step 1: Clone the repo
 # git clone https://github.com/tom1193/time-distance-transformer
@@ -316,22 +336,23 @@ STEP 6: Downstream tasks
 
 ## 7. CONNECTION TO OTHER PAPERS
 
-| Paper | Connection |
-|-------|-----------|
-| **Paper 13 (Swin UNETR)** | Provides the embedding extractor — replaces paper's lung CNN |
-| **Paper 9 (ComBat)** | Harmonizes embeddings before temporal encoding |
-| **Paper 10 (Longitudinal ComBat)** | Preserves patient trajectories during harmonization |
-| **Paper 10+ (Nested ComBat)** | Handles Yale's multiple scanner effects |
-| **Paper 10++ (ComBat Validation)** | Test BEFORE harmonizing — don't blindly apply! |
-| **Paper 2 (nnU-Net)** | Provides tumor masks → guides attention to tumor ROIs |
-| **Paper 5 (FLIRE)** | Temporal alignment ensures scans are spatially comparable |
-| **TransXAI** | Attention maps from temporal ViT → feed to LLM for explanations (Phase 3) |
+| Paper                                    | Connection                                                                 |
+| ---------------------------------------- | -------------------------------------------------------------------------- |
+| **Paper 13 (Swin UNETR)**          | Provides the embedding extractor — replaces paper's lung CNN              |
+| **Paper 9 (ComBat)**               | Harmonizes embeddings before temporal encoding                             |
+| **Paper 10 (Longitudinal ComBat)** | Preserves patient trajectories during harmonization                        |
+| **Paper 10+ (Nested ComBat)**      | Handles Yale's multiple scanner effects                                    |
+| **Paper 10++ (ComBat Validation)** | Test BEFORE harmonizing — don't blindly apply!                            |
+| **Paper 2 (nnU-Net)**              | Provides tumor masks → guides attention to tumor ROIs                     |
+| **Paper 5 (FLIRE)**                | Temporal alignment ensures scans are spatially comparable                  |
+| **TransXAI**                       | Attention maps from temporal ViT → feed to LLM for explanations (Phase 3) |
 
 ---
 
 ## 8. BOTTOM LINE
 
 ### ✅ Why This Paper is CRITICAL (⭐⭐⭐):
+
 1. **Solves THE core problem**: How to handle irregular time intervals between scans
 2. **Proven catastrophic failure without it**: Positional ViT → 0.50 AUC on irregular data!
 3. **Two methods, both work**: TeViT (simple, no extra params) + TaViT (learnable, slightly better)
@@ -340,11 +361,12 @@ STEP 6: Downstream tasks
 6. **Pretraining strategy**: Masked autoencoding works on unlabeled data → Perfect for Yale's 11,884 scans!
 
 ### 🎯 One-Line Takeaway:
+
 > **Use TaViT's temporal emphasis model on Swin UNETR embeddings to track brain tumor progression across Yale's irregular 8-scan sequences — the paper proves this is essential (without time info → random chance!).**
 
 ---
 
-*Paper: "Time-distance vision transformers in lung cancer diagnosis from longitudinal computed tomography" (2022)*  
-*Authors: Thomas Z. Li et al., Vanderbilt University*  
-*arXiv: https://arxiv.org/abs/2209.01676*  
+*Paper: "Time-distance vision transformers in lung cancer diagnosis from longitudinal computed tomography" (2022)*
+*Authors: Thomas Z. Li et al., Vanderbilt University*
+*arXiv: https://arxiv.org/abs/2209.01676*
 *Code: https://github.com/tom1193/time-distance-transformer*
