@@ -1,0 +1,32 @@
+{
+  "nnunet": {
+    "M1_volume_R2_ridge": 0.8063779303099454,
+    "M1_volume_R2_rf": 0.8685750738434359,
+    "M1_spearman_rho": 0.8708337381291338,
+    "M2_logvol_R2_ridge": 0.8254463215679853,
+    "M2_logvol_R2_rf": 0.8199899660981258,
+    "M3_enhancement_ridge": 0.9465806787246153,
+    "M3_enhancement_rf": 0.9856573941669902,
+    "M4_necrosis_F1": 0.8796950471404164,
+    "M5_corefrac_ridge": 0.9606791292859005,
+    "M5_corefrac_rf": 0.9853145185489854,
+    "M6_patient_purity_pct": 12.833333333333332,
+    "H1_rankme": 824.4286499023438,
+    "H1_eff_rank_95": 1122.0,
+    "H2_diversity": 0.23290026187896729,
+    "H2_uniformity": -0.7862005829811096,
+    "H3_responder_F1": 0.8213544449022028,
+    "H4_norm_cv": 0.04730019345879555,
+    "H5_rankme_standalone": 824.4286499023438,
+    "T1_spearman_wt": 0.3040816414281176,
+    "T2_ordering_pass": 1.0,
+    "T3_delta_R2": -0.009804990277193726,
+    "T3_directional_auc": 0.7502818489289741,
+    "T4_rano_auc": 0.6867543644823847,
+    "T5_coherence": 0.9389676066163688,
+    "T5_pass_dual": 0.0,
+    "T6_velocity_cv": 0.6099569797515869,
+    "T7_treatment_d": 0.45237863063812256,
+    "T8_kendall_tau": 0.39417639020288026
+  }
+}

@@ -1,0 +1,179 @@
+6.6s	1	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.6s	2	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.6s	3	0.00s - to python to disable frozen modules.
+6.6s	4	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+7.3s	5	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.3s	6	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.3s	7	0.00s - to python to disable frozen modules.
+7.3s	8	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+11.7s	9	nnunet: 1620 scans | dim=2825
+11.7s	10	  File: /kaggle/input/datasets/mohamedmohamed23/embedding-datasets/cnn_nnunet_embeddings.npz
+11.7s	11	
+11.7s	12	============================================================
+11.7s	13	  RAW EMBEDDING STATISTICS
+11.7s	14	============================================================
+11.7s	15	
+11.7s	16	  nnunet: 1620 scans | 731 patients | dim=2825
+11.7s	17	    Norm: min=0.0  max=25.2  mean=15.4
+11.7s	18	    Norm CV (std/mean): 0.2215
+11.7s	19	    Architecture: C=256 | octant=2048D  region=768D  vol=9D
+11.7s	20	    Cosine sim (500 pairs): mean=0.794  std=0.157
+11.7s	21	    Diversity (mean pairwise L2): 0.586
+11.9s	22	    RankMe (effective rank): 121.9
+11.9s	23	    Zero embeddings (resected): 2
+11.9s	24	
+11.9s	25	============================================================
+11.9s	26	  APPLYING COMPONENT-WISE L2 NORMALISATION
+11.9s	27	============================================================
+11.9s	28	  nnunet: Component-wise L2 (D=2825)
+11.9s	29	    Full (2825-D): mean_norm=2.433  CV=0.0473
+11.9s	30	    Cosine sim (498 pairs): mean=0.771  std=0.144
+11.9s	31	    Diversity: 0.642
+11.9s	32	
+11.9s	33	Tumor volumes: 1620 rows from /kaggle/input/datasets/mohamedmohamed23/brats2024-metadata/tumor_volumes.csv
+11.9s	34	Match test: FOUND
+11.9s	35	
+11.9s	36	✅ Ready | CACHE_LOADED=False | Models: ['nnunet']
+11.9s	37	Output: /kaggle/working/phase2_evaluation
+12.1s	38	============================================================
+12.1s	39	  MORPHOLOGY TESTS M1-M6
+12.1s	40	============================================================
+14.3s	41	nnunet: 1620/1620 matched
+2082.6s	42	  nnunet M1_spearman_rho: 0.871
+2082.6s	43	  nnunet M1_volume_R2_rf: 0.869
+2082.6s	44	  nnunet M1_volume_R2_ridge: 0.806
+2082.6s	45	  nnunet M2_logvol_R2_rf: 0.820
+2082.6s	46	  nnunet M2_logvol_R2_ridge: 0.825
+2082.6s	47	  nnunet M3_enhancement_rf: 0.986
+2082.6s	48	  nnunet M3_enhancement_ridge: 0.947
+2082.6s	49	  nnunet M4_necrosis_F1: 0.880
+2082.6s	50	  nnunet M5_corefrac_rf: 0.985
+2082.6s	51	  nnunet M5_corefrac_ridge: 0.961
+2082.6s	52	  nnunet M6_patient_purity_pct: 12.833
+2082.8s	53	
+2082.8s	54	============================================================
+2082.8s	55	  HETEROGENEITY TESTS H1-H5
+2082.8s	56	============================================================
+2090.8s	57	  nnunet H1_eff_rank_95: 1122.000
+2090.8s	58	  nnunet H1_rankme: 824.429
+2090.8s	59	  nnunet H2_diversity: 0.233
+2090.8s	60	  nnunet H2_uniformity: -0.786
+2090.8s	61	  nnunet H3_responder_F1: 0.821
+2090.8s	62	  nnunet H4_norm_cv: 0.047
+2090.8s	63	  nnunet H5_rankme_standalone: 824.429
+2091.0s	64	
+2091.0s	65	============================================================
+2091.0s	66	  TEMPORAL TESTS T1-T8 (Static Modeling Limitations)
+2091.0s	67	============================================================
+2091.0s	68	  nnunet: 559 longitudinal patients
+2093.0s	69	  nnunet T1_spearman_wt: 0.304
+2093.0s	70	  nnunet T2_ordering_pass: 1.000
+2093.0s	71	  nnunet T3_delta_R2: -0.010 <- WEAK (static CNN limitation)
+2093.0s	72	  nnunet T3_directional_auc: 0.750
+2093.0s	73	  nnunet T4_rano_auc: 0.687
+2093.0s	74	  nnunet T5_coherence: 0.939
+2093.0s	75	  nnunet T5_pass_dual: 0.000
+2093.0s	76	  nnunet T6_velocity_cv: 0.610
+2093.0s	77	  nnunet T7_treatment_d: 0.452
+2093.0s	78	  nnunet T8_kendall_tau: 0.394
+2093.2s	79	
+2093.2s	80	============================================================
+2093.2s	81	  FULL 18-TEST DASHBOARD
+2093.2s	82	============================================================
+2093.2s	83	
+2093.2s	84	nnunet  [22/26 pass]
+2093.2s	85	  M1_volume_R2_ridge                     0.806  thresh=0.5     PASS  [low-pri]
+2093.2s	86	  M1_volume_R2_rf                        0.869  thresh=0.5     PASS  [med-pri]
+2093.2s	87	  M1_spearman_rho                        0.871  thresh=0.55    PASS  [med-pri]
+2093.2s	88	  M2_logvol_R2_ridge                     0.825  thresh=0.4     PASS  [low-pri]
+2093.2s	89	  M2_logvol_R2_rf                        0.820  thresh=0.4     PASS  [med-pri]
+2093.2s	90	  M3_enhancement_ridge                   0.947  thresh=0.25    PASS  [low-pri]
+2093.2s	91	  M3_enhancement_rf                      0.986  thresh=0.25    PASS  [low-pri]
+2093.2s	92	  M4_necrosis_F1                         0.880  thresh=0.6     PASS  [med-pri]
+2093.2s	93	  M5_corefrac_ridge                      0.961  thresh=0.3     PASS  [low-pri]
+2093.2s	94	  M5_corefrac_rf                         0.985  thresh=0.3     PASS  [low-pri]
+2093.2s	95	  M6_patient_purity_pct                 12.833  thresh=60.0    FAIL  [HIGH-PRI]
+2093.2s	96	  H1_rankme                            824.429  thresh=30.0    PASS  [med-pri]
+2093.2s	97	  H1_eff_rank_95                      1122.000  thresh=50.0    PASS  [med-pri]
+2093.2s	98	  H2_diversity                           0.233  thresh=0.25    FAIL  [med-pri]
+2093.2s	99	  H2_uniformity                         -0.786  thresh=-3.0    PASS  [med-pri]
+2093.2s	100	  H3_responder_F1                        0.821  thresh=0.55    PASS  [med-pri]
+2093.2s	101	  H4_norm_cv                             0.047  thresh=0.3     PASS  [low-pri]
+2093.2s	102	  H5_rankme_standalone                 824.429  thresh=30.0    PASS  [med-pri]
+2093.2s	103	  T1_spearman_wt                         0.304  thresh=0.3     PASS  [HIGH-PRI]
+2093.2s	104	  T2_ordering_pass                       1.000  thresh=1.0     PASS  [low-pri]
+2093.2s	105	  T3_delta_R2                           -0.010  (descriptor)
+2093.2s	106	  T3_directional_auc                     0.750  thresh=0.55    PASS  [low-pri]
+2093.2s	107	  T4_rano_auc                            0.687  thresh=0.65    PASS  [HIGH-PRI]
+2093.2s	108	  T5_coherence                           0.939  thresh=0.7     PASS  [med-pri]
+2093.2s	109	  T5_pass_dual                           0.000  thresh=1.0     FAIL  [low-pri]
+2093.2s	110	  T6_velocity_cv                         0.610  (descriptor)
+2093.2s	111	  T7_treatment_d                         0.452  thresh=0.5     FAIL  [HIGH-PRI]
+2093.2s	112	  T8_kendall_tau                         0.394  thresh=0.3     PASS  [HIGH-PRI]
+2093.2s	113	
+2093.2s	114	  HIGH-PRIORITY FAILS:
+2093.2s	115	    M6_patient_purity_pct = 12.833 -> needs > 60.00
+2093.2s	116	    T7_treatment_d = 0.452 -> needs > 0.50
+2093.2s	117	
+2093.2s	118	Saved: /kaggle/working/phase2_evaluation/cnn_eval_results.json
+2093.2s	119	
+2093.2s	120	Generating t-SNE visualization...
+2103.8s	121	  Saved: /kaggle/working/phase2_evaluation/figures/nnunet_tsne.png
+2105.8s	122	  Saved: /kaggle/working/phase2_evaluation/figures/nnunet_distributions.png
+2105.8s	123	
+2105.8s	124	All outputs in: /kaggle/working/phase2_evaluation
+2105.8s	125	
+2105.8s	126	============================================================
+2105.8s	127	  PHASE 2 CNN EVALUATION — COMPUTED SUMMARY
+2105.8s	128	============================================================
+2105.8s	129	
+2105.8s	130	Model: nnunet
+2105.8s	131	  Scans: 1620 | Patients: 731 | Embedding dim: 2825
+2105.8s	132	
+2105.8s	133	  MORPHOLOGY:
+2105.8s	134	    M1_spearman_rho                     = 0.871
+2105.8s	135	    M1_volume_R2_rf                     = 0.869
+2105.8s	136	    M2_logvol_R2_rf                     = 0.820
+2105.8s	137	    M4_necrosis_F1                      = 0.880
+2105.8s	138	    M6_patient_purity_pct               = 12.833
+2105.8s	139	
+2105.8s	140	  HETEROGENEITY:
+2105.8s	141	    H1_rankme                           = 824.4
+2105.8s	142	    H2_diversity                        = 0.233
+2105.8s	143	    H3_responder_F1                     = 0.821
+2105.8s	144	    H4_norm_cv                          = 0.047
+2105.8s	145	
+2105.8s	146	  TEMPORAL:
+2105.8s	147	    T1_spearman_wt                      = 0.304
+2105.8s	148	    T4_rano_auc                         = 0.687
+2105.8s	149	    T7_treatment_d                      = 0.452
+2105.8s	150	    T8_kendall_tau                      = 0.394
+2105.8s	151	
+2105.8s	152	  STRENGTHS (7):
+2105.8s	153	    ✅ M1_spearman_rho = 0.871 (>0.55)
+2105.8s	154	    ✅ M4_necrosis_F1 = 0.880 (>0.6)
+2105.8s	155	    ✅ H1_rankme = 824.429 (>30.0)
+2105.8s	156	    ✅ T5_coherence = 0.939 (>0.7)
+2105.8s	157	    ✅ H3_responder_F1 = 0.821 (>0.55)
+2105.8s	158	    ✅ T4_rano_auc = 0.687 (>0.65)
+2105.8s	159	    ✅ T8_kendall_tau = 0.394 (>0.3)
+2105.8s	160	
+2105.8s	161	  LIMITATIONS (3) → Phase 3 targets:
+2105.8s	162	    ❌ H2_diversity = 0.233 (needs >0.25)
+2105.8s	163	    ❌ M6_patient_purity_pct = 12.833 (needs >60.0)
+2105.8s	164	    ❌ T7_treatment_d = 0.452 (needs >0.5)
+2105.8s	165	
+2105.8s	166	============================================================
+2105.8s	167	  PHASE 2 COMPLETE
+2105.8s	168	============================================================
+2105.8s	169	  Results saved: /kaggle/working/phase2_evaluation/cnn_eval_results.json
+2105.8s	170	  Figures saved: /kaggle/working/phase2_evaluation/figures
+2105.8s	171	  → Phase 3: SwinUNETR + temporal sequences
+2108.4s	172	/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+2108.4s	173	  cells[i][c] = re.sub('\\\\\|', '|', cell)
+2108.6s	174	/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+2108.6s	175	  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+2109.2s	176	[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+2109.5s	177	[NbConvertApp] Writing 55035 bytes to __notebook__.ipynb
+2111.9s	178	[NbConvertApp] Converting notebook __notebook__.ipynb to html
+2112.8s	179	[NbConvertApp] Writing 483625 bytes to __results__.html
