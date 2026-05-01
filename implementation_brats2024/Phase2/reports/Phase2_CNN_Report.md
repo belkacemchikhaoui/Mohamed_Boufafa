@@ -317,9 +317,9 @@ Stage 3 (16×16×16, 256 channels) was selected because:
 
 ---
 
-## Honest Limitations and Known Issues
+## Honest Design Limitations
 
-### Issue 1 — GT Mask Used in Embedding Extraction (Partial Circularity)
+### Limitation 1 — GT Mask Used in Embedding Extraction (Partial Circularity)
 
 **What happens:** Both the region-weighted component and the volumetric component use the ground-truth segmentation mask during extraction:
 - Region-weighted pool: the encoder feature map is multiplied by the GT WT/TC/ET binary masks → the pooled vector depends on GT mask boundaries
@@ -349,7 +349,7 @@ Stage 3 (16×16×16, 256 channels) was selected because:
 **Tests that remain valid (GT does not directly inflate them):**
 M6, H1, H2, H3, H4, T1, T2, T3, T4, T5, T6, T7, T8 — all temporal and structural tests.
 
-### Issue 2 — No Component Ablation Study
+### Limitation 2 — No Component Ablation Study
 
 Without running each component (Octant-only, Region-only, Volume-only, All-combined) through the 18-test battery, it is unknown:
 - How much each component independently contributes
@@ -358,43 +358,9 @@ Without running each component (Octant-only, Region-only, Volume-only, All-combi
 
 **Scope:** This is a known gap for the Phase 2 baseline. Ablation is planned for Phase 3 (see below) because Phase 3 is the publication-relevant model.
 
-### Issue 3 — Cell 9 NameError in Original Training Notebook
 
-The original `Phase2_A2_nnUNet_Finetune.ipynb` training run crashed in Cell 9 (visualization) with `NameError: name 'gc' is not defined` after training completed. Training itself finished correctly at epoch 27 with best checkpoint saved. The extraction notebook (`after_run/phase2-a2-nnunet-finetune_continue.ipynb`) recovered the checkpoint and completed embedding extraction cleanly with no errors.
 
 ---
 
-## Planned Actions (Phase 3 Review — Before Paper Submission)
-
-### Action 1 — Verify 4608-D SwinUNETR Encoder Alone is Sufficient (HIGH PRIORITY)
-
-**Context:** Phase 3's 4617-D embedding = 4608-D SwinUNETR encoder features + 9-D GT volumes. The same GT circularity applies. If the 4608-D encoder alone achieves comparable M1 R² scores, the 9-D GT volume component can be **dropped entirely** — making the Phase 3 embedding 100% GT-free and fully deployable without ground truth.
-
-**Plan:**
-1. Modify `Phase3/notebooks/Phase3_D1_Hybrid_Extraction.ipynb` — add a one-line flag to skip the 9-D volume concatenation
-2. Re-run Phase3_B1 with the 4608-D-only embedding
-3. Compare M1 R², T1 ρ, N11 Silhouette against the 4617-D results
-
-**Expected outcome:** If M1 R² stays ≥0.90 without the 9-D component → drop it. The SwinUNETR encoder was trained on segmentation, so it necessarily encodes volume information in its features.
-
-**If retained after ablation:** The 9-D component should switch from GT mask volumes to **predicted mask volumes** (from the model's own sigmoid output) — making it GT-free.
-
-**Estimated cost:** One Kaggle run (~1 hour). No architecture changes.  
-**When:** During Phase 3 review, before Phase 3_D1 is finalised.
-
-### Action 2 — Component Ablation for Phase 3 4617-D (MEDIUM PRIORITY)
-
-Run Phase3_B1 with three embedding variants to justify the design:
-- Encoder only (4608-D)
-- Encoder + volume (4617-D, current)
-- Volume only (9-D)
-
-Add a comparison column to the 18-test table in the Phase 3 report.
-
-**Estimated cost:** Two additional Kaggle runs.  
-**When:** After Action 1 confirms whether to keep or drop the 9-D component.
-
----
-
-*Report last updated: 2026-05-01*  
-*Sources: Phase2_A2_nnUNet_Finetune.ipynb (13 cells), Phase2_B1_CNN_Embedding_Evaluation.ipynb (7 cells), training_log_nnunet.txt, eval_log_nnunet.txt, extraction_log_nnunet.txt, cnn_eval_results.json*
+*Report last updated: 2026-05-01 | Phase 2 — Weeks 5–7*  
+*Sources: Phase2_A2_nnUNet_Finetune.ipynb, Phase2_B1_CNN_Embedding_Evaluation.ipynb, training_log_nnunet.txt, eval_log_nnunet.txt, extraction_log_nnunet.txt, cnn_eval_results.json*
