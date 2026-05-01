@@ -275,6 +275,8 @@ The following limitations were confirmed quantitatively and explicitly motivate 
 
 ---
 
+---
+
 ## Quick Reference — Numbers to Report
 
 | Metric | Value |
@@ -290,4 +292,109 @@ The following limitations were confirmed quantitatively and explicitly motivate 
 
 ---
 
-*Generated: 2026-05-01 | Phase 2 — Weeks 5–7*
+## Design Decisions and Rationale
+
+### Why concatenate three components into 2825-D?
+
+Each component captures a qualitatively different information type that the others cannot:
+
+| Component | What it captures | Cannot be replaced by |
+|---|---|---|
+| Octant (2048-D) | Spatial distribution of tumour appearance across 8 anatomical sub-regions (anterior/posterior, superior/inferior, left/right) | Region-weighted pool — which has no spatial decomposition |
+| Region-weighted (768-D) | Mean encoder activations specifically INSIDE each sub-region mask (WT, TC, ET) — encodes what each tumour compartment looks like | Octant — which pools the bounding box indiscriminately |
+| Volumetric (9-D) | Absolute tumour size (log-volumes), presence flags, and inter-region ratios (TC/WT, ET/TC) | Neither above — both are normalised feature maps insensitive to absolute size |
+
+The concatenation follows standard radiomics practice: combining shape features (volume), texture (encoder activations), and spatial distribution (octant) into a single descriptor. This is consistent with established medical image feature frameworks and aligns with the SwinUNETR 4617-D design in Phase 3 for fair cross-model comparison.
+
+**Limitation acknowledged:** No ablation study was performed to quantify the marginal contribution of each component individually. This is standard for a baseline model that will be superseded. See Planned Actions section.
+
+### Why Stage 3 for the embedding hook?
+
+Stage 3 (16×16×16, 256 channels) was selected because:
+1. It is the deepest encoder stage that still retains spatial structure at a resolution meaningful for tumour-level analysis
+2. It matches the resolution of SwinUNETR's `layers2` feature map — enabling a controlled cross-model comparison at equivalent spatial scale
+3. Deeper stages (Stage 4, 5) collapse to 8³ or 4³ resolution, losing spatial discriminability
+
+---
+
+## Honest Limitations and Known Issues
+
+### Issue 1 — GT Mask Used in Embedding Extraction (Partial Circularity)
+
+**What happens:** Both the region-weighted component and the volumetric component use the ground-truth segmentation mask during extraction:
+- Region-weighted pool: the encoder feature map is multiplied by the GT WT/TC/ET binary masks → the pooled vector depends on GT mask boundaries
+- Volumetric component: `log1p(GT_wt_vol)`, `log1p(GT_tc_vol)`, `log1p(GT_et_vol)` are directly computed from GT mask voxel counts
+
+**Why this is a problem:**
+1. **Evaluation circularity** — tests M1 (volume R²=0.869), M2 (log-vol R²=0.820), M4 (necrosis F1=0.880), and M5 (core fraction R²=0.985) are inflated because the GT volumes and region boundaries are literally encoded inside the embedding. Predicting volume from an embedding that contains the volume is not a meaningful test.
+2. **Non-deployable as-is** — in a real clinical setting, GT masks are not available for new patients. The extraction procedure as designed requires the ground truth to produce the embedding.
+
+**Why it was done anyway:**
+- For a Phase 2 **baseline** on training data where GT is available, this gives the strongest possible feature descriptor
+- The intent was to establish an upper-bound reference, not a deployable system
+- The limitation is systematic and affects CNN and ViT Phase 3 embeddings equally — making cross-model comparisons still internally consistent
+
+**Correct interpretation of affected test scores:**
+
+| Test | Reported value | Honest interpretation |
+|---|---|---|
+| M1 Volume R² (RF) | 0.869 | Upper bound — inflated by GT volume in embedding. True discriminative value unknown. |
+| M2 Log-vol R² (RF) | 0.820 | Same issue — partially circular. |
+| M4 Necrosis F1 | 0.880 | Partially inflated — region mask boundaries encoded. |
+| M5 Core fraction R² | 0.985 | Highly inflated — TC/WT ratio is literally the et/wt ratio stored in vol component. |
+| M1 Spearman ρ | 0.871 | Same as M1 R². |
+| T1, T4, T7, T8 | 0.304 / 0.687 / 0.452 / 0.394 | Not directly affected — these compare temporal differences, not absolute volume. |
+| M6, H1, H2, H3 | Not affected — structural properties of the embedding space, not volume prediction. |
+
+**Tests that remain valid (GT does not directly inflate them):**
+M6, H1, H2, H3, H4, T1, T2, T3, T4, T5, T6, T7, T8 — all temporal and structural tests.
+
+### Issue 2 — No Component Ablation Study
+
+Without running each component (Octant-only, Region-only, Volume-only, All-combined) through the 18-test battery, it is unknown:
+- How much each component independently contributes
+- Whether the concatenation improves on any single component
+- Whether the 9-D volume component (GT-dependent) is necessary if the encoder features already encode volume
+
+**Scope:** This is a known gap for the Phase 2 baseline. Ablation is planned for Phase 3 (see below) because Phase 3 is the publication-relevant model.
+
+### Issue 3 — Cell 9 NameError in Original Training Notebook
+
+The original `Phase2_A2_nnUNet_Finetune.ipynb` training run crashed in Cell 9 (visualization) with `NameError: name 'gc' is not defined` after training completed. Training itself finished correctly at epoch 27 with best checkpoint saved. The extraction notebook (`after_run/phase2-a2-nnunet-finetune_continue.ipynb`) recovered the checkpoint and completed embedding extraction cleanly with no errors.
+
+---
+
+## Planned Actions (Phase 3 Review — Before Paper Submission)
+
+### Action 1 — Verify 4608-D SwinUNETR Encoder Alone is Sufficient (HIGH PRIORITY)
+
+**Context:** Phase 3's 4617-D embedding = 4608-D SwinUNETR encoder features + 9-D GT volumes. The same GT circularity applies. If the 4608-D encoder alone achieves comparable M1 R² scores, the 9-D GT volume component can be **dropped entirely** — making the Phase 3 embedding 100% GT-free and fully deployable without ground truth.
+
+**Plan:**
+1. Modify `Phase3/notebooks/Phase3_D1_Hybrid_Extraction.ipynb` — add a one-line flag to skip the 9-D volume concatenation
+2. Re-run Phase3_B1 with the 4608-D-only embedding
+3. Compare M1 R², T1 ρ, N11 Silhouette against the 4617-D results
+
+**Expected outcome:** If M1 R² stays ≥0.90 without the 9-D component → drop it. The SwinUNETR encoder was trained on segmentation, so it necessarily encodes volume information in its features.
+
+**If retained after ablation:** The 9-D component should switch from GT mask volumes to **predicted mask volumes** (from the model's own sigmoid output) — making it GT-free.
+
+**Estimated cost:** One Kaggle run (~1 hour). No architecture changes.  
+**When:** During Phase 3 review, before Phase 3_D1 is finalised.
+
+### Action 2 — Component Ablation for Phase 3 4617-D (MEDIUM PRIORITY)
+
+Run Phase3_B1 with three embedding variants to justify the design:
+- Encoder only (4608-D)
+- Encoder + volume (4617-D, current)
+- Volume only (9-D)
+
+Add a comparison column to the 18-test table in the Phase 3 report.
+
+**Estimated cost:** Two additional Kaggle runs.  
+**When:** After Action 1 confirms whether to keep or drop the 9-D component.
+
+---
+
+*Report last updated: 2026-05-01*  
+*Sources: Phase2_A2_nnUNet_Finetune.ipynb (13 cells), Phase2_B1_CNN_Embedding_Evaluation.ipynb (7 cells), training_log_nnunet.txt, eval_log_nnunet.txt, extraction_log_nnunet.txt, cnn_eval_results.json*
