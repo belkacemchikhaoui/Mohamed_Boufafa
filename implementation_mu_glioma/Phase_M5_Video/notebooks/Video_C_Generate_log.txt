@@ -1,0 +1,456 @@
+12.5s	1	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+12.5s	2	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+12.5s	3	0.00s - to python to disable frozen modules.
+12.5s	4	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+13.3s	5	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+13.3s	6	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+13.3s	7	0.00s - to python to disable frozen modules.
+13.3s	8	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+19.1s	9	Device: cpu
+19.1s	10	Config: noise_t=5, frames/gap=15, fps=3, px_to_mL=0.0035
+19.9s	11	Loaded 1470 triplets, 152 patients
+19.9s	12	Patients with pairs: 152
+19.9s	13	  PatientID_0003: 2 consecutive pairs
+19.9s	14	  PatientID_0005: 1 consecutive pairs
+19.9s	15	  PatientID_0006: 3 consecutive pairs
+19.9s	16	  PatientID_0007: 4 consecutive pairs
+19.9s	17	  PatientID_0008: 1 consecutive pairs
+20.1s	18	Schedule: cosine T=50
+21.4s	19	Model loaded: 24.7M params
+21.4s	20	Checkpoint: ep137 dice=0.7596333139830015
+22.4s	21	Helpers ready (morpho + subregion overlays)
+22.6s	22	Generating for 10 patients...
+37.0s	23	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+37.0s	24	
+37.0s	25	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+38.9s	26	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+38.9s	27	
+38.9s	28	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+40.5s	29	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+40.5s	30	
+40.5s	31	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+42.2s	32	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+42.2s	33	
+42.2s	34	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+44.0s	35	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+44.0s	36	
+44.0s	37	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+45.7s	38	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+45.7s	39	
+45.7s	40	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+47.3s	41	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+47.3s	42	
+47.3s	43	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+49.1s	44	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+49.1s	45	
+49.1s	46	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+49.4s	47	  [1/10] PatientID_0003: 29 frames x 4 (mp4+html)
+56.5s	48	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+56.5s	49	
+56.5s	50	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+57.4s	51	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+57.4s	52	
+57.4s	53	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+58.3s	54	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+58.3s	55	
+58.3s	56	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+59.4s	57	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+59.4s	58	
+59.4s	59	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+60.3s	60	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+60.3s	61	
+60.3s	62	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+61.1s	63	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+61.1s	64	
+61.1s	65	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+62.1s	66	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+62.1s	67	
+62.1s	68	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+62.9s	69	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+62.9s	70	
+62.9s	71	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+63.2s	72	  [2/10] PatientID_0005: 15 frames x 4 (mp4+html)
+84.7s	73	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+84.7s	74	
+84.7s	75	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+87.2s	76	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+87.2s	77	
+87.2s	78	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+89.7s	79	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+89.7s	80	
+89.7s	81	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+92.2s	82	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+92.2s	83	
+92.2s	84	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+94.8s	85	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+94.8s	86	
+94.8s	87	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+97.1s	88	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+97.1s	89	
+97.1s	90	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+99.8s	91	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+99.8s	92	
+99.8s	93	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+102.2s	94	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+102.2s	95	
+102.2s	96	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+102.5s	97	  [3/10] PatientID_0006: 43 frames x 4 (mp4+html)
+131.0s	98	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+131.0s	99	
+131.0s	100	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+134.3s	101	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+134.3s	102	
+134.3s	103	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+137.5s	104	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+137.5s	105	
+137.5s	106	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+140.8s	107	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+140.8s	108	
+140.8s	109	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+144.2s	110	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+144.2s	111	
+144.2s	112	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+147.3s	113	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+147.3s	114	
+147.3s	115	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+150.7s	116	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+150.7s	117	
+150.7s	118	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+154.0s	119	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+154.0s	120	
+154.0s	121	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+154.4s	122	  [4/10] PatientID_0007: 57 frames x 4 (mp4+html)
+161.2s	123	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+161.2s	124	
+161.2s	125	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+162.1s	126	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+162.1s	127	
+162.1s	128	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+163.0s	129	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+163.0s	130	
+163.0s	131	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+163.9s	132	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+163.9s	133	
+163.9s	134	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+164.8s	135	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+164.8s	136	
+164.8s	137	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+165.8s	138	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+165.8s	139	
+165.8s	140	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+166.7s	141	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+166.7s	142	
+166.7s	143	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+167.6s	144	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+167.6s	145	
+167.6s	146	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+167.9s	147	  [5/10] PatientID_0008: 15 frames x 4 (mp4+html)
+181.4s	148	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+181.4s	149	
+181.4s	150	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+183.3s	151	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+183.3s	152	
+183.3s	153	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+185.0s	154	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+185.0s	155	
+185.0s	156	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+186.6s	157	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+186.6s	158	
+186.6s	159	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+188.5s	160	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+188.5s	161	
+188.5s	162	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+190.1s	163	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+190.1s	164	
+190.1s	165	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+191.7s	166	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+191.7s	167	
+191.7s	168	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+193.6s	169	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+193.6s	170	
+193.6s	171	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+193.9s	172	  [6/10] PatientID_0010: 29 frames x 4 (mp4+html)
+200.7s	173	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+200.7s	174	
+200.7s	175	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+201.6s	176	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+201.6s	177	
+201.6s	178	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+202.5s	179	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+202.5s	180	
+202.5s	181	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+203.4s	182	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+203.4s	183	
+203.4s	184	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+204.3s	185	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+204.3s	186	
+204.3s	187	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+205.4s	188	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+205.4s	189	
+205.4s	190	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+206.3s	191	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+206.3s	192	
+206.3s	193	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+207.2s	194	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+207.2s	195	
+207.2s	196	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+207.4s	197	  [7/10] PatientID_0011: 15 frames x 4 (mp4+html)
+214.1s	198	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+214.1s	199	
+214.1s	200	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+215.0s	201	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+215.0s	202	
+215.0s	203	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+216.1s	204	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+216.1s	205	
+216.1s	206	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+217.0s	207	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+217.0s	208	
+217.0s	209	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+217.9s	210	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+217.9s	211	
+217.9s	212	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+218.8s	213	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+218.8s	214	
+218.8s	215	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+219.7s	216	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+219.7s	217	
+219.7s	218	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+220.6s	219	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+220.6s	220	
+220.6s	221	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+220.9s	222	  [8/10] PatientID_0012: 15 frames x 4 (mp4+html)
+248.6s	223	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+248.6s	224	
+248.6s	225	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+251.9s	226	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+251.9s	227	
+251.9s	228	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+255.1s	229	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+255.1s	230	
+255.1s	231	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+258.4s	232	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+258.4s	233	
+258.4s	234	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+261.8s	235	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+261.8s	236	
+261.8s	237	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+264.9s	238	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+264.9s	239	
+264.9s	240	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+268.2s	241	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+268.2s	242	
+268.2s	243	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+271.5s	244	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+271.5s	245	
+271.5s	246	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+271.9s	247	  [9/10] PatientID_0013: 57 frames x 4 (mp4+html)
+306.0s	248	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+306.0s	249	
+306.0s	250	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+310.0s	251	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+310.0s	252	
+310.0s	253	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+314.0s	254	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+314.0s	255	
+314.0s	256	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+318.0s	257	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+318.0s	258	
+318.0s	259	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+322.0s	260	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+322.0s	261	
+322.0s	262	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+325.7s	263	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+325.7s	264	
+325.7s	265	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+329.7s	266	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+329.7s	267	
+329.7s	268	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+333.7s	269	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+333.7s	270	
+333.7s	271	IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (500, 500) to (512, 512) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+333.9s	272	  [10/10] PatientID_0014: 71 frames x 4 (mp4+html)
+333.9s	273	Done! Videos: /kaggle/working/video_gen/videos | Interactive: /kaggle/working/video_gen/interactive
+340.0s	274	Saved comparison summary_keyframes.png
+340.0s	275	
+340.0s	276	============================================================
+340.0s	277	  VIDEO_C: MU-GLIOMA EVOLUTION VIDEOS - COMPLETE
+340.0s	278	============================================================
+340.0s	279	  Patients:       10
+340.0s	280	  Videos/patient: 4 (ALL, WT, TC, ET)
+340.0s	281	  Frames/gap:     15
+340.0s	282	  FPS:            3
+340.0s	283	  T1c:            Single per patient (no glitching)
+340.0s	284	  Post-process:   morpho_cleanup + containment
+340.0s	285	  Files:
+340.0s	286	    interactive/PatientID_0003_ALL.html  1.9MB
+340.0s	287	    interactive/PatientID_0003_ALL_linear.html  1.9MB
+340.0s	288	    interactive/PatientID_0003_ET.html  1.7MB
+340.0s	289	    interactive/PatientID_0003_ET_linear.html  1.7MB
+340.0s	290	    interactive/PatientID_0003_TC.html  1.7MB
+340.0s	291	    interactive/PatientID_0003_TC_linear.html  1.7MB
+340.0s	292	    interactive/PatientID_0003_WT.html  1.9MB
+340.0s	293	    interactive/PatientID_0003_WT_linear.html  1.9MB
+340.0s	294	    interactive/PatientID_0005_ALL.html  1.1MB
+340.0s	295	    interactive/PatientID_0005_ALL_linear.html  1.1MB
+340.0s	296	    interactive/PatientID_0005_ET.html  0.9MB
+340.0s	297	    interactive/PatientID_0005_ET_linear.html  0.9MB
+340.0s	298	    interactive/PatientID_0005_TC.html  1.0MB
+340.0s	299	    interactive/PatientID_0005_TC_linear.html  1.0MB
+340.0s	300	    interactive/PatientID_0005_WT.html  1.1MB
+340.0s	301	    interactive/PatientID_0005_WT_linear.html  1.1MB
+340.0s	302	    interactive/PatientID_0006_ALL.html  2.7MB
+340.0s	303	    interactive/PatientID_0006_ALL_linear.html  2.7MB
+340.0s	304	    interactive/PatientID_0006_ET.html  2.6MB
+340.0s	305	    interactive/PatientID_0006_ET_linear.html  2.6MB
+340.0s	306	    interactive/PatientID_0006_TC.html  2.6MB
+340.0s	307	    interactive/PatientID_0006_TC_linear.html  2.6MB
+340.0s	308	    interactive/PatientID_0006_WT.html  2.8MB
+340.0s	309	    interactive/PatientID_0006_WT_linear.html  2.7MB
+340.0s	310	    interactive/PatientID_0007_ALL.html  3.7MB
+340.0s	311	    interactive/PatientID_0007_ALL_linear.html  3.7MB
+340.0s	312	    interactive/PatientID_0007_ET.html  3.5MB
+340.0s	313	    interactive/PatientID_0007_ET_linear.html  3.5MB
+340.0s	314	    interactive/PatientID_0007_TC.html  3.4MB
+340.0s	315	    interactive/PatientID_0007_TC_linear.html  3.4MB
+340.0s	316	    interactive/PatientID_0007_WT.html  3.7MB
+340.0s	317	    interactive/PatientID_0007_WT_linear.html  3.7MB
+340.0s	318	    interactive/PatientID_0008_ALL.html  1.0MB
+340.0s	319	    interactive/PatientID_0008_ALL_linear.html  1.0MB
+340.0s	320	    interactive/PatientID_0008_ET.html  1.0MB
+340.0s	321	    interactive/PatientID_0008_ET_linear.html  1.0MB
+340.0s	322	    interactive/PatientID_0008_TC.html  1.0MB
+340.0s	323	    interactive/PatientID_0008_TC_linear.html  1.0MB
+340.0s	324	    interactive/PatientID_0008_WT.html  1.0MB
+340.0s	325	    interactive/PatientID_0008_WT_linear.html  1.0MB
+340.0s	326	    interactive/PatientID_0010_ALL.html  1.9MB
+340.0s	327	    interactive/PatientID_0010_ALL_linear.html  1.9MB
+340.0s	328	    interactive/PatientID_0010_ET.html  1.8MB
+340.0s	329	    interactive/PatientID_0010_ET_linear.html  1.8MB
+340.0s	330	    interactive/PatientID_0010_TC.html  1.7MB
+340.0s	331	    interactive/PatientID_0010_TC_linear.html  1.7MB
+340.0s	332	    interactive/PatientID_0010_WT.html  1.9MB
+340.0s	333	    interactive/PatientID_0010_WT_linear.html  1.9MB
+340.0s	334	    interactive/PatientID_0011_ALL.html  1.1MB
+340.0s	335	    interactive/PatientID_0011_ALL_linear.html  1.1MB
+340.0s	336	    interactive/PatientID_0011_ET.html  1.0MB
+340.0s	337	    interactive/PatientID_0011_ET_linear.html  1.0MB
+340.0s	338	    interactive/PatientID_0011_TC.html  1.0MB
+340.0s	339	    interactive/PatientID_0011_TC_linear.html  1.0MB
+340.0s	340	    interactive/PatientID_0011_WT.html  1.1MB
+340.0s	341	    interactive/PatientID_0011_WT_linear.html  1.1MB
+340.0s	342	    interactive/PatientID_0012_ALL.html  1.1MB
+340.0s	343	    interactive/PatientID_0012_ALL_linear.html  1.1MB
+340.0s	344	    interactive/PatientID_0012_ET.html  0.9MB
+340.0s	345	    interactive/PatientID_0012_ET_linear.html  0.9MB
+340.0s	346	    interactive/PatientID_0012_TC.html  1.0MB
+340.0s	347	    interactive/PatientID_0012_TC_linear.html  1.0MB
+340.0s	348	    interactive/PatientID_0012_WT.html  1.1MB
+340.0s	349	    interactive/PatientID_0012_WT_linear.html  1.1MB
+340.0s	350	    interactive/PatientID_0013_ALL.html  3.6MB
+340.0s	351	    interactive/PatientID_0013_ALL_linear.html  3.6MB
+340.0s	352	    interactive/PatientID_0013_ET.html  3.3MB
+340.0s	353	    interactive/PatientID_0013_ET_linear.html  3.3MB
+340.0s	354	    interactive/PatientID_0013_TC.html  3.3MB
+340.0s	355	    interactive/PatientID_0013_TC_linear.html  3.3MB
+340.0s	356	    interactive/PatientID_0013_WT.html  3.7MB
+340.0s	357	    interactive/PatientID_0013_WT_linear.html  3.6MB
+340.0s	358	    interactive/PatientID_0014_ALL.html  4.2MB
+340.0s	359	    interactive/PatientID_0014_ALL_linear.html  4.2MB
+340.0s	360	    interactive/PatientID_0014_ET.html  3.9MB
+340.0s	361	    interactive/PatientID_0014_ET_linear.html  3.9MB
+340.0s	362	    interactive/PatientID_0014_TC.html  3.9MB
+340.0s	363	    interactive/PatientID_0014_TC_linear.html  3.9MB
+340.0s	364	    interactive/PatientID_0014_WT.html  4.2MB
+340.0s	365	    interactive/PatientID_0014_WT_linear.html  4.2MB
+340.0s	366	    summary_keyframes.png  0.7MB
+340.0s	367	    videos/PatientID_0003_ALL.mp4  0.0MB
+340.0s	368	    videos/PatientID_0003_ALL_linear.mp4  0.0MB
+340.0s	369	    videos/PatientID_0003_ET.mp4  0.0MB
+340.0s	370	    videos/PatientID_0003_ET_linear.mp4  0.0MB
+340.0s	371	    videos/PatientID_0003_TC.mp4  0.0MB
+340.0s	372	    videos/PatientID_0003_TC_linear.mp4  0.0MB
+340.0s	373	    videos/PatientID_0003_WT.mp4  0.0MB
+340.0s	374	    videos/PatientID_0003_WT_linear.mp4  0.0MB
+340.0s	375	    videos/PatientID_0005_ALL.mp4  0.0MB
+340.0s	376	    videos/PatientID_0005_ALL_linear.mp4  0.0MB
+340.0s	377	    videos/PatientID_0005_ET.mp4  0.0MB
+340.0s	378	    videos/PatientID_0005_ET_linear.mp4  0.0MB
+340.0s	379	    videos/PatientID_0005_TC.mp4  0.0MB
+340.0s	380	    videos/PatientID_0005_TC_linear.mp4  0.0MB
+340.0s	381	    videos/PatientID_0005_WT.mp4  0.0MB
+340.0s	382	    videos/PatientID_0005_WT_linear.mp4  0.0MB
+340.0s	383	    videos/PatientID_0006_ALL.mp4  0.0MB
+340.0s	384	    videos/PatientID_0006_ALL_linear.mp4  0.0MB
+340.0s	385	    videos/PatientID_0006_ET.mp4  0.0MB
+340.0s	386	    videos/PatientID_0006_ET_linear.mp4  0.0MB
+340.0s	387	    videos/PatientID_0006_TC.mp4  0.0MB
+340.0s	388	    videos/PatientID_0006_TC_linear.mp4  0.0MB
+340.0s	389	    videos/PatientID_0006_WT.mp4  0.0MB
+340.0s	390	    videos/PatientID_0006_WT_linear.mp4  0.0MB
+340.0s	391	    videos/PatientID_0007_ALL.mp4  0.0MB
+340.0s	392	    videos/PatientID_0007_ALL_linear.mp4  0.0MB
+340.0s	393	    videos/PatientID_0007_ET.mp4  0.0MB
+340.0s	394	    videos/PatientID_0007_ET_linear.mp4  0.0MB
+340.0s	395	    videos/PatientID_0007_TC.mp4  0.0MB
+340.0s	396	    videos/PatientID_0007_TC_linear.mp4  0.0MB
+340.0s	397	    videos/PatientID_0007_WT.mp4  0.0MB
+340.0s	398	    videos/PatientID_0007_WT_linear.mp4  0.0MB
+340.0s	399	    videos/PatientID_0008_ALL.mp4  0.0MB
+340.0s	400	    videos/PatientID_0008_ALL_linear.mp4  0.0MB
+340.0s	401	    videos/PatientID_0008_ET.mp4  0.0MB
+340.0s	402	    videos/PatientID_0008_ET_linear.mp4  0.0MB
+340.0s	403	    videos/PatientID_0008_TC.mp4  0.0MB
+340.0s	404	    videos/PatientID_0008_TC_linear.mp4  0.0MB
+340.0s	405	    videos/PatientID_0008_WT.mp4  0.0MB
+340.0s	406	    videos/PatientID_0008_WT_linear.mp4  0.0MB
+340.0s	407	    videos/PatientID_0010_ALL.mp4  0.0MB
+340.0s	408	    videos/PatientID_0010_ALL_linear.mp4  0.0MB
+340.0s	409	    videos/PatientID_0010_ET.mp4  0.0MB
+340.0s	410	    videos/PatientID_0010_ET_linear.mp4  0.0MB
+340.0s	411	    videos/PatientID_0010_TC.mp4  0.0MB
+340.0s	412	    videos/PatientID_0010_TC_linear.mp4  0.0MB
+340.0s	413	    videos/PatientID_0010_WT.mp4  0.0MB
+340.0s	414	    videos/PatientID_0010_WT_linear.mp4  0.0MB
+340.0s	415	    videos/PatientID_0011_ALL.mp4  0.0MB
+340.0s	416	    videos/PatientID_0011_ALL_linear.mp4  0.0MB
+340.0s	417	    videos/PatientID_0011_ET.mp4  0.0MB
+340.0s	418	    videos/PatientID_0011_ET_linear.mp4  0.0MB
+340.0s	419	    videos/PatientID_0011_TC.mp4  0.0MB
+340.0s	420	    videos/PatientID_0011_TC_linear.mp4  0.0MB
+340.0s	421	    videos/PatientID_0011_WT.mp4  0.0MB
+340.0s	422	    videos/PatientID_0011_WT_linear.mp4  0.0MB
+340.0s	423	    videos/PatientID_0012_ALL.mp4  0.0MB
+340.0s	424	    videos/PatientID_0012_ALL_linear.mp4  0.0MB
+340.0s	425	    videos/PatientID_0012_ET.mp4  0.0MB
+340.0s	426	    videos/PatientID_0012_ET_linear.mp4  0.0MB
+340.0s	427	    videos/PatientID_0012_TC.mp4  0.0MB
+340.0s	428	    videos/PatientID_0012_TC_linear.mp4  0.0MB
+340.0s	429	    videos/PatientID_0012_WT.mp4  0.0MB
+340.0s	430	    videos/PatientID_0012_WT_linear.mp4  0.0MB
+340.0s	431	    videos/PatientID_0013_ALL.mp4  0.1MB
+340.0s	432	    videos/PatientID_0013_ALL_linear.mp4  0.0MB
+340.0s	433	    videos/PatientID_0013_ET.mp4  0.0MB
+340.0s	434	    videos/PatientID_0013_ET_linear.mp4  0.0MB
+340.0s	435	    videos/PatientID_0013_TC.mp4  0.0MB
+340.0s	436	    videos/PatientID_0013_TC_linear.mp4  0.0MB
+340.0s	437	    videos/PatientID_0013_WT.mp4  0.0MB
+340.0s	438	    videos/PatientID_0013_WT_linear.mp4  0.0MB
+340.0s	439	    videos/PatientID_0014_ALL.mp4  0.0MB
+340.0s	440	    videos/PatientID_0014_ALL_linear.mp4  0.0MB
+340.0s	441	    videos/PatientID_0014_ET.mp4  0.0MB
+340.0s	442	    videos/PatientID_0014_ET_linear.mp4  0.0MB
+340.0s	443	    videos/PatientID_0014_TC.mp4  0.0MB
+340.0s	444	    videos/PatientID_0014_TC_linear.mp4  0.0MB
+340.0s	445	    videos/PatientID_0014_WT.mp4  0.0MB
+340.0s	446	    videos/PatientID_0014_WT_linear.mp4  0.0MB
+340.0s	447	  Total: 161 files
+340.0s	448	============================================================
+343.5s	449	/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+343.5s	450	  cells[i][c] = re.sub('\\\\\|', '|', cell)
+343.7s	451	/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+343.7s	452	  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+344.4s	453	[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+344.6s	454	[NbConvertApp] Writing 68390 bytes to __notebook__.ipynb
+347.0s	455	[NbConvertApp] Converting notebook __notebook__.ipynb to html
+347.9s	456	[NbConvertApp] Writing 436079 bytes to __results__.html

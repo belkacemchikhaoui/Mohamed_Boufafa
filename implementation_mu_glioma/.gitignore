@@ -1,0 +1,21 @@
+# ── Model weights (too large for GitHub) ─────────────────────────────────────
+*.pth
+*.pt
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
+# ── Large embedding arrays ────────────────────────────────────────────────────
+*.npz
+*.npy
+
+# ── Python cache ──────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# ── OS / editor noise ─────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db

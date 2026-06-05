@@ -1,0 +1,106 @@
+\relax 
+\citation{stupp2005glioblastoma}
+\citation{osborn2022who}
+\citation{stupp2005glioblastoma}
+\citation{wen2010rano}
+\citation{isensee2021nnunet}
+\citation{tang2022swinunetr}
+\citation{liu2023tadiff}
+\citation{liu2023tadiff}
+\citation{liu2023tadiff}
+\citation{deverdier2024bratsptg}
+\citation{milletari2016vnet}
+\citation{isensee2021nnunet}
+\citation{tang2022swinunetr}
+\citation{liu2021swin}
+\citation{cardoso2022monai}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{}\protected@file@percent }
+\citation{liu2023tadiff}
+\citation{liu2023tadiff}
+\citation{liu2023tadiff}
+\citation{dosovitskiy2021vit}
+\citation{vaswani2017attention}
+\citation{liu2021swin}
+\citation{press2022alibi}
+\citation{perez2018film}
+\citation{ho2020ddpm}
+\citation{nichol2021improved}
+\citation{liu2023tadiff}
+\citation{isensee2021nnunet}
+\citation{ho2020ddpm}
+\citation{isensee2021nnunet}
+\citation{ho2020ddpm}
+\citation{isensee2021nnunet}
+\citation{baid2021brats}
+\citation{loshchilov2019adamw}
+\citation{tang2022swinunetr}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Related Work}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {III}Methodology}{2}{}\protected@file@percent }
+\newlabel{sec:methodology}{{III}{2}{Methodology}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Segmentation and Embedding Extraction}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {III-A}1}nnU-Net Segmentation}{2}{}\protected@file@percent }
+\citation{press2022alibi}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Overview of the proposed pipeline. A fine-tuned nnU-Net~\cite  {isensee2021nnunet} segments each MRI scan and extracts structured 2,825-dimensional embeddings. TaViT processes the patient-level embedding sequence augmented with per-scan treatment tokens and a molecular marker CLS token, jointly modeling tumor subregion volumes at every observed timepoint. As a complementary component, a FiLM-conditioned DDPM~\cite  {ho2020ddpm} interpolates between consecutive segmentation pairs to generate per-patient tumor evolution videos.}}{3}{}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:pipeline}{{1}{3}{Methodology}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {III-A}2}Structured Embedding Extraction}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Treatment-Aware Vision Transformer (TaViT)}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {III-B}1}Architecture}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {III-B}2}Training}{3}{}\protected@file@percent }
+\citation{loshchilov2019adamw}
+\citation{gal2016dropout}
+\citation{ho2020ddpm}
+\citation{perez2018film}
+\citation{deverdier2024bratsptg}
+\citation{garrido2023rankme}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Conditional DDPM for Tumor Visualization}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Experiments}{4}{}\protected@file@percent }
+\newlabel{sec:experiments}{{IV}{4}{Experiments}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Datasets}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-A}1}MU-Glioma (Primary Cohort)}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-A}2}BraTS-PTG (External Validation)}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Implementation}{4}{}\protected@file@percent }
+\newlabel{sec:implementation}{{\mbox  {IV-B}}{4}{Implementation}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-B}1}Evaluation Protocol}{4}{}\protected@file@percent }
+\newlabel{sec:eval_protocol}{{\mbox  {IV-B}1}{4}{Evaluation Protocol}{}{}}
+\citation{isensee2021nnunet}
+\citation{liu2023tadiff}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}Results}{5}{}\protected@file@percent }
+\newlabel{sec:results}{{\mbox  {IV-C}}{5}{Results}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-C}1}Segmentation Performance}{5}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Segmentation Dice scores on MU-Glioma validation set.}}{5}{}\protected@file@percent }
+\newlabel{tab:segmentation}{{I}{5}{Segmentation Performance}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-C}2}Temporal Test Battery}{5}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Temporal test results: CNN vs.\ ViT vs.\ TaViT.}}{5}{}\protected@file@percent }
+\newlabel{tab:temporal}{{II}{5}{Temporal Test Battery}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-C}3}TaViT Volume Prediction}{5}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces TaViT volume prediction (3-fold CV on MU-Glioma).}}{5}{}\protected@file@percent }
+\newlabel{tab:tavit}{{III}{5}{TaViT Volume Prediction}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-C}4}Ablation Study}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {IV-C}5}DDPM Video Generation}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {V}Discussion}{5}{}\protected@file@percent }
+\newlabel{sec:discussion}{{V}{5}{Discussion}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Conclusion}{5}{}\protected@file@percent }
+\newlabel{sec:conclusion}{{VI}{5}{Conclusion}{}{}}
+\bibstyle{IEEEtran}
+\bibdata{ref}
+\bibcite{stupp2005glioblastoma}{1}
+\bibcite{osborn2022who}{2}
+\bibcite{wen2010rano}{3}
+\bibcite{isensee2021nnunet}{4}
+\bibcite{tang2022swinunetr}{5}
+\bibcite{liu2023tadiff}{6}
+\bibcite{perez2018film}{7}
+\bibcite{ho2020ddpm}{8}
+\bibcite{deverdier2024bratsptg}{9}
+\bibcite{milletari2016vnet}{10}
+\bibcite{liu2021swin}{11}
+\bibcite{cardoso2022monai}{12}
+\bibcite{dosovitskiy2021vit}{13}
+\bibcite{press2022alibi}{14}
+\bibcite{nichol2021improved}{15}
+\bibcite{loshchilov2019adamw}{16}
+\bibcite{garrido2023rankme}{17}
+\bibcite{gal2016dropout}{18}
+\@writefile{toc}{\contentsline {section}{References}{6}{}\protected@file@percent }
+\gdef \@abspage@last{6}

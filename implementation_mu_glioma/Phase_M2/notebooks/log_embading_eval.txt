@@ -1,0 +1,439 @@
+8.7s	1	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.7s	2	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.7s	3	0.00s - to python to disable frozen modules.
+8.7s	4	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+9.5s	5	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+9.5s	6	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+9.5s	7	0.00s - to python to disable frozen modules.
+9.5s	8	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+15.2s	9	nnunet: 571 scans | dim=2825 | File: /kaggle/input/datasets/zinou123viva/mu-glioma-m2-nnunet/cnn_nnunet_embeddings.npz
+15.6s	10	swinunetr: 571 scans | dim=4233 | File: /kaggle/input/datasets/zinou123viva/mu-glioma-m2-swinter/vit_swinunetr_embeddings.npz
+15.6s	11	
+15.6s	12	============================================================
+15.6s	13	  RAW EMBEDDING STATISTICS
+15.6s	14	============================================================
+15.6s	15	
+15.6s	16	  nnunet: 571 scans | 198 patients | dim=2825
+15.6s	17	    Norm: min=0.0  max=26.5  mean=17.0
+15.6s	18	    Norm CV (std/mean): 0.1791
+15.6s	19	    Architecture: C=256 | octant=2048D  region=768D  vol=9D
+15.6s	20	    Cosine sim (284 pairs): mean=0.891  std=0.100
+15.6s	21	    Diversity (mean pairwise L2): 0.428
+16.0s	22	    RankMe (effective rank): 106.6
+16.0s	23	    Zero embeddings (resected): 1
+16.0s	24	
+16.0s	25	  swinunetr: 571 scans | 198 patients | dim=4233
+16.0s	26	    Norm: min=1466.7  max=2301.8  mean=1831.6
+16.0s	27	    Norm CV (std/mean): 0.0755
+16.0s	28	    Architecture: C=384 | octant=3072D  region=1152D  vol=9D
+16.0s	29	    Cosine sim (285 pairs): mean=0.935  std=0.044
+16.0s	30	    Diversity (mean pairwise L2): 0.339
+16.0s	31	    RankMe (effective rank): 8.9
+16.1s	32	    Zero embeddings (resected): 0
+16.1s	33	
+16.1s	34	============================================================
+16.1s	35	  APPLYING COMPONENT-WISE L2 NORMALISATION
+16.1s	36	============================================================
+16.1s	37	  nnunet: Component-wise L2 (D=2825, C=256)
+16.1s	38	    Norm: mean=2.431  CV=0.0529
+16.1s	39	    Cosine sim (284 pairs): mean=0.859
+16.1s	40	  swinunetr: Component-wise L2 (D=4233, C=384)
+16.1s	41	    Norm: mean=2.449  CV=0.0000
+16.1s	42	    Cosine sim (285 pairs): mean=0.941
+16.1s	43	
+16.1s	44	Tumor volumes: 596 rows from /kaggle/input/datasets/zinou123viva/mu-glioma-m1-outputs/tumor_volumes.csv
+16.1s	45	Match test: FOUND
+16.1s	46	
+16.1s	47	✅ Ready | CACHE_LOADED=False | Models: ['nnunet', 'swinunetr']
+16.1s	48	Output: /kaggle/working/phase_m2_evaluation
+16.2s	49	============================================================
+16.2s	50	  MORPHOLOGY TESTS M1-M6
+16.2s	51	============================================================
+16.9s	52	  nnunet: 571/571 matched to volumes
+762.0s	53	    nnunet M1_spearman_rho: 0.879
+762.0s	54	    nnunet M1_volume_R2_rf: 0.826
+762.0s	55	    nnunet M1_volume_R2_ridge: 0.839
+762.0s	56	    nnunet M2_logvol_R2_rf: 0.891
+762.0s	57	    nnunet M2_logvol_R2_ridge: 0.903
+762.0s	58	    nnunet M3_enhancement_rf: 0.823
+762.0s	59	    nnunet M3_enhancement_ridge: 0.574
+762.0s	60	    nnunet M4_necrosis_F1: 0.746
+762.0s	61	    nnunet M5_corefrac_rf: 0.833
+762.0s	62	    nnunet M5_corefrac_ridge: 0.655
+762.0s	63	    nnunet M6_patient_purity_pct: 14.641
+762.6s	64	  swinunetr: 571/571 matched to volumes
+1944.8s	65	    swinunetr M1_spearman_rho: 0.794
+1944.8s	66	    swinunetr M1_volume_R2_rf: 0.839
+1944.8s	67	    swinunetr M1_volume_R2_ridge: 0.275
+1944.8s	68	    swinunetr M2_logvol_R2_rf: 0.784
+1944.8s	69	    swinunetr M2_logvol_R2_ridge: 0.680
+1944.8s	70	    swinunetr M3_enhancement_rf: 0.770
+1944.8s	71	    swinunetr M3_enhancement_ridge: 0.698
+1944.8s	72	    swinunetr M4_necrosis_F1: 0.773
+1944.8s	73	    swinunetr M5_corefrac_rf: 0.805
+1944.8s	74	    swinunetr M5_corefrac_ridge: 0.695
+1944.8s	75	    swinunetr M6_patient_purity_pct: 7.320
+1945.1s	76	
+1945.1s	77	============================================================
+1945.1s	78	  HETEROGENEITY TESTS H1-H5
+1945.1s	79	============================================================
+1946.2s	80	    nnunet H1_rankme: 165.726
+1946.2s	81	    nnunet H2_diversity: 0.520
+1946.2s	82	    nnunet H3_responder_F1: 0.602
+1946.2s	83	    nnunet H4_norm_cv: 0.053
+1946.2s	84	    nnunet H5_rankme_standalone: 165.726
+1962.1s	85	    swinunetr H1_rankme: 7.639
+1962.1s	86	    swinunetr H2_diversity: 0.279
+1962.1s	87	    swinunetr H3_responder_F1: 0.592
+1962.1s	88	    swinunetr H4_norm_cv: 0.000
+1962.1s	89	    swinunetr H5_rankme_standalone: 7.639
+1962.3s	90	
+1962.3s	91	============================================================
+1962.3s	92	  TEMPORAL TESTS T1-T8
+1962.3s	93	============================================================
+1962.3s	94	  nnunet: 152 longitudinal patients
+1963.4s	95	    nnunet T1_spearman_wt: 0.023 <- WEAK
+1963.4s	96	    nnunet T2_ordering_pass: 1.000
+1963.4s	97	    nnunet T3_delta_R2: -0.032 <- WEAK
+1963.4s	98	    nnunet T3_directional_auc: 0.249 <- WEAK
+1963.4s	99	    nnunet T4_rano_auc: 0.612
+1963.4s	100	    nnunet T5_coherence: 0.925
+1963.4s	101	    nnunet T5_pass_dual: 1.000
+1963.4s	102	    nnunet T6_velocity_cv: 0.474
+1963.4s	103	    nnunet T7_treatment_d: 0.300
+1963.4s	104	    nnunet T8_kendall_tau: 0.380
+1963.4s	105	  swinunetr: 152 longitudinal patients
+1964.3s	106	    swinunetr T1_spearman_wt: 0.028 <- WEAK
+1964.3s	107	    swinunetr T2_ordering_pass: 1.000
+1964.3s	108	    swinunetr T3_delta_R2: -0.033 <- WEAK
+1964.3s	109	    swinunetr T3_directional_auc: 0.249 <- WEAK
+1964.3s	110	    swinunetr T4_rano_auc: 0.599
+1964.3s	111	    swinunetr T5_coherence: 0.974
+1964.3s	112	    swinunetr T5_pass_dual: 0.000
+1964.3s	113	    swinunetr T6_velocity_cv: 0.838
+1964.3s	114	    swinunetr T7_treatment_d: 0.420
+1964.3s	115	    swinunetr T8_kendall_tau: 0.070 <- WEAK
+1964.5s	116	============================================================
+1964.5s	117	  ABLATION: No-Volumetric (2816D neural features only)
+1964.5s	118	============================================================
+1964.5s	119	
+1964.5s	120	  nnunet: 2825D → 2816D (removed 9D volumetric)
+2721.2s	121	
+2721.2s	122	  swinunetr: 4233D → 4224D (removed 9D volumetric)
+4035.5s	123	
+4035.5s	124	================================================================================
+4035.5s	125	  ABLATION COMPARISON: Full (2825D) vs No-Vol (2816D)
+4035.5s	126	================================================================================
+4035.5s	127	
+4035.5s	128	  Model: nnunet
+4035.5s	129	  Test                            Full(2825D)   NoVol(2816D)        Δ    Signal?
+4035.5s	130	  ----------------------------------------------------------------------------
+4035.5s	131	  M1_volume_R2_rf                       0.826          0.836   +0.010   ↑ neural
+4035.5s	132	  M1_spearman_rho                       0.879          0.879   +0.000     ≈ same
+4035.5s	133	  M2_logvol_R2_rf                       0.891          0.875   -0.016 ↓ vol helps
+4035.5s	134	  M3_enhancement_rf                     0.823          0.648   -0.175 ↓ vol helps
+4035.5s	135	  M4_necrosis_F1                        0.746          0.745   -0.002     ≈ same
+4035.5s	136	  M5_corefrac_rf                        0.833          0.718   -0.114 ↓ vol helps
+4035.5s	137	  M6_patient_purity_pct                14.641         14.851   +0.210   ↑ neural
+4035.5s	138	  H1_rankme                           165.726        222.516  +56.790   ↑ neural
+4035.5s	139	  H2_diversity                          0.520          0.817   +0.297   ↑ neural
+4035.5s	140	  H3_responder_F1                       0.602          0.595   -0.007     ≈ same
+4035.5s	141	  H4_norm_cv                            0.053          0.186   +0.133   ↑ neural
+4035.5s	142	  T1_spearman_wt                        0.023          0.132   +0.109   ↑ neural
+4035.5s	143	  T2_ordering_pass                      1.000          0.000   -1.000 ↓ vol helps
+4035.5s	144	  T3_directional_auc                    0.249          0.750   +0.501   ↑ neural
+4035.5s	145	  T4_rano_auc                           0.612          0.644   +0.032   ↑ neural
+4035.5s	146	  T5_coherence                          0.925          0.793   -0.132 ↓ vol helps
+4035.5s	147	  T7_treatment_d                        0.300          0.013   -0.288 ↓ vol helps
+4035.5s	148	  T8_kendall_tau                        0.380          0.341   -0.038 ↓ vol helps
+4035.5s	149	
+4035.5s	150	  Model: swinunetr
+4035.5s	151	  Test                            Full(2825D)   NoVol(2816D)        Δ    Signal?
+4035.5s	152	  ----------------------------------------------------------------------------
+4035.5s	153	  M1_volume_R2_rf                       0.839          0.422   -0.417 ↓ vol helps
+4035.5s	154	  M1_spearman_rho                       0.794          0.680   -0.114 ↓ vol helps
+4035.5s	155	  M2_logvol_R2_rf                       0.784          0.484   -0.299 ↓ vol helps
+4035.5s	156	  M3_enhancement_rf                     0.770          0.263   -0.507 ↓ vol helps
+4035.5s	157	  M4_necrosis_F1                        0.773          0.706   -0.067 ↓ vol helps
+4035.5s	158	  M5_corefrac_rf                        0.805          0.299   -0.506 ↓ vol helps
+4035.5s	159	  M6_patient_purity_pct                 7.320          7.320   -0.000     ≈ same
+4035.5s	160	  H1_rankme                             7.639          9.257   +1.617   ↑ neural
+4035.5s	161	  H2_diversity                          0.279          0.379   +0.100   ↑ neural
+4035.5s	162	  H3_responder_F1                       0.592          0.580   -0.012 ↓ vol helps
+4035.5s	163	  H4_norm_cv                            0.000          0.000   +0.000     ≈ same
+4035.5s	164	  T1_spearman_wt                        0.028          0.025   -0.003     ≈ same
+4035.5s	165	  T2_ordering_pass                      1.000          1.000   +0.000     ≈ same
+4035.5s	166	  T3_directional_auc                    0.249          0.249   +0.000     ≈ same
+4035.5s	167	  T4_rano_auc                           0.599          0.576   -0.022 ↓ vol helps
+4035.5s	168	  T5_coherence                          0.974          0.956   -0.018 ↓ vol helps
+4035.5s	169	  T7_treatment_d                        0.420          0.287   -0.132 ↓ vol helps
+4035.5s	170	  T8_kendall_tau                        0.070          0.118   +0.048   ↑ neural
+4035.5s	171	
+4035.5s	172	  Legend: ↑ neural = removing vol IMPROVED score (neural features alone are better)
+4035.5s	173	         ↓ vol helps = removing vol HURT score (vol features contributed)
+4035.5s	174	         ≈ same = negligible difference (<0.01)
+4035.5s	175	
+4035.5s	176	================================================================================
+4035.5s	177	  DIAGNOSTIC: R2 Precision Check + Permutation Baseline
+4035.5s	178	================================================================================
+4214.2s	179	  nnunet No-Vol R2 (6 dec): 0.836418
+4530.0s	180	  nnunet Shuffled R2 (sanity): -0.109823
+4530.0s	181	    -> CV works. Features genuinely encode volume info.
+4550.6s	182	  nnunet Reduced RF (20t, d=5): 0.823583
+4550.6s	183	  nnunet Ridge (linear) R2: 0.838556
+4550.6s	184	  Volume stats: min=0 max=376 mean=73
+4550.6s	185	  Embedding shape: (571, 2816)
+4848.5s	186	  swinunetr No-Vol R2 (6 dec): 0.421809
+5283.5s	187	  swinunetr Shuffled R2 (sanity): -0.209272
+5283.5s	188	    -> CV works. Features genuinely encode volume info.
+5316.1s	189	  swinunetr Reduced RF (20t, d=5): 0.413798
+5316.3s	190	  swinunetr Ridge (linear) R2: 0.105884
+5316.3s	191	  Volume stats: min=0 max=376 mean=73
+5316.3s	192	  Embedding shape: (571, 4224)
+5316.3s	193	
+5316.3s	194	  Saved: /kaggle/working/phase_m2_evaluation/m2_ablation_results.json
+5316.5s	195	================================================================================
+5316.5s	196	  PER-SEGMENT ABLATION
+5316.5s	197	================================================================================
+5316.5s	198	
+5316.5s	199	  nnunet | C=256 | Segments: octant_only=2048D, region_only=768D, vol_only=9D, oct+reg=2816D, oct+vol=2057D, reg+vol=777D, full=2825D
+7598.0s	200	
+7598.0s	201	  Metric                 octant_only(2048) region_only(768)      vol_only(9)    oct+reg(2816)    oct+vol(2057)     reg+vol(777)       full(2825)
+7598.0s	202	  ---------------------------------------------------------------------------------------------------------------------------------------------
+7598.0s	203	  M1_vol_R2_rf                      0.748            0.830            0.790            0.836            0.787            0.811            0.826  <- oct+reg
+7598.0s	204	  M1_vol_R2_ridge                   0.808            0.081           -0.768            0.839            0.809            0.068            0.839  <- full
+7598.0s	205	  M1_spearman                       0.922            0.930            0.949            0.935            0.908            0.916            0.921  <- vol_only
+7598.0s	206	  M3_enhance_R2                     0.460            0.655            0.822            0.648            0.833            0.827            0.823  <- oct+vol
+7598.0s	207	  M5_core_R2                        0.520            0.727            0.843            0.718            0.852            0.849            0.833  <- oct+vol
+7598.0s	208	  M6_purity                        15.692            9.510            2.662           14.851           15.499            9.247           14.641  <- octant_only
+7598.0s	209	  H1_rankme                       228.722          115.329            2.200          225.575          141.748           64.902          163.873  <- octant_only
+7598.0s	210	  H3_responder                      0.618            0.657            0.543            0.595            0.611            0.657            0.602  <- region_only
+7598.0s	211	  T1_spearman                       0.286            0.059            0.100            0.132            0.098            0.053            0.023  <- octant_only
+7598.0s	212	  T5_coherence                      0.797            0.789            0.977            0.793            0.947            0.945            0.925  <- vol_only
+7598.0s	213	  T8_kendall                        0.459            0.241            0.099            0.341            0.383            0.276            0.380  <- octant_only
+7598.0s	214	
+7598.0s	215	  INTERPRETATION:
+7598.0s	216	    vol_only R2=0.790: 9D volume features DO encode volume (expected: high)
+7598.0s	217	    octant R2=0.748: spatial features DO encode volume
+7598.0s	218	    region R2=0.830: mask-weighted features DO encode volume
+7598.0s	219	    oct+reg R2=0.836: neural features DO encode volume
+7598.0s	220	
+7598.0s	221	    Temporal monotonicity (T8 Kendall tau):
+7598.0s	222	      octant=0.459  region=0.241  vol=0.099
+7598.0s	223	      -> Octant features carry best temporal signal
+7598.0s	224	
+7598.0s	225	  swinunetr | C=384 | Segments: octant_only=3072D, region_only=1152D, vol_only=9D, oct+reg=4224D, oct+vol=3081D, reg+vol=1161D, full=4233D
+11339.3s	226	
+11339.3s	227	  Metric                 octant_only(3072) region_only(1152)      vol_only(9)    oct+reg(4224)    oct+vol(3081)    reg+vol(1161)       full(4233)
+11339.3s	228	  ---------------------------------------------------------------------------------------------------------------------------------------------
+11339.3s	229	  M1_vol_R2_rf                      0.252            0.425            0.919            0.422            0.850            0.864            0.839  <- vol_only
+11339.3s	230	  M1_vol_R2_ridge                   0.049            0.300            0.470            0.106            0.304            0.457            0.275  <- vol_only
+11339.3s	231	  M1_spearman                       0.474            0.682            0.962            0.658            0.906            0.930            0.901  <- vol_only
+11339.3s	232	  M3_enhance_R2                    -0.045            0.230            0.778            0.263            0.773            0.767            0.770  <- vol_only
+11339.3s	233	  M5_core_R2                       -0.043            0.250            0.808            0.299            0.805            0.806            0.805  <- vol_only
+11339.3s	234	  M6_purity                         6.567            3.643            2.557            7.320            6.532            3.713            7.320  <- full
+11339.3s	235	  H1_rankme                         6.084            4.780            2.100            9.413            5.089            4.290            7.649  <- oct+reg
+11339.3s	236	  H3_responder                      0.645            0.572            0.535            0.580            0.626            0.571            0.592  <- octant_only
+11339.3s	237	  T1_spearman                       0.089            0.012            0.090            0.025            0.020            0.068            0.028  <- vol_only
+11339.3s	238	  T5_coherence                      0.978            0.934            0.983            0.956            0.982            0.973            0.974  <- vol_only
+11339.3s	239	  T8_kendall                        0.054            0.055            0.103            0.118            0.053            0.089            0.070  <- oct+reg
+11339.3s	240	
+11339.3s	241	  INTERPRETATION:
+11339.3s	242	    vol_only R2=0.919: 9D volume features DO encode volume (expected: high)
+11339.3s	243	    octant R2=0.252: spatial features do NOT encode volume
+11339.3s	244	    region R2=0.425: mask-weighted features do NOT encode volume
+11339.3s	245	    oct+reg R2=0.422: neural features do NOT encode volume
+11339.3s	246	    -> Volume signal comes ONLY from the 9D explicit features (good design)
+11339.3s	247	
+11339.3s	248	    Temporal monotonicity (T8 Kendall tau):
+11339.3s	249	      octant=0.054  region=0.055  vol=0.103
+11339.3s	250	      -> Volume features carry best temporal signal
+11339.3s	251	
+11339.3s	252	  Saved: /kaggle/working/phase_m2_evaluation/m2_segment_ablation.json
+11339.4s	253	
+11339.4s	254	============================================================
+11339.4s	255	  FULL 18-TEST DASHBOARD — MU-Glioma-Post
+11339.4s	256	============================================================
+11339.4s	257	
+11339.4s	258	nnunet  [11/14 pass]
+11339.4s	259	  M1_volume_R2_ridge                     0.839  (descriptor)
+11339.4s	260	  M1_volume_R2_rf                        0.826  (descriptor)
+11339.4s	261	  M1_spearman_rho                        0.879  thresh=0.55    PASS  [HIGH-PRI]
+11339.4s	262	  M2_logvol_R2_ridge                     0.903  (descriptor)
+11339.4s	263	  M2_logvol_R2_rf                        0.891  (descriptor)
+11339.4s	264	  M3_enhancement_ridge                   0.574  (descriptor)
+11339.4s	265	  M3_enhancement_rf                      0.823  (descriptor)
+11339.4s	266	  M4_necrosis_F1                         0.746  thresh=0.6     PASS  [MEDIUM]
+11339.4s	267	  M5_corefrac_ridge                      0.655  (descriptor)
+11339.4s	268	  M5_corefrac_rf                         0.833  (descriptor)
+11339.4s	269	  M6_patient_purity_pct                 14.641  thresh=60.0    FAIL  [HIGH-PRI]
+11339.4s	270	  H1_rankme                            165.726  thresh=30.0    PASS  [MEDIUM]
+11339.4s	271	  H2_diversity                           0.520  thresh=0.25    PASS  [MEDIUM]
+11339.4s	272	  H3_responder_F1                        0.602  thresh=0.55    PASS  [HIGH-PRI]
+11339.4s	273	  H4_norm_cv                             0.053  thresh=0.5     PASS  [LOW]
+11339.4s	274	  H5_rankme_standalone                 165.726  (descriptor)
+11339.4s	275	  T1_spearman_wt                         0.023  thresh=0.25    FAIL  [MEDIUM]
+11339.4s	276	  T2_ordering_pass                       1.000  thresh=1.0     PASS  [HIGH-PRI]
+11339.4s	277	  T3_delta_R2                           -0.032  (descriptor)
+11339.4s	278	  T3_directional_auc                     0.249  thresh=0.55    FAIL  [MEDIUM]
+11339.4s	279	  T4_rano_auc                            0.612  thresh=0.55    PASS  [MEDIUM]
+11339.4s	280	  T5_coherence                           0.925  (descriptor)
+11339.4s	281	  T5_pass_dual                           1.000  thresh=1.0     PASS  [MEDIUM]
+11339.4s	282	  T6_velocity_cv                         0.474  (descriptor)
+11339.4s	283	  T7_treatment_d                         0.300  thresh=0.3     PASS  [MEDIUM]
+11339.4s	284	  T8_kendall_tau                         0.380  thresh=0.2     PASS  [MEDIUM]
+11339.4s	285	
+11339.4s	286	  HIGH-PRIORITY FAILS:
+11339.4s	287	    M6_patient_purity_pct = 14.641 -> needs > 60.00
+11339.4s	288	
+11339.4s	289	swinunetr  [8/14 pass]
+11339.4s	290	  M1_volume_R2_ridge                     0.275  (descriptor)
+11339.4s	291	  M1_volume_R2_rf                        0.839  (descriptor)
+11339.4s	292	  M1_spearman_rho                        0.794  thresh=0.55    PASS  [HIGH-PRI]
+11339.4s	293	  M2_logvol_R2_ridge                     0.680  (descriptor)
+11339.4s	294	  M2_logvol_R2_rf                        0.784  (descriptor)
+11339.4s	295	  M3_enhancement_ridge                   0.698  (descriptor)
+11339.4s	296	  M3_enhancement_rf                      0.770  (descriptor)
+11339.4s	297	  M4_necrosis_F1                         0.773  thresh=0.6     PASS  [MEDIUM]
+11339.4s	298	  M5_corefrac_ridge                      0.695  (descriptor)
+11339.4s	299	  M5_corefrac_rf                         0.805  (descriptor)
+11339.4s	300	  M6_patient_purity_pct                  7.320  thresh=60.0    FAIL  [HIGH-PRI]
+11339.4s	301	  H1_rankme                              7.639  thresh=30.0    FAIL  [MEDIUM]
+11339.4s	302	  H2_diversity                           0.279  thresh=0.25    PASS  [MEDIUM]
+11339.4s	303	  H3_responder_F1                        0.592  thresh=0.55    PASS  [HIGH-PRI]
+11339.4s	304	  H4_norm_cv                             0.000  thresh=0.5     PASS  [LOW]
+11339.4s	305	  H5_rankme_standalone                   7.639  (descriptor)
+11339.4s	306	  T1_spearman_wt                         0.028  thresh=0.25    FAIL  [MEDIUM]
+11339.4s	307	  T2_ordering_pass                       1.000  thresh=1.0     PASS  [HIGH-PRI]
+11339.4s	308	  T3_delta_R2                           -0.033  (descriptor)
+11339.4s	309	  T3_directional_auc                     0.249  thresh=0.55    FAIL  [MEDIUM]
+11339.4s	310	  T4_rano_auc                            0.599  thresh=0.55    PASS  [MEDIUM]
+11339.4s	311	  T5_coherence                           0.974  (descriptor)
+11339.4s	312	  T5_pass_dual                           0.000  thresh=1.0     FAIL  [MEDIUM]
+11339.4s	313	  T6_velocity_cv                         0.838  (descriptor)
+11339.4s	314	  T7_treatment_d                         0.420  thresh=0.3     PASS  [MEDIUM]
+11339.4s	315	  T8_kendall_tau                         0.070  thresh=0.2     FAIL  [MEDIUM]
+11339.4s	316	
+11339.4s	317	  HIGH-PRIORITY FAILS:
+11339.4s	318	    M6_patient_purity_pct = 7.320 -> needs > 60.00
+11339.4s	319	
+11339.4s	320	Saved: /kaggle/working/phase_m2_evaluation/m2_eval_results.json
+11339.4s	321	Saved: /kaggle/working/phase_m2_evaluation/m2_ablation_results.json
+11339.4s	322	Saved: /kaggle/working/phase_m2_evaluation/m2_segment_ablation.json
+11339.4s	323	
+11339.4s	324	Generating t-SNE visualizations...
+11345.2s	325	  Saved: /kaggle/working/phase_m2_evaluation/figures/nnunet_tsne.png
+11351.0s	326	  Saved: /kaggle/working/phase_m2_evaluation/figures/swinunetr_tsne.png
+11352.5s	327	  Saved: /kaggle/working/phase_m2_evaluation/figures/nnunet_distributions.png
+11354.0s	328	  Saved: /kaggle/working/phase_m2_evaluation/figures/swinunetr_distributions.png
+11354.0s	329	
+11354.0s	330	All outputs in: /kaggle/working/phase_m2_evaluation
+11354.1s	331	
+11354.1s	332	============================================================
+11354.1s	333	  PHASE M2 EMBEDDING EVALUATION — MU-Glioma-Post
+11354.1s	334	============================================================
+11354.1s	335	
+11354.1s	336	Model: nnunet
+11354.1s	337	  Scans: 571 | Patients: 198 | Embedding dim: 2825
+11354.1s	338	
+11354.1s	339	  MORPHOLOGY:
+11354.1s	340	    M1_spearman_rho                     = 0.879
+11354.1s	341	    M1_volume_R2_rf                     = 0.826
+11354.1s	342	    M2_logvol_R2_rf                     = 0.891
+11354.1s	343	    M4_necrosis_F1                      = 0.746
+11354.1s	344	    M6_patient_purity_pct               = 14.641
+11354.1s	345	
+11354.1s	346	  HETEROGENEITY:
+11354.1s	347	    H1_rankme                           = 165.7
+11354.1s	348	    H2_diversity                        = 0.520
+11354.1s	349	    H3_responder_F1                     = 0.602
+11354.1s	350	    H4_norm_cv                          = 0.053
+11354.1s	351	
+11354.1s	352	  TEMPORAL:
+11354.1s	353	    T1_spearman_wt                      = 0.023
+11354.1s	354	    T4_rano_auc                         = 0.612
+11354.1s	355	    T7_treatment_d                      = 0.300
+11354.1s	356	    T8_kendall_tau                      = 0.380
+11354.1s	357	
+11354.1s	358	  STRENGTHS (7):
+11354.1s	359	    ✅ M1_spearman_rho = 0.879 (>0.55)
+11354.1s	360	    ✅ M4_necrosis_F1 = 0.746 (>0.6)
+11354.1s	361	    ✅ H1_rankme = 165.726 (>30.0)
+11354.1s	362	    ✅ H2_diversity = 0.520 (>0.25)
+11354.1s	363	    ✅ T5_coherence = 0.925 (>0.7)
+11354.1s	364	    ✅ H3_responder_F1 = 0.602 (>0.55)
+11354.1s	365	    ✅ T8_kendall_tau = 0.380 (>0.3)
+11354.1s	366	
+11354.1s	367	  LIMITATIONS (3) → Phase M3 targets:
+11354.1s	368	    ❌ M6_patient_purity_pct = 14.641 (needs >60.0)
+11354.1s	369	    ❌ T4_rano_auc = 0.612 (needs >0.65)
+11354.1s	370	    ❌ T7_treatment_d = 0.300 (needs >0.5)
+11354.1s	371	
+11354.1s	372	Model: swinunetr
+11354.1s	373	  Scans: 571 | Patients: 198 | Embedding dim: 4233
+11354.1s	374	
+11354.1s	375	  MORPHOLOGY:
+11354.1s	376	    M1_spearman_rho                     = 0.794
+11354.1s	377	    M1_volume_R2_rf                     = 0.839
+11354.1s	378	    M2_logvol_R2_rf                     = 0.784
+11354.1s	379	    M4_necrosis_F1                      = 0.773
+11354.1s	380	    M6_patient_purity_pct               = 7.320
+11354.1s	381	
+11354.1s	382	  HETEROGENEITY:
+11354.1s	383	    H1_rankme                           = 7.6
+11354.1s	384	    H2_diversity                        = 0.279
+11354.1s	385	    H3_responder_F1                     = 0.592
+11354.1s	386	    H4_norm_cv                          = 0.000
+11354.1s	387	
+11354.1s	388	  TEMPORAL:
+11354.1s	389	    T1_spearman_wt                      = 0.028
+11354.1s	390	    T4_rano_auc                         = 0.599
+11354.1s	391	    T7_treatment_d                      = 0.420
+11354.1s	392	    T8_kendall_tau                      = 0.070
+11354.1s	393	
+11354.1s	394	  STRENGTHS (5):
+11354.1s	395	    ✅ M1_spearman_rho = 0.794 (>0.55)
+11354.1s	396	    ✅ M4_necrosis_F1 = 0.773 (>0.6)
+11354.1s	397	    ✅ H2_diversity = 0.279 (>0.25)
+11354.1s	398	    ✅ T5_coherence = 0.974 (>0.7)
+11354.1s	399	    ✅ H3_responder_F1 = 0.592 (>0.55)
+11354.1s	400	
+11354.1s	401	  LIMITATIONS (5) → Phase M3 targets:
+11354.1s	402	    ❌ H1_rankme = 7.639 (needs >30.0)
+11354.1s	403	    ❌ M6_patient_purity_pct = 7.320 (needs >60.0)
+11354.1s	404	    ❌ T4_rano_auc = 0.599 (needs >0.65)
+11354.1s	405	    ❌ T7_treatment_d = 0.420 (needs >0.5)
+11354.1s	406	    ❌ T8_kendall_tau = 0.070 (needs >0.3)
+11354.1s	407	
+11354.1s	408	============================================================
+11354.1s	409	  CNN vs ViT COMPARISON
+11354.1s	410	============================================================
+11354.1s	411	  Metric                                     nnunet     swinunetr    Winner
+11354.1s	412	  ---------------------------------------------------------------------------
+11354.1s	413	  M1_spearman_rho                             0.879         0.794    nnunet
+11354.1s	414	  M1_volume_R2_rf                             0.826         0.839    swinunetr
+11354.1s	415	  M2_logvol_R2_rf                             0.891         0.784    nnunet
+11354.1s	416	  M4_necrosis_F1                              0.746         0.773    swinunetr
+11354.1s	417	  M6_patient_purity_pct                      14.641         7.320    nnunet
+11354.1s	418	  H1_rankme                                 165.726         7.639    nnunet
+11354.1s	419	  H2_diversity                                0.520         0.279    nnunet
+11354.1s	420	  H3_responder_F1                             0.602         0.592    nnunet
+11354.1s	421	  T1_spearman_wt                              0.023         0.028    swinunetr
+11354.1s	422	  T4_rano_auc                                 0.612         0.599    nnunet
+11354.1s	423	  T7_treatment_d                              0.300         0.420    swinunetr
+11354.1s	424	  T8_kendall_tau                              0.380         0.070    nnunet
+11354.1s	425	
+11354.1s	426	============================================================
+11354.1s	427	  PHASE M2 EVALUATION COMPLETE
+11354.1s	428	============================================================
+11354.1s	429	  Results: /kaggle/working/phase_m2_evaluation/m2_eval_results.json
+11354.1s	430	  Figures: /kaggle/working/phase_m2_evaluation/figures
+11354.1s	431	  → Next: Phase M3 TaViT V3 training
+11357.6s	432	/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+11357.6s	433	  cells[i][c] = re.sub('\\\\\|', '|', cell)
+11357.8s	434	/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+11357.8s	435	  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+11358.6s	436	[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+11359.0s	437	[NbConvertApp] Writing 114826 bytes to __notebook__.ipynb
+11362.1s	438	[NbConvertApp] Converting notebook __notebook__.ipynb to html
+11363.6s	439	[NbConvertApp] Writing 689226 bytes to __results__.html

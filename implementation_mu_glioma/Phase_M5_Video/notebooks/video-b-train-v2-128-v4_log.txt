@@ -1,0 +1,57 @@
+7.0s	1	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.0s	2	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.0s	3	0.00s - to python to disable frozen modules.
+7.0s	4	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+7.7s	5	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.7s	6	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.7s	7	0.00s - to python to disable frozen modules.
+7.7s	8	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+13.6s	9	Device: cuda
+13.6s	10	Config: {'res': 128, 'n_cls': 5, 'bs': 8, 'T': 50, 'lr': 0.0002, 'epochs': 300, 'patience': 35, 'val_split': 0.15, 'base_ch': 96}
+14.4s	11	Loaded 1470 samples at 128x128 (native resolution)
+14.5s	12	Train:1250 Val:220 | ET-rich:451/1250 (3x oversampled)
+15.1s	13	Noise schedule: cosine, T=50
+15.6s	14	DDPMv2: 24.7M params
+16.1s	15	Shape: torch.Size([2, 5, 64, 64]) ok
+16.2s	16	Loss: wMSE+Dice+CE(ETx10)+focal_ET(g=3)+focal_TC(g=2) | Containment ON
+17.5s	17	Checkpoint: ep124 dice=0.7595
+22.7s	18	Training ep124->300 | patience=35 | FP32
+87.9s	19	  Ep125/300 l=0.5964/0.5926 WT=0.942 TC=0.678 ET=0.569 avg=0.730 best=0.759 pat=1 65s
+447.3s	20	  Ep130/300 l=0.5884/0.5973 WT=0.932 TC=0.682 ET=0.561 avg=0.725 best=0.759 pat=6 425s
+827.6s	21	  Ep135/300 l=0.5890/0.5962 WT=0.943 TC=0.694 ET=0.578 avg=0.738 best=0.759 pat=11 805s
+1057.2s	22	  Ep138/300 l=0.5901/0.5994 WT=0.961 TC=0.720 ET=0.598 avg=0.760 best=0.760 pat=0 1034s
+1208.2s	23	  Ep140/300 l=0.5876/0.5855 WT=0.906 TC=0.686 ET=0.570 avg=0.721 best=0.760 pat=2 1185s
+1574.6s	24	  Ep145/300 l=0.5835/0.6029 WT=0.941 TC=0.692 ET=0.574 avg=0.735 best=0.760 pat=7 1552s
+1938.4s	25	  Ep150/300 l=0.5866/0.5905 WT=0.941 TC=0.692 ET=0.569 avg=0.734 best=0.760 pat=12 1916s
+2302.2s	26	  Ep155/300 l=0.5844/0.5928 WT=0.948 TC=0.703 ET=0.582 avg=0.744 best=0.760 pat=17 2279s
+2666.4s	27	  Ep160/300 l=0.5851/0.5822 WT=0.935 TC=0.691 ET=0.570 avg=0.732 best=0.760 pat=22 2644s
+3030.8s	28	  Ep165/300 l=0.5870/0.5876 WT=0.940 TC=0.679 ET=0.576 avg=0.732 best=0.760 pat=27 3008s
+3394.5s	29	  Ep170/300 l=0.5834/0.5874 WT=0.934 TC=0.696 ET=0.578 avg=0.736 best=0.760 pat=32 3372s
+3612.3s	30	  Early stop ep173
+3612.3s	31	Done. Best Dice: 0.7596
+3612.8s	32	Curves saved
+3615.5s	33	Sampling test saved
+3619.4s	34	
+3619.4s	35	============================================================
+3619.4s	36	  DDPMv2 128x128 — COMPLETE
+3619.4s	37	============================================================
+3619.4s	38	  Model:    DDPMv2 (24.7M params)
+3619.4s	39	  Res:      128x128
+3619.4s	40	  T:        50 steps (sampling: 25 warm-start)
+3619.4s	41	  Best Dice:0.7596
+3619.4s	42	  Epochs:   49 trained this session
+3619.4s	43	  Files:
+3619.4s	44	    curves_v2.png                       0.2MB
+3619.4s	45	    ddpm_v2_128_v4_best.pth             98.8MB
+3619.4s	46	    interp_v2.png                       0.1MB
+3619.4s	47	    sampling_v2.png                     0.1MB
+3619.4s	48	  → Next: Video_C_Validate.ipynb
+3619.4s	49	============================================================
+3624.9s	50	/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+3624.9s	51	  cells[i][c] = re.sub('\\\\\|', '|', cell)
+3625.0s	52	/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+3625.0s	53	  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+3625.7s	54	[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+3626.0s	55	[NbConvertApp] Writing 31005 bytes to __notebook__.ipynb
+3628.5s	56	[NbConvertApp] Converting notebook __notebook__.ipynb to html
+3629.4s	57	[NbConvertApp] Writing 416166 bytes to __results__.html

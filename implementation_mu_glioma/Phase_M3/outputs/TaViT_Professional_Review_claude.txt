@@ -1,0 +1,149 @@
+﻿TECHNICAL PEER REVIEW
+TaViT V3.2 & VOCEG - Treatment-Aware Tumour Trajectory Prediction
+Glioma MRI Longitudinal Modelling  |  May 2026
+
+EXECUTIVE SUMMARY
+TaViT V3.2 is a 3.06M-parameter Treatment-Aware Trajectory Vision Transformer predicts glioma volumes (WT, TC, ET) from sequential MRI embeddings, conditioned on treatment tokens and molecular markers. The architecture is well-grounded in current literature. Volume-prediction accuracy is strong (WT R2=0.917, TC R2=0.957, ET R2=0.959). However, areas including dataset scale, trajectory classification fidelity, uncertainty quantification, and VOCEG causal validity require attention before clinical or publication-grade robustness can be claimed.
+Architecture
+✓  StrongResults (Volume)
+✓  StrongTrajectory Cls.
+△  Needs WorkData Scale
+✗  ConcernUncertainty Quant.
+✗  MissingVOCEG Causal Valid.
+△  Needs Work
+1.  Architecture Overview
+TaViT V3.2 is a 3.06M-parameter end-to-end system composed of three learned modules working in sequence:
+
+ModuleRole & ScaleTaViT_Backbone  (2.96M params)Projects and fuses scan embeddings (2816-D), treatment tokens (8-D), and sinusoidal time encoding, then runs a 4-layer / 8-head Transformer Encoder.MolProjector  (18 K params)Projects 26 binary molecular markers to a 256-D prefix token prepended to the scan sequence, providing patient-level genomic context.VolDecoder  (78 K params)Decodes each Transformer output token (concatenated with a 9-D volume anchor from nnU-Net) into (WT, TC, ET) volumes in log1p scale, with a parallel delta head for inter-scan change.
+2.  Strengths - What the Literature Supports
+2.1  Transformer-Based Longitudinal Modelling
+✓  Architecture choice is well-validated for irregular medical time series
+• Sequence-to-sequence attention over MRI scans directly mirrors the design validated by Transformer-XL and medical imaging adaptations. The 4-layer / 8-head configuration is consistent with small-cohort medical imaging literature, where larger models overfit. [1,2]
+• Pre-norm (norm_first=True) is the recommended setting from Xiong et al. (2020), who showed it stabilises gradients especially with shorter training runs on small datasets. [3]
+• Sinusoidal positional encoding of absolute scan days (rather than learned integer positions) is the right choice for irregular scan intervals, following Vaswani et al. (2017) and reaffirmed by medical imaging works handling non-uniform time grids. [1,4]
+2.2  Multimodal Fusion Strategy
+✓  Concatenate-then-MLP fusion for interacting modalities is principled
+• The choice to concatenate scan and treatment projections, then fuse with a learned MLP, rather than using simple addition, directly implements the cross-modal interaction mechanism recommended by Huang et al. (2021) for multimodal medical transformers. Treatment effect on tumour response does depend on tumour state, making the learned interaction justified. [5]
+• Additive sinusoidal encoding for time (not concatenated) correctly separates content from positional information, matching the original Transformer design principle. [1]
+• The vol_feats bypass (9-D volume anchor fed directly to VolDecoder) implements an effective shortcut connection that prevents the transformer from needing to reconstruct absolute volume scale from relative neural features - a design analogous to the skip connections validated in nnU-Net itself. [6]
+2.3  Molecular CLS Prefix Token
+✓  Patient-level genomic context as a prefix is the right design choice
+• Replacing a learnable random CLS token with a patient-specific molecular prefix (IDH, MGMT, 1p/19q, etc.) ensures the transformer has biologically meaningful global context before processing any scan. This is superior to a generic CLS token and is conceptually aligned with BERT-style prefix conditioning. [7,8]
+• IDH mutation status and MGMT methylation are among the strongest known prognostic factors in glioma. [9] Incorporating them as conditioning signals is clinically motivated and increases the biological plausibility of the model.
+2.4  Multi-Task Loss Design
+✓  Four-component loss is well-motivated by multi-task learning theory
+• L_vol (SmoothL1, w=1.0) as the primary objective is appropriate; SmoothL1 is more robust than MSE to outliers in volume space. [10]
+• L_delta (SmoothL1, w=0.5) directly supervises inter-scan volume changes, which forces the model to learn tumour dynamics rather than static volume mapping. This auxiliary objective mirrors the trend supervision used in clinical prognostic scoring systems. [11]
+• L_cls (FocalLoss γ=2, w=0.3) with PROG/STABLE/RESP supervision using Focal Loss correctly addresses class imbalance (55%/20%/25% split). Lin et al. (2017) demonstrated Focal Loss is the standard choice in imbalanced classification settings. [12]
+• L_smooth (w=0.05) penalises erratic volume jumps, acting as a temporal regulariser. This is a domain-appropriate constraint given that tumour volumes cannot physically oscillate rapidly between scans.
+• The treatment ablation (A1: +23.7% improvement) and VOCEG ablation (E1: +10.3%) already confirm that conditioning signals are not merely decorative - they materially improve prediction.
+2.5  Training Regime
+✓  Training configuration follows current best practices
+• AdamW + CosineAnnealing is the standard combination for transformers, providing weight decay regularisation and smooth learning rate decay. [13]
+• Gradient clipping (max_norm=1.0) is necessary for transformer stability and correctly applied. [3]
+• 3-fold stratified CV stratified by trajectory class ensures equal representation of PROG/STABLE/RESP in all splits, preventing class-imbalance bias in evaluation. [14]
+• Early stopping (patience=40) on validation volume loss prevents overfitting without hard epoch limits.
+3.  Areas for Improvement - Critical Findings
+3.1  Dataset Scale and Generalisability  [CRITICAL]
+✗  150 patients / 23-patient test set is insufficient for clinical claims
+• 23-patient test set means each R² and MAE value has extremely wide confidence intervals. A single outlier patient can shift WT MAE by >1 mL. Confidence intervals should be reported around all metrics (bootstrapped CIs or fold-level variance). [15]
+• The literature on deep learning for glioma generally reports N > 300 patients as a minimum for meaningful generalisation claims. BraTS 2023 used 1,251 patients for segmentation benchmarking. [6,16]
+• No external cohort validation means it is unknown whether the model transfers to a different MRI scanner, protocol, or patient population. This is a fundamental requirement for clinical translation. [15]
+• Recommendation: Report 95% bootstrap confidence intervals on all reported metrics, and clearly frame all results as proof-of-concept on a single-centre cohort rather than clinical validation.
+3.2  Trajectory Classification Performance  [SIGNIFICANT]
+✗  39.1% TrajAcc is only marginally above a random 33.3% baseline
+• The +5.8 percentage-point improvement over random chance for a 3-class problem is statistically fragile on 23 patients (roughly 1-2 patients). Cohen's κ should be reported alongside accuracy to account for chance agreement. [17]
+• The class imbalance (PROG 55%, STABLE 20%, RESP 25%) means a majority-class classifier would achieve 55% accuracy - making 39.1% appear below the trivial baseline for this specific imbalance. [12]
+• Recommendation: (1) Report balanced accuracy, F1-macro, and Cohen's κ. (2) Investigate whether the CLS head benefits from the molecular prefix - attention visualisation may reveal whether the last token integrates molecular context.
+• If classification remains weak, consider: reframing as binary PROG vs non-PROG (more clinically actionable), or removing the CLS head and focusing on trajectory definition purely from the delta predictions.
+3.3  Volume Anchor Leakage Risk  [SIGNIFICANT]
+△  vol_feats bypass may inflate volume prediction metrics
+• The 9-D vol_feats (dims 2816-2824 of the nnU-Net embedding) include log1p(WT), log1p(TC), log1p(ET) - i.e., near-direct representations of the ground-truth target - and these are fed directly to the VolDecoder, bypassing the transformer. [6]
+• If vol_feats dominate the VolDecoder's predictions (rather than tok_out), then reported R² values are measuring nnU-Net's intrinsic accuracy, not TaViT's trajectory-modelling contribution. Ablation B1 (removing vol_feats) is therefore the most important experiment to run.
+• Recommendation: Run B1 urgently. If R² drops only modestly (<5%), the transformer is genuinely contributing. If R² collapses, the reported metrics are primarily reflecting the nnU-Net quality, and the claim about TaViT's contribution must be qualified.
+3.4  Lack of Uncertainty Quantification  [SIGNIFICANT]
+△  Point predictions are insufficient for clinical decision support
+• TaViT outputs single-point volume predictions with no measure of confidence. Clinical use of volume trajectories for treatment decisions requires calibrated prediction intervals. [18]
+• Recommended approaches (cheapest first):
+• (a) Monte Carlo Dropout: enable Dropout(0.2) at inference time, run N=100 forward passes, report mean ± 2σ. Zero additional training cost. [18]
+• (b) Deep Ensembles: train 5 independent models on the same folds, average predictions. Well-calibrated and consistently outperforms single models. [19]
+• (c) Conformal Prediction: provides distribution-free coverage guarantees on held-out calibration set - well-suited to small N. [20]
+• Recommendation: At minimum, implement MC Dropout (option a) and add a calibration plot (expected vs observed volume coverage) to the thesis.
+3.5  VOCEG Causal Validity  [SIGNIFICANT]
+△  Counterfactual projections conflate correlation with causal effect
+• VOCEG generates counterfactual tumour trajectories (e.g., 'what if this patient had received RT?'), but the model is trained on observational data where treatment assignment is confounded by patient severity. Sicker patients receive more aggressive treatment; this correlation is baked into the training distribution. [21]
+• A counterfactual prediction by VOCEG answers 'what would a similar patient in the training data show?' - not 'what would happen causally if treatment were changed for this patient.' [21,22]
+• VOCEG R²=0.734 vs TaViT R²=0.917 on the same cohort suggests VOCEG is already substantially weaker - this gap widens in truly counterfactual scenarios that are unrepresented in training data.
+• Recommendation: Clearly label VOCEG outputs as observational analogues, not causal counterfactuals. Consider adding an IPTW (Inverse Probability of Treatment Weighting) pre-processing step to partially de-confound the observational data, following standard causal ML practice. [21]
+3.6  Additional Technical Concerns
+△  Normalisation scope, attention depth, and interpretability
+• Sinusoidal encoding normalised to 730 days: patients with follow-up beyond 2 years (730 days) will have out-of-distribution temporal encodings. The normalisation constant should be set to the observed maximum in the dataset or use learned time embeddings.
+• Max sequence length = 6: patients with more than 6 scans are silently truncated. The truncation strategy (early vs. late scans dropped) should be documented and its impact evaluated.
+• Attention visualisation is absent: for clinical trust and interpretability, attention weight maps across scan sequences (e.g., 'which prior scan does the model attend to most when predicting scan N?') should be analysed and included in the thesis. [23]
+• Binary molecular markers: some markers (e.g., MGMT promoter methylation status) have continuous underlying measurements. Binarisation may lose prognostic information. A continuous or ordinal encoding of methylation percentages could be evaluated.
+• 26-D molecular token with potential multicollinearity: markers like IDH mutation and 1p/19q codeletion are biologically correlated (IDH-mutant oligodendroglioma has co-deletion). A PCA or structured encoding that respects these dependencies could improve the MolProjector's representational efficiency.
+4.  Ablation Study Assessment
+The proposed ablation plan is logically structured. Below is a prioritised evaluation of each group.
+
+AblationAssessment & RecommendationA1 - No Treatment Token  ✓ Done+23.7% is a strong result. Well-reported. Confirms treatment conditioning is not cosmetic.A2 - No Molecular CLS  ★★★Critical. Without this, the MolProjector's contribution is unsubstantiated. Run immediately.A3 - No Temporal Encoding  ★★★Critical. Validates the sinusoidal time embedding. If impact is low, consider simplifying to a linear day-ratio feature.B1 - No Vol-Feats Anchor  ★★★ (Urgent)Most important ablation. Determines whether TaViT or nnU-Net is doing the heavy lifting. Should be Phase 1.C1 - No Delta LossImportant for justifying multi-task design. Run in Phase 2.C2 - No Classification LossGiven weak TrajAcc (39.1%), this may show L_cls adds noise rather than signal to volume prediction.C4 - Vol-Only Loss  ★★★Essential. Multi-task vs. single-task comparison is a standard expected in ML papers.E1 - VOCEG No Treatment  ✓ Done+10.3%. Valid. Should be accompanied by a causal-validity caveat.E2 - VOCEG No Delta-DaysQuick and informative. Validates VOCEG's time-sensitivity.E3 - Volume-Only VOCEGUseful lower bound to show that both treatment and time are needed.
+Missing ablation: There is no ablation comparing TaViT vs. a linear baseline (e.g., linear mixed-effects model on log1p volumes with treatment as covariate). Without this, it is impossible to assess how much the transformer architecture contributes over a simpler statistical model. This is a standard expectation in clinical AI papers. [15,24]
+
+5.  Prioritised Recommendations
+Priority 1 - Before Thesis Submission
+✗  Must-address items
+• Run Ablation B1 (vol_feats removal) and report in the thesis as a validation of TaViT's genuine contribution. This is the single highest-value experiment.
+• Report 95% bootstrap confidence intervals on all metrics (R², MAE, TrajAcc). With 23 test patients, point estimates alone are not credible.
+• Replace accuracy with balanced accuracy + F1-macro + Cohen's κ for trajectory classification. Clarify that 39.1% < 55% majority-class baseline.
+• Add a causal-validity disclaimer to all VOCEG results, making clear these are observational analogues and not interventional predictions.
+• Document the 730-day normalisation limit and the sequence truncation strategy for >6-scan patients.
+Priority 2 - For Journal Submission
+△  Strongly recommended additions
+• Implement MC Dropout uncertainty estimation (enable Dropout at inference, N=100 passes). Add calibration plot. Estimated implementation time: 1-2 days.
+• Add a linear mixed-effects model baseline to quantify the transformer's value-add over a simple statistical model.
+• Add attention weight visualisation for 3-5 example patients to demonstrate interpretability and support clinical adoption arguments.
+• Consider reframing trajectory classification as binary PROG vs. non-PROG to improve clinical actionability and likely improve classification metrics.
+• Revise the sinusoidal encoding normalisation constant to the observed dataset maximum (or use a learned time MLP).
+Priority 3 - Future Work
+✓  Longer-term improvements
+• External cohort validation on a publicly available glioma dataset (e.g., TCGA-GBM or UPENN-GBM) to test generalisability.
+• Replace binary molecular markers with continuous assay values (e.g., MGMT methylation percentage) where available.
+• Explore IPTW de-confounding of the training data to move VOCEG projections closer to causal validity.
+• Consider a Bayesian or ensemble approach to TaViT to produce well-calibrated predictive distributions for clinical risk stratification.
+6.  Results Evaluation
+6.1  Volume Prediction - Strong
+MetricValue & ContextWT R² = 0.917Strong. 91.7% variance explained. Context: nnU-Net automatic segmentation R² on BraTS typically 0.85-0.95 [Ref 6].TC R² = 0.957Very strong. Tumour core is clinically the most relevant region for treatment planning.ET R² = 0.959Very strong. Enhancing tumour correlates with grade and active disease.WT MAE = 15.2 mLModerate concern. 15.2 mL is clinically meaningful - small recurrent tumours may be 5-20 mL total. Wide errors here could mislead treatment decisions.TC MAE = 4.8 mL  /  ET MAE = 3.2 mLAcceptable. Errors are smaller relative to typical TC/ET volumes.
+6.2  Trajectory Classification - Weak
+TrajAcc = 39.1%  vs  33.3% majority-class random baseline. The more relevant baseline is the 55% majority-class (PROG) classifier, against which 39.1% represents a negative result - the model performs worse than always predicting 'Progressive.' This must be clearly contextualised in the thesis and the classification head's design reviewed.
+
+6.3  VOCEG - Adequate but Overstated
+VOCEG R² = 0.734 for counterfactual volume projection is substantially weaker than TaViT's direct prediction (0.917). This gap is expected for a generative counterfactual model, but the causal interpretation must not be overstated. VOCEG E1 (+10.3% with treatment) confirms treatment conditioning is useful, but the overall VOCEG framework needs the causal-validity caveats outlined in Section 3.5.
+
+7.  References
+[1]  Vaswani, A., et al. (2017). Attention Is All You Need. NeurIPS 30.
+[2]  Dai, Z., et al. (2019). Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context. ACL 2019.
+[3]  Xiong, R., et al. (2020). On Layer Normalization in the Transformer Architecture. ICML 2020.
+[4]  Horn, M., et al. (2020). Set Functions for Time Series. ICML 2020.
+[5]  Huang, S.-C., et al. (2021). Fusion of Medical Imaging and Electronic Health Records Using Deep Learning. npj Digital Medicine.
+[6]  Isensee, F., et al. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature Methods, 18, 203-211.
+[7]  Devlin, J., et al. (2019). BERT: Pre-training of Deep Bidirectional Transformers. NAACL 2019.
+[8]  Chen, R. J., et al. (2022). Scaling Vision Transformers to Gigapixel Images via Hierarchical Self-Supervised Learning. CVPR 2022.
+[9]  Louis, D. N., et al. (2021). The 2021 WHO Classification of Tumors of the Central Nervous System. Neuro-Oncology, 23(8), 1231-1251.
+[10]  Girshick, R. (2015). Fast R-CNN. ICCV 2015. [SmoothL1 origin]
+[11]  Kickingereder, P., et al. (2019). Automated quantitative tumour response assessment of MRI in neuro-oncology. The Lancet Oncology, 20(5), 728-740.
+[12]  Lin, T.-Y., et al. (2017). Focal Loss for Dense Object Detection. ICCV 2017.
+[13]  Loshchilov, I. & Hutter, F. (2019). Decoupled Weight Decay Regularization. ICLR 2019.
+[14]  Kohavi, R. (1995). A Study of Cross-Validation and Bootstrap for Accuracy Estimation. IJCAI 1995.
+[15]  Wynants, L., et al. (2020). Prediction models for diagnosis and prognosis of covid-19 infection. BMJ 369. [Reporting standards for clinical prediction models]
+[16]  Menze, B. H., et al. (2015). The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS). IEEE Trans. Med. Imaging, 34(10), 1993-2024.
+[17]  Cohen, J. (1960). A coefficient of agreement for nominal scales. Educational and Psychological Measurement, 20(1), 37-46.
+[18]  Gal, Y. & Ghahramani, Z. (2016). Dropout as a Bayesian Approximation. ICML 2016.
+[19]  Lakshminarayanan, B., et al. (2017). Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles. NeurIPS 2017.
+[20]  Angelopoulos, A. N. & Bates, S. (2021). A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification. arXiv:2107.07511.
+[21]  Hernan, M. A. & Robins, J. M. (2020). Causal Inference: What If. Chapman & Hall / CRC.
+[22]  Prosperi, M., et al. (2020). Causal inference and counterfactual prediction in machine learning. Nature Machine Intelligence, 2, 369-375.
+[23]  Chefer, H., et al. (2021). Transformer Interpretability Beyond Attention Visualization. CVPR 2021.
+[24]  Bzdok, D., et al. (2018). Statistics versus machine learning. Nature Methods, 15, 233-234.
+
+This review was prepared based on the TaViT V3.2 full project report and architecture guide provided. All recommendations are grounded in peer-reviewed literature as cited. The authors are encouraged to address Priority 1 items before thesis submission.
+TaViT V3.2 Technical Review  |  Confidential  |  Page 
+

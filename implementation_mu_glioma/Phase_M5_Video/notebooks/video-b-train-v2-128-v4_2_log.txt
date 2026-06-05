@@ -1,0 +1,58 @@
+12.1s	1	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+12.1s	2	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+12.1s	3	0.00s - to python to disable frozen modules.
+12.1s	4	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+12.9s	5	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+12.9s	6	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+12.9s	7	0.00s - to python to disable frozen modules.
+12.9s	8	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+22.3s	9	Device: cuda
+22.3s	10	Config: {'res': 128, 'n_cls': 5, 'bs': 8, 'T': 50, 'lr': 0.0002, 'epochs': 300, 'patience': 35, 'val_split': 0.15, 'base_ch': 96}
+22.9s	11	Loaded 1470 samples at 128x128 (native resolution)
+23.1s	12	Train:1250 Val:220 | ET-rich:451/1250 (3x oversampled)
+23.9s	13	Noise schedule: cosine, T=50
+24.3s	14	DDPMv2: 24.7M params
+25.6s	15	Shape: torch.Size([2, 5, 64, 64]) ok
+25.6s	16	Loss: wMSE+Dice+CE(ETx10)+focal_ET(g=3)+focal_TC(g=2) | Containment ON
+26.5s	17	Checkpoint: ep124 dice=0.7595
+26.5s	18	SKIP_TRAIN=True - going to sampling
+26.5s	19	No training history to plot (SKIP_TRAIN=True or checkpoint loaded)
+26.7s	20	Warm-start Dice on 30 val samples + containment...
+39.7s	21	Warm-start+containment: WT=0.743 TC=0.413 ET=0.332 avg=0.496
+42.2s	22	Saved sampling_final.png
+81.4s	23	  step   WT mean   WT std   TC mean   TC std   ET mean   ET std      Avg
+81.4s	24	------------------------------------------------------------------------
+81.4s	25	     0     0.780    0.234     0.418    0.408     0.328    0.421    0.509
+81.4s	26	     5     0.772    0.237     0.417    0.408     0.340    0.419    0.510
+81.4s	27	    10     0.768    0.241     0.415    0.408     0.345    0.418    0.509
+81.4s	28	    15     0.762    0.242     0.406    0.410     0.336    0.416    0.502
+81.4s	29	    20     0.751    0.241     0.409    0.408     0.340    0.416    0.500
+81.4s	30	    25     0.743    0.240     0.399    0.404     0.336    0.412    0.493
+82.1s	31	Saved step_sweep_errorbar.png
+83.8s	32	Saved step_sweep_grid.png
+89.3s	33	Saved interp_final.png
+89.4s	34	
+89.4s	35	============================================================
+89.4s	36	  DDPMv2 v4 128x128 - COMPLETE
+89.4s	37	============================================================
+89.4s	38	  Model:    DDPMv2 (24.7M params)
+89.4s	39	  Res:      128x128
+89.4s	40	  Sampling: Full 50-step DDPM + containment
+89.4s	41	  Best Dice:0.7595
+89.4s	42	  50-step WT:0.743 TC:0.413 ET:0.332
+89.4s	43	  Files:
+89.4s	44	    ddpm_v2_128_v4_best.pth             98.8MB
+89.4s	45	    interp_final.png                    0.1MB
+89.4s	46	    sampling_final.png                  0.1MB
+89.4s	47	    step_sweep_errorbar.png             0.1MB
+89.4s	48	    step_sweep_grid.png                 0.1MB
+89.4s	49	  -> Next: Video_C_Validate.ipynb
+89.4s	50	============================================================
+94.8s	51	/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+94.8s	52	  cells[i][c] = re.sub('\\\\\|', '|', cell)
+95.0s	53	/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+95.0s	54	  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+95.6s	55	[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+95.9s	56	[NbConvertApp] Writing 36697 bytes to __notebook__.ipynb
+98.2s	57	[NbConvertApp] Converting notebook __notebook__.ipynb to html
+99.2s	58	[NbConvertApp] Writing 451413 bytes to __results__.html

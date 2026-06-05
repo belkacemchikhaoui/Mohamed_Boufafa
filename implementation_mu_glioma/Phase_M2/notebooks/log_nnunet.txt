@@ -1,0 +1,366 @@
+6.6s	1	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.6s	2	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.6s	3	0.00s - to python to disable frozen modules.
+6.6s	4	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+7.2s	5	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.2s	6	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.2s	7	0.00s - to python to disable frozen modules.
+7.2s	8	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+12.4s	9	Model: nnunet | Patch: [128, 128, 128] | Regions: ['WT', 'TC', 'ET']
+12.6s	10	Installing nnunetv2 ...
+14.5s	11	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 205.6/205.6 kB 5.1 MB/s eta 0:00:00
+14.7s	12	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 205.6/205.6 kB 5.1 MB/s eta 0:00:00
+29.5s	13	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.0/77.0 kB 6.4 MB/s eta 0:00:00
+29.7s	14	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.0/77.0 kB 6.4 MB/s eta 0:00:00
+31.2s	15	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.1/63.1 kB 4.8 MB/s eta 0:00:00
+31.4s	16	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.1/63.1 kB 4.8 MB/s eta 0:00:00
+31.9s	17	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.7/73.7 kB 5.5 MB/s eta 0:00:00
+32.1s	18	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.7/73.7 kB 5.5 MB/s eta 0:00:00
+32.2s	19	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 26.5/26.5 MB 54.5 MB/s eta 0:00:00
+32.3s	20	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 68.3 MB/s eta 0:00:00
+32.4s	21	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 53.2 MB/s eta 0:00:00
+32.4s	22	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 26.5/26.5 MB 54.5 MB/s eta 0:00:00
+32.4s	23	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 68.3 MB/s eta 0:00:00
+32.4s	24	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 53.2 MB/s eta 0:00:00
+32.4s	25	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.4/96.4 kB 7.5 MB/s eta 0:00:00
+32.6s	26	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.4/96.4 kB 7.5 MB/s eta 0:00:00
+40.2s	27	nnunetv2 installed
+42.5s	28	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.2/49.2 kB 2.8 MB/s eta 0:00:00
+42.7s	29	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.2/49.2 kB 2.8 MB/s eta 0:00:00
+43.7s	30	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.4/54.4 kB 3.8 MB/s eta 0:00:00
+43.9s	31	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.4/54.4 kB 3.8 MB/s eta 0:00:00
+45.1s	32	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.0/50.0 kB 3.7 MB/s eta 0:00:00
+45.3s	33	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.0/50.0 kB 3.7 MB/s eta 0:00:00
+45.7s	34	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.6/43.6 kB 3.0 MB/s eta 0:00:00
+45.9s	35	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.6/43.6 kB 3.0 MB/s eta 0:00:00
+46.4s	36	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.4/48.4 kB 3.7 MB/s eta 0:00:00
+46.6s	37	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.4/48.4 kB 3.7 MB/s eta 0:00:00
+48.0s	38	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.8/53.8 kB 4.5 MB/s eta 0:00:00
+48.1s	39	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 266.5/266.5 kB 9.1 MB/s eta 0:00:00
+48.1s	40	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 32.6 MB/s eta 0:00:00
+48.2s	41	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.8/53.8 kB 4.5 MB/s eta 0:00:00
+48.2s	42	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 266.5/266.5 kB 9.1 MB/s eta 0:00:00
+48.2s	43	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 32.6 MB/s eta 0:00:00
+49.6s	44	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 81.4/81.4 MB 19.5 MB/s eta 0:00:00
+49.8s	45	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 81.4/81.4 MB 19.5 MB/s eta 0:00:00
+50.9s	46	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.8/67.8 MB 21.3 MB/s eta 0:00:00
+51.1s	47	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.8/67.8 MB 21.3 MB/s eta 0:00:00
+51.3s	48	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.0/28.0 MB 46.0 MB/s eta 0:00:00
+51.5s	49	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.0/28.0 MB 46.0 MB/s eta 0:00:00
+52.3s	50	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.2/57.2 MB 26.3 MB/s eta 0:00:00
+52.5s	51	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.2/57.2 MB 26.3 MB/s eta 0:00:00
+52.9s	52	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.5/28.5 MB 42.5 MB/s eta 0:00:00
+53.1s	53	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.5/28.5 MB 42.5 MB/s eta 0:00:00
+53.1s	54	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.9/15.9 MB 48.3 MB/s eta 0:00:00
+53.3s	55	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.6/10.6 MB 108.8 MB/s eta 0:00:00
+53.3s	56	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 102.5 MB/s eta 0:00:00
+53.4s	57	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 74.0 MB/s eta 0:00:00
+53.4s	58	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.9/15.9 MB 48.3 MB/s eta 0:00:00
+53.4s	59	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.6/10.6 MB 108.8 MB/s eta 0:00:00
+53.4s	60	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 102.5 MB/s eta 0:00:00
+53.4s	61	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 36.7 MB/s eta 0:00:00
+53.5s	62	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 115.9/115.9 kB 9.9 MB/s eta 0:00:00
+53.5s	63	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 333.1/333.1 kB 26.3 MB/s eta 0:00:00
+53.5s	64	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 92.7 MB/s eta 0:00:00
+53.6s	65	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 74.0 MB/s eta 0:00:00
+53.6s	66	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 36.7 MB/s eta 0:00:00
+53.6s	67	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 115.9/115.9 kB 9.9 MB/s eta 0:00:00
+53.6s	68	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 333.1/333.1 kB 26.3 MB/s eta 0:00:00
+53.6s	69	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 92.7 MB/s eta 0:00:00
+54.6s	70	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.4/61.4 MB 25.4 MB/s eta 0:00:00
+54.6s	71	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.5/87.5 kB 7.0 MB/s eta 0:00:00
+54.7s	72	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 202.1/202.1 kB 14.2 MB/s eta 0:00:00
+54.7s	73	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 319.6/319.6 kB 24.9 MB/s eta 0:00:00
+54.8s	74	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.4/61.4 MB 25.4 MB/s eta 0:00:00
+54.8s	75	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.5/87.5 kB 7.0 MB/s eta 0:00:00
+54.8s	76	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 202.1/202.1 kB 14.2 MB/s eta 0:00:00
+54.8s	77	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 319.6/319.6 kB 24.9 MB/s eta 0:00:00
+54.9s	78	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.9/114.9 kB 9.1 MB/s eta 0:00:00
+54.9s	79	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 208.4/208.4 kB 17.9 MB/s eta 0:00:00
+54.9s	80	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.0/77.0 kB 6.1 MB/s eta 0:00:00
+55.0s	81	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.3/56.3 kB 4.8 MB/s eta 0:00:00
+55.1s	82	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.9/114.9 kB 9.1 MB/s eta 0:00:00
+55.1s	83	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 208.4/208.4 kB 17.9 MB/s eta 0:00:00
+55.1s	84	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.0/77.0 kB 6.1 MB/s eta 0:00:00
+55.1s	85	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.3/56.3 kB 4.8 MB/s eta 0:00:00
+55.2s	86	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.2/9.2 MB 60.3 MB/s eta 0:00:00
+55.2s	87	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.2/132.2 kB 11.5 MB/s eta 0:00:00
+55.4s	88	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.2/9.2 MB 60.3 MB/s eta 0:00:00
+55.4s	89	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.2/132.2 kB 11.5 MB/s eta 0:00:00
+55.4s	90	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 879.5/879.5 kB 35.9 MB/s eta 0:00:00
+55.4s	91	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 207.3/207.3 kB 15.8 MB/s eta 0:00:00
+55.6s	92	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 879.5/879.5 kB 35.9 MB/s eta 0:00:00
+55.6s	93	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 207.3/207.3 kB 15.8 MB/s eta 0:00:00
+99.7s	94	ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+99.7s	95	pytensor 2.38.0 requires filelock>=3.15, but you have filelock 3.11.0 which is incompatible.
+99.9s	96	ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+99.9s	97	pytensor 2.38.0 requires filelock>=3.15, but you have filelock 3.11.0 which is incompatible.
+99.9s	98	
+99.9s	99	ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+99.9s	100	pytensor 2.38.0 requires filelock>=3.15, but you have filelock 3.11.0 which is incompatible.
+185.2s	101	2026-05-07 00:22:46.916287: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+185.2s	102	WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+185.2s	103	E0000 00:00:1778113367.099633      22 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+185.2s	104	E0000 00:00:1778113367.148345      22 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+185.2s	105	W0000 00:00:1778113367.600112      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+185.2s	106	W0000 00:00:1778113367.600149      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+185.2s	107	W0000 00:00:1778113367.600152      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+185.2s	108	W0000 00:00:1778113367.600154      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+185.4s	109	2026-05-07 00:22:46.916287: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+185.4s	110	WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+185.4s	111	E0000 00:00:1778113367.099633      22 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+185.4s	112	E0000 00:00:1778113367.148345      22 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+185.4s	113	W0000 00:00:1778113367.600112      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+185.4s	114	W0000 00:00:1778113367.600149      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+185.4s	115	W0000 00:00:1778113367.600152      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+185.4s	116	W0000 00:00:1778113367.600154      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+185.4s	117	
+185.4s	118	2026-05-07 00:22:46.916287: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+185.4s	119	WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+185.4s	120	E0000 00:00:1778113367.099633      22 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+185.4s	121	E0000 00:00:1778113367.148345      22 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+185.4s	122	W0000 00:00:1778113367.600112      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+185.4s	123	W0000 00:00:1778113367.600149      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+185.4s	124	W0000 00:00:1778113367.600152      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+185.4s	125	W0000 00:00:1778113367.600154      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+197.8s	126	MONAI 1.5.2 | PyTorch 2.10.0+cu128 | Device: cuda
+197.8s	127	GPU: Tesla T4 | Total memory: 15.6 GB
+197.8s	128	Disk free: 20.9 GB (need ~2GB for checkpoints)
+197.9s	129	MU-Glioma Label mapping: WT=1+2+3 | TC=1+3 | ET=3
+197.9s	130	  1=NETC  2=SNFH  3=ET  4=RC(excluded)
+205.5s	131	  Created 2978 symlinks from datasets
+205.5s	132	scan_index.json: /kaggle/input/datasets/zinou123viva/mu-glioma-m1-outputs/scan_index.json
+205.5s	133	data_splits.json: /kaggle/input/datasets/zinou123viva/mu-glioma-m1-outputs/data_splits.json
+205.5s	134	master_csv.csv: /kaggle/input/datasets/zinou123viva/mu-glioma-m1-outputs/mu_glioma_master.csv
+205.5s	135	Total scans in index: 596
+205.5s	136	Splits: Train=148 | Val=25 | Test=30
+205.5s	137	NIFTI_ROOT: /kaggle/working/nifti_links/zinou123viva/mu-glioma-post-validation/MU-Glioma-Post
+205.5s	138	Resolved: 594 total scans
+205.5s	139	Train: 429 | Val: 82
+205.5s	140	Spot-check: /kaggle/working/nifti_links/zinou123viva/mu-glioma-post-validation/MU-Glioma-Post/PatientID_0003/Timepoint_1/PatientID_0003_Timepoint_1_brain_t1c.nii.gz
+205.5s	141	  exists=True, size=5251963
+205.5s	142	  nibabel OK: shape=(240, 240, 155)
+205.5s	143	Transforms ready (3-channel: WT/TC/ET)
+205.5s	144	Validating scans...
+207.1s	145	Train dicts: 429 | Val dicts: 82 | All dicts: 594
+207.1s	146	  Sample: /kaggle/working/nifti_links/zinou123viva/mu-glioma-post-validation/MU-Glioma-Post/PatientID_0004/Timepoint_1/PatientID_0004_Timepoint_1_brain_t1n.nii.gz
+207.1s	147	  Exists: True
+207.3s	148	=======================================================
+207.3s	149	  Loading nnUNet v2 pretrained model
+207.3s	150	  Source: BraTS 2021 fold_0 (ORIGINAL — not BraTS 2024 fine-tuned)
+207.3s	151	  Target: WT=0.9005  TC=0.8673  ET=0.8509 (BraTS 2021)
+207.3s	152	=======================================================
+209.0s	153	Checkpoint: /kaggle/input/datasets/zinou123viva/brats2024-pretrained-weights/Dataset002_BRATS19/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/checkpoint_final.pth
+209.0s	154	Plans:      /kaggle/input/datasets/zinou123viva/brats2024-pretrained-weights/Dataset002_BRATS19/nnUNetTrainer__nnUNetPlans__3d_fullres/plans.json
+209.0s	155	  PlainConvUNet | 6 stages | features: [32, 64, 128, 256, 320, 320]
+209.0s	156	  strides: [[1, 1, 1], [2, 2, 2], [2, 2, 2], [2, 2, 2], [2, 2, 2], [2, 2, 1]]
+209.0s	157	  Imported from dynamic_network_architectures.architectures.unet
+211.6s	158	  Pretrained: 209/219 layers loaded | 30.8M params
+211.7s	159	Model on cuda
+213.4s	160	
+Loading dataset:   0%|          | 0/21 [00:00<?, ?it/s]
+216.5s	161	
+Loading dataset:   0%|          | 0/21 [00:00<?, ?it/s]
+Loading dataset:   5%|▍         | 1/21 [00:03<01:01,  3.07s/it]
+216.9s	162	
+Loading dataset:   5%|▍         | 1/21 [00:03<01:01,  3.07s/it]
+Loading dataset:  10%|▉         | 2/21 [00:03<00:28,  1.51s/it]
+219.7s	163	
+Loading dataset:  10%|▉         | 2/21 [00:03<00:28,  1.51s/it]
+Loading dataset:  24%|██▍       | 5/21 [00:06<00:17,  1.09s/it]
+220.1s	164	
+Loading dataset:  24%|██▍       | 5/21 [00:06<00:17,  1.09s/it]
+Loading dataset:  29%|██▊       | 6/21 [00:06<00:13,  1.11it/s]
+220.2s	165	
+Loading dataset:  29%|██▊       | 6/21 [00:06<00:13,  1.11it/s]
+Loading dataset:  33%|███▎      | 7/21 [00:06<00:09,  1.43it/s]
+222.8s	166	
+Loading dataset:  33%|███▎      | 7/21 [00:06<00:09,  1.43it/s]
+Loading dataset:  43%|████▎     | 9/21 [00:09<00:11,  1.04it/s]
+223.2s	167	
+Loading dataset:  43%|████▎     | 9/21 [00:09<00:11,  1.04it/s]
+Loading dataset:  48%|████▊     | 10/21 [00:09<00:09,  1.22it/s]
+223.3s	168	
+Loading dataset:  48%|████▊     | 10/21 [00:09<00:09,  1.22it/s]
+Loading dataset:  57%|█████▋    | 12/21 [00:09<00:04,  1.91it/s]
+225.8s	169	
+Loading dataset:  57%|█████▋    | 12/21 [00:09<00:04,  1.91it/s]
+Loading dataset:  62%|██████▏   | 13/21 [00:12<00:07,  1.06it/s]
+226.4s	170	
+Loading dataset:  62%|██████▏   | 13/21 [00:12<00:07,  1.06it/s]
+Loading dataset:  67%|██████▋   | 14/21 [00:12<00:06,  1.14it/s]
+228.6s	171	
+Loading dataset:  67%|██████▋   | 14/21 [00:12<00:06,  1.14it/s]
+Loading dataset:  81%|████████  | 17/21 [00:15<00:03,  1.24it/s]
+229.6s	172	
+Loading dataset:  81%|████████  | 17/21 [00:15<00:03,  1.24it/s]
+Loading dataset:  86%|████████▌ | 18/21 [00:16<00:02,  1.20it/s]
+229.7s	173	
+Loading dataset:  86%|████████▌ | 18/21 [00:16<00:02,  1.20it/s]
+Loading dataset:  95%|█████████▌| 20/21 [00:16<00:00,  1.79it/s]
+230.4s	174	
+Loading dataset:  95%|█████████▌| 20/21 [00:16<00:00,  1.79it/s]
+Loading dataset: 100%|██████████| 21/21 [00:16<00:00,  1.73it/s]
+230.4s	175	
+Loading dataset: 100%|██████████| 21/21 [00:16<00:00,  1.73it/s]
+Loading dataset: 100%|██████████| 21/21 [00:16<00:00,  1.24it/s]
+230.4s	176	Using CacheDataset (5% RAM cache)
+230.4s	177	Train: 429 batches | Val: 82 batches
+230.4s	178	Expected ~20 min/epoch x 30 epochs ~ 10.0h total
+230.4s	179	
+Loading dataset: 100%|██████████| 21/21 [00:16<00:00,  1.24it/s]
+230.4s	180	
+230.4s	181	
+595.8s	182	Ep   0 | L=0.9499 | 6.4m
+950.2s	183	Ep   1 | L=0.9341 | 12.3m
+1303.3s	184	Ep   2 | L=0.9181 | 18.2m
+1885.2s	185	Ep   3 | L=0.8849 | Dice=0.4505 WT=0.731 TC=0.441 ET=0.180 | 27.9m NEW BEST
+2243.8s	186	Ep   4 | L=0.8218 | 33.8m
+2601.8s	187	Ep   5 | L=0.7242 | 39.8m
+2953.7s	188	Ep   6 | L=0.5957 | 45.7m
+3521.6s	189	Ep   7 | L=0.4560 | Dice=0.7998 WT=0.851 TC=0.774 ET=0.775 | 55.1m NEW BEST
+3874.8s	190	Ep   8 | L=0.3670 | 61.0m
+4230.4s	191	Ep   9 | L=0.3086 | 66.9m
+4579.2s	192	Ep  10 | L=0.2795 | 72.8m
+5149.7s	193	Ep  11 | L=0.2647 | Dice=0.8614 WT=0.886 TC=0.843 ET=0.856 | 82.3m NEW BEST
+5496.9s	194	Ep  12 | L=0.2504 | 88.1m
+5846.9s	195	Ep  13 | L=0.2416 | 93.9m
+6201.0s	196	Ep  14 | L=0.2334 | 99.8m
+6773.5s	197	Ep  15 | L=0.2246 | Dice=0.8646 WT=0.883 TC=0.846 ET=0.865 | 109.3m NEW BEST
+7129.2s	198	Ep  16 | L=0.2160 | 115.3m
+7486.5s	199	Ep  17 | L=0.2136 | 121.2m
+7842.0s	200	Ep  18 | L=0.2089 | 127.1m
+8423.4s	201	Ep  19 | L=0.2038 | Dice=0.8745 WT=0.899 TC=0.855 ET=0.870 | 136.8m NEW BEST
+8776.7s	202	Ep  20 | L=0.2033 | 142.7m
+9142.8s	203	Ep  21 | L=0.1919 | 148.8m
+9505.0s	204	Ep  22 | L=0.1916 | 154.9m
+10091.3s	205	Ep  23 | L=0.1935 | Dice=0.8725 WT=0.898 TC=0.852 ET=0.868 | 164.6m
+10458.5s	206	Ep  24 | L=0.1879 | 170.8m
+10824.1s	207	Ep  25 | L=0.1853 | 176.8m
+11193.1s	208	Ep  26 | L=0.1825 | 183.0m
+11774.1s	209	Ep  27 | L=0.1796 | Dice=0.8757 WT=0.904 TC=0.854 ET=0.870 | 192.7m NEW BEST
+12126.3s	210	Ep  28 | L=0.1803 | 198.5m
+12701.8s	211	Ep  29 | L=0.1813 | Dice=0.8774 WT=0.904 TC=0.857 ET=0.872 | 208.1m NEW BEST
+12702.5s	212	Loaded BEST checkpoint → Dice 0.8774
+12702.6s	213	
+12702.6s	214	Fine-tuning complete. Best Dice: 0.8774
+12703.8s	215	  Loaded BEST checkpoint → epoch 29 | Dice 0.8774
+12703.8s	216	  Visualising 5 random val patients:
+12703.8s	217	    PatientID_0254 tp=4
+12703.8s	218	    PatientID_0033 tp=5
+12703.8s	219	    PatientID_0006 tp=6
+12703.8s	220	    PatientID_0095 tp=6
+12703.8s	221	    PatientID_0095 tp=1
+12711.0s	222	    Saved: val_3d_0_PatientID_0254.png | WT=0.965  TC=0.935  ET=0.923
+12718.1s	223	    Saved: val_3d_1_PatientID_0033.png | WT=0.966  TC=0.982  ET=0.968
+12725.3s	224	    Saved: val_3d_2_PatientID_0006.png | WT=0.927  TC=0.893  ET=0.898
+12732.7s	225	    Saved: val_3d_3_PatientID_0095.png | WT=0.942  TC=0.830  ET=0.828
+12739.8s	226	    Saved: val_3d_4_PatientID_0095.png | WT=0.960  TC=0.911  ET=0.915
+12739.8s	227	Figures saved to /kaggle/working/phase_m2_nnunet/figures
+12740.5s	228	Cleaning VRAM before embedding extraction...
+12740.7s	229	VRAM free: 15.4 GB
+12740.7s	230	
+12740.7s	231	Extracting nnUNet embeddings v2 (ROI-crop + octant + volumetric)...
+12740.7s	232	  Hook: encoder.stages[3] (Sequential)
+12740.7s	233	  Extraction v2: 594 scans (ALL — train+val+test)
+12740.7s	234	  ────────────────────────────────────────────────────────────
+12742.2s	235	  Feature map: (1, 256, 16, 16, 16) → C=256
+12742.6s	236	  Embedding: octant=2048 + region=768 + vol=9 = 2825-D
+12742.6s	237	  ────────────────────────────────────────────────────────────
+12742.6s	238	  [   1/594] PatientID_0003                  tp=1  WT= 54933v TC= 26349v ET= 21994v  ROI=9×8×10  | 0.5/s ETA 19.5m
+12759.5s	239	  [  10/594]  done=10 | 0.5/s ETA 18.3m
+12776.8s	240	  [  20/594]  done=20 | 0.6/s ETA 17.3m
+12794.1s	241	  [  30/594]  done=30 | 0.6/s ETA 16.8m
+12810.5s	242	  [  40/594]  done=40 | 0.6/s ETA 16.1m
+12828.6s	243	  [  50/594] PatientID_0021                  tp=2  WT= 40817v TC=  7937v ET=  4440v  ROI=6×9×8  | 0.6/s ETA 15.9m
+12846.3s	244	  [  60/594]  done=60 | 0.6/s ETA 15.7m
+12863.8s	245	  [  70/594]  done=70 | 0.6/s ETA 15.4m
+12880.6s	246	  [  80/594]  done=80 | 0.6/s ETA 15.0m
+12898.5s	247	  [  90/594]  done=90 | 0.6/s ETA 14.7m
+12916.4s	248	  [ 100/594] PatientID_0036                  tp=4  WT= 78427v TC=   801v ET=   801v  ROI=8×9×10  | 0.6/s ETA 14.5m
+12934.3s	249	  [ 110/594]  done=110 | 0.6/s ETA 14.2m
+12952.4s	250	  [ 120/594]  done=120 | 0.6/s ETA 13.9m
+12970.3s	251	  [ 130/594]  done=130 | 0.6/s ETA 13.7m
+12988.3s	252	  [ 140/594]  done=140 | 0.6/s ETA 13.4m
+13006.5s	253	  [ 150/594] PatientID_0055                  tp=5  WT= 39146v TC= 11511v ET= 10930v  ROI=7×9×10  | 0.6/s ETA 13.1m
+13024.9s	254	  [ 160/594]  done=160 | 0.6/s ETA 12.8m
+13042.8s	255	  [ 170/594]  done=170 | 0.6/s ETA 12.6m
+13060.8s	256	  [ 180/594]  done=180 | 0.6/s ETA 12.3m
+13077.8s	257	  [ 190/594]  done=190 | 0.6/s ETA 11.9m
+13096.1s	258	  [ 200/594] PatientID_0074                  tp=1  WT= 12668v TC=  1490v ET=  1490v  ROI=13×12×6  | 0.6/s ETA 11.7m
+13113.6s	259	  [ 210/594]  done=210 | 0.6/s ETA 11.4m
+13130.7s	260	  [ 220/594]  done=220 | 0.6/s ETA 11.1m
+13150.5s	261	  [ 230/594]  done=230 | 0.6/s ETA 10.8m
+13169.3s	262	  [ 240/594]  done=240 | 0.6/s ETA 10.5m
+13187.0s	263	  [ 250/594] PatientID_0089                  tp=5  WT= 62930v TC=  3266v ET=  3130v  ROI=9×14×10  | 0.6/s ETA 10.2m
+13206.1s	264	  [ 260/594]  done=260 | 0.6/s ETA 10.0m
+13225.3s	265	  [ 270/594]  done=270 | 0.6/s ETA 9.7m
+13244.5s	266	  [ 280/594]  done=280 | 0.6/s ETA 9.4m
+13262.8s	267	  [ 290/594]  done=290 | 0.6/s ETA 9.1m
+13279.5s	268	  [ 300/594] PatientID_0110                  tp=1  WT=110424v TC=  5274v ET=  5274v  ROI=10×10×13  | 0.6/s ETA 8.8m
+13296.4s	269	  [ 310/594]  done=310 | 0.6/s ETA 8.5m
+13313.0s	270	  [ 320/594]  done=320 | 0.6/s ETA 8.2m
+13329.5s	271	  [ 330/594]  done=330 | 0.6/s ETA 7.9m
+13345.9s	272	  [ 340/594]  done=340 | 0.6/s ETA 7.5m
+13362.4s	273	  [ 350/594] PatientID_0143                  tp=1  WT= 55991v TC=  6909v ET=  5947v  ROI=11×11×10  | 0.6/s ETA 7.2m
+13378.9s	274	  [ 360/594]  done=360 | 0.6/s ETA 6.9m
+13395.4s	275	  [ 370/594]  done=370 | 0.6/s ETA 6.6m
+13412.2s	276	  [ 380/594]  done=380 | 0.6/s ETA 6.3m
+13428.6s	277	  [ 390/594]  done=390 | 0.6/s ETA 6.0m
+13444.9s	278	  [ 400/594] PatientID_0164                  tp=4  WT= 27087v TC= 21650v ET= 16769v  ROI=7×7×6  | 0.6/s ETA 5.7m
+13461.4s	279	  [ 410/594]  done=410 | 0.6/s ETA 5.4m
+13477.9s	280	  [ 420/594]  done=420 | 0.6/s ETA 5.1m
+13494.1s	281	  [ 430/594]  done=430 | 0.6/s ETA 4.8m
+13510.0s	282	  [ 440/594]  done=440 | 0.6/s ETA 4.5m
+13526.8s	283	  [ 450/594] PatientID_0198                  tp=4  WT= 36283v TC=  4676v ET=  4401v  ROI=9×8×10  | 0.6/s ETA 4.2m
+13543.7s	284	  [ 460/594]  done=460 | 0.6/s ETA 3.9m
+13562.3s	285	  [ 470/594]  done=470 | 0.6/s ETA 3.6m
+13580.4s	286	  [ 480/594]  done=480 | 0.6/s ETA 3.3m
+13598.7s	287	  [ 490/594]  done=490 | 0.6/s ETA 3.0m
+13616.0s	288	  [ 500/594] PatientID_0235                  tp=3  WT= 51346v TC=   951v ET=   951v  ROI=7×14×10  | 0.6/s ETA 2.7m
+13633.8s	289	  [ 510/594]  done=510 | 0.6/s ETA 2.5m
+13651.5s	290	  [ 520/594]  done=520 | 0.6/s ETA 2.2m
+13669.3s	291	  [ 530/594]  done=530 | 0.6/s ETA 1.9m
+13686.6s	292	  [ 540/594]  done=540 | 0.6/s ETA 1.6m
+13705.8s	293	  [ 550/594] PatientID_0265                  tp=1  WT= 41948v TC=  3590v ET=  3590v  ROI=8×9×7  | 0.6/s ETA 1.3m
+13724.5s	294	  [ 560/594]  done=560 | 0.6/s ETA 1.0m
+13743.0s	295	  [ 570/594]  done=570 | 0.6/s ETA 0.7m
+13744.7s	296	  Skipped 23 corrupt files total
+13744.7s	297	  ────────────────────────────────────────────────────────────
+13744.7s	298	  Done: 571/594 in 16.7 min
+13744.7s	299	  Skipped: 0 | Empty ROI (complete resection): 20
+13745.0s	300	  Saved: /kaggle/working/phase_m2_nnunet/embeddings/cnn_nnunet_embeddings.npz  shape=(571, 2825) (6.5 MB)
+13771.8s	301	  Spatial tokens: /kaggle/working/phase_m2_nnunet/embeddings/cnn_spatial_tokens.npz
+13771.8s	302	    Shape: (571, 2640, 256) (1543.6 MB)
+13771.8s	303	    Max tokens: 2640  Mean: 686
+13771.8s	304	  Volumes CSV: /kaggle/working/phase_m2_nnunet/embeddings/tumor_volumes.csv  (571 rows)
+13771.8s	305	  Architecture: octant=2048D + region=768D + vol=9D = 2825D
+13771.8s	306	Embedding Diversity Check
+13771.8s	307	  Scans:    571
+13771.8s	308	  Dim:      2825  (octant + 3×region + 9 volumetric)
+13771.8s	309	  Norm:     [0.00, 26.73]  mean=16.79
+13771.8s	310	  Cos sim:  mean=0.851 over 200 random pairs
+13771.8s	311	  Diverse:  69.0% of pairs have cos < 0.95  [GOOD diversity]
+13771.8s	312	  Timepoint 1: 181 scans
+13771.8s	313	  Timepoint 2: 132 scans
+13771.8s	314	  Timepoint 3: 104 scans
+13771.8s	315	  Timepoint 4: 62 scans
+13771.8s	316	  Timepoint 5: 42 scans
+13771.8s	317	  Timepoint 6: 50 scans
+13771.9s	318	=======================================================
+13771.9s	319	  nnUNet Fine-Tuning Complete (MU-Glioma)
+13771.9s	320	  Best Mean Dice:  0.8774
+13771.9s	321	  Regions:         ['WT', 'TC', 'ET']
+13771.9s	322	  Target (BraTS2021): WT=0.900 TC=0.867 ET=0.851
+13771.9s	323	  Train scans:     429
+13771.9s	324	  All scans (emb): 594
+13771.9s	325	  Outputs: /kaggle/working/phase_m2_nnunet
+13771.9s	326	=======================================================
+13777.2s	327	/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+13777.2s	328	  cells[i][c] = re.sub('\\\\\|', '|', cell)
+13777.4s	329	/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+13777.4s	330	  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+13778.1s	331	[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+13778.4s	332	[NbConvertApp] Writing 78300 bytes to __notebook__.ipynb
+13780.8s	333	[NbConvertApp] Converting notebook __notebook__.ipynb to html
+13781.9s	334	[NbConvertApp] Writing 526930 bytes to __results__.html

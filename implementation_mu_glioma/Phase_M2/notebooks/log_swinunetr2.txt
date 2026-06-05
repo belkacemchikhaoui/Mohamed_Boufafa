@@ -1,0 +1,784 @@
+7.3s	1	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.3s	2	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.3s	3	0.00s - to python to disable frozen modules.
+7.3s	4	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.0s	5	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.0s	6	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.0s	7	0.00s - to python to disable frozen modules.
+8.0s	8	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+9.2s	9	Model: swinunetr | Patch: (128, 128, 128) | Regions: ['WT', 'TC', 'ET']
+17.4s	10	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.2/49.2 kB 2.7 MB/s eta 0:00:00
+17.6s	11	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.2/49.2 kB 2.7 MB/s eta 0:00:00
+18.8s	12	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.4/54.4 kB 3.7 MB/s eta 0:00:00
+19.0s	13	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.4/54.4 kB 3.7 MB/s eta 0:00:00
+20.5s	14	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.0/50.0 kB 2.9 MB/s eta 0:00:00
+20.7s	15	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.0/50.0 kB 2.9 MB/s eta 0:00:00
+21.2s	16	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.6/43.6 kB 2.4 MB/s eta 0:00:00
+21.4s	17	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.6/43.6 kB 2.4 MB/s eta 0:00:00
+22.1s	18	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.4/48.4 kB 2.8 MB/s eta 0:00:00
+22.3s	19	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.4/48.4 kB 2.8 MB/s eta 0:00:00
+24.0s	20	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.8/53.8 kB 3.1 MB/s eta 0:00:00
+24.0s	21	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 266.5/266.5 kB 8.6 MB/s eta 0:00:00
+24.1s	22	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 32.9 MB/s eta 0:00:00
+24.2s	23	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.8/53.8 kB 3.1 MB/s eta 0:00:00
+24.2s	24	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 266.5/266.5 kB 8.6 MB/s eta 0:00:00
+24.2s	25	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 32.9 MB/s eta 0:00:00
+25.0s	26	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 81.4/81.4 MB 22.7 MB/s eta 0:00:00
+25.2s	27	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 81.4/81.4 MB 22.7 MB/s eta 0:00:00
+25.6s	28	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.8/67.8 MB 27.5 MB/s eta 0:00:00
+25.8s	29	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.8/67.8 MB 27.5 MB/s eta 0:00:00
+25.9s	30	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.0/28.0 MB 60.5 MB/s eta 0:00:00
+26.1s	31	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.0/28.0 MB 60.5 MB/s eta 0:00:00
+26.5s	32	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.2/57.2 MB 32.1 MB/s eta 0:00:00
+26.7s	33	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.2/57.2 MB 32.1 MB/s eta 0:00:00
+26.8s	34	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.5/28.5 MB 59.2 MB/s eta 0:00:00
+27.0s	35	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.5/28.5 MB 59.2 MB/s eta 0:00:00
+27.0s	36	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.9/15.9 MB 71.6 MB/s eta 0:00:00
+27.2s	37	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.6/10.6 MB 86.4 MB/s eta 0:00:00
+27.3s	38	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.9/15.9 MB 71.6 MB/s eta 0:00:00
+27.3s	39	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.6/10.6 MB 86.4 MB/s eta 0:00:00
+27.3s	40	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 75.3 MB/s eta 0:00:00
+27.3s	41	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 55.8 MB/s eta 0:00:00
+27.4s	42	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 63.3 MB/s eta 0:00:00
+27.4s	43	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 115.9/115.9 kB 7.7 MB/s eta 0:00:00
+27.5s	44	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 75.3 MB/s eta 0:00:00
+27.5s	45	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 55.8 MB/s eta 0:00:00
+27.5s	46	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 63.3 MB/s eta 0:00:00
+27.5s	47	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 115.9/115.9 kB 7.7 MB/s eta 0:00:00
+27.7s	48	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 26.5/26.5 MB 64.6 MB/s eta 0:00:00
+27.7s	49	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 333.1/333.1 kB 18.1 MB/s eta 0:00:00
+27.8s	50	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 71.1 MB/s eta 0:00:00
+27.9s	51	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 26.5/26.5 MB 64.6 MB/s eta 0:00:00
+27.9s	52	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 333.1/333.1 kB 18.1 MB/s eta 0:00:00
+27.9s	53	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 71.1 MB/s eta 0:00:00
+28.4s	54	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.4/61.4 MB 30.2 MB/s eta 0:00:00
+28.5s	55	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.5/87.5 kB 5.5 MB/s eta 0:00:00
+28.5s	56	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 202.1/202.1 kB 13.5 MB/s eta 0:00:00
+28.6s	57	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 319.6/319.6 kB 17.5 MB/s eta 0:00:00
+28.6s	58	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.4/61.4 MB 30.2 MB/s eta 0:00:00
+28.6s	59	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.5/87.5 kB 5.5 MB/s eta 0:00:00
+28.6s	60	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 202.1/202.1 kB 13.5 MB/s eta 0:00:00
+28.6s	61	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 319.6/319.6 kB 17.5 MB/s eta 0:00:00
+28.7s	62	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.9/114.9 kB 7.6 MB/s eta 0:00:00
+28.8s	63	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 208.4/208.4 kB 12.9 MB/s eta 0:00:00
+28.8s	64	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.0/77.0 kB 4.1 MB/s eta 0:00:00
+28.8s	65	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.3/56.3 kB 3.6 MB/s eta 0:00:00
+28.9s	66	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.9/114.9 kB 7.6 MB/s eta 0:00:00
+28.9s	67	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 208.4/208.4 kB 12.9 MB/s eta 0:00:00
+28.9s	68	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.0/77.0 kB 4.1 MB/s eta 0:00:00
+28.9s	69	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.3/56.3 kB 3.6 MB/s eta 0:00:00
+29.0s	70	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.2/9.2 MB 100.3 MB/s eta 0:00:00
+29.0s	71	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.2/132.2 kB 8.2 MB/s eta 0:00:00
+29.2s	72	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.2/9.2 MB 100.3 MB/s eta 0:00:00
+29.2s	73	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.2/132.2 kB 8.2 MB/s eta 0:00:00
+29.2s	74	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 879.5/879.5 kB 42.8 MB/s eta 0:00:00
+29.3s	75	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 207.3/207.3 kB 15.2 MB/s eta 0:00:00
+29.4s	76	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 879.5/879.5 kB 42.8 MB/s eta 0:00:00
+29.4s	77	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 207.3/207.3 kB 15.2 MB/s eta 0:00:00
+81.3s	78	ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+81.3s	79	pytensor 2.38.0 requires filelock>=3.15, but you have filelock 3.11.0 which is incompatible.
+81.5s	80	ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+81.5s	81	pytensor 2.38.0 requires filelock>=3.15, but you have filelock 3.11.0 which is incompatible.
+81.5s	82	
+81.5s	83	ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+81.5s	84	pytensor 2.38.0 requires filelock>=3.15, but you have filelock 3.11.0 which is incompatible.
+182.5s	85	2026-05-07 16:52:47.929350: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+182.5s	86	WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+182.5s	87	E0000 00:00:1778172768.149946      23 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+182.5s	88	E0000 00:00:1778172768.216562      23 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+182.5s	89	W0000 00:00:1778172768.774512      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+182.5s	90	W0000 00:00:1778172768.774566      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+182.5s	91	W0000 00:00:1778172768.774570      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+182.5s	92	W0000 00:00:1778172768.774572      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+182.7s	93	2026-05-07 16:52:47.929350: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+182.7s	94	WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+182.7s	95	E0000 00:00:1778172768.149946      23 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+182.7s	96	E0000 00:00:1778172768.216562      23 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+182.7s	97	W0000 00:00:1778172768.774512      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+182.7s	98	W0000 00:00:1778172768.774566      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+182.7s	99	W0000 00:00:1778172768.774570      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+182.7s	100	W0000 00:00:1778172768.774572      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+182.7s	101	
+182.7s	102	2026-05-07 16:52:47.929350: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+182.7s	103	WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+182.7s	104	E0000 00:00:1778172768.149946      23 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+182.7s	105	E0000 00:00:1778172768.216562      23 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+182.7s	106	W0000 00:00:1778172768.774512      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+182.7s	107	W0000 00:00:1778172768.774566      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+182.7s	108	W0000 00:00:1778172768.774570      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+182.7s	109	W0000 00:00:1778172768.774572      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+197.1s	110	MONAI 1.5.2 | PyTorch 2.10.0+cu128 | Device: cuda
+197.1s	111	GPU: Tesla T4 | Total memory: 15.6 GB
+197.1s	112	Disk free: 20.9 GB (need ~3GB for checkpoints)
+197.1s	113	MU-Glioma Label mapping: WT=1+2+3 | TC=1+3 | ET=3
+206.0s	114	  Created 2978 symlinks from datasets
+206.0s	115	scan_index.json: /kaggle/input/datasets/boufafamoamed/mu-glioma-m1-outputs/scan_index.json
+206.0s	116	data_splits.json: /kaggle/input/datasets/boufafamoamed/mu-glioma-m1-outputs/data_splits.json
+206.0s	117	master_csv.csv: /kaggle/input/datasets/boufafamoamed/mu-glioma-m1-outputs/mu_glioma_master.csv
+206.0s	118	Total scans in index: 596
+206.0s	119	Splits: Train=148 | Val=25 | Test=30
+206.0s	120	NIFTI_ROOT: /kaggle/working/nifti_links/boufafamoamed/mu-glioma-post-validation/MU-Glioma-Post
+206.0s	121	Resolved: 594 total scans
+206.0s	122	Train: 429 | Val: 82
+206.0s	123	Spot-check: /kaggle/working/nifti_links/boufafamoamed/mu-glioma-post-validation/MU-Glioma-Post/PatientID_0003/Timepoint_1/PatientID_0003_Timepoint_1_brain_t1c.nii.gz
+206.0s	124	  exists=True, size=5251963
+206.0s	125	  nibabel OK: shape=(240, 240, 155)
+206.0s	126	Transforms ready (3-channel: WT/TC/ET)
+206.0s	127	Validating scans...
+208.7s	128	Train dicts: 429 | Val dicts: 82 | All dicts: 594
+208.7s	129	  Sample: /kaggle/working/nifti_links/boufafamoamed/mu-glioma-post-validation/MU-Glioma-Post/PatientID_0004/Timepoint_1/PatientID_0004_Timepoint_1_brain_t1n.nii.gz
+208.7s	130	  Exists: True
+208.9s	131	=======================================================
+208.9s	132	  Loading SwinUNETR (BraTS 2021 Fold 1 — original)
+208.9s	133	=======================================================
+209.5s	134	  SwinUNETR created: 62.2M params
+212.9s	135	  WARNING: No pretrained weights found — training from scratch
+212.9s	136	  ✅ DataParallel: 2 GPUs (30GB VRAM total)
+212.9s	137	  Total: 62.2M | Trainable: 62.2M | Frozen params: 0
+213.1s	138	  Model on cuda
+219.9s	139	  Recovered BEST from /kaggle/input/datasets/boufafamoamed/swinter-mu-glioma/swinunetr_best.pth
+225.2s	140	  Recovered LATEST from /kaggle/input/datasets/boufafamoamed/swinter-mu-glioma/swinunetr_latest.pth
+225.8s	141	  🔁 WARM RESTART: best weights loaded (Dice=0.7923) → schedule restarted
+225.8s	142	🔁 WARM RESTART: weights loaded (prev best=0.7923) → training from ep 0
+225.8s	143	
+Loading dataset:   0%|          | 0/171 [00:00<?, ?it/s]
+227.3s	144	
+Loading dataset:   0%|          | 0/171 [00:00<?, ?it/s]
+Loading dataset:   1%|          | 1/171 [00:01<04:09,  1.47s/it]
+228.7s	145	
+Loading dataset:   1%|          | 1/171 [00:01<04:09,  1.47s/it]
+Loading dataset:   1%|          | 2/171 [00:02<04:08,  1.47s/it]
+230.3s	146	
+Loading dataset:   1%|          | 2/171 [00:02<04:08,  1.47s/it]
+Loading dataset:   2%|▏         | 3/171 [00:04<04:15,  1.52s/it]
+231.8s	147	
+Loading dataset:   2%|▏         | 3/171 [00:04<04:15,  1.52s/it]
+Loading dataset:   2%|▏         | 4/171 [00:06<04:13,  1.52s/it]
+233.4s	148	
+Loading dataset:   2%|▏         | 4/171 [00:06<04:13,  1.52s/it]
+Loading dataset:   3%|▎         | 5/171 [00:07<04:15,  1.54s/it]
+234.9s	149	
+Loading dataset:   3%|▎         | 5/171 [00:07<04:15,  1.54s/it]
+Loading dataset:   4%|▎         | 6/171 [00:09<04:08,  1.51s/it]
+236.3s	150	
+Loading dataset:   4%|▎         | 6/171 [00:09<04:08,  1.51s/it]
+Loading dataset:   4%|▍         | 7/171 [00:10<04:05,  1.50s/it]
+237.8s	151	
+Loading dataset:   4%|▍         | 7/171 [00:10<04:05,  1.50s/it]
+Loading dataset:   5%|▍         | 8/171 [00:11<04:01,  1.48s/it]
+239.3s	152	
+Loading dataset:   5%|▍         | 8/171 [00:11<04:01,  1.48s/it]
+Loading dataset:   5%|▌         | 9/171 [00:13<03:59,  1.48s/it]
+240.8s	153	
+Loading dataset:   5%|▌         | 9/171 [00:13<03:59,  1.48s/it]
+Loading dataset:   6%|▌         | 10/171 [00:14<04:01,  1.50s/it]
+242.2s	154	
+Loading dataset:   6%|▌         | 10/171 [00:14<04:01,  1.50s/it]
+Loading dataset:   6%|▋         | 11/171 [00:16<03:57,  1.48s/it]
+243.8s	155	
+Loading dataset:   6%|▋         | 11/171 [00:16<03:57,  1.48s/it]
+Loading dataset:   7%|▋         | 12/171 [00:17<03:56,  1.49s/it]
+245.3s	156	
+Loading dataset:   7%|▋         | 12/171 [00:17<03:56,  1.49s/it]
+Loading dataset:   8%|▊         | 13/171 [00:19<03:57,  1.51s/it]
+246.8s	157	
+Loading dataset:   8%|▊         | 13/171 [00:19<03:57,  1.51s/it]
+Loading dataset:   8%|▊         | 14/171 [00:21<03:59,  1.52s/it]
+248.4s	158	
+Loading dataset:   8%|▊         | 14/171 [00:21<03:59,  1.52s/it]
+Loading dataset:   9%|▉         | 15/171 [00:22<03:59,  1.54s/it]
+250.0s	159	
+Loading dataset:   9%|▉         | 15/171 [00:22<03:59,  1.54s/it]
+Loading dataset:   9%|▉         | 16/171 [00:24<03:59,  1.54s/it]
+251.5s	160	
+Loading dataset:   9%|▉         | 16/171 [00:24<03:59,  1.54s/it]
+Loading dataset:  10%|▉         | 17/171 [00:25<03:58,  1.55s/it]
+253.0s	161	
+Loading dataset:  10%|▉         | 17/171 [00:25<03:58,  1.55s/it]
+Loading dataset:  11%|█         | 18/171 [00:27<03:54,  1.53s/it]
+254.6s	162	
+Loading dataset:  11%|█         | 18/171 [00:27<03:54,  1.53s/it]
+Loading dataset:  11%|█         | 19/171 [00:28<03:55,  1.55s/it]
+256.2s	163	
+Loading dataset:  11%|█         | 19/171 [00:28<03:55,  1.55s/it]
+Loading dataset:  12%|█▏        | 20/171 [00:30<03:55,  1.56s/it]
+257.7s	164	
+Loading dataset:  12%|█▏        | 20/171 [00:30<03:55,  1.56s/it]
+Loading dataset:  12%|█▏        | 21/171 [00:31<03:52,  1.55s/it]
+259.3s	165	
+Loading dataset:  12%|█▏        | 21/171 [00:31<03:52,  1.55s/it]
+Loading dataset:  13%|█▎        | 22/171 [00:33<03:53,  1.57s/it]
+260.9s	166	
+Loading dataset:  13%|█▎        | 22/171 [00:33<03:53,  1.57s/it]
+Loading dataset:  13%|█▎        | 23/171 [00:35<03:52,  1.57s/it]
+262.5s	167	
+Loading dataset:  13%|█▎        | 23/171 [00:35<03:52,  1.57s/it]
+Loading dataset:  14%|█▍        | 24/171 [00:36<03:50,  1.57s/it]
+263.9s	168	
+Loading dataset:  14%|█▍        | 24/171 [00:36<03:50,  1.57s/it]
+Loading dataset:  15%|█▍        | 25/171 [00:38<03:43,  1.53s/it]
+265.3s	169	
+Loading dataset:  15%|█▍        | 25/171 [00:38<03:43,  1.53s/it]
+Loading dataset:  15%|█▌        | 26/171 [00:39<03:36,  1.49s/it]
+266.8s	170	
+Loading dataset:  15%|█▌        | 26/171 [00:39<03:36,  1.49s/it]
+Loading dataset:  16%|█▌        | 27/171 [00:40<03:31,  1.47s/it]
+268.2s	171	
+Loading dataset:  16%|█▌        | 27/171 [00:40<03:31,  1.47s/it]
+Loading dataset:  16%|█▋        | 28/171 [00:42<03:29,  1.46s/it]
+269.7s	172	
+Loading dataset:  16%|█▋        | 28/171 [00:42<03:29,  1.46s/it]
+Loading dataset:  17%|█▋        | 29/171 [00:43<03:27,  1.46s/it]
+271.2s	173	
+Loading dataset:  17%|█▋        | 29/171 [00:43<03:27,  1.46s/it]
+Loading dataset:  18%|█▊        | 30/171 [00:45<03:28,  1.48s/it]
+272.7s	174	
+Loading dataset:  18%|█▊        | 30/171 [00:45<03:28,  1.48s/it]
+Loading dataset:  18%|█▊        | 31/171 [00:46<03:27,  1.48s/it]
+274.3s	175	
+Loading dataset:  18%|█▊        | 31/171 [00:46<03:27,  1.48s/it]
+Loading dataset:  19%|█▊        | 32/171 [00:48<03:30,  1.51s/it]
+275.8s	176	
+Loading dataset:  19%|█▊        | 32/171 [00:48<03:30,  1.51s/it]
+Loading dataset:  19%|█▉        | 33/171 [00:49<03:28,  1.51s/it]
+277.3s	177	
+Loading dataset:  19%|█▉        | 33/171 [00:49<03:28,  1.51s/it]
+Loading dataset:  20%|█▉        | 34/171 [00:51<03:29,  1.53s/it]
+278.9s	178	
+Loading dataset:  20%|█▉        | 34/171 [00:51<03:29,  1.53s/it]
+Loading dataset:  20%|██        | 35/171 [00:53<03:28,  1.53s/it]
+280.4s	179	
+Loading dataset:  20%|██        | 35/171 [00:53<03:28,  1.53s/it]
+Loading dataset:  21%|██        | 36/171 [00:54<03:27,  1.53s/it]
+282.0s	180	
+Loading dataset:  21%|██        | 36/171 [00:54<03:27,  1.53s/it]
+Loading dataset:  22%|██▏       | 37/171 [00:56<03:26,  1.54s/it]
+283.5s	181	
+Loading dataset:  22%|██▏       | 37/171 [00:56<03:26,  1.54s/it]
+Loading dataset:  22%|██▏       | 38/171 [00:57<03:24,  1.54s/it]
+285.0s	182	
+Loading dataset:  22%|██▏       | 38/171 [00:57<03:24,  1.54s/it]
+Loading dataset:  23%|██▎       | 39/171 [00:59<03:22,  1.53s/it]
+286.5s	183	
+Loading dataset:  23%|██▎       | 39/171 [00:59<03:22,  1.53s/it]
+Loading dataset:  23%|██▎       | 40/171 [01:00<03:20,  1.53s/it]
+287.9s	184	
+Loading dataset:  23%|██▎       | 40/171 [01:00<03:20,  1.53s/it]
+Loading dataset:  24%|██▍       | 41/171 [01:02<03:13,  1.49s/it]
+289.3s	185	
+Loading dataset:  24%|██▍       | 41/171 [01:02<03:13,  1.49s/it]
+Loading dataset:  25%|██▍       | 42/171 [01:03<03:07,  1.45s/it]
+290.8s	186	
+Loading dataset:  25%|██▍       | 42/171 [01:03<03:07,  1.45s/it]
+Loading dataset:  25%|██▌       | 43/171 [01:04<03:07,  1.46s/it]
+292.3s	187	
+Loading dataset:  25%|██▌       | 43/171 [01:04<03:07,  1.46s/it]
+Loading dataset:  26%|██▌       | 44/171 [01:06<03:09,  1.49s/it]
+293.8s	188	
+Loading dataset:  26%|██▌       | 44/171 [01:06<03:09,  1.49s/it]
+Loading dataset:  26%|██▋       | 45/171 [01:08<03:07,  1.49s/it]
+295.3s	189	
+Loading dataset:  26%|██▋       | 45/171 [01:08<03:07,  1.49s/it]
+Loading dataset:  27%|██▋       | 46/171 [01:09<03:04,  1.48s/it]
+296.7s	190	
+Loading dataset:  27%|██▋       | 46/171 [01:09<03:04,  1.48s/it]
+Loading dataset:  27%|██▋       | 47/171 [01:10<03:03,  1.48s/it]
+298.1s	191	
+Loading dataset:  27%|██▋       | 47/171 [01:10<03:03,  1.48s/it]
+Loading dataset:  28%|██▊       | 48/171 [01:12<02:58,  1.45s/it]
+299.5s	192	
+Loading dataset:  28%|██▊       | 48/171 [01:12<02:58,  1.45s/it]
+Loading dataset:  29%|██▊       | 49/171 [01:13<02:54,  1.43s/it]
+300.9s	193	
+Loading dataset:  29%|██▊       | 49/171 [01:13<02:54,  1.43s/it]
+Loading dataset:  29%|██▉       | 50/171 [01:15<02:50,  1.41s/it]
+302.2s	194	
+Loading dataset:  29%|██▉       | 50/171 [01:15<02:50,  1.41s/it]
+Loading dataset:  30%|██▉       | 51/171 [01:16<02:46,  1.39s/it]
+303.7s	195	
+Loading dataset:  30%|██▉       | 51/171 [01:16<02:46,  1.39s/it]
+Loading dataset:  30%|███       | 52/171 [01:17<02:47,  1.40s/it]
+305.1s	196	
+Loading dataset:  30%|███       | 52/171 [01:17<02:47,  1.40s/it]
+Loading dataset:  31%|███       | 53/171 [01:19<02:48,  1.42s/it]
+306.5s	197	
+Loading dataset:  31%|███       | 53/171 [01:19<02:48,  1.42s/it]
+Loading dataset:  32%|███▏      | 54/171 [01:20<02:45,  1.42s/it]
+308.0s	198	
+Loading dataset:  32%|███▏      | 54/171 [01:20<02:45,  1.42s/it]
+Loading dataset:  32%|███▏      | 55/171 [01:22<02:47,  1.44s/it]
+309.5s	199	
+Loading dataset:  32%|███▏      | 55/171 [01:22<02:47,  1.44s/it]
+Loading dataset:  33%|███▎      | 56/171 [01:23<02:48,  1.46s/it]
+311.1s	200	
+Loading dataset:  33%|███▎      | 56/171 [01:23<02:48,  1.46s/it]
+Loading dataset:  33%|███▎      | 57/171 [01:25<02:51,  1.50s/it]
+312.7s	201	
+Loading dataset:  33%|███▎      | 57/171 [01:25<02:51,  1.50s/it]
+Loading dataset:  34%|███▍      | 58/171 [01:26<02:51,  1.52s/it]
+314.3s	202	
+Loading dataset:  34%|███▍      | 58/171 [01:26<02:51,  1.52s/it]
+Loading dataset:  35%|███▍      | 59/171 [01:28<02:52,  1.54s/it]
+315.8s	203	
+Loading dataset:  35%|███▍      | 59/171 [01:28<02:52,  1.54s/it]
+Loading dataset:  35%|███▌      | 60/171 [01:30<02:51,  1.54s/it]
+317.4s	204	
+Loading dataset:  35%|███▌      | 60/171 [01:30<02:51,  1.54s/it]
+Loading dataset:  36%|███▌      | 61/171 [01:31<02:50,  1.55s/it]
+318.8s	205	
+Loading dataset:  36%|███▌      | 61/171 [01:31<02:50,  1.55s/it]
+Loading dataset:  36%|███▋      | 62/171 [01:33<02:43,  1.50s/it]
+320.3s	206	
+Loading dataset:  36%|███▋      | 62/171 [01:33<02:43,  1.50s/it]
+Loading dataset:  37%|███▋      | 63/171 [01:34<02:41,  1.50s/it]
+321.7s	207	
+Loading dataset:  37%|███▋      | 63/171 [01:34<02:41,  1.50s/it]
+Loading dataset:  37%|███▋      | 64/171 [01:35<02:38,  1.48s/it]
+323.2s	208	
+Loading dataset:  37%|███▋      | 64/171 [01:35<02:38,  1.48s/it]
+Loading dataset:  38%|███▊      | 65/171 [01:37<02:37,  1.48s/it]
+324.6s	209	
+Loading dataset:  38%|███▊      | 65/171 [01:37<02:37,  1.48s/it]
+Loading dataset:  39%|███▊      | 66/171 [01:38<02:32,  1.45s/it]
+326.0s	210	
+Loading dataset:  39%|███▊      | 66/171 [01:38<02:32,  1.45s/it]
+Loading dataset:  39%|███▉      | 67/171 [01:40<02:30,  1.44s/it]
+327.6s	211	
+Loading dataset:  39%|███▉      | 67/171 [01:40<02:30,  1.44s/it]
+Loading dataset:  40%|███▉      | 68/171 [01:41<02:33,  1.49s/it]
+329.2s	212	
+Loading dataset:  40%|███▉      | 68/171 [01:41<02:33,  1.49s/it]
+Loading dataset:  40%|████      | 69/171 [01:43<02:36,  1.53s/it]
+330.8s	213	
+Loading dataset:  40%|████      | 69/171 [01:43<02:36,  1.53s/it]
+Loading dataset:  41%|████      | 70/171 [01:44<02:34,  1.53s/it]
+332.3s	214	
+Loading dataset:  41%|████      | 70/171 [01:44<02:34,  1.53s/it]
+Loading dataset:  42%|████▏     | 71/171 [01:46<02:33,  1.53s/it]
+333.8s	215	
+Loading dataset:  42%|████▏     | 71/171 [01:46<02:33,  1.53s/it]
+Loading dataset:  42%|████▏     | 72/171 [01:47<02:30,  1.52s/it]
+335.3s	216	
+Loading dataset:  42%|████▏     | 72/171 [01:47<02:30,  1.52s/it]
+Loading dataset:  43%|████▎     | 73/171 [01:49<02:29,  1.52s/it]
+336.9s	217	
+Loading dataset:  43%|████▎     | 73/171 [01:49<02:29,  1.52s/it]
+Loading dataset:  43%|████▎     | 74/171 [01:51<02:28,  1.53s/it]
+338.4s	218	
+Loading dataset:  43%|████▎     | 74/171 [01:51<02:28,  1.53s/it]
+Loading dataset:  44%|████▍     | 75/171 [01:52<02:26,  1.53s/it]
+339.9s	219	
+Loading dataset:  44%|████▍     | 75/171 [01:52<02:26,  1.53s/it]
+Loading dataset:  44%|████▍     | 76/171 [01:54<02:23,  1.51s/it]
+341.4s	220	
+Loading dataset:  44%|████▍     | 76/171 [01:54<02:23,  1.51s/it]
+Loading dataset:  45%|████▌     | 77/171 [01:55<02:23,  1.52s/it]
+342.9s	221	
+Loading dataset:  45%|████▌     | 77/171 [01:55<02:23,  1.52s/it]
+Loading dataset:  46%|████▌     | 78/171 [01:57<02:21,  1.52s/it]
+344.4s	222	
+Loading dataset:  46%|████▌     | 78/171 [01:57<02:21,  1.52s/it]
+Loading dataset:  46%|████▌     | 79/171 [01:58<02:19,  1.52s/it]
+346.0s	223	
+Loading dataset:  46%|████▌     | 79/171 [01:58<02:19,  1.52s/it]
+Loading dataset:  47%|████▋     | 80/171 [02:00<02:17,  1.52s/it]
+347.5s	224	
+Loading dataset:  47%|████▋     | 80/171 [02:00<02:17,  1.52s/it]
+Loading dataset:  47%|████▋     | 81/171 [02:01<02:16,  1.52s/it]
+348.9s	225	
+Loading dataset:  47%|████▋     | 81/171 [02:01<02:16,  1.52s/it]
+Loading dataset:  48%|████▊     | 82/171 [02:03<02:13,  1.50s/it]
+350.4s	226	
+Loading dataset:  48%|████▊     | 82/171 [02:03<02:13,  1.50s/it]
+Loading dataset:  49%|████▊     | 83/171 [02:04<02:10,  1.48s/it]
+351.9s	227	
+Loading dataset:  49%|████▊     | 83/171 [02:04<02:10,  1.48s/it]
+Loading dataset:  49%|████▉     | 84/171 [02:06<02:10,  1.49s/it]
+353.3s	228	
+Loading dataset:  49%|████▉     | 84/171 [02:06<02:10,  1.49s/it]
+Loading dataset:  50%|████▉     | 85/171 [02:07<02:07,  1.48s/it]
+354.7s	229	
+Loading dataset:  50%|████▉     | 85/171 [02:07<02:07,  1.48s/it]
+Loading dataset:  50%|█████     | 86/171 [02:08<02:03,  1.45s/it]
+356.0s	230	
+Loading dataset:  50%|█████     | 86/171 [02:08<02:03,  1.45s/it]
+Loading dataset:  51%|█████     | 87/171 [02:10<01:58,  1.42s/it]
+357.4s	231	
+Loading dataset:  51%|█████     | 87/171 [02:10<01:58,  1.42s/it]
+Loading dataset:  51%|█████▏    | 88/171 [02:11<01:55,  1.40s/it]
+358.8s	232	
+Loading dataset:  51%|█████▏    | 88/171 [02:11<01:55,  1.40s/it]
+Loading dataset:  52%|█████▏    | 89/171 [02:13<01:54,  1.40s/it]
+360.1s	233	
+Loading dataset:  52%|█████▏    | 89/171 [02:13<01:54,  1.40s/it]
+Loading dataset:  53%|█████▎    | 90/171 [02:14<01:51,  1.38s/it]
+361.6s	234	
+Loading dataset:  53%|█████▎    | 90/171 [02:14<01:51,  1.38s/it]
+Loading dataset:  53%|█████▎    | 91/171 [02:15<01:53,  1.42s/it]
+363.2s	235	
+Loading dataset:  53%|█████▎    | 91/171 [02:15<01:53,  1.42s/it]
+Loading dataset:  54%|█████▍    | 92/171 [02:17<01:54,  1.45s/it]
+364.7s	236	
+Loading dataset:  54%|█████▍    | 92/171 [02:17<01:54,  1.45s/it]
+Loading dataset:  54%|█████▍    | 93/171 [02:18<01:54,  1.47s/it]
+366.2s	237	
+Loading dataset:  54%|█████▍    | 93/171 [02:18<01:54,  1.47s/it]
+Loading dataset:  55%|█████▍    | 94/171 [02:20<01:54,  1.49s/it]
+367.7s	238	
+Loading dataset:  55%|█████▍    | 94/171 [02:20<01:54,  1.49s/it]
+Loading dataset:  56%|█████▌    | 95/171 [02:21<01:53,  1.49s/it]
+369.3s	239	
+Loading dataset:  56%|█████▌    | 95/171 [02:21<01:53,  1.49s/it]
+Loading dataset:  56%|█████▌    | 96/171 [02:23<01:53,  1.51s/it]
+370.7s	240	
+Loading dataset:  56%|█████▌    | 96/171 [02:23<01:53,  1.51s/it]
+Loading dataset:  57%|█████▋    | 97/171 [02:24<01:50,  1.50s/it]
+372.3s	241	
+Loading dataset:  57%|█████▋    | 97/171 [02:24<01:50,  1.50s/it]
+Loading dataset:  57%|█████▋    | 98/171 [02:26<01:49,  1.50s/it]
+373.8s	242	
+Loading dataset:  57%|█████▋    | 98/171 [02:26<01:49,  1.50s/it]
+Loading dataset:  58%|█████▊    | 99/171 [02:28<01:49,  1.53s/it]
+375.5s	243	
+Loading dataset:  58%|█████▊    | 99/171 [02:28<01:49,  1.53s/it]
+Loading dataset:  58%|█████▊    | 100/171 [02:29<01:50,  1.55s/it]
+377.0s	244	
+Loading dataset:  58%|█████▊    | 100/171 [02:29<01:50,  1.55s/it]
+Loading dataset:  59%|█████▉    | 101/171 [02:31<01:47,  1.54s/it]
+378.5s	245	
+Loading dataset:  59%|█████▉    | 101/171 [02:31<01:47,  1.54s/it]
+Loading dataset:  60%|█████▉    | 102/171 [02:32<01:46,  1.55s/it]
+380.2s	246	
+Loading dataset:  60%|█████▉    | 102/171 [02:32<01:46,  1.55s/it]
+Loading dataset:  60%|██████    | 103/171 [02:34<01:47,  1.58s/it]
+381.9s	247	
+Loading dataset:  60%|██████    | 103/171 [02:34<01:47,  1.58s/it]
+Loading dataset:  61%|██████    | 104/171 [02:36<01:47,  1.61s/it]
+383.6s	248	
+Loading dataset:  61%|██████    | 104/171 [02:36<01:47,  1.61s/it]
+Loading dataset:  61%|██████▏   | 105/171 [02:37<01:47,  1.63s/it]
+385.2s	249	
+Loading dataset:  61%|██████▏   | 105/171 [02:37<01:47,  1.63s/it]
+Loading dataset:  62%|██████▏   | 106/171 [02:39<01:46,  1.64s/it]
+386.8s	250	
+Loading dataset:  62%|██████▏   | 106/171 [02:39<01:46,  1.64s/it]
+Loading dataset:  63%|██████▎   | 107/171 [02:40<01:43,  1.62s/it]
+388.3s	251	
+Loading dataset:  63%|██████▎   | 107/171 [02:40<01:43,  1.62s/it]
+Loading dataset:  63%|██████▎   | 108/171 [02:42<01:41,  1.60s/it]
+389.9s	252	
+Loading dataset:  63%|██████▎   | 108/171 [02:42<01:41,  1.60s/it]
+Loading dataset:  64%|██████▎   | 109/171 [02:44<01:38,  1.60s/it]
+391.4s	253	
+Loading dataset:  64%|██████▎   | 109/171 [02:44<01:38,  1.60s/it]
+Loading dataset:  64%|██████▍   | 110/171 [02:45<01:35,  1.57s/it]
+393.0s	254	
+Loading dataset:  64%|██████▍   | 110/171 [02:45<01:35,  1.57s/it]
+Loading dataset:  65%|██████▍   | 111/171 [02:47<01:33,  1.56s/it]
+394.4s	255	
+Loading dataset:  65%|██████▍   | 111/171 [02:47<01:33,  1.56s/it]
+Loading dataset:  65%|██████▌   | 112/171 [02:48<01:30,  1.53s/it]
+395.9s	256	
+Loading dataset:  65%|██████▌   | 112/171 [02:48<01:30,  1.53s/it]
+Loading dataset:  66%|██████▌   | 113/171 [02:50<01:27,  1.52s/it]
+397.3s	257	
+Loading dataset:  66%|██████▌   | 113/171 [02:50<01:27,  1.52s/it]
+Loading dataset:  67%|██████▋   | 114/171 [02:51<01:24,  1.48s/it]
+398.9s	258	
+Loading dataset:  67%|██████▋   | 114/171 [02:51<01:24,  1.48s/it]
+Loading dataset:  67%|██████▋   | 115/171 [02:53<01:24,  1.50s/it]
+400.3s	259	
+Loading dataset:  67%|██████▋   | 115/171 [02:53<01:24,  1.50s/it]
+Loading dataset:  68%|██████▊   | 116/171 [02:54<01:22,  1.50s/it]
+401.9s	260	
+Loading dataset:  68%|██████▊   | 116/171 [02:54<01:22,  1.50s/it]
+Loading dataset:  68%|██████▊   | 117/171 [02:56<01:22,  1.52s/it]
+403.5s	261	
+Loading dataset:  68%|██████▊   | 117/171 [02:56<01:22,  1.52s/it]
+Loading dataset:  69%|██████▉   | 118/171 [02:57<01:21,  1.54s/it]
+405.0s	262	
+Loading dataset:  69%|██████▉   | 118/171 [02:57<01:21,  1.54s/it]
+Loading dataset:  70%|██████▉   | 119/171 [02:59<01:19,  1.53s/it]
+406.4s	263	
+Loading dataset:  70%|██████▉   | 119/171 [02:59<01:19,  1.53s/it]
+Loading dataset:  70%|███████   | 120/171 [03:00<01:16,  1.49s/it]
+407.8s	264	
+Loading dataset:  70%|███████   | 120/171 [03:00<01:16,  1.49s/it]
+Loading dataset:  71%|███████   | 121/171 [03:01<01:12,  1.45s/it]
+409.2s	265	
+Loading dataset:  71%|███████   | 121/171 [03:01<01:12,  1.45s/it]
+Loading dataset:  71%|███████▏  | 122/171 [03:03<01:10,  1.44s/it]
+410.6s	266	
+Loading dataset:  71%|███████▏  | 122/171 [03:03<01:10,  1.44s/it]
+Loading dataset:  72%|███████▏  | 123/171 [03:04<01:08,  1.42s/it]
+412.0s	267	
+Loading dataset:  72%|███████▏  | 123/171 [03:04<01:08,  1.42s/it]
+Loading dataset:  73%|███████▎  | 124/171 [03:06<01:06,  1.42s/it]
+413.3s	268	
+Loading dataset:  73%|███████▎  | 124/171 [03:06<01:06,  1.42s/it]
+Loading dataset:  73%|███████▎  | 125/171 [03:07<01:04,  1.39s/it]
+414.8s	269	
+Loading dataset:  73%|███████▎  | 125/171 [03:07<01:04,  1.39s/it]
+Loading dataset:  74%|███████▎  | 126/171 [03:08<01:03,  1.41s/it]
+416.2s	270	
+Loading dataset:  74%|███████▎  | 126/171 [03:08<01:03,  1.41s/it]
+Loading dataset:  74%|███████▍  | 127/171 [03:10<01:02,  1.41s/it]
+417.5s	271	
+Loading dataset:  74%|███████▍  | 127/171 [03:10<01:02,  1.41s/it]
+Loading dataset:  75%|███████▍  | 128/171 [03:11<00:59,  1.39s/it]
+418.9s	272	
+Loading dataset:  75%|███████▍  | 128/171 [03:11<00:59,  1.39s/it]
+Loading dataset:  75%|███████▌  | 129/171 [03:13<00:58,  1.40s/it]
+420.4s	273	
+Loading dataset:  75%|███████▌  | 129/171 [03:13<00:58,  1.40s/it]
+Loading dataset:  76%|███████▌  | 130/171 [03:14<00:57,  1.41s/it]
+421.8s	274	
+Loading dataset:  76%|███████▌  | 130/171 [03:14<00:57,  1.41s/it]
+Loading dataset:  77%|███████▋  | 131/171 [03:15<00:56,  1.40s/it]
+423.1s	275	
+Loading dataset:  77%|███████▋  | 131/171 [03:15<00:56,  1.40s/it]
+Loading dataset:  77%|███████▋  | 132/171 [03:17<00:54,  1.39s/it]
+424.6s	276	
+Loading dataset:  77%|███████▋  | 132/171 [03:17<00:54,  1.39s/it]
+Loading dataset:  78%|███████▊  | 133/171 [03:18<00:53,  1.40s/it]
+426.0s	277	
+Loading dataset:  78%|███████▊  | 133/171 [03:18<00:53,  1.40s/it]
+Loading dataset:  78%|███████▊  | 134/171 [03:20<00:52,  1.41s/it]
+427.5s	278	
+Loading dataset:  78%|███████▊  | 134/171 [03:20<00:52,  1.41s/it]
+Loading dataset:  79%|███████▉  | 135/171 [03:21<00:51,  1.44s/it]
+429.2s	279	
+Loading dataset:  79%|███████▉  | 135/171 [03:21<00:51,  1.44s/it]
+Loading dataset:  80%|███████▉  | 136/171 [03:23<00:52,  1.51s/it]
+430.5s	280	
+Loading dataset:  80%|███████▉  | 136/171 [03:23<00:52,  1.51s/it]
+Loading dataset:  80%|████████  | 137/171 [03:24<00:49,  1.46s/it]
+432.0s	281	
+Loading dataset:  80%|████████  | 137/171 [03:24<00:49,  1.46s/it]
+Loading dataset:  81%|████████  | 138/171 [03:26<00:48,  1.48s/it]
+433.5s	282	
+Loading dataset:  81%|████████  | 138/171 [03:26<00:48,  1.48s/it]
+Loading dataset:  81%|████████▏ | 139/171 [03:27<00:47,  1.49s/it]
+435.1s	283	
+Loading dataset:  81%|████████▏ | 139/171 [03:27<00:47,  1.49s/it]
+Loading dataset:  82%|████████▏ | 140/171 [03:29<00:47,  1.52s/it]
+436.6s	284	
+Loading dataset:  82%|████████▏ | 140/171 [03:29<00:47,  1.52s/it]
+Loading dataset:  82%|████████▏ | 141/171 [03:30<00:45,  1.50s/it]
+438.1s	285	
+Loading dataset:  82%|████████▏ | 141/171 [03:30<00:45,  1.50s/it]
+Loading dataset:  83%|████████▎ | 142/171 [03:32<00:43,  1.49s/it]
+439.6s	286	
+Loading dataset:  83%|████████▎ | 142/171 [03:32<00:43,  1.49s/it]
+Loading dataset:  84%|████████▎ | 143/171 [03:33<00:41,  1.49s/it]
+441.1s	287	
+Loading dataset:  84%|████████▎ | 143/171 [03:33<00:41,  1.49s/it]
+Loading dataset:  84%|████████▍ | 144/171 [03:35<00:40,  1.50s/it]
+442.6s	288	
+Loading dataset:  84%|████████▍ | 144/171 [03:35<00:40,  1.50s/it]
+Loading dataset:  85%|████████▍ | 145/171 [03:36<00:39,  1.51s/it]
+444.2s	289	
+Loading dataset:  85%|████████▍ | 145/171 [03:36<00:39,  1.51s/it]
+Loading dataset:  85%|████████▌ | 146/171 [03:38<00:38,  1.55s/it]
+445.8s	290	
+Loading dataset:  85%|████████▌ | 146/171 [03:38<00:38,  1.55s/it]
+Loading dataset:  86%|████████▌ | 147/171 [03:39<00:37,  1.54s/it]
+447.3s	291	
+Loading dataset:  86%|████████▌ | 147/171 [03:39<00:37,  1.54s/it]
+Loading dataset:  87%|████████▋ | 148/171 [03:41<00:35,  1.53s/it]
+448.8s	292	
+Loading dataset:  87%|████████▋ | 148/171 [03:41<00:35,  1.53s/it]
+Loading dataset:  87%|████████▋ | 149/171 [03:42<00:33,  1.52s/it]
+450.4s	293	
+Loading dataset:  87%|████████▋ | 149/171 [03:42<00:33,  1.52s/it]
+Loading dataset:  88%|████████▊ | 150/171 [03:44<00:32,  1.55s/it]
+451.9s	294	
+Loading dataset:  88%|████████▊ | 150/171 [03:44<00:32,  1.55s/it]
+Loading dataset:  88%|████████▊ | 151/171 [03:46<00:30,  1.55s/it]
+453.4s	295	
+Loading dataset:  88%|████████▊ | 151/171 [03:46<00:30,  1.55s/it]
+Loading dataset:  89%|████████▉ | 152/171 [03:47<00:28,  1.53s/it]
+455.1s	296	
+Loading dataset:  89%|████████▉ | 152/171 [03:47<00:28,  1.53s/it]
+Loading dataset:  89%|████████▉ | 153/171 [03:49<00:28,  1.59s/it]
+456.6s	297	
+Loading dataset:  89%|████████▉ | 153/171 [03:49<00:28,  1.59s/it]
+Loading dataset:  90%|█████████ | 154/171 [03:50<00:26,  1.54s/it]
+458.1s	298	
+Loading dataset:  90%|█████████ | 154/171 [03:50<00:26,  1.54s/it]
+Loading dataset:  91%|█████████ | 155/171 [03:52<00:24,  1.54s/it]
+459.7s	299	
+Loading dataset:  91%|█████████ | 155/171 [03:52<00:24,  1.54s/it]
+Loading dataset:  91%|█████████ | 156/171 [03:53<00:23,  1.56s/it]
+461.4s	300	
+Loading dataset:  91%|█████████ | 156/171 [03:53<00:23,  1.56s/it]
+Loading dataset:  92%|█████████▏| 157/171 [03:55<00:22,  1.60s/it]
+463.0s	301	
+Loading dataset:  92%|█████████▏| 157/171 [03:55<00:22,  1.60s/it]
+Loading dataset:  92%|█████████▏| 158/171 [03:57<00:20,  1.60s/it]
+464.5s	302	
+Loading dataset:  92%|█████████▏| 158/171 [03:57<00:20,  1.60s/it]
+Loading dataset:  93%|█████████▎| 159/171 [03:58<00:18,  1.57s/it]
+466.0s	303	
+Loading dataset:  93%|█████████▎| 159/171 [03:58<00:18,  1.57s/it]
+Loading dataset:  94%|█████████▎| 160/171 [04:00<00:16,  1.54s/it]
+467.5s	304	
+Loading dataset:  94%|█████████▎| 160/171 [04:00<00:16,  1.54s/it]
+Loading dataset:  94%|█████████▍| 161/171 [04:01<00:15,  1.52s/it]
+469.0s	305	
+Loading dataset:  94%|█████████▍| 161/171 [04:01<00:15,  1.52s/it]
+Loading dataset:  95%|█████████▍| 162/171 [04:03<00:13,  1.52s/it]
+470.5s	306	
+Loading dataset:  95%|█████████▍| 162/171 [04:03<00:13,  1.52s/it]
+Loading dataset:  95%|█████████▌| 163/171 [04:04<00:12,  1.51s/it]
+472.0s	307	
+Loading dataset:  95%|█████████▌| 163/171 [04:04<00:12,  1.51s/it]
+Loading dataset:  96%|█████████▌| 164/171 [04:06<00:10,  1.51s/it]
+473.5s	308	
+Loading dataset:  96%|█████████▌| 164/171 [04:06<00:10,  1.51s/it]
+Loading dataset:  96%|█████████▋| 165/171 [04:07<00:09,  1.51s/it]
+475.0s	309	
+Loading dataset:  96%|█████████▋| 165/171 [04:07<00:09,  1.51s/it]
+Loading dataset:  97%|█████████▋| 166/171 [04:09<00:07,  1.51s/it]
+476.4s	310	
+Loading dataset:  97%|█████████▋| 166/171 [04:09<00:07,  1.51s/it]
+Loading dataset:  98%|█████████▊| 167/171 [04:10<00:05,  1.47s/it]
+477.8s	311	
+Loading dataset:  98%|█████████▊| 167/171 [04:10<00:05,  1.47s/it]
+Loading dataset:  98%|█████████▊| 168/171 [04:11<00:04,  1.44s/it]
+479.3s	312	
+Loading dataset:  98%|█████████▊| 168/171 [04:11<00:04,  1.44s/it]
+Loading dataset:  99%|█████████▉| 169/171 [04:13<00:02,  1.48s/it]
+480.9s	313	
+Loading dataset:  99%|█████████▉| 169/171 [04:13<00:02,  1.48s/it]
+Loading dataset:  99%|█████████▉| 170/171 [04:15<00:01,  1.51s/it]
+482.6s	314	
+Loading dataset:  99%|█████████▉| 170/171 [04:15<00:01,  1.51s/it]
+Loading dataset: 100%|██████████| 171/171 [04:16<00:00,  1.57s/it]
+482.6s	315	
+Loading dataset: 100%|██████████| 171/171 [04:16<00:00,  1.57s/it]
+Loading dataset: 100%|██████████| 171/171 [04:16<00:00,  1.50s/it]
+482.6s	316	CacheDataset: 40% (171 scans ~13 GB) — safe for 30 GB RAM
+482.6s	317	Train: 215 batches | Val: 82 batches
+482.6s	318	
+Loading dataset: 100%|██████████| 171/171 [04:16<00:00,  1.50s/it]
+482.6s	319	
+482.6s	320	
+873.0s	321	Ep   0 | lr=1.62e-04 | L=0.2851 | 10.8m
+1258.8s	322	Ep   1 | lr=3.00e-04 | L=0.2989 | 17.2m
+1645.0s	323	Ep   2 | lr=2.98e-04 | L=0.2945 | 23.7m
+2341.1s	324	Ep   3 | lr=2.92e-04 | L=0.2842 | Dice=0.7977 WT=0.794 TC=0.786 ET=0.813 | 35.3m NEW BEST
+2726.4s	325	Ep   4 | lr=2.81e-04 | L=0.2912 | 41.7m
+3113.5s	326	Ep   5 | lr=2.67e-04 | L=0.2817 | 48.1m
+3499.3s	327	Ep   6 | lr=2.49e-04 | L=0.2717 | 54.6m
+4196.9s	328	Ep   7 | lr=2.28e-04 | L=0.2726 | Dice=0.8099 WT=0.828 TC=0.790 ET=0.812 | 66.2m NEW BEST
+4582.9s	329	Ep   8 | lr=2.05e-04 | L=0.2626 | 72.6m
+4967.6s	330	Ep   9 | lr=1.81e-04 | L=0.2586 | 79.0m
+5351.4s	331	Ep  10 | lr=1.55e-04 | L=0.2576 | 85.4m
+6050.3s	332	Ep  11 | lr=1.30e-04 | L=0.2513 | Dice=0.8099 WT=0.840 TC=0.782 ET=0.807 | 97.1m
+6439.1s	333	Ep  12 | lr=1.05e-04 | L=0.2450 | 103.6m
+6829.6s	334	Ep  13 | lr=8.09e-05 | L=0.2445 | 110.1m
+7218.0s	335	Ep  14 | lr=5.92e-05 | L=0.2410 | 116.5m
+7919.3s	336	Ep  15 | lr=4.02e-05 | L=0.2388 | Dice=0.8344 WT=0.849 TC=0.816 ET=0.838 | 128.2m NEW BEST
+8309.3s	337	Ep  16 | lr=2.44e-05 | L=0.2365 | 134.7m
+8698.0s	338	Ep  17 | lr=1.22e-05 | L=0.2361 | 141.2m
+9089.2s	339	Ep  18 | lr=4.14e-06 | L=0.2305 | 147.7m
+9789.0s	340	Ep  19 | lr=3.11e-07 | L=0.2322 | Dice=0.8350 WT=0.851 TC=0.816 ET=0.838 | 159.4m NEW BEST
+9790.3s	341	Loaded BEST checkpoint → Dice 0.8350
+9796.6s	342	
+9796.6s	343	Stage 1 complete. Best Dice: 0.8350
+9796.8s	344	  Visualising 5 random val patients
+9809.3s	345	    PatientID_0254: WT=0.950  TC=0.931  ET=0.925
+9821.9s	346	    PatientID_0033: WT=0.944  TC=0.964  ET=0.947
+9835.2s	347	    PatientID_0006: WT=0.869  TC=0.817  ET=0.839
+9848.8s	348	    PatientID_0095: WT=0.915  TC=0.862  ET=0.862
+9862.2s	349	    PatientID_0095: WT=0.915  TC=0.861  ET=0.884
+9862.9s	350	
+9862.9s	351	Extracting SwinUNETR embeddings (ROI-crop + octant + volumetric)...
+9862.9s	352	  Hook: swinViT.layers3[0] → C_feat=384
+9863.1s	353	  Extraction: 594 scans → ~4233-D
+9863.1s	354	  ⚠️  Using MODEL PREDICTIONS (not GT) for volumes & ROI
+9863.1s	355	  (octant=3072 + region=1152 + vol=9)
+9864.8s	356	  Feature map: (1, 384, 8, 8, 8) → C=384
+9864.8s	357	  Embedding: 4233-D
+9865.9s	358	  [   1/594] PatientID_0003                 tp=1 WT= 55368v ROI=5×7×7 | 0.3/s ETA 28.3m
+9889.8s	359	  [  10/594] done=10 | 0.4/s ETA 26.0m
+9918.0s	360	  [  20/594] done=20 | 0.4/s ETA 26.3m
+9945.7s	361	  [  30/594] done=30 | 0.4/s ETA 25.9m
+9971.9s	362	  [  40/594] done=40 | 0.4/s ETA 25.1m
+9999.9s	363	  [  50/594] PatientID_0021                 tp=2 WT= 44004v ROI=5×7×5 | 0.4/s ETA 24.8m
+10027.8s	364	  [  60/594] done=60 | 0.4/s ETA 24.4m
+10055.7s	365	  [  70/594] done=70 | 0.4/s ETA 24.0m
+10083.1s	366	  [  80/594] done=80 | 0.4/s ETA 23.6m
+10110.7s	367	  [  90/594] done=90 | 0.4/s ETA 23.1m
+10138.4s	368	  [ 100/594] PatientID_0036                 tp=4 WT= 75811v ROI=7×6×7 | 0.4/s ETA 22.7m
+10165.5s	369	  [ 110/594] done=110 | 0.4/s ETA 22.2m
+10192.0s	370	  [ 120/594] done=120 | 0.4/s ETA 21.7m
+10218.8s	371	  [ 130/594] done=130 | 0.4/s ETA 21.2m
+10245.3s	372	  [ 140/594] done=140 | 0.4/s ETA 20.7m
+10272.4s	373	  [ 150/594] PatientID_0055                 tp=5 WT= 41316v ROI=5×8×7 | 0.4/s ETA 20.2m
+10300.6s	374	  [ 160/594] done=160 | 0.4/s ETA 19.8m
+10328.5s	375	  [ 170/594] done=170 | 0.4/s ETA 19.3m
+10354.7s	376	  [ 180/594] done=180 | 0.4/s ETA 18.8m
+10379.5s	377	  [ 190/594] done=190 | 0.4/s ETA 18.3m
+10405.0s	378	  [ 200/594] PatientID_0074                 tp=1 WT= 13222v ROI=8×8×8 | 0.4/s ETA 17.8m
+10431.2s	379	  [ 210/594] done=210 | 0.4/s ETA 17.3m
+10457.7s	380	  [ 220/594] done=220 | 0.4/s ETA 16.8m
+10484.6s	381	  [ 230/594] done=230 | 0.4/s ETA 16.4m
+10511.1s	382	  [ 240/594] done=240 | 0.4/s ETA 15.9m
+10536.8s	383	  [ 250/594] PatientID_0089                 tp=5 WT= 65928v ROI=6×8×8 | 0.4/s ETA 15.5m
+10563.6s	384	  [ 260/594] done=260 | 0.4/s ETA 15.0m
+10589.4s	385	  [ 270/594] done=270 | 0.4/s ETA 14.5m
+10615.5s	386	  [ 280/594] done=280 | 0.4/s ETA 14.1m
+10641.8s	387	  [ 290/594] done=290 | 0.4/s ETA 13.6m
+10669.5s	388	  [ 300/594] PatientID_0110                 tp=1 WT=108297v ROI=6×8×8 | 0.4/s ETA 13.2m
+10697.4s	389	  [ 310/594] done=310 | 0.4/s ETA 12.7m
+10724.4s	390	  [ 320/594] done=320 | 0.4/s ETA 12.3m
+10750.8s	391	  [ 330/594] done=330 | 0.4/s ETA 11.8m
+10777.9s	392	  [ 340/594] done=340 | 0.4/s ETA 11.4m
+10803.1s	393	  [ 350/594] PatientID_0143                 tp=1 WT= 68042v ROI=7×7×7 | 0.4/s ETA 10.9m
+10828.6s	394	  [ 360/594] done=360 | 0.4/s ETA 10.5m
+10853.7s	395	  [ 370/594] done=370 | 0.4/s ETA 10.0m
+10879.2s	396	  [ 380/594] done=380 | 0.4/s ETA 9.5m
+10904.5s	397	  [ 390/594] done=390 | 0.4/s ETA 9.1m
+10930.8s	398	  [ 400/594] PatientID_0164                 tp=4 WT= 35800v ROI=8×8×5 | 0.4/s ETA 8.6m
+10957.0s	399	  [ 410/594] done=410 | 0.4/s ETA 8.2m
+10982.4s	400	  [ 420/594] done=420 | 0.4/s ETA 7.7m
+11008.1s	401	  [ 430/594] done=430 | 0.4/s ETA 7.3m
+11033.2s	402	  [ 440/594] done=440 | 0.4/s ETA 6.8m
+11057.4s	403	  [ 450/594] PatientID_0198                 tp=4 WT= 39677v ROI=6×5×7 | 0.4/s ETA 6.4m
+11081.5s	404	  [ 460/594] done=460 | 0.4/s ETA 5.9m
+11107.9s	405	  [ 470/594] done=470 | 0.4/s ETA 5.5m
+11133.6s	406	  [ 480/594] done=480 | 0.4/s ETA 5.0m
+11158.8s	407	  [ 490/594] done=490 | 0.4/s ETA 4.6m
+11183.2s	408	  [ 500/594] PatientID_0235                 tp=3 WT= 87172v ROI=8×8×7 | 0.4/s ETA 4.1m
+11210.2s	409	  [ 510/594] done=510 | 0.4/s ETA 3.7m
+11235.7s	410	  [ 520/594] done=520 | 0.4/s ETA 3.3m
+11260.0s	411	  [ 530/594] done=530 | 0.4/s ETA 2.8m
+11284.1s	412	  [ 540/594] done=540 | 0.4/s ETA 2.4m
+11309.7s	413	  [ 550/594] PatientID_0265                 tp=1 WT= 52427v ROI=6×6×6 | 0.4/s ETA 1.9m
+11335.5s	414	  [ 560/594] done=560 | 0.4/s ETA 1.5m
+11361.5s	415	  [ 570/594] done=570 | 0.4/s ETA 1.1m
+11364.0s	416	  Skipped 23 corrupt files
+11364.0s	417	  Done: 571/594 in 25.0 min
+11364.0s	418	  Skipped: 0 | Empty ROI: 0
+11364.5s	419	  Saved: /kaggle/working/phase_m2_swinunetr/embeddings/vit_swinunetr_embeddings.npz shape=(571, 4233)
+11377.6s	420	  Spatial tokens: /kaggle/working/phase_m2_swinunetr/embeddings/vit_spatial_tokens.npz shape=(571, 512, 384)
+11377.6s	421	  Volumes CSV: 571 rows
+11377.8s	422	ViT Embedding Diversity — N=571, D=4233
+11377.8s	423	  Norm: [1466.72, 2301.84] mean=1831.63
+11377.8s	424	  Cos sim: mean=0.934 | 54.5% < 0.95 [GOOD]
+11377.8s	425	=======================================================
+11377.8s	426	  SwinUNETR Fine-Tuning Complete (MU-Glioma)
+11377.8s	427	  Best Dice: 0.8350
+11377.8s	428	  All scans (emb): 594
+11377.8s	429	  Outputs: /kaggle/working/phase_m2_swinunetr
+11377.8s	430	=======================================================
+11385.9s	431	/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+11385.9s	432	  cells[i][c] = re.sub('\\\\\|', '|', cell)
+11386.2s	433	/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+11386.2s	434	  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+11387.9s	435	[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+11388.3s	436	[NbConvertApp] Writing 68713 bytes to __notebook__.ipynb
+11390.8s	437	[NbConvertApp] Converting notebook __notebook__.ipynb to html
+11392.1s	438	[NbConvertApp] Writing 499741 bytes to __results__.html

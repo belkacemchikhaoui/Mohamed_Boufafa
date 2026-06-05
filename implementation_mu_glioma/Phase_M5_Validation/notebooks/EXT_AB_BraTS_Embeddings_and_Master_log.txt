@@ -1,0 +1,271 @@
+5.9s	1	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+5.9s	2	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+5.9s	3	0.00s - to python to disable frozen modules.
+5.9s	4	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+6.5s	5	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.5s	6	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.5s	7	0.00s - to python to disable frozen modules.
+6.5s	8	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+11.2s	9	Model: nnunet | Patch: [128, 128, 128] | Regions: ['WT', 'TC', 'ET']
+11.2s	10	Synthetic gap: 90 days between ordinal timepoints
+11.4s	11	Installing nnunetv2 ...
+13.2s	12	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 205.6/205.6 kB 5.6 MB/s eta 0:00:00
+13.4s	13	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 205.6/205.6 kB 5.6 MB/s eta 0:00:00
+27.7s	14	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.0/77.0 kB 6.4 MB/s eta 0:00:00
+27.9s	15	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.0/77.0 kB 6.4 MB/s eta 0:00:00
+29.2s	16	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.1/63.1 kB 5.4 MB/s eta 0:00:00
+29.4s	17	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.1/63.1 kB 5.4 MB/s eta 0:00:00
+30.4s	18	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.7/73.7 kB 6.7 MB/s eta 0:00:00
+30.6s	19	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.7/73.7 kB 6.7 MB/s eta 0:00:00
+30.7s	20	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 27.8/27.8 MB 69.0 MB/s eta 0:00:00
+30.8s	21	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.6/16.6 MB 93.1 MB/s eta 0:00:00
+30.9s	22	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 27.8/27.8 MB 69.0 MB/s eta 0:00:00
+30.9s	23	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.6/16.6 MB 93.1 MB/s eta 0:00:00
+30.9s	24	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 88.2 MB/s eta 0:00:00
+31.0s	25	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 89.4 MB/s eta 0:00:00
+31.0s	26	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.4/96.4 kB 8.7 MB/s eta 0:00:00
+31.1s	27	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 88.2 MB/s eta 0:00:00
+31.1s	28	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 89.4 MB/s eta 0:00:00
+31.1s	29	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.4/96.4 kB 8.7 MB/s eta 0:00:00
+41.6s	30	ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+41.6s	31	bigframes 2.35.0 requires google-cloud-bigquery-storage<3.0.0,>=2.30.0, which is not installed.
+41.6s	32	ydata-profiling 4.18.1 requires numpy<2.4,>=1.22, but you have numpy 2.4.4 which is incompatible.
+41.6s	33	google-colab 1.0.0 requires jupyter-server==2.14.0, but you have jupyter-server 2.12.5 which is incompatible.
+41.6s	34	google-colab 1.0.0 requires pandas==2.2.2, but you have pandas 2.3.3 which is incompatible.
+41.6s	35	dopamine-rl 4.1.2 requires gym<=0.25.2, but you have gym 0.26.2 which is incompatible.
+41.6s	36	tensorflow 2.19.0 requires numpy<2.2.0,>=1.26.0, but you have numpy 2.4.4 which is incompatible.
+41.6s	37	numba 0.60.0 requires numpy<2.1,>=1.22, but you have numpy 2.4.4 which is incompatible.
+41.8s	38	ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+41.8s	39	bigframes 2.35.0 requires google-cloud-bigquery-storage<3.0.0,>=2.30.0, which is not installed.
+41.8s	40	ydata-profiling 4.18.1 requires numpy<2.4,>=1.22, but you have numpy 2.4.4 which is incompatible.
+41.8s	41	google-colab 1.0.0 requires jupyter-server==2.14.0, but you have jupyter-server 2.12.5 which is incompatible.
+41.8s	42	google-colab 1.0.0 requires pandas==2.2.2, but you have pandas 2.3.3 which is incompatible.
+41.8s	43	dopamine-rl 4.1.2 requires gym<=0.25.2, but you have gym 0.26.2 which is incompatible.
+41.8s	44	tensorflow 2.19.0 requires numpy<2.2.0,>=1.26.0, but you have numpy 2.4.4 which is incompatible.
+41.8s	45	numba 0.60.0 requires numpy<2.1,>=1.22, but you have numpy 2.4.4 which is incompatible.
+41.8s	46	
+41.8s	47	ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+41.8s	48	bigframes 2.35.0 requires google-cloud-bigquery-storage<3.0.0,>=2.30.0, which is not installed.
+41.8s	49	ydata-profiling 4.18.1 requires numpy<2.4,>=1.22, but you have numpy 2.4.4 which is incompatible.
+41.8s	50	google-colab 1.0.0 requires jupyter-server==2.14.0, but you have jupyter-server 2.12.5 which is incompatible.
+41.8s	51	google-colab 1.0.0 requires pandas==2.2.2, but you have pandas 2.3.3 which is incompatible.
+41.8s	52	dopamine-rl 4.1.2 requires gym<=0.25.2, but you have gym 0.26.2 which is incompatible.
+41.8s	53	tensorflow 2.19.0 requires numpy<2.2.0,>=1.26.0, but you have numpy 2.4.4 which is incompatible.
+41.8s	54	numba 0.60.0 requires numpy<2.1,>=1.22, but you have numpy 2.4.4 which is incompatible.
+42.0s	55	nnunetv2 installed
+43.7s	56	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.2/49.2 kB 3.2 MB/s eta 0:00:00
+43.9s	57	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.2/49.2 kB 3.2 MB/s eta 0:00:00
+44.9s	58	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.4/54.4 kB 3.7 MB/s eta 0:00:00
+45.1s	59	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.4/54.4 kB 3.7 MB/s eta 0:00:00
+46.1s	60	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.0/50.0 kB 1.5 MB/s eta 0:00:00
+46.3s	61	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.0/50.0 kB 1.5 MB/s eta 0:00:00
+46.7s	62	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.6/43.6 kB 3.4 MB/s eta 0:00:00
+46.9s	63	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.6/43.6 kB 3.4 MB/s eta 0:00:00
+47.3s	64	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.4/48.4 kB 4.0 MB/s eta 0:00:00
+47.5s	65	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.4/48.4 kB 4.0 MB/s eta 0:00:00
+48.8s	66	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.8/53.8 kB 4.1 MB/s eta 0:00:00
+48.8s	67	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 266.5/266.5 kB 10.0 MB/s eta 0:00:00
+48.9s	68	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 37.9 MB/s eta 0:00:00
+49.0s	69	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.8/53.8 kB 4.1 MB/s eta 0:00:00
+49.0s	70	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 266.5/266.5 kB 10.0 MB/s eta 0:00:00
+49.0s	71	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 37.9 MB/s eta 0:00:00
+49.8s	72	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 81.4/81.4 MB 20.6 MB/s eta 0:00:00
+50.0s	73	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 81.4/81.4 MB 20.6 MB/s eta 0:00:00
+50.6s	74	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.8/67.8 MB 27.4 MB/s eta 0:00:00
+50.8s	75	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.8/67.8 MB 27.4 MB/s eta 0:00:00
+50.9s	76	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.0/28.0 MB 58.1 MB/s eta 0:00:00
+51.1s	77	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.0/28.0 MB 58.1 MB/s eta 0:00:00
+51.6s	78	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.2/57.2 MB 31.2 MB/s eta 0:00:00
+51.8s	79	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.2/57.2 MB 31.2 MB/s eta 0:00:00
+51.9s	80	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.5/28.5 MB 52.0 MB/s eta 0:00:00
+52.1s	81	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.9/15.9 MB 78.1 MB/s eta 0:00:00
+52.1s	82	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.5/28.5 MB 52.0 MB/s eta 0:00:00
+52.1s	83	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.9/15.9 MB 78.1 MB/s eta 0:00:00
+52.2s	84	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.6/10.6 MB 120.9 MB/s eta 0:00:00
+52.2s	85	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 96.1 MB/s eta 0:00:00
+52.3s	86	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 72.8 MB/s eta 0:00:00
+52.3s	87	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 76.1 MB/s eta 0:00:00
+52.3s	88	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 115.9/115.9 kB 9.5 MB/s eta 0:00:00
+52.4s	89	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 333.1/333.1 kB 26.0 MB/s eta 0:00:00
+52.4s	90	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.6/10.6 MB 120.9 MB/s eta 0:00:00
+52.4s	91	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 96.1 MB/s eta 0:00:00
+52.4s	92	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 72.8 MB/s eta 0:00:00
+52.4s	93	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 76.1 MB/s eta 0:00:00
+52.4s	94	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 115.9/115.9 kB 9.5 MB/s eta 0:00:00
+52.4s	95	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 333.1/333.1 kB 26.0 MB/s eta 0:00:00
+52.4s	96	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 95.3 MB/s eta 0:00:00
+52.6s	97	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 95.3 MB/s eta 0:00:00
+53.1s	98	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.4/61.4 MB 31.1 MB/s eta 0:00:00
+53.1s	99	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.5/87.5 kB 7.6 MB/s eta 0:00:00
+53.2s	100	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 202.1/202.1 kB 17.3 MB/s eta 0:00:00
+53.2s	101	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 319.6/319.6 kB 24.0 MB/s eta 0:00:00
+53.3s	102	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.4/61.4 MB 31.1 MB/s eta 0:00:00
+53.3s	103	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.5/87.5 kB 7.6 MB/s eta 0:00:00
+53.3s	104	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 202.1/202.1 kB 17.3 MB/s eta 0:00:00
+53.3s	105	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 319.6/319.6 kB 24.0 MB/s eta 0:00:00
+53.3s	106	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.9/114.9 kB 9.5 MB/s eta 0:00:00
+53.3s	107	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 208.4/208.4 kB 16.5 MB/s eta 0:00:00
+53.4s	108	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.0/77.0 kB 6.3 MB/s eta 0:00:00
+53.4s	109	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.3/56.3 kB 4.3 MB/s eta 0:00:00
+53.5s	110	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.9/114.9 kB 9.5 MB/s eta 0:00:00
+53.5s	111	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 208.4/208.4 kB 16.5 MB/s eta 0:00:00
+53.5s	112	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.0/77.0 kB 6.3 MB/s eta 0:00:00
+53.5s	113	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.3/56.3 kB 4.3 MB/s eta 0:00:00
+53.5s	114	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.2/9.2 MB 106.1 MB/s eta 0:00:00
+53.6s	115	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.2/132.2 kB 11.9 MB/s eta 0:00:00
+53.7s	116	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.2/9.2 MB 106.1 MB/s eta 0:00:00
+53.7s	117	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.2/132.2 kB 11.9 MB/s eta 0:00:00
+53.7s	118	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 879.5/879.5 kB 51.4 MB/s eta 0:00:00
+53.7s	119	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 207.3/207.3 kB 16.8 MB/s eta 0:00:00
+53.9s	120	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 879.5/879.5 kB 51.4 MB/s eta 0:00:00
+53.9s	121	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 207.3/207.3 kB 16.8 MB/s eta 0:00:00
+94.5s	122	ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+94.5s	123	ydata-profiling 4.18.1 requires numpy<2.4,>=1.22, but you have numpy 2.4.4 which is incompatible.
+94.5s	124	pytensor 2.38.0 requires filelock>=3.15, but you have filelock 3.11.0 which is incompatible.
+94.7s	125	ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+94.7s	126	ydata-profiling 4.18.1 requires numpy<2.4,>=1.22, but you have numpy 2.4.4 which is incompatible.
+94.7s	127	pytensor 2.38.0 requires filelock>=3.15, but you have filelock 3.11.0 which is incompatible.
+94.7s	128	
+94.7s	129	ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+94.7s	130	ydata-profiling 4.18.1 requires numpy<2.4,>=1.22, but you have numpy 2.4.4 which is incompatible.
+94.7s	131	pytensor 2.38.0 requires filelock>=3.15, but you have filelock 3.11.0 which is incompatible.
+171.9s	132	2026-05-11 03:41:03.099432: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+171.9s	133	WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+171.9s	134	E0000 00:00:1778470863.268360      22 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+171.9s	135	E0000 00:00:1778470863.315790      22 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+171.9s	136	W0000 00:00:1778470863.710866      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+171.9s	137	W0000 00:00:1778470863.710899      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+171.9s	138	W0000 00:00:1778470863.710902      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+171.9s	139	W0000 00:00:1778470863.710905      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+172.1s	140	2026-05-11 03:41:03.099432: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+172.1s	141	WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+172.1s	142	E0000 00:00:1778470863.268360      22 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+172.1s	143	E0000 00:00:1778470863.315790      22 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+172.1s	144	W0000 00:00:1778470863.710866      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+172.1s	145	W0000 00:00:1778470863.710899      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+172.1s	146	W0000 00:00:1778470863.710902      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+172.1s	147	W0000 00:00:1778470863.710905      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+172.1s	148	
+172.1s	149	2026-05-11 03:41:03.099432: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+172.1s	150	WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+172.1s	151	E0000 00:00:1778470863.268360      22 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+172.1s	152	E0000 00:00:1778470863.315790      22 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+172.1s	153	W0000 00:00:1778470863.710866      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+172.1s	154	W0000 00:00:1778470863.710899      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+172.1s	155	W0000 00:00:1778470863.710902      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+172.1s	156	W0000 00:00:1778470863.710905      22 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+184.5s	157	MONAI 1.5.2 | PyTorch 2.10.0+cu128 | Device: cuda
+184.5s	158	GPU: Tesla T4 | Total memory: 15.6 GB
+184.5s	159	Disk free: 20.9 GB
+184.5s	160	Label mapping: WT=1+2+3 | TC=1+3 | ET=3 (identical to MU-Glioma)
+197.3s	161	  Created 8105 symlinks from datasets
+197.3s	162	NIFTI_ROOT: /kaggle/working/nifti_links
+197.4s	163	Total scans: 1621 | Patients: 731
+197.4s	164	≥2 tp: 559 | ≥3 tp: 153
+197.4s	165	Spot-check: BraTS-GLI-00005-100 → nibabel shape: (182, 218, 182)
+197.4s	166	Val transforms ready
+197.5s	167	Validating scans...
+203.2s	168	Valid: 1621 / 1621
+203.4s	169	=======================================================
+203.4s	170	  Loading nnUNet — MU-Glioma fine-tuned checkpoint
+203.4s	171	  REQUIRES: plans.json alongside checkpoint!
+203.4s	172	=======================================================
+203.4s	173	Checkpoint: /kaggle/input/datasets/zinou123viva/nn-unet-pretrained-brats2024/nnunet_best.pth
+203.4s	174	Plans:      /kaggle/input/datasets/zinou123viva/nn-unet-pretrained-brats2024/plans.json
+203.4s	175	  PlainConvUNet | 6 stages | features: [32, 64, 128, 256, 320, 320]
+203.4s	176	  Imported from dynamic_network_architectures.architectures.unet
+205.2s	177	  Checkpoint from epoch 27 | Training best Dice: 0.8150
+205.2s	178	  Loaded: 219/219 layers | 30.8M params
+205.3s	179	
+205.3s	180	✅ PlainConvUNet on cuda — INFERENCE MODE
+205.3s	181	   Stage 3 features: 256 channels (embeddings will be 2825-D)
+205.9s	182	
+205.9s	183	Extracting nnUNet embeddings + Dice for BraTS-PTG...
+205.9s	184	  Hook: encoder.stages[3]
+206.1s	185	  Extracting embeddings + Dice: 1621 scans
+206.1s	186	  ─────────────────────────────────────────────────────────────────
+208.4s	187	  Feature map: (1, 256, 16, 16, 16) → C=256
+208.4s	188	  Embedding dim: 2825-D (8×256 + 3×256 + 9)
+208.4s	189	  ✅ Dimension verified: 2825-D
+208.4s	190	  ─────────────────────────────────────────────────────────────────
+208.4s	191	  [    1/1621] BraTS-GLI-00005 tp=100 Dice(WT=0.856 TC=nan ET=nan) | 0.4/s ETA 64.7m
+375.9s	192	  [  100/1621] BraTS-GLI-02064 tp=102 Dice(WT=0.851 TC=0.728 ET=0.717) | 0.6/s ETA 43.0m
+611.3s	193	  [  200/1621] BraTS-GLI-02102 tp=100 Dice(WT=0.875 TC=0.732 ET=0.715) | 0.5/s ETA 48.0m
+840.6s	194	  [  300/1621] BraTS-GLI-02144 tp=100 Dice(WT=0.879 TC=0.732 ET=0.715) | 0.5/s ETA 46.6m
+1066.5s	195	  [  400/1621] BraTS-GLI-02193 tp=104 Dice(WT=0.880 TC=0.732 ET=0.719) | 0.5/s ETA 43.8m
+1226.2s	196	  [  500/1621] BraTS-GLI-02230 tp=101 Dice(WT=0.874 TC=0.708 ET=0.706) | 0.5/s ETA 38.1m
+1419.8s	197	  [  600/1621] BraTS-GLI-02307 tp=100 Dice(WT=0.873 TC=0.701 ET=0.700) | 0.5/s ETA 34.4m
+1697.2s	198	  [  700/1621] BraTS-GLI-02428 tp=100 Dice(WT=0.872 TC=0.718 ET=0.714) | 0.5/s ETA 32.7m
+1869.4s	199	  [  800/1621] BraTS-GLI-02514 tp=104 Dice(WT=0.875 TC=0.728 ET=0.723) | 0.5/s ETA 28.4m
+2031.3s	200	  [  900/1621] BraTS-GLI-02575 tp=101 Dice(WT=0.873 TC=0.731 ET=0.725) | 0.5/s ETA 24.4m
+2192.8s	201	  [ 1000/1621] BraTS-GLI-02634 tp=100 Dice(WT=0.866 TC=0.729 ET=0.724) | 0.5/s ETA 20.6m
+2352.9s	202	  [ 1100/1621] BraTS-GLI-02751 tp=100 Dice(WT=0.862 TC=0.726 ET=0.721) | 0.5/s ETA 16.9m
+2511.7s	203	  [ 1200/1621] BraTS-GLI-02805 tp=100 Dice(WT=0.858 TC=0.726 ET=0.720) | 0.5/s ETA 13.5m
+2671.2s	204	  [ 1300/1621] BraTS-GLI-02864 tp=100 Dice(WT=0.856 TC=0.724 ET=0.718) | 0.5/s ETA 10.1m
+2829.8s	205	  [ 1400/1621] BraTS-GLI-02917 tp=100 Dice(WT=0.851 TC=0.723 ET=0.716) | 0.5/s ETA 6.9m
+2986.4s	206	  [ 1500/1621] BraTS-GLI-02980 tp=100 Dice(WT=0.848 TC=0.723 ET=0.717) | 0.5/s ETA 3.7m
+3147.3s	207	  [ 1600/1621] BraTS-GLI-03052 tp=102 Dice(WT=0.847 TC=0.723 ET=0.717) | 0.5/s ETA 0.6m
+3179.2s	208	  Skipped 1 corrupt files
+3180.3s	209	  MU-Glioma baseline (from training log): WT=0.904 TC=0.857 ET=0.872 (mean=0.8150)
+3180.3s	210	  ═════════════════════════════════════════════════════════════════
+3180.3s	211	  nnUNet Dice — MU-Glioma (train) vs BraTS-PTG (zero-shot)
+3180.3s	212	  ═════════════════════════════════════════════════════════════════
+3180.3s	213	  Region      MU-Glioma        BraTS-PTG       Drop
+3180.3s	214	  ──────────────────────────────────────────────────
+3180.3s	215	  WT              0.904      0.847±0.108      +6.3%
+3180.3s	216	  TC              0.857      0.723±0.212     +15.7%
+3180.3s	217	  ET              0.872      0.717±0.195     +17.8%
+3180.3s	218	  ──────────────────────────────────────────────────
+3180.3s	219	  Mean            0.878            0.762     +13.1%
+3180.3s	220	  ═════════════════════════════════════════════════════════════════
+3180.3s	221	  Embeddings: 1620/1621 in 49.6m
+3180.3s	222	  Skipped: 0 | Empty ROI: 51
+3180.9s	223	  Saved: /kaggle/working/ext_brats_ptg/embeddings/brats_ptg_embeddings.npz  shape=(1620, 2825)
+3180.9s	224	  Volumes: /kaggle/working/ext_brats_ptg/embeddings/brats_ptg_volumes.csv
+3180.9s	225	  Dice scores: /kaggle/working/ext_brats_ptg/embeddings/brats_ptg_dice_scores.csv
+3181.1s	226	=======================================================
+3181.1s	227	  Building brats_ptg_master.csv
+3181.1s	228	  Treatment: ZEROS | Molecular: ZEROS
+3181.1s	229	=======================================================
+3181.1s	230	Loaded volumes from: /kaggle/working/ext_brats_ptg/embeddings/brats_ptg_volumes.csv (1620 rows)
+3181.1s	231	Volumes ready: 1620 scans
+3181.8s	232	Loaded metadata from: BraTS-PTG supplementary demographic information and metadata.xlsx
+3181.8s	233	  Demographics merged: 818 patients
+3181.8s	234	  Treatment (8-D): ZEROS | Molecular (26-D): ZEROS
+3182.3s	235	
+3182.3s	236	Trajectory distribution:
+3182.3s	237	  STABLE: 420
+3182.3s	238	  PROG: 231
+3182.3s	239	  RESP: 80
+3182.3s	240	
+3182.3s	241	Saved: /kaggle/working/ext_brats_ptg/brats_ptg_master.csv ((1620, 53))
+3182.3s	242	Trajectory-capable patients (≥2 tp): 559
+3182.3s	243	  Fold 0: train=317 val=55 test=187
+3182.3s	244	  Fold 1: train=317 val=55 test=187
+3182.3s	245	  Fold 2: train=318 val=56 test=185
+3182.3s	246	Saved: /kaggle/working/ext_brats_ptg/brats_ptg_splits.json
+3182.4s	247	═════════════════════════════════════════════════════════════════
+3182.4s	248	  EXT_AB COMPLETE
+3182.4s	249	═════════════════════════════════════════════════════════════════
+3182.6s	250	  Embeddings: (1620, 2825) (2825-D)
+3182.6s	251	  Patients:   731
+3182.6s	252	  Scans:      1620
+3182.6s	253	
+3182.6s	254	  Segmentation Dice — MU-Glioma baseline: WT=0.904 TC=0.857 ET=0.872
+3182.6s	255	    WT: 0.8475 ± 0.1083
+3182.6s	256	    TC: 0.7226 ± 0.2116
+3182.6s	257	    ET: 0.7167 ± 0.1954
+3182.6s	258	
+3182.6s	259	  Master CSV: (1620, 53)
+3182.6s	260	  Splits: 3-fold CV on 559 patients
+3182.6s	261	
+3182.6s	262	  ✅ 2825-D verified
+3182.6s	263	  ✅ Ready for EXT_C (TaViT External Validation)
+3188.2s	264	/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+3188.2s	265	  cells[i][c] = re.sub('\\\\\|', '|', cell)
+3188.4s	266	/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+3188.4s	267	  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+3189.0s	268	[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+3189.3s	269	[NbConvertApp] Writing 67501 bytes to __notebook__.ipynb
+3191.8s	270	[NbConvertApp] Converting notebook __notebook__.ipynb to html
+3192.8s	271	[NbConvertApp] Writing 492678 bytes to __results__.html

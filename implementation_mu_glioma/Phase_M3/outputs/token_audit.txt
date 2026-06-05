@@ -1,0 +1,37 @@
+idx  Feature                     Non-zero  Coverage     Mean      Max
+─────────────────────────────────────────────────────────────────
+   0  days_since_surgery               591     99.2%    0.284    1.000
+   1  had_repeat_surgery                 0      0.0%    0.000    0.000  ⚠ LOW
+   2  currently_on_RT                    9      1.5%    0.015    1.000  ⚠ LOW
+   3  RT_completed                     405     68.0%    0.680    1.000
+   4  dose_gy_norm                     426     71.5%    0.629    0.923
+   5  dose_per_fraction                426     71.5%    0.367    0.850
+   6  RT_duration                      450     75.5%    0.703    1.000
+   7  surg_to_RT_delay                 446     74.8%    0.430    1.000
+   8  is_proton                          2      0.3%    0.003    1.000  ⚠ LOW
+   9  on_initial_chemo                   7      1.2%    0.012    1.000  ⚠ LOW
+  10  chemo_completed                  384     64.4%    0.644    1.000
+  11  is_TMZ                           431     72.3%    0.723    1.000
+  12  surg_to_chemo_delay              411     69.0%    0.380    1.000
+  13  is_concurrent                    401     67.3%    0.673    1.000
+  14  chemo_duration                   412     69.1%    0.457    0.833
+  15  on_maintenance                   146     24.5%    0.245    1.000
+  16  maint_is_TMZ                     389     65.3%    0.653    1.000
+  17  maint_cycles_done                222     37.2%    0.143    1.000
+  18  maint_cycle_length               398     66.8%    0.339    1.000
+  19  extended_maintenance             143     24.0%    0.240    1.000
+  20  on_immunotherapy                  29      4.9%    0.049    1.000  ⚠ LOW
+  21  is_avastin                        28      4.7%    0.047    1.000  ⚠ LOW
+  22  is_checkpoint                      0      0.0%    0.000    0.000  ⚠ LOW
+  23  immuno_cycles_done                40      6.7%    0.032    1.000
+  24  immuno_timing                    199     33.4%    0.231    1.000
+  25  had_brachytherapy                 28      4.7%    0.047    1.000  ⚠ LOW
+  26  is_gamma_tiles                     5      0.8%    0.008    1.000  ⚠ LOW
+  27  on_TTF                            34      5.7%    0.057    1.000
+  28  had_LITT                          12      2.0%    0.020    1.000  ⚠ LOW
+  29  IDH1_mutation                    134     22.5%    0.195    1.000
+  30  MGMT_methylation                 301     50.5%    0.410    1.000
+  31  EGFR_amplification                30      5.0%    0.050    1.000
+  32  PTEN_mutation                     38      6.4%    0.064    1.000
+  33  CDKN2A_deletion                   42      7.0%    0.070    1.000
+  34  age_norm                         593     99.5%    0.551    1.000

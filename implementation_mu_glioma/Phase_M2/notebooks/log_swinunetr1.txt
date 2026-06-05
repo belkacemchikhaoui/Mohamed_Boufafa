@@ -1,0 +1,351 @@
+6.2s	1	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.2s	2	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.2s	3	0.00s - to python to disable frozen modules.
+6.2s	4	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+6.8s	5	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.8s	6	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.8s	7	0.00s - to python to disable frozen modules.
+6.8s	8	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+7.8s	9	Model: swinunetr | Patch: (128, 128, 128) | Regions: ['WT', 'TC', 'ET']
+14.5s	10	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.2/49.2 kB 2.9 MB/s eta 0:00:00
+14.7s	11	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.2/49.2 kB 2.9 MB/s eta 0:00:00
+15.8s	12	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.4/54.4 kB 3.7 MB/s eta 0:00:00
+16.0s	13	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.4/54.4 kB 3.7 MB/s eta 0:00:00
+17.4s	14	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.0/50.0 kB 3.8 MB/s eta 0:00:00
+17.6s	15	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.0/50.0 kB 3.8 MB/s eta 0:00:00
+18.1s	16	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.6/43.6 kB 3.0 MB/s eta 0:00:00
+18.3s	17	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.6/43.6 kB 3.0 MB/s eta 0:00:00
+18.8s	18	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.4/48.4 kB 3.4 MB/s eta 0:00:00
+19.0s	19	     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.4/48.4 kB 3.4 MB/s eta 0:00:00
+20.5s	20	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.8/53.8 kB 3.6 MB/s eta 0:00:00
+20.5s	21	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 266.5/266.5 kB 9.5 MB/s eta 0:00:00
+20.6s	22	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 34.5 MB/s eta 0:00:00
+20.7s	23	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.8/53.8 kB 3.6 MB/s eta 0:00:00
+20.7s	24	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 266.5/266.5 kB 9.5 MB/s eta 0:00:00
+20.7s	25	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 34.5 MB/s eta 0:00:00
+21.9s	26	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 81.4/81.4 MB 22.2 MB/s eta 0:00:00
+22.1s	27	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 81.4/81.4 MB 22.2 MB/s eta 0:00:00
+22.9s	28	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.8/67.8 MB 24.0 MB/s eta 0:00:00
+23.1s	29	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.8/67.8 MB 24.0 MB/s eta 0:00:00
+23.4s	30	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.0/28.0 MB 41.4 MB/s eta 0:00:00
+23.6s	31	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.0/28.0 MB 41.4 MB/s eta 0:00:00
+24.5s	32	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.2/57.2 MB 25.3 MB/s eta 0:00:00
+24.7s	33	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.2/57.2 MB 25.3 MB/s eta 0:00:00
+25.1s	34	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.5/28.5 MB 41.7 MB/s eta 0:00:00
+25.3s	35	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.5/28.5 MB 41.7 MB/s eta 0:00:00
+25.4s	36	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.9/15.9 MB 43.8 MB/s eta 0:00:00
+25.6s	37	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.9/15.9 MB 43.8 MB/s eta 0:00:00
+25.6s	38	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.6/10.6 MB 51.8 MB/s eta 0:00:00
+25.7s	39	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 50.8 MB/s eta 0:00:00
+25.8s	40	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 45.6 MB/s eta 0:00:00
+25.8s	41	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.6/10.6 MB 51.8 MB/s eta 0:00:00
+25.8s	42	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 50.8 MB/s eta 0:00:00
+25.8s	43	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 45.6 MB/s eta 0:00:00
+25.8s	44	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 39.6 MB/s eta 0:00:00
+25.9s	45	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 115.9/115.9 kB 9.6 MB/s eta 0:00:00
+26.0s	46	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 39.6 MB/s eta 0:00:00
+26.0s	47	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 115.9/115.9 kB 9.6 MB/s eta 0:00:00
+26.3s	48	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 26.5/26.5 MB 41.6 MB/s eta 0:00:00
+26.4s	49	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 333.1/333.1 kB 21.9 MB/s eta 0:00:00
+26.4s	50	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 51.2 MB/s eta 0:00:00
+26.5s	51	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 26.5/26.5 MB 41.6 MB/s eta 0:00:00
+26.5s	52	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 333.1/333.1 kB 21.9 MB/s eta 0:00:00
+26.5s	53	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 51.2 MB/s eta 0:00:00
+27.6s	54	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.4/61.4 MB 22.8 MB/s eta 0:00:00
+27.7s	55	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.5/87.5 kB 6.8 MB/s eta 0:00:00
+27.7s	56	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 202.1/202.1 kB 15.4 MB/s eta 0:00:00
+27.7s	57	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 319.6/319.6 kB 23.2 MB/s eta 0:00:00
+27.8s	58	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.4/61.4 MB 22.8 MB/s eta 0:00:00
+27.8s	59	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.5/87.5 kB 6.8 MB/s eta 0:00:00
+27.8s	60	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 202.1/202.1 kB 15.4 MB/s eta 0:00:00
+27.8s	61	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 319.6/319.6 kB 23.2 MB/s eta 0:00:00
+27.8s	62	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.9/114.9 kB 9.6 MB/s eta 0:00:00
+27.9s	63	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 208.4/208.4 kB 15.4 MB/s eta 0:00:00
+27.9s	64	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.0/77.0 kB 6.2 MB/s eta 0:00:00
+27.9s	65	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.3/56.3 kB 4.1 MB/s eta 0:00:00
+28.1s	66	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.9/114.9 kB 9.6 MB/s eta 0:00:00
+28.1s	67	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 208.4/208.4 kB 15.4 MB/s eta 0:00:00
+28.1s	68	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.0/77.0 kB 6.2 MB/s eta 0:00:00
+28.1s	69	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.3/56.3 kB 4.1 MB/s eta 0:00:00
+28.2s	70	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.2/9.2 MB 55.5 MB/s eta 0:00:00
+28.2s	71	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.2/132.2 kB 9.8 MB/s eta 0:00:00
+28.4s	72	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.2/9.2 MB 55.5 MB/s eta 0:00:00
+28.4s	73	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.2/132.2 kB 9.8 MB/s eta 0:00:00
+28.4s	74	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 879.5/879.5 kB 41.3 MB/s eta 0:00:00
+28.4s	75	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 207.3/207.3 kB 17.2 MB/s eta 0:00:00
+28.6s	76	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 879.5/879.5 kB 41.3 MB/s eta 0:00:00
+28.6s	77	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 207.3/207.3 kB 17.2 MB/s eta 0:00:00
+67.5s	78	ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+67.5s	79	pytensor 2.38.0 requires filelock>=3.15, but you have filelock 3.11.0 which is incompatible.
+67.7s	80	ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+67.7s	81	pytensor 2.38.0 requires filelock>=3.15, but you have filelock 3.11.0 which is incompatible.
+67.7s	82	
+67.7s	83	ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+67.7s	84	pytensor 2.38.0 requires filelock>=3.15, but you have filelock 3.11.0 which is incompatible.
+154.3s	85	2026-05-07 01:05:27.623463: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+154.3s	86	WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+154.3s	87	E0000 00:00:1778115927.797301      23 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+154.3s	88	E0000 00:00:1778115927.850310      23 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+154.3s	89	W0000 00:00:1778115928.276749      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+154.3s	90	W0000 00:00:1778115928.276826      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+154.3s	91	W0000 00:00:1778115928.276829      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+154.3s	92	W0000 00:00:1778115928.276832      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+154.5s	93	2026-05-07 01:05:27.623463: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+154.5s	94	WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+154.5s	95	E0000 00:00:1778115927.797301      23 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+154.5s	96	E0000 00:00:1778115927.850310      23 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+154.5s	97	W0000 00:00:1778115928.276749      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+154.5s	98	W0000 00:00:1778115928.276826      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+154.5s	99	W0000 00:00:1778115928.276829      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+154.5s	100	W0000 00:00:1778115928.276832      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+154.5s	101	
+154.5s	102	2026-05-07 01:05:27.623463: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+154.5s	103	WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+154.5s	104	E0000 00:00:1778115927.797301      23 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+154.5s	105	E0000 00:00:1778115927.850310      23 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+154.5s	106	W0000 00:00:1778115928.276749      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+154.5s	107	W0000 00:00:1778115928.276826      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+154.5s	108	W0000 00:00:1778115928.276829      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+154.5s	109	W0000 00:00:1778115928.276832      23 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+167.2s	110	MONAI 1.5.2 | PyTorch 2.10.0+cu128 | Device: cuda
+167.2s	111	GPU: Tesla T4 | Total memory: 15.6 GB
+167.2s	112	Disk free: 20.9 GB (need ~3GB for checkpoints)
+167.3s	113	MU-Glioma Label mapping: WT=1+2+3 | TC=1+3 | ET=3
+172.4s	114	  Created 2978 symlinks from datasets
+172.4s	115	scan_index.json: /kaggle/input/datasets/boufafamoamed/mu-glioma-m1-outputs/scan_index.json
+172.4s	116	data_splits.json: /kaggle/input/datasets/boufafamoamed/mu-glioma-m1-outputs/data_splits.json
+172.4s	117	master_csv.csv: /kaggle/input/datasets/boufafamoamed/mu-glioma-m1-outputs/mu_glioma_master.csv
+172.4s	118	Total scans in index: 596
+172.4s	119	Splits: Train=148 | Val=25 | Test=30
+172.4s	120	NIFTI_ROOT: /kaggle/working/nifti_links/boufafamoamed/mu-glioma-post-validation/MU-Glioma-Post
+172.4s	121	Resolved: 594 total scans
+172.4s	122	Train: 429 | Val: 82
+172.4s	123	Spot-check: /kaggle/working/nifti_links/boufafamoamed/mu-glioma-post-validation/MU-Glioma-Post/PatientID_0003/Timepoint_1/PatientID_0003_Timepoint_1_brain_t1c.nii.gz
+172.4s	124	  exists=True, size=5251963
+172.4s	125	  nibabel OK: shape=(240, 240, 155)
+172.5s	126	Transforms ready (3-channel: WT/TC/ET)
+172.5s	127	Validating scans...
+174.0s	128	Train dicts: 429 | Val dicts: 82 | All dicts: 594
+174.0s	129	  Sample: /kaggle/working/nifti_links/boufafamoamed/mu-glioma-post-validation/MU-Glioma-Post/PatientID_0004/Timepoint_1/PatientID_0004_Timepoint_1_brain_t1n.nii.gz
+174.0s	130	  Exists: True
+174.2s	131	=======================================================
+174.2s	132	  Loading SwinUNETR (BraTS 2021 Fold 1 — original)
+174.2s	133	=======================================================
+174.8s	134	  SwinUNETR created: 62.2M params
+174.8s	135	  Found weights: /kaggle/input/datasets/boufafamoamed/brats2024-pretrained-weights/swinunetr_fold1.pt
+176.1s	136	  Pretrained: 159/159 layers loaded
+176.1s	137	  Total: 62.2M | Trainable: 61.7M | Frozen params: 60
+176.3s	138	  Model on cuda
+176.3s	139	Two-stage training components ready
+178.1s	140	
+Loading dataset:   0%|          | 0/21 [00:00<?, ?it/s]
+181.2s	141	
+Loading dataset:   0%|          | 0/21 [00:00<?, ?it/s]
+Loading dataset:   5%|▍         | 1/21 [00:03<01:02,  3.12s/it]
+181.7s	142	
+Loading dataset:   5%|▍         | 1/21 [00:03<01:02,  3.12s/it]
+Loading dataset:  10%|▉         | 2/21 [00:03<00:29,  1.56s/it]
+184.3s	143	
+Loading dataset:  10%|▉         | 2/21 [00:03<00:29,  1.56s/it]
+Loading dataset:  24%|██▍       | 5/21 [00:06<00:17,  1.07s/it]
+184.5s	144	
+Loading dataset:  24%|██▍       | 5/21 [00:06<00:17,  1.07s/it]
+Loading dataset:  29%|██▊       | 6/21 [00:06<00:12,  1.17it/s]
+184.7s	145	
+Loading dataset:  29%|██▊       | 6/21 [00:06<00:12,  1.17it/s]
+Loading dataset:  33%|███▎      | 7/21 [00:06<00:09,  1.45it/s]
+187.1s	146	
+Loading dataset:  33%|███▎      | 7/21 [00:06<00:09,  1.45it/s]
+Loading dataset:  43%|████▎     | 9/21 [00:09<00:10,  1.11it/s]
+187.7s	147	
+Loading dataset:  43%|████▎     | 9/21 [00:09<00:10,  1.11it/s]
+Loading dataset:  48%|████▊     | 10/21 [00:09<00:09,  1.21it/s]
+187.9s	148	
+Loading dataset:  48%|████▊     | 10/21 [00:09<00:09,  1.21it/s]
+Loading dataset:  57%|█████▋    | 12/21 [00:09<00:04,  1.90it/s]
+189.9s	149	
+Loading dataset:  57%|█████▋    | 12/21 [00:09<00:04,  1.90it/s]
+Loading dataset:  62%|██████▏   | 13/21 [00:11<00:06,  1.16it/s]
+190.8s	150	
+Loading dataset:  62%|██████▏   | 13/21 [00:11<00:06,  1.16it/s]
+Loading dataset:  67%|██████▋   | 14/21 [00:12<00:06,  1.14it/s]
+192.6s	151	
+Loading dataset:  67%|██████▋   | 14/21 [00:12<00:06,  1.14it/s]
+Loading dataset:  81%|████████  | 17/21 [00:14<00:02,  1.36it/s]
+193.4s	152	
+Loading dataset:  81%|████████  | 17/21 [00:14<00:02,  1.36it/s]
+Loading dataset:  86%|████████▌ | 18/21 [00:15<00:02,  1.32it/s]
+193.8s	153	
+Loading dataset:  86%|████████▌ | 18/21 [00:15<00:02,  1.32it/s]
+Loading dataset:  90%|█████████ | 19/21 [00:15<00:01,  1.50it/s]
+194.4s	154	
+Loading dataset:  90%|█████████ | 19/21 [00:15<00:01,  1.50it/s]
+Loading dataset: 100%|██████████| 21/21 [00:16<00:00,  1.89it/s]
+194.4s	155	
+Loading dataset: 100%|██████████| 21/21 [00:16<00:00,  1.89it/s]
+Loading dataset: 100%|██████████| 21/21 [00:16<00:00,  1.29it/s]
+194.4s	156	Using CacheDataset (5% RAM cache)
+194.4s	157	Train: 429 batches | Val: 82 batches
+194.4s	158	
+Loading dataset: 100%|██████████| 21/21 [00:16<00:00,  1.29it/s]
+194.4s	159	
+194.4s	160	
+1141.9s	161	Ep   0 | L=0.8009 | 16.1m
+2099.6s	162	Ep   1 | L=0.5682 | 32.0m
+3056.5s	163	Ep   2 | L=0.4706 | 48.0m
+4572.7s	164	Ep   3 | L=0.3987 | Dice=0.6882 WT=0.666 TC=0.677 ET=0.721 | 73.2m NEW BEST
+5527.4s	165	Ep   4 | L=0.3748 | 89.2m
+6482.8s	166	Ep   5 | L=0.3587 | 105.1m
+7437.2s	167	Ep   6 | L=0.3461 | 121.0m
+8954.1s	168	Ep   7 | L=0.3374 | Dice=0.7549 WT=0.764 TC=0.732 ET=0.769 | 146.3m NEW BEST
+9910.6s	169	Ep   8 | L=0.3288 | 162.2m
+10864.2s	170	Ep   9 | L=0.3198 | 178.1m
+11815.3s	171	Ep  10 | L=0.3143 | 194.0m
+13328.7s	172	Ep  11 | L=0.3118 | Dice=0.7657 WT=0.775 TC=0.742 ET=0.781 | 219.2m NEW BEST
+14282.0s	173	Ep  12 | L=0.3082 | 235.1m
+15233.2s	174	Ep  13 | L=0.3044 | 250.9m
+16186.1s	175	Ep  14 | L=0.2992 | 266.8m
+17700.4s	176	Ep  15 | L=0.2941 | Dice=0.7804 WT=0.797 TC=0.752 ET=0.793 | 292.0m NEW BEST
+18656.9s	177	Ep  16 | L=0.2898 | 308.0m
+19611.7s	178	Ep  17 | L=0.2906 | 323.9m
+20566.2s	179	Ep  18 | L=0.2876 | 339.8m
+22081.4s	180	Ep  19 | L=0.2864 | Dice=0.7912 WT=0.806 TC=0.766 ET=0.802 | 365.1m NEW BEST
+23034.8s	181	Ep  20 | L=0.2846 | 380.9m
+23985.5s	182	Ep  21 | L=0.2843 | 396.8m
+24935.1s	183	Ep  22 | L=0.2800 | 412.6m
+26442.1s	184	Ep  23 | L=0.2805 | Dice=0.7911 WT=0.809 TC=0.764 ET=0.801 | 437.7m
+27390.6s	185	Ep  24 | L=0.2796 | 453.5m
+28339.3s	186	Ep  25 | L=0.2812 | 469.4m
+29289.8s	187	Ep  26 | L=0.2795 | 485.2m
+30801.9s	188	Ep  27 | L=0.2789 | Dice=0.7923 WT=0.810 TC=0.765 ET=0.802 | 510.4m NEW BEST
+30803.3s	189	Loaded BEST checkpoint → Dice 0.7923
+30803.6s	190	
+30803.6s	191	Stage 1 complete. Best Dice: 0.7923
+30804.8s	192	Running Stage 2: Temporal Contrastive Training...
+30804.8s	193	  Stage 2 trainable: 42.6M (encoder only)
+31516.9s	194	Traceback (most recent call last):
+31516.9s	195	  File "<string>", line 1, in <module>
+31516.9s	196	  File "/usr/local/lib/python3.12/dist-packages/papermill/execute.py", line 131, in execute_notebook
+31516.9s	197	    raise_for_execution_errors(nb, output_path)
+31516.9s	198	  File "/usr/local/lib/python3.12/dist-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+31516.9s	199	    raise error
+31516.9s	200	papermill.exceptions.PapermillExecutionError: 
+31516.9s	201	---------------------------------------------------------------------------
+31516.9s	202	Exception encountered at "In [10]":
+31516.9s	203	---------------------------------------------------------------------------
+31516.9s	204	ImageFileError                            Traceback (most recent call last)
+31516.9s	205	/usr/local/lib/python3.12/dist-packages/monai/transforms/transform.py in apply_transform(transform, data, map_items, unpack_items, log_stats, lazy, overrides)
+31516.9s	206	    149             ]
+31516.9s	207	--> 150         return _apply_transform(transform, data, unpack_items, lazy, overrides, log_stats)
+31516.9s	208	    151     except Exception as e:
+31516.9s	209	
+31516.9s	210	/usr/local/lib/python3.12/dist-packages/monai/transforms/transform.py in _apply_transform(transform, data, unpack_parameters, lazy, overrides, logger_name)
+31516.9s	211	     97 
+31516.9s	212	---> 98     return transform(data, lazy=lazy) if isinstance(transform, LazyTrait) else transform(data)
+31516.9s	213	     99 
+31516.9s	214	
+31516.9s	215	/usr/local/lib/python3.12/dist-packages/monai/transforms/io/dictionary.py in __call__(self, data, reader)
+31516.9s	216	    162         for key, meta_key, meta_key_postfix in self.key_iterator(d, self.meta_keys, self.meta_key_postfix):
+31516.9s	217	--> 163             data = self._loader(d[key], reader)
+31516.9s	218	    164             if self._loader.image_only:
+31516.9s	219	
+31516.9s	220	/usr/local/lib/python3.12/dist-packages/monai/transforms/io/array.py in __call__(self, filename, reader)
+31516.9s	221	    262                     if reader.verify_suffix(filename):
+31516.9s	222	--> 263                         img = reader.read(filename)
+31516.9s	223	    264                         break
+31516.9s	224	
+31516.9s	225	/usr/local/lib/python3.12/dist-packages/monai/data/image_reader.py in read(self, data, **kwargs)
+31516.9s	226	   1089         for name in filenames:
+31516.9s	227	-> 1090             img = nib.load(name, **kwargs_)
+31516.9s	228	   1091             img = correct_nifti_header_if_necessary(img)
+31516.9s	229	
+31516.9s	230	/usr/local/lib/python3.12/dist-packages/nibabel/loadsave.py in load(filename, **kwargs)
+31516.9s	231	    115     if not matches:
+31516.9s	232	--> 116         raise ImageFileError(msg)
+31516.9s	233	    117 
+31516.9s	234	
+31516.9s	235	ImageFileError: File /kaggle/working/nifti_links/boufafamoamed/mu-glioma-post-validation/MU-Glioma-Post/PatientID_0203/Timepoint_1/PatientID_0203_Timepoint_1_brain_t2w.nii.gz is not a gzip file
+31516.9s	236	
+31516.9s	237	The above exception was the direct cause of the following exception:
+31516.9s	238	
+31516.9s	239	RuntimeError                              Traceback (most recent call last)
+31516.9s	240	/tmp/ipykernel_23/3206217907.py in <cell line: 0>()
+31516.9s	241	    117             val_loader_s2 = DataLoader(val_ds_s2, batch_size=1, shuffle=False, num_workers=0)
+31516.9s	242	    118             with torch.no_grad():
+31516.9s	243	--> 119                 for vb in safe_loader_iter(val_loader_s2):
+31516.9s	244	    120                     try:
+31516.9s	245	    121                         vo = sliding_window_inference(vb['image'].to(device), list(PATCH), 2, model, overlap=0.25)
+31516.9s	246	
+31516.9s	247	/tmp/ipykernel_23/1995345288.py in safe_loader_iter(loader)
+31516.9s	248	     29     SKIP = ['EOFError','gzip','Compressed file','end-of-stream','worker','corrupt','truncat']
+31516.9s	249	     30     while True:
+31516.9s	250	---> 31         try: yield next(it)
+31516.9s	251	     32         except StopIteration: return
+31516.9s	252	     33         except Exception as e:
+31516.9s	253	
+31516.9s	254	/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py in __next__(self)
+31516.9s	255	    739                 # TODO(https://github.com/pytorch/pytorch/issues/76750)
+31516.9s	256	    740                 self._reset()  # type: ignore[call-arg]
+31516.9s	257	--> 741             data = self._next_data()
+31516.9s	258	    742             self._num_yielded += 1
+31516.9s	259	    743             if (
+31516.9s	260	
+31516.9s	261	/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py in _next_data(self)
+31516.9s	262	    799     def _next_data(self):
+31516.9s	263	    800         index = self._next_index()  # may raise StopIteration
+31516.9s	264	--> 801         data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+31516.9s	265	    802         if self._pin_memory:
+31516.9s	266	    803             data = _utils.pin_memory.pin_memory(data, self._pin_memory_device)
+31516.9s	267	
+31516.9s	268	/usr/local/lib/python3.12/dist-packages/torch/utils/data/_utils/fetch.py in fetch(self, possibly_batched_index)
+31516.9s	269	     52                 data = self.dataset.__getitems__(possibly_batched_index)
+31516.9s	270	     53             else:
+31516.9s	271	---> 54                 data = [self.dataset[idx] for idx in possibly_batched_index]
+31516.9s	272	     55         else:
+31516.9s	273	     56             data = self.dataset[possibly_batched_index]
+31516.9s	274	
+31516.9s	275	/usr/local/lib/python3.12/dist-packages/monai/data/dataset.py in __getitem__(self, index)
+31516.9s	276	    107             # dataset[[1, 3, 4]]
+31516.9s	277	    108             return Subset(dataset=self, indices=index)
+31516.9s	278	--> 109         return self._transform(index)
+31516.9s	279	    110 
+31516.9s	280	    111 
+31516.9s	281	
+31516.9s	282	/usr/local/lib/python3.12/dist-packages/monai/data/dataset.py in _transform(self, index)
+31516.9s	283	     93         """
+31516.9s	284	     94         data_i = self.data[index]
+31516.9s	285	---> 95         return self.transform(data_i)
+31516.9s	286	     96 
+31516.9s	287	     97     def __getitem__(self, index: int | slice | Sequence[int]):
+31516.9s	288	
+31516.9s	289	/usr/local/lib/python3.12/dist-packages/monai/transforms/compose.py in __call__(self, input_, start, end, threading, lazy)
+31516.9s	290	    344     def __call__(self, input_, start=0, end=None, threading=False, lazy: bool | None = None):
+31516.9s	291	    345         _lazy = self._lazy if lazy is None else lazy
+31516.9s	292	--> 346         result = execute_compose(
+31516.9s	293	    347             input_,
+31516.9s	294	    348             transforms=self.transforms,
+31516.9s	295	
+31516.9s	296	/usr/local/lib/python3.12/dist-packages/monai/transforms/compose.py in execute_compose(data, transforms, map_items, unpack_items, start, end, lazy, overrides, threading, log_stats)
+31516.9s	297	    114         if threading:
+31516.9s	298	    115             _transform = deepcopy(_transform) if isinstance(_transform, ThreadUnsafe) else _transform
+31516.9s	299	--> 116         data = apply_transform(
+31516.9s	300	    117             _transform, data, map_items, unpack_items, lazy=lazy, overrides=overrides, log_stats=log_stats
+31516.9s	301	    118         )
+31516.9s	302	
+31516.9s	303	/usr/local/lib/python3.12/dist-packages/monai/transforms/transform.py in apply_transform(transform, data, map_items, unpack_items, log_stats, lazy, overrides)
+31516.9s	304	    178             else:
+31516.9s	305	    179                 _log_stats(data=data)
+31516.9s	306	--> 180         raise RuntimeError(f"applying transform {transform}") from e
+31516.9s	307	    181 
+31516.9s	308	    182 
+31516.9s	309	
+31516.9s	310	RuntimeError: applying transform <monai.transforms.io.dictionary.LoadImaged object at 0x7fdf3b1aa6f0>
+31516.9s	311	
+31518.9s	312	/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+31518.9s	313	  cells[i][c] = re.sub('\\\\\|', '|', cell)
+31519.0s	314	/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+31519.0s	315	  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+31519.7s	316	[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+31520.0s	317	[NbConvertApp] Writing 90515 bytes to __notebook__.ipynb
+31522.4s	318	[NbConvertApp] Converting notebook __notebook__.ipynb to html
+31523.4s	319	[NbConvertApp] Writing 546759 bytes to __results__.html

@@ -1,0 +1,5677 @@
+{
+  "PatientID_0003": {
+    "patient_id": "PatientID_0003",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      5
+    ],
+    "scan_ids": [
+      "PatientID_0003_Timepoint_1",
+      "PatientID_0003_Timepoint_2",
+      "PatientID_0003_Timepoint_5"
+    ],
+    "days_from_diagnosis": [
+      90.0,
+      146.0,
+      286.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 4,
+    "has_avastin": false
+  },
+  "PatientID_0004": {
+    "patient_id": "PatientID_0004",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0004_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      67.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 4,
+    "has_avastin": false
+  },
+  "PatientID_0005": {
+    "patient_id": "PatientID_0005",
+    "n_timepoints": 2,
+    "timepoints": [
+      3,
+      4
+    ],
+    "scan_ids": [
+      "PatientID_0005_Timepoint_3",
+      "PatientID_0005_Timepoint_4"
+    ],
+    "days_from_diagnosis": [
+      133.0,
+      176.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 4,
+    "has_avastin": true
+  },
+  "PatientID_0006": {
+    "patient_id": "PatientID_0006",
+    "n_timepoints": 4,
+    "timepoints": [
+      2,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0006_Timepoint_2",
+      "PatientID_0006_Timepoint_4",
+      "PatientID_0006_Timepoint_5",
+      "PatientID_0006_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      175.0,
+      217.0,
+      259.0,
+      450.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 4,
+    "has_avastin": true
+  },
+  "PatientID_0007": {
+    "patient_id": "PatientID_0007",
+    "n_timepoints": 5,
+    "timepoints": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0007_Timepoint_2",
+      "PatientID_0007_Timepoint_3",
+      "PatientID_0007_Timepoint_4",
+      "PatientID_0007_Timepoint_5",
+      "PatientID_0007_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      0.0,
+      NaN,
+      178.0,
+      264.0,
+      366.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT",
+      "UNKNOWN_TIMING"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 4,
+    "has_avastin": false
+  },
+  "PatientID_0008": {
+    "patient_id": "PatientID_0008",
+    "n_timepoints": 2,
+    "timepoints": [
+      4,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0008_Timepoint_4",
+      "PatientID_0008_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      181.0,
+      294.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 4,
+    "has_avastin": true
+  },
+  "PatientID_0009": {
+    "patient_id": "PatientID_0009",
+    "n_timepoints": 1,
+    "timepoints": [
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0009_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      97.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 4,
+    "has_avastin": false
+  },
+  "PatientID_0010": {
+    "patient_id": "PatientID_0010",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      4,
+      5
+    ],
+    "scan_ids": [
+      "PatientID_0010_Timepoint_1",
+      "PatientID_0010_Timepoint_4",
+      "PatientID_0010_Timepoint_5"
+    ],
+    "days_from_diagnosis": [
+      84.0,
+      217.0,
+      259.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 4,
+    "has_avastin": true
+  },
+  "PatientID_0011": {
+    "patient_id": "PatientID_0011",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0011_Timepoint_1",
+      "PatientID_0011_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      92.0,
+      162.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 4,
+    "has_avastin": false
+  },
+  "PatientID_0012": {
+    "patient_id": "PatientID_0012",
+    "n_timepoints": 2,
+    "timepoints": [
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0012_Timepoint_2",
+      "PatientID_0012_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      99.0,
+      176.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 4,
+    "has_avastin": false
+  },
+  "PatientID_0013": {
+    "patient_id": "PatientID_0013",
+    "n_timepoints": 5,
+    "timepoints": [
+      1,
+      2,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0013_Timepoint_1",
+      "PatientID_0013_Timepoint_2",
+      "PatientID_0013_Timepoint_4",
+      "PatientID_0013_Timepoint_5",
+      "PatientID_0013_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      70.0,
+      168.0,
+      253.0,
+      308.0,
+      311.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 4,
+    "has_avastin": true
+  },
+  "PatientID_0014": {
+    "patient_id": "PatientID_0014",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0014_Timepoint_1",
+      "PatientID_0014_Timepoint_2",
+      "PatientID_0014_Timepoint_3",
+      "PatientID_0014_Timepoint_4",
+      "PatientID_0014_Timepoint_5",
+      "PatientID_0014_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      84.0,
+      126.0,
+      246.0,
+      316.0,
+      351.0,
+      442.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0015": {
+    "patient_id": "PatientID_0015",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0015_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      42.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0018": {
+    "patient_id": "PatientID_0018",
+    "n_timepoints": 5,
+    "timepoints": [
+      1,
+      2,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0018_Timepoint_1",
+      "PatientID_0018_Timepoint_2",
+      "PatientID_0018_Timepoint_4",
+      "PatientID_0018_Timepoint_5",
+      "PatientID_0018_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      102.0,
+      194.0,
+      320.0,
+      324.0,
+      382.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0019": {
+    "patient_id": "PatientID_0019",
+    "n_timepoints": 3,
+    "timepoints": [
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0019_Timepoint_4",
+      "PatientID_0019_Timepoint_5",
+      "PatientID_0019_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      268.0,
+      317.0,
+      379.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0020": {
+    "patient_id": "PatientID_0020",
+    "n_timepoints": 4,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "scan_ids": [
+      "PatientID_0020_Timepoint_1",
+      "PatientID_0020_Timepoint_2",
+      "PatientID_0020_Timepoint_3",
+      "PatientID_0020_Timepoint_4"
+    ],
+    "days_from_diagnosis": [
+      97.0,
+      173.0,
+      304.0,
+      401.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0021": {
+    "patient_id": "PatientID_0021",
+    "n_timepoints": 5,
+    "timepoints": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0021_Timepoint_2",
+      "PatientID_0021_Timepoint_3",
+      "PatientID_0021_Timepoint_4",
+      "PatientID_0021_Timepoint_5",
+      "PatientID_0021_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      83.0,
+      175.0,
+      267.0,
+      330.0,
+      456.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0022": {
+    "patient_id": "PatientID_0022",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0022_Timepoint_1",
+      "PatientID_0022_Timepoint_2",
+      "PatientID_0022_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      95.0,
+      147.0,
+      156.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 4,
+    "has_avastin": true
+  },
+  "PatientID_0023": {
+    "patient_id": "PatientID_0023",
+    "n_timepoints": 1,
+    "timepoints": [
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0023_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      100.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0024": {
+    "patient_id": "PatientID_0024",
+    "n_timepoints": 2,
+    "timepoints": [
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0024_Timepoint_2",
+      "PatientID_0024_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      92.0,
+      215.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 2,
+    "has_avastin": false
+  },
+  "PatientID_0025": {
+    "patient_id": "PatientID_0025",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0025_Timepoint_1",
+      "PatientID_0025_Timepoint_2",
+      "PatientID_0025_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      99.0,
+      213.0,
+      291.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0026": {
+    "patient_id": "PatientID_0026",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0026_Timepoint_1",
+      "PatientID_0026_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      71.0,
+      182.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 1,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0027": {
+    "patient_id": "PatientID_0027",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0027_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      13.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 2,
+    "mgmt": 4,
+    "has_avastin": false
+  },
+  "PatientID_0029": {
+    "patient_id": "PatientID_0029",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      3,
+      4
+    ],
+    "scan_ids": [
+      "PatientID_0029_Timepoint_1",
+      "PatientID_0029_Timepoint_3",
+      "PatientID_0029_Timepoint_4"
+    ],
+    "days_from_diagnosis": [
+      88.0,
+      271.0,
+      728.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": true
+  },
+  "PatientID_0030": {
+    "patient_id": "PatientID_0030",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      3,
+      4
+    ],
+    "scan_ids": [
+      "PatientID_0030_Timepoint_1",
+      "PatientID_0030_Timepoint_3",
+      "PatientID_0030_Timepoint_4"
+    ],
+    "days_from_diagnosis": [
+      191.0,
+      509.0,
+      512.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 4,
+    "has_avastin": false
+  },
+  "PatientID_0031": {
+    "patient_id": "PatientID_0031",
+    "n_timepoints": 4,
+    "timepoints": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "scan_ids": [
+      "PatientID_0031_Timepoint_2",
+      "PatientID_0031_Timepoint_3",
+      "PatientID_0031_Timepoint_4",
+      "PatientID_0031_Timepoint_5"
+    ],
+    "days_from_diagnosis": [
+      510.0,
+      588.0,
+      673.0,
+      816.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0032": {
+    "patient_id": "PatientID_0032",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0032_Timepoint_1",
+      "PatientID_0032_Timepoint_2",
+      "PatientID_0032_Timepoint_3",
+      "PatientID_0032_Timepoint_4",
+      "PatientID_0032_Timepoint_5",
+      "PatientID_0032_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      91.0,
+      154.0,
+      158.0,
+      290.0,
+      366.0,
+      480.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0033": {
+    "patient_id": "PatientID_0033",
+    "n_timepoints": 5,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "scan_ids": [
+      "PatientID_0033_Timepoint_1",
+      "PatientID_0033_Timepoint_2",
+      "PatientID_0033_Timepoint_3",
+      "PatientID_0033_Timepoint_4",
+      "PatientID_0033_Timepoint_5"
+    ],
+    "days_from_diagnosis": [
+      89.0,
+      160.0,
+      341.0,
+      451.0,
+      611.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": true
+  },
+  "PatientID_0034": {
+    "patient_id": "PatientID_0034",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0034_Timepoint_1",
+      "PatientID_0034_Timepoint_2",
+      "PatientID_0034_Timepoint_3",
+      "PatientID_0034_Timepoint_4",
+      "PatientID_0034_Timepoint_5",
+      "PatientID_0034_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      113.0,
+      175.0,
+      217.0,
+      295.0,
+      377.0,
+      640.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 1,
+    "mgmt": 1,
+    "has_avastin": true
+  },
+  "PatientID_0035": {
+    "patient_id": "PatientID_0035",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0035_Timepoint_1",
+      "PatientID_0035_Timepoint_2",
+      "PatientID_0035_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      64.0,
+      155.0,
+      260.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0036": {
+    "patient_id": "PatientID_0036",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0036_Timepoint_1",
+      "PatientID_0036_Timepoint_2",
+      "PatientID_0036_Timepoint_3",
+      "PatientID_0036_Timepoint_4",
+      "PatientID_0036_Timepoint_5",
+      "PatientID_0036_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      78.0,
+      156.0,
+      219.0,
+      317.0,
+      408.0,
+      484.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 2,
+    "has_avastin": true
+  },
+  "PatientID_0037": {
+    "patient_id": "PatientID_0037",
+    "n_timepoints": 4,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "scan_ids": [
+      "PatientID_0037_Timepoint_1",
+      "PatientID_0037_Timepoint_2",
+      "PatientID_0037_Timepoint_3",
+      "PatientID_0037_Timepoint_4"
+    ],
+    "days_from_diagnosis": [
+      77.0,
+      182.0,
+      280.0,
+      371.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "ON_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0038": {
+    "patient_id": "PatientID_0038",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0038_Timepoint_1",
+      "PatientID_0038_Timepoint_2",
+      "PatientID_0038_Timepoint_3",
+      "PatientID_0038_Timepoint_4",
+      "PatientID_0038_Timepoint_5",
+      "PatientID_0038_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      102.0,
+      194.0,
+      255.0,
+      320.0,
+      324.0,
+      382.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0039": {
+    "patient_id": "PatientID_0039",
+    "n_timepoints": 5,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0039_Timepoint_1",
+      "PatientID_0039_Timepoint_2",
+      "PatientID_0039_Timepoint_3",
+      "PatientID_0039_Timepoint_4",
+      "PatientID_0039_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      99.0,
+      197.0,
+      259.0,
+      351.0,
+      414.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0040": {
+    "patient_id": "PatientID_0040",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0040_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      16.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0041": {
+    "patient_id": "PatientID_0041",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0041_Timepoint_1",
+      "PatientID_0041_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      91.0,
+      182.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0042": {
+    "patient_id": "PatientID_0042",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0042_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      388.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0043": {
+    "patient_id": "PatientID_0043",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0043_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      55.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0044": {
+    "patient_id": "PatientID_0044",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0044_Timepoint_1",
+      "PatientID_0044_Timepoint_2",
+      "PatientID_0044_Timepoint_3",
+      "PatientID_0044_Timepoint_4",
+      "PatientID_0044_Timepoint_5",
+      "PatientID_0044_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      21.0,
+      86.0,
+      184.0,
+      269.0,
+      357.0,
+      477.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 2,
+    "has_avastin": false
+  },
+  "PatientID_0045": {
+    "patient_id": "PatientID_0045",
+    "n_timepoints": 4,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "scan_ids": [
+      "PatientID_0045_Timepoint_1",
+      "PatientID_0045_Timepoint_2",
+      "PatientID_0045_Timepoint_3",
+      "PatientID_0045_Timepoint_4"
+    ],
+    "days_from_diagnosis": [
+      98.0,
+      168.0,
+      198.0,
+      249.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0046": {
+    "patient_id": "PatientID_0046",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0046_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      25.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 1,
+    "mgmt": 4,
+    "has_avastin": false
+  },
+  "PatientID_0047": {
+    "patient_id": "PatientID_0047",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0047_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      58.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0049": {
+    "patient_id": "PatientID_0049",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0049_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      76.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 4,
+    "has_avastin": false
+  },
+  "PatientID_0051": {
+    "patient_id": "PatientID_0051",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      3,
+      4
+    ],
+    "scan_ids": [
+      "PatientID_0051_Timepoint_1",
+      "PatientID_0051_Timepoint_3",
+      "PatientID_0051_Timepoint_4"
+    ],
+    "days_from_diagnosis": [
+      99.0,
+      189.0,
+      276.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": true
+  },
+  "PatientID_0052": {
+    "patient_id": "PatientID_0052",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0052_Timepoint_1",
+      "PatientID_0052_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      104.0,
+      174.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0053": {
+    "patient_id": "PatientID_0053",
+    "n_timepoints": 5,
+    "timepoints": [
+      1,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0053_Timepoint_1",
+      "PatientID_0053_Timepoint_3",
+      "PatientID_0053_Timepoint_4",
+      "PatientID_0053_Timepoint_5",
+      "PatientID_0053_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      179.0,
+      330.0,
+      491.0,
+      560.0,
+      651.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 1,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0054": {
+    "patient_id": "PatientID_0054",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0054_Timepoint_1",
+      "PatientID_0054_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      98.0,
+      175.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0055": {
+    "patient_id": "PatientID_0055",
+    "n_timepoints": 4,
+    "timepoints": [
+      1,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0055_Timepoint_1",
+      "PatientID_0055_Timepoint_4",
+      "PatientID_0055_Timepoint_5",
+      "PatientID_0055_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      93.0,
+      275.0,
+      339.0,
+      381.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0056": {
+    "patient_id": "PatientID_0056",
+    "n_timepoints": 1,
+    "timepoints": [
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0056_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      188.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0057": {
+    "patient_id": "PatientID_0057",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0057_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      9.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0058": {
+    "patient_id": "PatientID_0058",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0058_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      41.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "ON_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 2,
+    "has_avastin": false
+  },
+  "PatientID_0059": {
+    "patient_id": "PatientID_0059",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0059_Timepoint_1",
+      "PatientID_0059_Timepoint_2",
+      "PatientID_0059_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      46.0,
+      1155.0,
+      1332.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0060": {
+    "patient_id": "PatientID_0060",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0060_Timepoint_1",
+      "PatientID_0060_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      8.0,
+      11.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0061": {
+    "patient_id": "PatientID_0061",
+    "n_timepoints": 1,
+    "timepoints": [
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0061_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      62.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0062": {
+    "patient_id": "PatientID_0062",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0062_Timepoint_1",
+      "PatientID_0062_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      8.0,
+      11.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0063": {
+    "patient_id": "PatientID_0063",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0063_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      53.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0064": {
+    "patient_id": "PatientID_0064",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0064_Timepoint_1",
+      "PatientID_0064_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      56.0,
+      140.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "PRE_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": true,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0065": {
+    "patient_id": "PatientID_0065",
+    "n_timepoints": 5,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "scan_ids": [
+      "PatientID_0065_Timepoint_1",
+      "PatientID_0065_Timepoint_2",
+      "PatientID_0065_Timepoint_3",
+      "PatientID_0065_Timepoint_4",
+      "PatientID_0065_Timepoint_5"
+    ],
+    "days_from_diagnosis": [
+      62.0,
+      76.0,
+      139.0,
+      219.0,
+      346.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0066": {
+    "patient_id": "PatientID_0066",
+    "n_timepoints": 5,
+    "timepoints": [
+      1,
+      2,
+      3,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0066_Timepoint_1",
+      "PatientID_0066_Timepoint_2",
+      "PatientID_0066_Timepoint_3",
+      "PatientID_0066_Timepoint_5",
+      "PatientID_0066_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      44.0,
+      107.0,
+      215.0,
+      385.0,
+      579.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0067": {
+    "patient_id": "PatientID_0067",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0067_Timepoint_1",
+      "PatientID_0067_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      100.0,
+      203.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": true
+  },
+  "PatientID_0068": {
+    "patient_id": "PatientID_0068",
+    "n_timepoints": 5,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "scan_ids": [
+      "PatientID_0068_Timepoint_1",
+      "PatientID_0068_Timepoint_2",
+      "PatientID_0068_Timepoint_3",
+      "PatientID_0068_Timepoint_4",
+      "PatientID_0068_Timepoint_5"
+    ],
+    "days_from_diagnosis": [
+      13.0,
+      90.0,
+      111.0,
+      159.0,
+      348.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "PRE_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": true,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0069": {
+    "patient_id": "PatientID_0069",
+    "n_timepoints": 5,
+    "timepoints": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0069_Timepoint_2",
+      "PatientID_0069_Timepoint_3",
+      "PatientID_0069_Timepoint_4",
+      "PatientID_0069_Timepoint_5",
+      "PatientID_0069_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      125.0,
+      176.0,
+      226.0,
+      328.0,
+      470.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": true
+  },
+  "PatientID_0070": {
+    "patient_id": "PatientID_0070",
+    "n_timepoints": 4,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "scan_ids": [
+      "PatientID_0070_Timepoint_1",
+      "PatientID_0070_Timepoint_2",
+      "PatientID_0070_Timepoint_3",
+      "PatientID_0070_Timepoint_4"
+    ],
+    "days_from_diagnosis": [
+      169.0,
+      172.0,
+      274.0,
+      420.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0071": {
+    "patient_id": "PatientID_0071",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0071_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      0.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0072": {
+    "patient_id": "PatientID_0072",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0072_Timepoint_1",
+      "PatientID_0072_Timepoint_2",
+      "PatientID_0072_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      44.0,
+      147.0,
+      233.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0073": {
+    "patient_id": "PatientID_0073",
+    "n_timepoints": 4,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "scan_ids": [
+      "PatientID_0073_Timepoint_1",
+      "PatientID_0073_Timepoint_2",
+      "PatientID_0073_Timepoint_3",
+      "PatientID_0073_Timepoint_4"
+    ],
+    "days_from_diagnosis": [
+      92.0,
+      135.0,
+      190.0,
+      232.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0074": {
+    "patient_id": "PatientID_0074",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0074_Timepoint_1",
+      "PatientID_0074_Timepoint_2",
+      "PatientID_0074_Timepoint_3",
+      "PatientID_0074_Timepoint_4",
+      "PatientID_0074_Timepoint_5",
+      "PatientID_0074_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      34.0,
+      115.0,
+      198.0,
+      344.0,
+      584.0,
+      687.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0076": {
+    "patient_id": "PatientID_0076",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0076_Timepoint_1",
+      "PatientID_0076_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      36.0,
+      77.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "PRE_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": true,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0077": {
+    "patient_id": "PatientID_0077",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0077_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      0.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0078": {
+    "patient_id": "PatientID_0078",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0078_Timepoint_1",
+      "PatientID_0078_Timepoint_2",
+      "PatientID_0078_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      -1.0,
+      102.0,
+      268.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0079": {
+    "patient_id": "PatientID_0079",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0079_Timepoint_1",
+      "PatientID_0079_Timepoint_2",
+      "PatientID_0079_Timepoint_3",
+      "PatientID_0079_Timepoint_4",
+      "PatientID_0079_Timepoint_5",
+      "PatientID_0079_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      68.0,
+      93.0,
+      105.0,
+      156.0,
+      210.0,
+      429.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0080": {
+    "patient_id": "PatientID_0080",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0080_Timepoint_1",
+      "PatientID_0080_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      71.0,
+      102.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": true
+  },
+  "PatientID_0081": {
+    "patient_id": "PatientID_0081",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0081_Timepoint_1",
+      "PatientID_0081_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      24.0,
+      -965.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0082": {
+    "patient_id": "PatientID_0082",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0082_Timepoint_1",
+      "PatientID_0082_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      79.0,
+      207.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0083": {
+    "patient_id": "PatientID_0083",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0083_Timepoint_1",
+      "PatientID_0083_Timepoint_2",
+      "PatientID_0083_Timepoint_3",
+      "PatientID_0083_Timepoint_4",
+      "PatientID_0083_Timepoint_5",
+      "PatientID_0083_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      36.0,
+      75.0,
+      113.0,
+      193.0,
+      207.0,
+      225.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": true
+  },
+  "PatientID_0084": {
+    "patient_id": "PatientID_0084",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0084_Timepoint_1",
+      "PatientID_0084_Timepoint_2",
+      "PatientID_0084_Timepoint_3",
+      "PatientID_0084_Timepoint_4",
+      "PatientID_0084_Timepoint_5",
+      "PatientID_0084_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      -4.0,
+      97.0,
+      188.0,
+      277.0,
+      372.0,
+      463.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "PRE_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": true,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0085": {
+    "patient_id": "PatientID_0085",
+    "n_timepoints": 4,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "scan_ids": [
+      "PatientID_0085_Timepoint_1",
+      "PatientID_0085_Timepoint_2",
+      "PatientID_0085_Timepoint_3",
+      "PatientID_0085_Timepoint_4"
+    ],
+    "days_from_diagnosis": [
+      68.0,
+      141.0,
+      202.0,
+      335.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0086": {
+    "patient_id": "PatientID_0086",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0086_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      0.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0087": {
+    "patient_id": "PatientID_0087",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0087_Timepoint_1",
+      "PatientID_0087_Timepoint_2",
+      "PatientID_0087_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      129.0,
+      258.0,
+      309.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0088": {
+    "patient_id": "PatientID_0088",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0088_Timepoint_1",
+      "PatientID_0088_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      0.0,
+      11.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0089": {
+    "patient_id": "PatientID_0089",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0089_Timepoint_1",
+      "PatientID_0089_Timepoint_2",
+      "PatientID_0089_Timepoint_3",
+      "PatientID_0089_Timepoint_4",
+      "PatientID_0089_Timepoint_5",
+      "PatientID_0089_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      114.0,
+      203.0,
+      294.0,
+      371.0,
+      469.0,
+      568.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0090": {
+    "patient_id": "PatientID_0090",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0090_Timepoint_1",
+      "PatientID_0090_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      70.0,
+      161.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0091": {
+    "patient_id": "PatientID_0091",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0091_Timepoint_1",
+      "PatientID_0091_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      24.0,
+      57.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0092": {
+    "patient_id": "PatientID_0092",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0092_Timepoint_1",
+      "PatientID_0092_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      53.0,
+      88.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0093": {
+    "patient_id": "PatientID_0093",
+    "n_timepoints": 4,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "scan_ids": [
+      "PatientID_0093_Timepoint_1",
+      "PatientID_0093_Timepoint_2",
+      "PatientID_0093_Timepoint_3",
+      "PatientID_0093_Timepoint_4"
+    ],
+    "days_from_diagnosis": [
+      109.0,
+      172.0,
+      229.0,
+      265.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0094": {
+    "patient_id": "PatientID_0094",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0094_Timepoint_1",
+      "PatientID_0094_Timepoint_2",
+      "PatientID_0094_Timepoint_3",
+      "PatientID_0094_Timepoint_4",
+      "PatientID_0094_Timepoint_5",
+      "PatientID_0094_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      179.0,
+      270.0,
+      313.0,
+      350.0,
+      397.0,
+      651.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0095": {
+    "patient_id": "PatientID_0095",
+    "n_timepoints": 5,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0095_Timepoint_1",
+      "PatientID_0095_Timepoint_2",
+      "PatientID_0095_Timepoint_3",
+      "PatientID_0095_Timepoint_4",
+      "PatientID_0095_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      70.0,
+      150.0,
+      157.0,
+      267.0,
+      388.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": true
+  },
+  "PatientID_0097": {
+    "patient_id": "PatientID_0097",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0097_Timepoint_1",
+      "PatientID_0097_Timepoint_2",
+      "PatientID_0097_Timepoint_3",
+      "PatientID_0097_Timepoint_4",
+      "PatientID_0097_Timepoint_5",
+      "PatientID_0097_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      85.0,
+      154.0,
+      196.0,
+      254.0,
+      275.0,
+      311.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0099": {
+    "patient_id": "PatientID_0099",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0099_Timepoint_1",
+      "PatientID_0099_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      0.0,
+      49.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0101": {
+    "patient_id": "PatientID_0101",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0101_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      0.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0103": {
+    "patient_id": "PatientID_0103",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0103_Timepoint_1",
+      "PatientID_0103_Timepoint_2",
+      "PatientID_0103_Timepoint_3",
+      "PatientID_0103_Timepoint_4",
+      "PatientID_0103_Timepoint_5",
+      "PatientID_0103_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      70.0,
+      138.0,
+      182.0,
+      190.0,
+      305.0,
+      378.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0105": {
+    "patient_id": "PatientID_0105",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0105_Timepoint_1",
+      "PatientID_0105_Timepoint_2",
+      "PatientID_0105_Timepoint_3",
+      "PatientID_0105_Timepoint_4",
+      "PatientID_0105_Timepoint_5",
+      "PatientID_0105_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      82.0,
+      173.0,
+      274.0,
+      372.0,
+      467.0,
+      499.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0106": {
+    "patient_id": "PatientID_0106",
+    "n_timepoints": 1,
+    "timepoints": [
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0106_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      43.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0108": {
+    "patient_id": "PatientID_0108",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0108_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      0.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0109": {
+    "patient_id": "PatientID_0109",
+    "n_timepoints": 4,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "scan_ids": [
+      "PatientID_0109_Timepoint_1",
+      "PatientID_0109_Timepoint_2",
+      "PatientID_0109_Timepoint_3",
+      "PatientID_0109_Timepoint_4"
+    ],
+    "days_from_diagnosis": [
+      99.0,
+      130.0,
+      176.0,
+      199.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0110": {
+    "patient_id": "PatientID_0110",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0110_Timepoint_1",
+      "PatientID_0110_Timepoint_2",
+      "PatientID_0110_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      70.0,
+      150.0,
+      157.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": true
+  },
+  "PatientID_0111": {
+    "patient_id": "PatientID_0111",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0111_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      0.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0112": {
+    "patient_id": "PatientID_0112",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0112_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      0.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0113": {
+    "patient_id": "PatientID_0113",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0113_Timepoint_1",
+      "PatientID_0113_Timepoint_2",
+      "PatientID_0113_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      79.0,
+      121.0,
+      186.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0114": {
+    "patient_id": "PatientID_0114",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0114_Timepoint_1",
+      "PatientID_0114_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      29.0,
+      37.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0115": {
+    "patient_id": "PatientID_0115",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0115_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      3.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "PRE_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 1,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0116": {
+    "patient_id": "PatientID_0116",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0116_Timepoint_1",
+      "PatientID_0116_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      84.0,
+      133.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0117": {
+    "patient_id": "PatientID_0117",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0117_Timepoint_1",
+      "PatientID_0117_Timepoint_2",
+      "PatientID_0117_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      85.0,
+      154.0,
+      196.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0118": {
+    "patient_id": "PatientID_0118",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0118_Timepoint_1",
+      "PatientID_0118_Timepoint_2",
+      "PatientID_0118_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      91.0,
+      181.0,
+      280.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0120": {
+    "patient_id": "PatientID_0120",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0120_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      5.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0121": {
+    "patient_id": "PatientID_0121",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0121_Timepoint_1",
+      "PatientID_0121_Timepoint_2",
+      "PatientID_0121_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      179.0,
+      270.0,
+      313.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0123": {
+    "patient_id": "PatientID_0123",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0123_Timepoint_1",
+      "PatientID_0123_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      91.0,
+      103.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0124": {
+    "patient_id": "PatientID_0124",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0124_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      100.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0125": {
+    "patient_id": "PatientID_0125",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0125_Timepoint_1",
+      "PatientID_0125_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      84.0,
+      102.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0126": {
+    "patient_id": "PatientID_0126",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0126_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      3.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0130": {
+    "patient_id": "PatientID_0130",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0130_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      4.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0132": {
+    "patient_id": "PatientID_0132",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0132_Timepoint_1",
+      "PatientID_0132_Timepoint_2",
+      "PatientID_0132_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      79.0,
+      121.0,
+      186.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0133": {
+    "patient_id": "PatientID_0133",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0133_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      -11.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0135": {
+    "patient_id": "PatientID_0135",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0135_Timepoint_1",
+      "PatientID_0135_Timepoint_2",
+      "PatientID_0135_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      64.0,
+      117.0,
+      182.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0136": {
+    "patient_id": "PatientID_0136",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0136_Timepoint_1",
+      "PatientID_0136_Timepoint_2",
+      "PatientID_0136_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      15.0,
+      69.0,
+      90.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "PRE_TREATMENT",
+      "ON_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": true,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0138": {
+    "patient_id": "PatientID_0138",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0138_Timepoint_1",
+      "PatientID_0138_Timepoint_2",
+      "PatientID_0138_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      -29.0,
+      39.0,
+      97.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "PRE_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": true,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0139": {
+    "patient_id": "PatientID_0139",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0139_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      5.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0140": {
+    "patient_id": "PatientID_0140",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0140_Timepoint_1",
+      "PatientID_0140_Timepoint_2",
+      "PatientID_0140_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      464.0,
+      573.0,
+      674.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0141": {
+    "patient_id": "PatientID_0141",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0141_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      6.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0142": {
+    "patient_id": "PatientID_0142",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0142_Timepoint_1",
+      "PatientID_0142_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      19.0,
+      128.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "ON_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0143": {
+    "patient_id": "PatientID_0143",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0143_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      3.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0144": {
+    "patient_id": "PatientID_0144",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0144_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      6.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 2,
+    "has_avastin": false
+  },
+  "PatientID_0145": {
+    "patient_id": "PatientID_0145",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0145_Timepoint_1",
+      "PatientID_0145_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      90.0,
+      230.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0147": {
+    "patient_id": "PatientID_0147",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0147_Timepoint_1",
+      "PatientID_0147_Timepoint_2",
+      "PatientID_0147_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      15.0,
+      65.0,
+      189.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "PRE_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": true,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0148": {
+    "patient_id": "PatientID_0148",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0148_Timepoint_1",
+      "PatientID_0148_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      10.0,
+      20.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0149": {
+    "patient_id": "PatientID_0149",
+    "n_timepoints": 4,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "scan_ids": [
+      "PatientID_0149_Timepoint_1",
+      "PatientID_0149_Timepoint_2",
+      "PatientID_0149_Timepoint_3",
+      "PatientID_0149_Timepoint_4"
+    ],
+    "days_from_diagnosis": [
+      52.0,
+      97.0,
+      169.0,
+      232.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0150": {
+    "patient_id": "PatientID_0150",
+    "n_timepoints": 5,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0150_Timepoint_1",
+      "PatientID_0150_Timepoint_2",
+      "PatientID_0150_Timepoint_3",
+      "PatientID_0150_Timepoint_4",
+      "PatientID_0150_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      102.0,
+      193.0,
+      235.0,
+      328.0,
+      543.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0151": {
+    "patient_id": "PatientID_0151",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0151_Timepoint_1",
+      "PatientID_0151_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      4.0,
+      63.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "ON_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 2,
+    "has_avastin": false
+  },
+  "PatientID_0152": {
+    "patient_id": "PatientID_0152",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0152_Timepoint_1",
+      "PatientID_0152_Timepoint_2",
+      "PatientID_0152_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      104.0,
+      150.0,
+      248.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0155": {
+    "patient_id": "PatientID_0155",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0155_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      8.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0156": {
+    "patient_id": "PatientID_0156",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0156_Timepoint_1",
+      "PatientID_0156_Timepoint_2",
+      "PatientID_0156_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      80.0,
+      136.0,
+      220.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0157": {
+    "patient_id": "PatientID_0157",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0157_Timepoint_1",
+      "PatientID_0157_Timepoint_2",
+      "PatientID_0157_Timepoint_3",
+      "PatientID_0157_Timepoint_4",
+      "PatientID_0157_Timepoint_5",
+      "PatientID_0157_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      11.0,
+      64.0,
+      90.0,
+      152.0,
+      250.0,
+      334.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "PRE_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": true,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0158": {
+    "patient_id": "PatientID_0158",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0158_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      69.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0159": {
+    "patient_id": "PatientID_0159",
+    "n_timepoints": 4,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "scan_ids": [
+      "PatientID_0159_Timepoint_1",
+      "PatientID_0159_Timepoint_2",
+      "PatientID_0159_Timepoint_3",
+      "PatientID_0159_Timepoint_4"
+    ],
+    "days_from_diagnosis": [
+      88.0,
+      193.0,
+      291.0,
+      382.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0160": {
+    "patient_id": "PatientID_0160",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0160_Timepoint_1",
+      "PatientID_0160_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      40.0,
+      90.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "ON_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0161": {
+    "patient_id": "PatientID_0161",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0161_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      142.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0162": {
+    "patient_id": "PatientID_0162",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0162_Timepoint_1",
+      "PatientID_0162_Timepoint_2",
+      "PatientID_0162_Timepoint_3",
+      "PatientID_0162_Timepoint_4",
+      "PatientID_0162_Timepoint_5",
+      "PatientID_0162_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      90.0,
+      152.0,
+      208.0,
+      264.0,
+      348.0,
+      404.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": true
+  },
+  "PatientID_0164": {
+    "patient_id": "PatientID_0164",
+    "n_timepoints": 5,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "scan_ids": [
+      "PatientID_0164_Timepoint_1",
+      "PatientID_0164_Timepoint_2",
+      "PatientID_0164_Timepoint_3",
+      "PatientID_0164_Timepoint_4",
+      "PatientID_0164_Timepoint_5"
+    ],
+    "days_from_diagnosis": [
+      8.0,
+      29.0,
+      84.0,
+      147.0,
+      164.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "PRE_TREATMENT",
+      "ON_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": true,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0165": {
+    "patient_id": "PatientID_0165",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0165_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      5.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0168": {
+    "patient_id": "PatientID_0168",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0168_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      7.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0169": {
+    "patient_id": "PatientID_0169",
+    "n_timepoints": 4,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "scan_ids": [
+      "PatientID_0169_Timepoint_1",
+      "PatientID_0169_Timepoint_2",
+      "PatientID_0169_Timepoint_3",
+      "PatientID_0169_Timepoint_4"
+    ],
+    "days_from_diagnosis": [
+      78.0,
+      106.0,
+      147.0,
+      172.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0170": {
+    "patient_id": "PatientID_0170",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0170_Timepoint_1",
+      "PatientID_0170_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      87.0,
+      178.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0171": {
+    "patient_id": "PatientID_0171",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0171_Timepoint_1",
+      "PatientID_0171_Timepoint_2",
+      "PatientID_0171_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      45.0,
+      79.0,
+      153.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0173": {
+    "patient_id": "PatientID_0173",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0173_Timepoint_1",
+      "PatientID_0173_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      21.0,
+      46.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 2,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0174": {
+    "patient_id": "PatientID_0174",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0174_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      2.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 2,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0186": {
+    "patient_id": "PatientID_0186",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0186_Timepoint_1",
+      "PatientID_0186_Timepoint_2",
+      "PatientID_0186_Timepoint_3",
+      "PatientID_0186_Timepoint_4",
+      "PatientID_0186_Timepoint_5",
+      "PatientID_0186_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      1.0,
+      37.0,
+      138.0,
+      222.0,
+      354.0,
+      508.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "PRE_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": true,
+    "grade": 2,
+    "idh1": 2,
+    "mgmt": 4,
+    "has_avastin": false
+  },
+  "PatientID_0187": {
+    "patient_id": "PatientID_0187",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0187_Timepoint_1",
+      "PatientID_0187_Timepoint_2",
+      "PatientID_0187_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      69.0,
+      146.0,
+      301.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 2,
+    "idh1": 1,
+    "mgmt": 2,
+    "has_avastin": false
+  },
+  "PatientID_0188": {
+    "patient_id": "PatientID_0188",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0188_Timepoint_1",
+      "PatientID_0188_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      19.0,
+      45.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "PRE_TREATMENT",
+      "ON_TREATMENT"
+    ],
+    "is_transition_patient": true,
+    "grade": 3,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0189": {
+    "patient_id": "PatientID_0189",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0189_Timepoint_1",
+      "PatientID_0189_Timepoint_2",
+      "PatientID_0189_Timepoint_3",
+      "PatientID_0189_Timepoint_4",
+      "PatientID_0189_Timepoint_5",
+      "PatientID_0189_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      323.0,
+      505.0,
+      529.0,
+      673.0,
+      753.0,
+      855.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "PRE_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": true,
+    "grade": 1,
+    "idh1": 2,
+    "mgmt": 4,
+    "has_avastin": false
+  },
+  "PatientID_0191": {
+    "patient_id": "PatientID_0191",
+    "n_timepoints": 4,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "scan_ids": [
+      "PatientID_0191_Timepoint_1",
+      "PatientID_0191_Timepoint_2",
+      "PatientID_0191_Timepoint_3",
+      "PatientID_0191_Timepoint_4"
+    ],
+    "days_from_diagnosis": [
+      109.0,
+      172.0,
+      255.0,
+      388.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 3,
+    "idh1": 1,
+    "mgmt": 2,
+    "has_avastin": true
+  },
+  "PatientID_0192": {
+    "patient_id": "PatientID_0192",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0192_Timepoint_1",
+      "PatientID_0192_Timepoint_2",
+      "PatientID_0192_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      451.0,
+      659.0,
+      981.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 2,
+    "idh1": 1,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0195": {
+    "patient_id": "PatientID_0195",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0195_Timepoint_1",
+      "PatientID_0195_Timepoint_2",
+      "PatientID_0195_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      88.0,
+      227.0,
+      303.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "PRE_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": true,
+    "grade": 2,
+    "idh1": 1,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0196": {
+    "patient_id": "PatientID_0196",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0196_Timepoint_1",
+      "PatientID_0196_Timepoint_2",
+      "PatientID_0196_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      79.0,
+      182.0,
+      436.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 2,
+    "idh1": 1,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0197": {
+    "patient_id": "PatientID_0197",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0197_Timepoint_1",
+      "PatientID_0197_Timepoint_2",
+      "PatientID_0197_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      6.0,
+      62.0,
+      147.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 2,
+    "idh1": 1,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0198": {
+    "patient_id": "PatientID_0198",
+    "n_timepoints": 4,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "scan_ids": [
+      "PatientID_0198_Timepoint_1",
+      "PatientID_0198_Timepoint_2",
+      "PatientID_0198_Timepoint_3",
+      "PatientID_0198_Timepoint_4"
+    ],
+    "days_from_diagnosis": [
+      88.0,
+      110.0,
+      186.0,
+      237.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0199": {
+    "patient_id": "PatientID_0199",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0199_Timepoint_1",
+      "PatientID_0199_Timepoint_2",
+      "PatientID_0199_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      82.0,
+      111.0,
+      146.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 2,
+    "mgmt": 2,
+    "has_avastin": false
+  },
+  "PatientID_0200": {
+    "patient_id": "PatientID_0200",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0200_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      7.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0201": {
+    "patient_id": "PatientID_0201",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0201_Timepoint_1",
+      "PatientID_0201_Timepoint_2",
+      "PatientID_0201_Timepoint_3",
+      "PatientID_0201_Timepoint_4",
+      "PatientID_0201_Timepoint_5",
+      "PatientID_0201_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      96.0,
+      138.0,
+      169.0,
+      299.0,
+      348.0,
+      443.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 1,
+    "mgmt": 4,
+    "has_avastin": true
+  },
+  "PatientID_0202": {
+    "patient_id": "PatientID_0202",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0202_Timepoint_1",
+      "PatientID_0202_Timepoint_2",
+      "PatientID_0202_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      81.0,
+      103.0,
+      130.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 2,
+    "idh1": 1,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0203": {
+    "patient_id": "PatientID_0203",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0203_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      4.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "PRE_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": null,
+    "idh1": 1,
+    "mgmt": 4,
+    "has_avastin": false
+  },
+  "PatientID_0204": {
+    "patient_id": "PatientID_0204",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0204_Timepoint_1",
+      "PatientID_0204_Timepoint_2",
+      "PatientID_0204_Timepoint_3",
+      "PatientID_0204_Timepoint_4",
+      "PatientID_0204_Timepoint_5",
+      "PatientID_0204_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      3.0,
+      80.0,
+      136.0,
+      227.0,
+      288.0,
+      340.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "PRE_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": true,
+    "grade": 4,
+    "idh1": 1,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0205": {
+    "patient_id": "PatientID_0205",
+    "n_timepoints": 5,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "scan_ids": [
+      "PatientID_0205_Timepoint_1",
+      "PatientID_0205_Timepoint_2",
+      "PatientID_0205_Timepoint_3",
+      "PatientID_0205_Timepoint_4",
+      "PatientID_0205_Timepoint_5"
+    ],
+    "days_from_diagnosis": [
+      21.0,
+      44.0,
+      127.0,
+      232.0,
+      288.0
+    ],
+    "trajectory_class": "INSUFFICIENT_DATA",
+    "treatment_phases": [
+      "PRE_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": true,
+    "grade": 2,
+    "idh1": 1,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0206": {
+    "patient_id": "PatientID_0206",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0206_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      4.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 1,
+    "idh1": 2,
+    "mgmt": 4,
+    "has_avastin": false
+  },
+  "PatientID_0207": {
+    "patient_id": "PatientID_0207",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0207_Timepoint_1",
+      "PatientID_0207_Timepoint_2",
+      "PatientID_0207_Timepoint_3",
+      "PatientID_0207_Timepoint_4",
+      "PatientID_0207_Timepoint_5",
+      "PatientID_0207_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      -6.0,
+      136.0,
+      200.0,
+      298.0,
+      389.0,
+      500.0
+    ],
+    "trajectory_class": "INSUFFICIENT_DATA",
+    "treatment_phases": [
+      "PRE_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": true,
+    "grade": 4,
+    "idh1": 1,
+    "mgmt": 2,
+    "has_avastin": false
+  },
+  "PatientID_0208": {
+    "patient_id": "PatientID_0208",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0208_Timepoint_1",
+      "PatientID_0208_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      111.0,
+      482.0
+    ],
+    "trajectory_class": "INSUFFICIENT_DATA",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 1,
+    "idh1": 2,
+    "mgmt": 4,
+    "has_avastin": false
+  },
+  "PatientID_0209": {
+    "patient_id": "PatientID_0209",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0209_Timepoint_1",
+      "PatientID_0209_Timepoint_2",
+      "PatientID_0209_Timepoint_3",
+      "PatientID_0209_Timepoint_4",
+      "PatientID_0209_Timepoint_5",
+      "PatientID_0209_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      11.0,
+      108.0,
+      192.0,
+      241.0,
+      255.0,
+      318.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "PRE_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": true,
+    "grade": 4,
+    "idh1": 1,
+    "mgmt": 1,
+    "has_avastin": true
+  },
+  "PatientID_0210": {
+    "patient_id": "PatientID_0210",
+    "n_timepoints": 5,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0210_Timepoint_1",
+      "PatientID_0210_Timepoint_2",
+      "PatientID_0210_Timepoint_3",
+      "PatientID_0210_Timepoint_4",
+      "PatientID_0210_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      90.0,
+      114.0,
+      136.0,
+      219.0,
+      461.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 2,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0211": {
+    "patient_id": "PatientID_0211",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0211_Timepoint_1",
+      "PatientID_0211_Timepoint_2",
+      "PatientID_0211_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      -2.0,
+      11.0,
+      31.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 2,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0212": {
+    "patient_id": "PatientID_0212",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0212_Timepoint_1",
+      "PatientID_0212_Timepoint_2",
+      "PatientID_0212_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      -2.0,
+      52.0,
+      103.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 2,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0213": {
+    "patient_id": "PatientID_0213",
+    "n_timepoints": 5,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "scan_ids": [
+      "PatientID_0213_Timepoint_1",
+      "PatientID_0213_Timepoint_2",
+      "PatientID_0213_Timepoint_3",
+      "PatientID_0213_Timepoint_4",
+      "PatientID_0213_Timepoint_5"
+    ],
+    "days_from_diagnosis": [
+      0.0,
+      3.0,
+      48.0,
+      99.0,
+      218.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "PRE_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": true,
+    "grade": 2,
+    "idh1": 1,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0214": {
+    "patient_id": "PatientID_0214",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0214_Timepoint_1",
+      "PatientID_0214_Timepoint_2",
+      "PatientID_0214_Timepoint_3",
+      "PatientID_0214_Timepoint_4",
+      "PatientID_0214_Timepoint_5",
+      "PatientID_0214_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      24.0,
+      120.0,
+      135.0,
+      233.0,
+      324.0,
+      423.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "PRE_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": true,
+    "grade": 2,
+    "idh1": 1,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0215": {
+    "patient_id": "PatientID_0215",
+    "n_timepoints": 6,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0215_Timepoint_1",
+      "PatientID_0215_Timepoint_2",
+      "PatientID_0215_Timepoint_3",
+      "PatientID_0215_Timepoint_4",
+      "PatientID_0215_Timepoint_5",
+      "PatientID_0215_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      54.0,
+      110.0,
+      166.0,
+      188.0,
+      236.0,
+      292.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 1,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0216": {
+    "patient_id": "PatientID_0216",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0216_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      149.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 2,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0220": {
+    "patient_id": "PatientID_0220",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0220_Timepoint_1",
+      "PatientID_0220_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      192.0,
+      NaN
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT",
+      "UNKNOWN_TIMING"
+    ],
+    "is_transition_patient": false,
+    "grade": 2,
+    "idh1": 1,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0235": {
+    "patient_id": "PatientID_0235",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      3,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0235_Timepoint_1",
+      "PatientID_0235_Timepoint_3",
+      "PatientID_0235_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      107.0,
+      290.0,
+      694.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 2,
+    "idh1": 0,
+    "mgmt": 4,
+    "has_avastin": false
+  },
+  "PatientID_0236": {
+    "patient_id": "PatientID_0236",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      3,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0236_Timepoint_1",
+      "PatientID_0236_Timepoint_3",
+      "PatientID_0236_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      105.0,
+      231.0,
+      498.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "PRE_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": true,
+    "grade": 2,
+    "idh1": 2,
+    "mgmt": 4,
+    "has_avastin": false
+  },
+  "PatientID_0237": {
+    "patient_id": "PatientID_0237",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0237_Timepoint_1",
+      "PatientID_0237_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      -2.0,
+      9.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0238": {
+    "patient_id": "PatientID_0238",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      3,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0238_Timepoint_1",
+      "PatientID_0238_Timepoint_3",
+      "PatientID_0238_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      85.0,
+      177.0,
+      379.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0239": {
+    "patient_id": "PatientID_0239",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      3,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0239_Timepoint_1",
+      "PatientID_0239_Timepoint_3",
+      "PatientID_0239_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      63.0,
+      246.0,
+      533.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 4,
+    "has_avastin": false
+  },
+  "PatientID_0240": {
+    "patient_id": "PatientID_0240",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      3,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0240_Timepoint_1",
+      "PatientID_0240_Timepoint_3",
+      "PatientID_0240_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      62.0,
+      244.0,
+      326.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 2,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0242": {
+    "patient_id": "PatientID_0242",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      3,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0242_Timepoint_1",
+      "PatientID_0242_Timepoint_3",
+      "PatientID_0242_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      105.0,
+      350.0,
+      1210.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 2,
+    "idh1": 2,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0244": {
+    "patient_id": "PatientID_0244",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0244_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      -17.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 2,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0249": {
+    "patient_id": "PatientID_0249",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0249_Timepoint_1",
+      "PatientID_0249_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      52.0,
+      234.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 2,
+    "idh1": 1,
+    "mgmt": 2,
+    "has_avastin": false
+  },
+  "PatientID_0250": {
+    "patient_id": "PatientID_0250",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0250_Timepoint_1",
+      "PatientID_0250_Timepoint_2",
+      "PatientID_0250_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      104.0,
+      174.0,
+      188.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0251": {
+    "patient_id": "PatientID_0251",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0251_Timepoint_1",
+      "PatientID_0251_Timepoint_2",
+      "PatientID_0251_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      13.0,
+      90.0,
+      111.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "PRE_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": true,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0252": {
+    "patient_id": "PatientID_0252",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      2,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0252_Timepoint_1",
+      "PatientID_0252_Timepoint_2",
+      "PatientID_0252_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      92.0,
+      135.0,
+      190.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0254": {
+    "patient_id": "PatientID_0254",
+    "n_timepoints": 4,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "scan_ids": [
+      "PatientID_0254_Timepoint_1",
+      "PatientID_0254_Timepoint_2",
+      "PatientID_0254_Timepoint_3",
+      "PatientID_0254_Timepoint_4"
+    ],
+    "days_from_diagnosis": [
+      70.0,
+      138.0,
+      182.0,
+      190.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0255": {
+    "patient_id": "PatientID_0255",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0255_Timepoint_1",
+      "PatientID_0255_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      -58.0,
+      -2.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 4,
+    "has_avastin": false
+  },
+  "PatientID_0256": {
+    "patient_id": "PatientID_0256",
+    "n_timepoints": 5,
+    "timepoints": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "scan_ids": [
+      "PatientID_0256_Timepoint_1",
+      "PatientID_0256_Timepoint_2",
+      "PatientID_0256_Timepoint_3",
+      "PatientID_0256_Timepoint_4",
+      "PatientID_0256_Timepoint_5"
+    ],
+    "days_from_diagnosis": [
+      88.0,
+      110.0,
+      186.0,
+      237.0,
+      260.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0258": {
+    "patient_id": "PatientID_0258",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0258_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      NaN
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TIMING"
+    ],
+    "is_transition_patient": false,
+    "grade": null,
+    "idh1": 1,
+    "mgmt": 4,
+    "has_avastin": false
+  },
+  "PatientID_0259": {
+    "patient_id": "PatientID_0259",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0259_Timepoint_1",
+      "PatientID_0259_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      43.0,
+      176.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 2,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0260": {
+    "patient_id": "PatientID_0260",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0260_Timepoint_1",
+      "PatientID_0260_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      92.0,
+      176.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0261": {
+    "patient_id": "PatientID_0261",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0261_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      78.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 2,
+    "idh1": 0,
+    "mgmt": 4,
+    "has_avastin": false
+  },
+  "PatientID_0264": {
+    "patient_id": "PatientID_0264",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0264_Timepoint_1",
+      "PatientID_0264_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      26.0,
+      141.0
+    ],
+    "trajectory_class": "PROGRESSIVE",
+    "treatment_phases": [
+      "PRE_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 2,
+    "idh1": 1,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0265": {
+    "patient_id": "PatientID_0265",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0265_Timepoint_1",
+      "PatientID_0265_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      155.0,
+      526.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 2,
+    "idh1": 1,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0267": {
+    "patient_id": "PatientID_0267",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      2
+    ],
+    "scan_ids": [
+      "PatientID_0267_Timepoint_1",
+      "PatientID_0267_Timepoint_2"
+    ],
+    "days_from_diagnosis": [
+      90.0,
+      152.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": true
+  },
+  "PatientID_0268": {
+    "patient_id": "PatientID_0268",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      3,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0268_Timepoint_1",
+      "PatientID_0268_Timepoint_3",
+      "PatientID_0268_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      -20.0,
+      20.0,
+      139.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0270": {
+    "patient_id": "PatientID_0270",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      3,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0270_Timepoint_1",
+      "PatientID_0270_Timepoint_3",
+      "PatientID_0270_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      97.0,
+      293.0,
+      426.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 2,
+    "idh1": 2,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0271": {
+    "patient_id": "PatientID_0271",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      3,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0271_Timepoint_1",
+      "PatientID_0271_Timepoint_3",
+      "PatientID_0271_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      42.0,
+      192.0,
+      381.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "UNKNOWN_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 2,
+    "idh1": 1,
+    "mgmt": 4,
+    "has_avastin": false
+  },
+  "PatientID_0272": {
+    "patient_id": "PatientID_0272",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      3,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0272_Timepoint_1",
+      "PatientID_0272_Timepoint_3",
+      "PatientID_0272_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      89.0,
+      208.0,
+      376.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 2,
+    "mgmt": 0,
+    "has_avastin": false
+  },
+  "PatientID_0273": {
+    "patient_id": "PatientID_0273",
+    "n_timepoints": 1,
+    "timepoints": [
+      1
+    ],
+    "scan_ids": [
+      "PatientID_0273_Timepoint_1"
+    ],
+    "days_from_diagnosis": [
+      87.0
+    ],
+    "trajectory_class": "SINGLE_SCAN",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 2,
+    "mgmt": 0,
+    "has_avastin": true
+  },
+  "PatientID_0274": {
+    "patient_id": "PatientID_0274",
+    "n_timepoints": 2,
+    "timepoints": [
+      1,
+      3
+    ],
+    "scan_ids": [
+      "PatientID_0274_Timepoint_1",
+      "PatientID_0274_Timepoint_3"
+    ],
+    "days_from_diagnosis": [
+      87.0,
+      232.0
+    ],
+    "trajectory_class": "STABLE",
+    "treatment_phases": [
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 4,
+    "idh1": 0,
+    "mgmt": 1,
+    "has_avastin": false
+  },
+  "PatientID_0275": {
+    "patient_id": "PatientID_0275",
+    "n_timepoints": 3,
+    "timepoints": [
+      1,
+      3,
+      6
+    ],
+    "scan_ids": [
+      "PatientID_0275_Timepoint_1",
+      "PatientID_0275_Timepoint_3",
+      "PatientID_0275_Timepoint_6"
+    ],
+    "days_from_diagnosis": [
+      104.0,
+      236.0,
+      319.0
+    ],
+    "trajectory_class": "RESPONDING",
+    "treatment_phases": [
+      "ON_TREATMENT",
+      "POST_TREATMENT"
+    ],
+    "is_transition_patient": false,
+    "grade": 2,
+    "idh1": 1,
+    "mgmt": 1,
+    "has_avastin": false
+  }
+}

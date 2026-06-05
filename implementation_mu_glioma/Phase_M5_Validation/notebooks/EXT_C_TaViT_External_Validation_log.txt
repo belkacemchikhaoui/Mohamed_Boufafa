@@ -1,0 +1,330 @@
+7.5s	1	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.5s	2	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.5s	3	0.00s - to python to disable frozen modules.
+7.5s	4	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.2s	5	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.2s	6	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.2s	7	0.00s - to python to disable frozen modules.
+8.2s	8	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+15.0s	9	Device: cuda | GPUs: 2
+15.0s	10	Config: {'d_scan': 2816, 'd_treat': 8, 'd_mol': 26, 'max_len': 6, 'd_model': 256, 'n_heads': 8, 'n_layers': 4, 'd_ff': 512, 'dropout': 0.2, 'tau': 180.0, 'ft_lr': 5e-05, 'ft_epochs': 40, 'ft_patience': 10, 'ft_batch': 8}
+15.0s	11	Checkpoints: /kaggle/input/datasets/zinou123viva/tavit-muglioma
+15.0s	12	Embeddings:  /kaggle/input/datasets/zinou123viva/embading-brats-glioma-mupretrained/brats_ptg_embeddings.npz
+15.2s	13	Embeddings: (1620, 2825) | 1620 scans
+15.2s	14	Master CSV:  (1620, 53)
+15.2s	15	Splits loaded: ['fold_0', 'fold_1', 'fold_2']
+15.2s	16	Volume scale: 1000.0x (mean wt=37.9 mL)
+15.3s	17	Architecture defined (exact V4: TimeAwareTransformerLayer + ModuleList)
+15.3s	18	  emb_dict sample keys: ['BraTS-GLI-00005-100', 'BraTS-GLI-00005-101', 'BraTS-GLI-00006-100']
+15.3s	19	  BraTSDataset(3 train pids) → 3 sequences
+15.3s	20	  scan_emb: torch.Size([6, 2816])  vol_feats: torch.Size([6, 9])
+15.3s	21	BraTSDataset defined ✅
+15.3s	22	Fine-tuning function defined ✅
+15.4s	23	════════════════════════════════════════════════════════════
+15.4s	24	  FEW-SHOT FINE-TUNING — TaViT V3.2 on BraTS-PTG
+15.4s	25	  (fine-tuning last 2 layers + vol decoder | LR=5e-5)
+15.4s	26	════════════════════════════════════════════════════════════
+15.4s	27	
+15.4s	28	  N=0 (zero-shot calibrated baseline):
+15.4s	29	    Mean | WT R²=0.003  MAE=24.3mL  Δ-sign=54.3%
+15.4s	30	
+15.4s	31	  N=10 fine-tuning patients:
+16.0s	32	    Loaded V4 checkpoint:
+16.0s	33	       backbone  missing=0  unexpected=0
+16.0s	34	       mol_proj  missing=0  unexpected=0
+16.0s	35	       decoder   missing=0 unexpected=0
+25.4s	36	    Fold 0 | N= 10 | ep= 10 | WT R²=0.844  TC R²=0.934  ET R²=0.927  MAE(WT/TC/ET)=0.4/0.3/0.3mL  Δ-sign=80.7%
+25.8s	37	    Loaded V4 checkpoint:
+25.8s	38	       backbone  missing=0  unexpected=0
+25.8s	39	       mol_proj  missing=0  unexpected=0
+25.8s	40	       decoder   missing=0 unexpected=0
+28.4s	41	    Fold 1 | N= 10 | ep=  9 | WT R²=0.813  TC R²=0.934  ET R²=0.940  MAE(WT/TC/ET)=0.4/0.3/0.3mL  Δ-sign=79.4%
+28.7s	42	    Loaded V4 checkpoint:
+28.7s	43	       backbone  missing=0  unexpected=0
+28.7s	44	       mol_proj  missing=0  unexpected=0
+28.7s	45	       decoder   missing=0 unexpected=0
+31.4s	46	    Fold 2 | N= 10 | ep=  8 | WT R²=0.802  TC R²=0.872  ET R²=0.870  MAE(WT/TC/ET)=0.4/0.4/0.4mL  Δ-sign=74.2%
+31.4s	47	    Mean | WT R²=0.820±0.018  TC R²=0.913  ET R²=0.912  MAE(WT/TC/ET)=0.4/0.3/0.3mL  Δ-sign=78.1±2.8%
+31.4s	48	
+31.4s	49	  N=20 fine-tuning patients:
+31.7s	50	    Loaded V4 checkpoint:
+31.7s	51	       backbone  missing=0  unexpected=0
+31.7s	52	       mol_proj  missing=0  unexpected=0
+31.7s	53	       decoder   missing=0 unexpected=0
+34.7s	54	    Fold 0 | N= 20 | ep=  8 | WT R²=0.832  TC R²=0.931  ET R²=0.927  MAE(WT/TC/ET)=0.4/0.3/0.3mL  Δ-sign=78.6%
+35.0s	55	    Loaded V4 checkpoint:
+35.0s	56	       backbone  missing=0  unexpected=0
+35.0s	57	       mol_proj  missing=0  unexpected=0
+35.0s	58	       decoder   missing=0 unexpected=0
+37.6s	59	    Fold 1 | N= 20 | ep=  5 | WT R²=0.797  TC R²=0.933  ET R²=0.936  MAE(WT/TC/ET)=0.4/0.3/0.3mL  Δ-sign=78.3%
+37.8s	60	    Loaded V4 checkpoint:
+37.8s	61	       backbone  missing=0  unexpected=0
+37.8s	62	       mol_proj  missing=0  unexpected=0
+37.8s	63	       decoder   missing=0 unexpected=0
+40.4s	64	    Fold 2 | N= 20 | ep=  5 | WT R²=0.796  TC R²=0.870  ET R²=0.866  MAE(WT/TC/ET)=0.4/0.4/0.4mL  Δ-sign=74.9%
+40.4s	65	    Mean | WT R²=0.808±0.017  TC R²=0.911  ET R²=0.910  MAE(WT/TC/ET)=0.4/0.3/0.3mL  Δ-sign=77.3±1.7%
+40.4s	66	
+40.4s	67	  N=30 fine-tuning patients:
+40.7s	68	    Loaded V4 checkpoint:
+40.7s	69	       backbone  missing=0  unexpected=0
+40.7s	70	       mol_proj  missing=0  unexpected=0
+40.7s	71	       decoder   missing=0 unexpected=0
+43.6s	72	    Fold 0 | N= 30 | ep=  4 | WT R²=0.827  TC R²=0.935  ET R²=0.929  MAE(WT/TC/ET)=0.4/0.3/0.3mL  Δ-sign=78.6%
+43.8s	73	    Loaded V4 checkpoint:
+43.8s	74	       backbone  missing=0  unexpected=0
+43.8s	75	       mol_proj  missing=0  unexpected=0
+43.8s	76	       decoder   missing=0 unexpected=0
+47.0s	77	    Fold 1 | N= 30 | ep=  6 | WT R²=0.809  TC R²=0.934  ET R²=0.942  MAE(WT/TC/ET)=0.4/0.3/0.2mL  Δ-sign=78.3%
+47.3s	78	    Loaded V4 checkpoint:
+47.3s	79	       backbone  missing=0  unexpected=0
+47.3s	80	       mol_proj  missing=0  unexpected=0
+47.3s	81	       decoder   missing=0 unexpected=0
+50.1s	82	    Fold 2 | N= 30 | ep=  4 | WT R²=0.785  TC R²=0.875  ET R²=0.871  MAE(WT/TC/ET)=0.5/0.4/0.4mL  Δ-sign=73.8%
+50.1s	83	    Mean | WT R²=0.807±0.017  TC R²=0.915  ET R²=0.914  MAE(WT/TC/ET)=0.4/0.3/0.3mL  Δ-sign=76.9±2.2%
+50.1s	84	
+50.1s	85	  N=50 fine-tuning patients:
+50.4s	86	    Loaded V4 checkpoint:
+50.4s	87	       backbone  missing=0  unexpected=0
+50.4s	88	       mol_proj  missing=0  unexpected=0
+50.4s	89	       decoder   missing=0 unexpected=0
+53.6s	90	    Fold 0 | N= 50 | ep=  2 | WT R²=0.833  TC R²=0.936  ET R²=0.930  MAE(WT/TC/ET)=0.4/0.3/0.3mL  Δ-sign=78.2%
+53.8s	91	    Loaded V4 checkpoint:
+53.8s	92	       backbone  missing=0  unexpected=0
+53.8s	93	       mol_proj  missing=0  unexpected=0
+53.8s	94	       decoder   missing=0 unexpected=0
+63.9s	95	    Fold 1 | N= 50 | ep= 38 | WT R²=0.788  TC R²=0.937  ET R²=0.948  MAE(WT/TC/ET)=0.4/0.3/0.2mL  Δ-sign=79.0%
+64.1s	96	    Loaded V4 checkpoint:
+64.1s	97	       backbone  missing=0  unexpected=0
+64.1s	98	       mol_proj  missing=0  unexpected=0
+64.1s	99	       decoder   missing=0 unexpected=0
+74.1s	100	    Fold 2 | N= 50 | ep= 35 | WT R²=0.792  TC R²=0.904  ET R²=0.901  MAE(WT/TC/ET)=0.5/0.4/0.3mL  Δ-sign=74.5%
+74.1s	101	    Mean | WT R²=0.804±0.020  TC R²=0.926  ET R²=0.926  MAE(WT/TC/ET)=0.4/0.3/0.3mL  Δ-sign=77.3±1.9%
+74.1s	102	
+74.1s	103	  Saved: /kaggle/working/ext_finetune/finetuning_results.json
+74.1s	104	  Best single run: N=10, fold=0 | WT R²=0.844
+74.3s	105	Rebuilding best fine-tuned model (N=50, fold=1)...
+74.8s	106	    Loaded V4 checkpoint:
+74.8s	107	       backbone  missing=0  unexpected=0
+74.8s	108	       mol_proj  missing=0  unexpected=0
+74.8s	109	       decoder   missing=0 unexpected=0
+84.6s	110	Running inference on test patients...
+85.7s	111	Collected 187 patient trajectories
+85.7s	112	Generating per-patient trajectory plots...
+177.5s	113	  ✅ 187 patient plots saved → /kaggle/working/ext_finetune/trajectories/per_patient/
+177.5s	114	Generating grid overview (WT)...
+213.0s	115	  ✅ Grid overview saved → /kaggle/working/ext_finetune/trajectories/grid_wt_finetuned.png
+213.0s	116	
+213.0s	117	  ══ PER-PATIENT SUMMARY (N=10 Fine-Tuned | Fold 0 | WT R²=0.844) ══
+213.0s	118	  Patient                     T    WT MAE    TC MAE    ET MAE    Δ-sign
+213.0s	119	  ──────────────────────────────────────────────────────────────────────
+213.0s	120	  BraTS-GLI-02575             2       1.3       0.7       0.7       1/1
+213.0s	121	  BraTS-GLI-02800             2       7.6       0.1       0.1       1/1
+213.0s	122	  BraTS-GLI-02861             2       0.8       0.0       0.0       N/A
+213.0s	123	  BraTS-GLI-00027             2      14.7       0.6       0.5       0/1
+213.0s	124	  BraTS-GLI-02932             2       0.3       0.0       0.0       N/A
+213.0s	125	  BraTS-GLI-02962             2      11.5       4.8       3.7       1/1
+213.0s	126	  BraTS-GLI-02776             2       1.0       0.1       0.0       1/1
+213.0s	127	  BraTS-GLI-02287             2       4.8       6.7       3.3       1/1
+213.0s	128	  BraTS-GLI-02897             2       1.0       0.1       0.1       0/1
+213.0s	129	  BraTS-GLI-02801             2      18.3       2.2       3.1       1/1
+213.0s	130	  BraTS-GLI-02804             2      17.1       2.9       2.2       1/1
+213.0s	131	  BraTS-GLI-02808             2       1.9       0.4       0.4       1/1
+213.0s	132	  BraTS-GLI-02780             2       4.4       0.1       0.1       0/1
+213.0s	133	  BraTS-GLI-02872             2      28.9       2.1       1.6       1/1
+213.0s	134	  BraTS-GLI-02940             2      12.7       0.5       0.4       0/1
+213.0s	135	  BraTS-GLI-02822             2      11.5       0.2       0.2       1/1
+213.0s	136	  BraTS-GLI-02988             2       2.8       0.1       0.1       1/1
+213.0s	137	  BraTS-GLI-02764             2       7.5       0.1       0.1       0/1
+213.0s	138	  BraTS-GLI-02198             5       4.4       0.1       0.1       3/4
+213.0s	139	  BraTS-GLI-02779             2       1.8       0.1       0.1       1/1
+213.0s	140	  BraTS-GLI-02849             2       4.9       0.1       0.1       0/1
+213.0s	141	  BraTS-GLI-02093             6       2.2       0.9       0.9       4/5
+213.0s	142	  BraTS-GLI-02770             2      18.2       3.5       0.8       1/1
+213.0s	143	  BraTS-GLI-02857             2      30.5       3.2       2.3       0/1
+213.0s	144	  BraTS-GLI-02973             2       6.6       0.1       0.8       1/1
+213.0s	145	  BraTS-GLI-02984             2      46.2       0.1       0.1       0/1
+213.0s	146	  BraTS-GLI-02959             2      26.2       5.6       4.4       1/1
+213.0s	147	  BraTS-GLI-00529             2       1.8       0.4       0.4       0/1
+213.0s	148	  BraTS-GLI-02480             2       9.1       3.2       8.1       0/1
+213.0s	149	  BraTS-GLI-02845             2       1.2       0.1       0.1       0/1
+213.0s	150	  BraTS-GLI-02115             2       2.2       0.5       0.7       0/1
+213.0s	151	  BraTS-GLI-02735             2      18.2       0.2       0.2       0/1
+213.0s	152	  BraTS-GLI-02771             2      27.7       0.0       0.0       0/1
+213.0s	153	  BraTS-GLI-02789             2       8.5       0.1       0.1       1/1
+213.0s	154	  BraTS-GLI-02099             2      22.0       1.4       1.4       1/1
+213.0s	155	  BraTS-GLI-02855             2       3.3       0.1       0.1       1/1
+213.0s	156	  BraTS-GLI-02843             2       0.9       0.1       0.1       0/1
+213.0s	157	  BraTS-GLI-02949             2      15.5       0.1       0.1       1/1
+213.0s	158	  BraTS-GLI-02830             2       8.0       0.1       0.1       1/1
+213.0s	159	  BraTS-GLI-02787             2       1.5       0.1       0.1       1/1
+213.0s	160	  BraTS-GLI-02890             2      11.7       1.1       1.0       1/1
+213.0s	161	  BraTS-GLI-02891             2      23.6       0.1       0.1       N/A
+213.0s	162	  BraTS-GLI-02851             2       1.0       0.1       0.1       0/1
+213.0s	163	  BraTS-GLI-02429             2       7.1       1.7       1.2       1/1
+213.0s	164	  BraTS-GLI-02114             2      20.7       0.1       0.1       1/1
+213.0s	165	  BraTS-GLI-02810             2       7.8       1.0       1.2       1/1
+213.0s	166	  BraTS-GLI-02227             2      16.0       0.1       0.1       1/1
+213.0s	167	  BraTS-GLI-02775             2       0.6       0.1       0.1       1/1
+213.0s	168	  BraTS-GLI-03017             2       3.7       0.1       0.1       0/1
+213.0s	169	  BraTS-GLI-02980             2       5.5       0.1       0.0       0/1
+213.0s	170	  BraTS-GLI-02877             2       0.8       0.0       0.0       N/A
+213.0s	171	  BraTS-GLI-03026             2      25.9       2.9       2.5       0/1
+213.0s	172	  BraTS-GLI-02859             2      24.9       0.1       0.1       1/1
+213.0s	173	  BraTS-GLI-02221             4      11.5       7.7       1.3       3/3
+213.0s	174	  BraTS-GLI-02139             4      15.9       2.0       0.9       2/3
+213.0s	175	  BraTS-GLI-02794             2       2.4       0.1       0.1       1/1
+213.0s	176	  BraTS-GLI-02081             3      10.2       0.3       0.2       2/2
+213.0s	177	  BraTS-GLI-02582             3      12.1       0.1       0.1       1/2
+213.0s	178	  BraTS-GLI-02926             2      28.7       1.7       1.5       0/1
+213.0s	179	  BraTS-GLI-02848             2      44.6       0.1       0.1       1/1
+213.0s	180	  BraTS-GLI-02865             2       2.5       0.1       0.1       N/A
+213.0s	181	  BraTS-GLI-02066             6      18.1       9.4       3.3       5/5
+213.0s	182	  BraTS-GLI-02829             2       8.4       0.2       0.2       1/1
+213.0s	183	  BraTS-GLI-00505             2       6.6       0.3       0.3       0/1
+213.0s	184	  BraTS-GLI-02744             2       3.1       0.1       0.1       0/1
+213.0s	185	  BraTS-GLI-02766             2       7.7       0.1       0.2       0/1
+213.0s	186	  BraTS-GLI-02741             2       1.9       0.1       0.1       N/A
+213.0s	187	  BraTS-GLI-02128             4       4.8       0.3       0.3       3/3
+213.0s	188	  BraTS-GLI-03008             2       9.1       1.8       1.1       0/1
+213.0s	189	  BraTS-GLI-02954             2       1.7       0.1       0.1       1/1
+213.0s	190	  BraTS-GLI-02957             2       2.4       0.0       0.1       1/1
+213.0s	191	  BraTS-GLI-02792             2       9.5       0.0       0.1       1/1
+213.0s	192	  BraTS-GLI-03013             2      17.7       3.1       2.6       0/1
+213.0s	193	  BraTS-GLI-02905             2       5.0       0.0       0.0       0/1
+213.0s	194	  BraTS-GLI-03030             2      14.5       0.2       0.1       0/1
+213.0s	195	  BraTS-GLI-02256             2       6.2       4.3       2.5       1/1
+213.0s	196	  BraTS-GLI-00463             2      14.7       5.6       3.6       1/1
+213.0s	197	  BraTS-GLI-02854             2      12.0       0.0       0.0       0/1
+213.0s	198	  BraTS-GLI-02999             2      14.6       0.4       0.4       0/1
+213.0s	199	  BraTS-GLI-02085             6      16.8       1.4       1.1       5/5
+213.0s	200	  BraTS-GLI-02239             4       2.5       0.1       0.0       0/3
+213.0s	201	  BraTS-GLI-02925             2       3.1       0.0       0.0       0/1
+213.0s	202	  BraTS-GLI-02869             2       5.4       0.1       0.1       1/1
+213.0s	203	  BraTS-GLI-02548             3       7.5       6.2       3.1       2/2
+213.0s	204	  BraTS-GLI-03052             3       5.0       1.6       0.5       2/2
+213.0s	205	  BraTS-GLI-02927             2      12.5       6.2       4.8       1/1
+213.0s	206	  BraTS-GLI-02884             2      11.1       0.7       1.7       1/1
+213.0s	207	  BraTS-GLI-02390             3       2.2       0.1       0.0       1/2
+213.0s	208	  BraTS-GLI-02378             3      12.1       2.4       1.4       2/2
+213.0s	209	  BraTS-GLI-02907             2      18.6       0.6       0.5       1/1
+213.0s	210	  BraTS-GLI-00498             2      16.4       3.2       3.0       1/1
+213.0s	211	  BraTS-GLI-03061             3      10.8       1.5       1.3       2/2
+213.0s	212	  BraTS-GLI-02584             3       9.8       0.0       0.0       1/2
+213.0s	213	  BraTS-GLI-02840             2       1.7       1.1       0.9       1/1
+213.0s	214	  BraTS-GLI-02842             2      15.8       5.4       6.4       1/1
+213.0s	215	  BraTS-GLI-02245             5      10.0       0.1       0.1       4/4
+213.0s	216	  BraTS-GLI-02751             2       3.5       0.1       0.1       0/1
+213.0s	217	  BraTS-GLI-02074             2      18.2      11.6       6.8       1/1
+213.0s	218	  BraTS-GLI-02258             2       3.6       6.1       4.7       1/1
+213.0s	219	  BraTS-GLI-03020             2      26.1      18.3      13.6       1/1
+213.0s	220	  BraTS-GLI-02123             4       4.3       1.0       1.1       3/3
+213.0s	221	  BraTS-GLI-00046             2       5.5       4.9       4.2       1/1
+213.0s	222	  BraTS-GLI-02170             3       3.7       3.5       2.4       2/2
+213.0s	223	  BraTS-GLI-02637             2       4.9       1.9       1.6       1/1
+213.0s	224	  BraTS-GLI-02873             2      13.0       0.1       0.1       1/1
+213.0s	225	  BraTS-GLI-03007             2      13.6       7.5       5.6       1/1
+213.0s	226	  BraTS-GLI-02881             2       1.6       0.8       0.7       1/1
+213.0s	227	  BraTS-GLI-02941             2       9.1       4.0       3.3       1/1
+213.0s	228	  BraTS-GLI-00491             2      14.4       0.6       0.3       1/1
+213.0s	229	  BraTS-GLI-02924             2      12.9       0.6       0.4       1/1
+213.0s	230	  BraTS-GLI-02335             2       4.1       1.1       0.9       1/1
+213.0s	231	  BraTS-GLI-02219             4       1.5       0.0       0.0       2/3
+213.0s	232	  BraTS-GLI-02921             2      15.6       1.7       0.7       1/1
+213.0s	233	  BraTS-GLI-02753             2      11.0      11.6       8.8       1/1
+213.0s	234	  BraTS-GLI-03011             2      13.8       2.7       3.2       1/1
+213.0s	235	  BraTS-GLI-02199             5       3.2       0.0       0.0       2/4
+213.0s	236	  BraTS-GLI-02614             6      12.9       0.9       1.0       3/5
+213.0s	237	  BraTS-GLI-02124             2       5.5       5.0       3.5       1/1
+213.0s	238	  BraTS-GLI-02486             2       9.2      11.4       7.7       1/1
+213.0s	239	  BraTS-GLI-02120             2       8.1       2.9       2.3       1/1
+213.0s	240	  BraTS-GLI-02944             2      28.0       9.8       7.2       1/1
+213.0s	241	  BraTS-GLI-02138             2       2.3       0.4       0.4       1/1
+213.0s	242	  BraTS-GLI-02191             2      11.0       0.1       0.1       1/1
+213.0s	243	  BraTS-GLI-00507             2      12.6       0.1       0.1       1/1
+213.0s	244	  BraTS-GLI-02241             3       4.1       0.5       0.5       2/2
+213.0s	245	  BraTS-GLI-02064             3       2.2       0.3       0.3       1/2
+213.0s	246	  BraTS-GLI-02217             5       5.5       0.1       0.0       3/4
+213.0s	247	  BraTS-GLI-02871             2       0.8       0.1       0.1       1/1
+213.0s	248	  BraTS-GLI-02155             2       0.7       0.7       0.7       1/1
+213.0s	249	  BraTS-GLI-02583             2       0.3       0.0       0.0       0/1
+213.0s	250	  BraTS-GLI-00511             2       1.0       0.0       0.0       0/1
+213.0s	251	  BraTS-GLI-02972             2      50.4       7.5       7.6       1/1
+213.0s	252	  BraTS-GLI-02062             6      14.0       0.4       0.2       3/5
+213.0s	253	  BraTS-GLI-02571             5       7.8       5.2       4.2       3/4
+213.0s	254	  BraTS-GLI-02591             3       3.3       1.3       1.2       1/2
+213.0s	255	  BraTS-GLI-02742             2       7.0       4.0       3.4       1/1
+213.0s	256	  BraTS-GLI-02242             5      42.2       0.1       0.1       3/4
+213.0s	257	  BraTS-GLI-02740             2      20.9       3.3       1.5       1/1
+213.0s	258	  BraTS-GLI-02216             5      15.5       5.0       3.6       3/3
+213.0s	259	  BraTS-GLI-02896             2      27.9       7.0       5.1       1/1
+213.0s	260	  BraTS-GLI-02930             2       9.5       8.5       6.3       1/1
+213.0s	261	  BraTS-GLI-02195             2       9.6       1.7       1.1       1/1
+213.0s	262	  BraTS-GLI-02379             2      19.9      13.3      11.0       1/1
+213.0s	263	  BraTS-GLI-02427             2       5.5       0.5       0.5       1/1
+213.0s	264	  BraTS-GLI-02540             2      15.6      12.2       4.6       1/1
+213.0s	265	  BraTS-GLI-02176             4       6.6       1.7       2.1       3/3
+213.0s	266	  BraTS-GLI-02609             5      10.0       3.0       2.1       4/4
+213.0s	267	  BraTS-GLI-02978             2      15.3       0.4       0.4       1/1
+213.0s	268	  BraTS-GLI-02069             4       4.2       0.1       0.1       2/3
+213.0s	269	  BraTS-GLI-02204             5      14.3       0.1       0.1       3/4
+213.0s	270	  BraTS-GLI-02116             2       8.3      29.0      12.5       1/1
+213.0s	271	  BraTS-GLI-03054             3      18.9       2.2       1.2       1/2
+213.0s	272	  BraTS-GLI-02087             3      37.4      21.7      14.3       2/2
+213.0s	273	  BraTS-GLI-03019             2       6.2       3.4       4.1       1/1
+213.0s	274	  BraTS-GLI-02083             4       2.6       0.7       0.7       2/3
+213.0s	275	  BraTS-GLI-02844             2       3.9       0.0       0.0       1/1
+213.0s	276	  BraTS-GLI-02517             2       5.4       0.6       0.5       1/1
+213.0s	277	  BraTS-GLI-02285             4      12.7       5.6       4.6       3/3
+213.0s	278	  BraTS-GLI-03053             3      14.3       1.4       1.8       2/2
+213.0s	279	  BraTS-GLI-02433             2      10.0       1.1       1.2       1/1
+213.0s	280	  BraTS-GLI-02773             2       0.6       1.6       2.1       1/1
+213.0s	281	  BraTS-GLI-00469             2       5.2       2.9       4.4       1/1
+213.0s	282	  BraTS-GLI-02118             2      11.5       8.7       2.8       1/1
+213.0s	283	  BraTS-GLI-02157             2       7.7      10.5       6.3       1/1
+213.0s	284	  BraTS-GLI-02923             2       1.2       0.0       0.1       1/1
+213.0s	285	  BraTS-GLI-03000             2       0.8       9.6       4.6       1/1
+213.0s	286	  BraTS-GLI-02146             4       3.4       0.0       0.0       2/2
+213.0s	287	  BraTS-GLI-02088             3       5.5       0.3       0.9       1/2
+213.0s	288	  BraTS-GLI-02618             3       0.9       0.4       0.5       2/2
+213.0s	289	  BraTS-GLI-02092             6       8.0       0.3       0.2       3/4
+213.0s	290	  BraTS-GLI-02218             5       2.6       0.0       0.0       4/4
+213.0s	291	  BraTS-GLI-02300             3       5.7       5.0       2.3       2/2
+213.0s	292	  BraTS-GLI-02220             3      12.7       0.1       0.1       2/2
+213.0s	293	  BraTS-GLI-02536             3      13.7       1.2       0.9       2/2
+213.0s	294	  BraTS-GLI-02616             2       2.4       0.3       0.3       1/1
+213.0s	295	  BraTS-GLI-02987             2      17.0       2.1       0.8       1/1
+213.0s	296	  BraTS-GLI-02490             2      10.6      16.1       8.0       1/1
+213.0s	297	  BraTS-GLI-02358             2      23.7      12.5      11.8       1/1
+213.0s	298	  BraTS-GLI-02207             2      33.3       0.1       0.1       1/1
+213.0s	299	  BraTS-GLI-02642             3       5.4       0.3       0.3       2/2
+213.0s	300	  BraTS-GLI-02481             4      14.6       7.4       4.7       3/3
+213.0s	301	  BraTS-GLI-02537             3       5.5       1.9       1.4       1/2
+213.0s	302	  BraTS-GLI-02169             3      18.7       7.7       5.5       2/2
+213.0s	303	  BraTS-GLI-02237             3       5.2       0.3       0.3       2/2
+213.0s	304	  BraTS-GLI-02060             2       9.4       3.0       2.6       1/1
+213.0s	305	  BraTS-GLI-02608             6      14.3       5.1       3.1       4/5
+213.0s	306	  BraTS-GLI-02493             2       6.0       1.5       1.5       1/1
+213.8s	307	Saved: /kaggle/working/ext_finetune/finetuning_recovery_curve.png
+213.8s	308	
+213.8s	309	════════════════════════════════════════
+213.8s	310	  THESIS TABLE — Fine-Tuning Recovery (BraTS-PTG External Validation)
+213.8s	311	  ─────────────────────────────────────────────────────────────────────────────────────
+213.8s	312	    N patients |   WT R² |   TC R² |   ET R² |  WT MAE |  TC MAE |  ET MAE |  Δ-sign
+213.8s	313	  ─────────────────────────────────────────────────────────────────────────────────────
+213.8s	314	             0 |   0.003 |     —   |     —   |   24.3mL |     —   |     —   |   54.3%
+213.8s	315	            10 |   0.820 |   0.913 |   0.912 |    0.4mL |   0.3mL |   0.3mL |   78.1%
+213.8s	316	            20 |   0.808 |   0.911 |   0.910 |    0.4mL |   0.3mL |   0.3mL |   77.3%
+213.8s	317	            30 |   0.807 |   0.915 |   0.914 |    0.4mL |   0.3mL |   0.3mL |   76.9%
+213.8s	318	            50 |   0.804 |   0.926 |   0.926 |    0.4mL |   0.3mL |   0.3mL |   77.3%
+213.8s	319	  ─────────────────────────────────────────────────────────────────────────────────────
+213.8s	320	     MU-Glioma |   0.918 |   0.953 |   0.952 |  15.5mL |   4.7mL |   3.7mL |   83.3%  (in-distribution)
+219.0s	321	/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+219.0s	322	  cells[i][c] = re.sub('\\\\\|', '|', cell)
+219.2s	323	/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+219.2s	324	  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+219.8s	325	[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+220.2s	326	[NbConvertApp] Writing 2875701 bytes to __notebook__.ipynb
+222.7s	327	[NbConvertApp] Converting notebook __notebook__.ipynb to html
+223.8s	328	[NbConvertApp] Support files will be in __results___files/
+223.8s	329	[NbConvertApp] Making directory __results___files
+223.8s	330	[NbConvertApp] Writing 533140 bytes to __results__.html
